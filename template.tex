@@ -225,7 +225,7 @@ Line 71: Add ". . . for most variables" to ". . . time-averaged quantities were 
 
 \subsection{Atmospheric Model Intercomparison Project phases (AMIP1/2)}
 \label{sec:amip1And2}
-\cred{Attn: Peter G, details of AMIP2 are light, can we augment}
+\cred{Attn: Peter G., details of AMIP2 are light, can we augment}
 
 Intercomparison of the results from different atmospheric model simulations focused on predicting near-term weather (numerical weather prediction) began soon after the first large-scale atmospheric models were developed in the 1950s, with the Working Group on Numerical Experimentation (WGNE) coordinating these activities since the early 1970s \citep{gates_ams_1992}. The first internationally coordinated climate model experimentation occurred in the late 1980s, scientifically focused on cloud feedbacks in the Feedback ANalysis of GCMs and In Observations (FANGIO) project and contributions from 19 unique atmospheric model configurations \citep{cess_methodology_1988, cess_interpretation_1989, cess_intercomparison_1990, cess_first_1991}. The nascent community success quickly expanded into the first phase of the Atmospheric Model Intercomparison Project (AMIP, \citet{gates_amip_1992}, hereafter referred to as AMIP1), which was organized under the purview of WGNE for the World Climate Research Programme (WCRP) to help identify and ultimately reduce systematic errors in atmospheric models. The acronym AGCM (Atmospheric General Circulation Model) was coined to define model configurations for the project. AMIP1 augmented total atmospheric model configurations to 27, more definitively documenting the atmosphere-only experimental protocols, including providing standardized "forcing" sea surface temperature (SST) and sea-ice boundary conditions for the 1979-1988 period, in addition to recommended solar constant (1365 W m\textsuperscript{-2}) and carbon dioxide concentrations (345 ppm) \citep{gates_amip_1991}. The project expanded the required model output from simple global and zonal means in FANGIO to climatological annual mean data in three dimensions. For many participating models, AMIP1 was the first opportunity to run their model longer than one annual cycle, with computer time provided by the Program for Climate Model Diagnosis and Intercomparison (PCMDI; see \autoref{sec:CMIPSupportingOrgsAndInfra}) allowing for 10-year integrations. Early AMIP1 results were incorporated into the IPCC First Assessment Report (FAR) \citep{gates_validation_1990}. As the second phase (AMIP2) was being planned, including an improved experimental design and updated forcing \citep{liang_pcmdi_1997, taylor_pcmdi_2000}, considerable efforts were made to leverage AMIP analysis in the IPCC Second Assessment Report (SAR) \citep{gates_climate_1996}, with a focus on assessing mean errors and multi-model consistency across the archive \citep{gates_amip_1995}.
 
@@ -265,7 +265,7 @@ C4MIP ~2002 https://web.archive.org/web/20040804013119/http://www.c4mip.cnrs-gif
 
 
 \subsection{Coupled Model Intercomparison Project phase 4 (CMIP4)}
-\cred{Attn: Jerry M, Ron S representative of reality?}
+\cred{Attn: Jerry M., Ron S. representative of reality?}
 
 While no formal phase was identified CMIP4, some CMIP3 follow-on simulations focused on climate change detection and attribution, specifically single-forcing experiments that held all but one of the 20C3M forcings fixed, were undertaken by several modelling groups. However, these were never formally contributed to a managed multi-model CMIP archive \citep{stouffer_cmip5_2017}. The early effort was a precursor to the CMIP6 Detection and Attribution Model Intercomparison Project (DAMIP; \citet{gillett_detection_2016}), building off early work focused on resolving the regional patterns of greenhouse gas and sulphate aerosol forcing \cite{taylor_response_1994, santer_towards_1995, hegerl_optimal_2000, gillett_detecting_2002, hegerl_20c3m_2003}. As planning began for the experiments targeting the next IPCC Fifth Assessment (AR5), aligning the CMIP and the IPCC report phases was an additional motivation to skip the CMIP4 identifier. This additionally also avoided unnecessary confusion with the developing coordinated carbon-cycle modelling activities, with the Coupled Climate-Carbon Cycle Model Intercomparison Project (C4MIP) an active collaborative project of the WGCM and the International Geosphere-Biosphere Programme (IGBP) that had been running in parallel to the prior CMIP phases \citep{fung_full-form_2000, cox_modelling_2002, friedlingstein_climatecarbon_2006}. C4MIP was one of numerous parallel efforts leveraging science coordination nurtured by the growing MIP community.
 \mycomment{
@@ -419,6 +419,7 @@ The early FANGIO success and the developing appetite to improve our understandin
 
 \subsection{The Earth System Grid Federation (ESGF)}
 \label{sec:earthSystemGridFederation}
+\cred{Attn: Bryan L.}
 
 While addressing current climate science questions through coordinated experimentation is CMIP's core focus, facilitating data access and use by an exponentially growing international community has become a central project priority. 
 
@@ -441,12 +442,12 @@ Middleton, Foster and Williams et al., 2006: Earth System Grid II final report 2
 
 \subsection{The IPCC Data Distribution Centre (IPCC-DDC)}
 \label{sec:IPCC-DDC}
-\cred{Attn: Martina S}
+\cred{Attn: Martina S.}
 
 
 \subsection{Climate and Forecast (CF) Metadata conventions}
 \label{sec:CFConventions}
-\cred{Attn: Karl T, Bryan L, David H? Could be markedly augmented with first-hand knowledge. Evolution from CF early days to v1.11, grid specs being folded in}
+\cred{Attn: Karl T., Bryan L., David H.? Could be markedly augmented with first-hand knowledge. Evolution from CF early days to v1.11, grid specs being folded in}
 
 By the early 1990s, the large (by the day's standards) climate model data archives had developed a considerable scientific following. With the augmented attention came the need to more clearly define model output quantities, their digital formats to ease data transfers and use, and documentation of the model configurations from where these data were derived. In parallel, there was considerable computer science development focused on generating a digital format that met the needs of growing meteorological data streams, with an aspiration to develop a portable and self-describing (where data and metadata that described it were co-contained) file format that allowed relevant metadata to be embedded alongside the data matrices. These discussions occurred parallel to the early MIP phases but led to numerous early releases of the network Common Data Format (netCDF) through the late 1980s and early 1990s. In May 1997, netCDF 3.3 was released, which included a new type-safe interface for the C and Fortran languages. In March 2001, netCDF 3.5.0 was released, which integrated a new Fortran90 interface, making this library suitable for integration with climate model libraries primarily written in Fortran \cred{(REFs?)}.
 \mycomment{
@@ -478,7 +479,7 @@ CF 2003 - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-c
 
 \subsection{Controlled vocabularies (CVs)}
 \label{sec:CMIPCVs}
-\cred{Attn: Karl T, Paul - consider realm evolution across mip eras, dovetailing Variable request section}
+\cred{Attn: Karl T., Paul - consider realm evolution across mip eras, dovetailing Variable request section}
 
 The experiences coordinating large and growing international climate science activities through AMIP1/2 and the early CMIP phases, coupled with parallel infrastructure and convention development, allowed for a common nomenclature to evolve defining and describing the various model outputs.
 
@@ -497,7 +498,7 @@ For CMIP6Plus (in preparation for CMIP7) the planning has been to address issues
 
 \subsection{Variable request and standard output}
 \label{sec:CMIP6DR}
-\cred{Attn: Karl T, Martin J}
+\cred{Attn: Karl T., Martin J.}
 \mycomment{Consider realm/frequency evolution across mip eras. RE: realm evolution, started in CMIP3 with tables (A1, O1, etc), built around the history files, from model components - so all ocean history files contained ocean, and sea ice variable, etc - Karl to augment; RE: frequencies, 3D fields, vs 2D fields were separated across tables as these had different temporal requests, to keep request sizes down; \autoref{tab:tab1-MIPsThroughTime} and \autoref{tab:tabAppB1-MIPStandardOutput}
 
 Old: A critical component MIP experimentation is specifying what simulation output to save. It is a trade off between the efforts required by modelling groups to fulfill a request, available storage, and existing and potential future science needs. Despite advancing technology, saving everything (i.e., all prognostic variables at every timestep) has never been realistic. In AMIP1/2, CMIP1/2/2+/3/5, consideration, was made in consultation with MIP chairs and modelling groups about what questions or analyses will be pursued with a given simulation that dictates how much data is saved.
@@ -553,7 +554,7 @@ CMIP5: https://pcmdi.llnl.gov/mips/cmip5/requirements.html
 
 
 \subsection{Data citation}
-\cred{Attn. Martina}
+\cred{Attn. Martina S.}
 
 With exponential growth in both the climate community using data, and CMIP archive of model output over phases (\autoref{tab:tab1-MIPsThroughTime}), the need to more explicitly assign credit to modelling groups, in addition to uniquely identifying model data used for downstream analyses, tracking errata, and enabling reproducible science, was needed. Before the distributed and federated ESGF development (\autoref{sec:earthSystemGridFederation}), a single location PCMDI hosted the complete AMIP and CMIP archives, but this changed in CMIP5. For this phase, three primary nodes at PCMDI (California, USA), The German Climate Computing Centre (DKRZ, Hamburg, Germany), and Centre for Environmental Data Analysis (CEDA, Oxfordshire, UK), shared the hosting role for the CMIP5 archive - distributed across nodes and not complete at any one centre. Data federation led to a more complex task in keeping track of uniquely identifying datasets. To solve this problem, DKRZ led an effort to both quality control and assign Digital Object Identifiers (DOIs) to CMIP5 datasets \citep{stockhause_quality_2012, stockhause_cmip6_2017}, delivered alongside the long-term archival as part of the DKRZ IPCC Data Distribution Centre (IPCC-DDC, \citet{stockhause_twenty-five_2022}).
 
@@ -624,7 +625,7 @@ Old information CMIP paths
 
 The importance of building an observational record to aid model validation was a crucial part of the early AMIP1 \citep{gates_amip_1992} and AMIP2 \citep{gleckler_amip_1996-1} phases, with a heavy dependence on the reanalysis products of ECWMF and NCEP/NCAR. Since then, work has continued to routinely leverage the latest observations to evaluate the realism of climate models.
 
-The expansion of satellite-based, global measurements of Earth properties has been an ideal target to leverage in aid of model evaluation, and this was recognized by the end of CMIP3 \cred{Gleckler et al., 2011 - in Zotero}. For CMIP5, the observations for model intercomparison projects (obs4MIPs) project was initiated \citep{teixeira_satellite_2011}, driven by a shared objective of the U.S. Department of Energy and NASA to leverage satellite products better to evaluate models. \cred{This project has continued.. \citep{waliser_observations_2020}}
+The expansion of satellite-based, global measurements of Earth properties has been an ideal target to leverage in aid of model evaluation, and this was recognized by the end of CMIP3 \citep{gleckler_improving_2011,teixeira_satellite_2011}. For CMIP5, the observations for model intercomparison projects (obs4MIPs) project was initiated \cred{(Teixeira et al., 2014 BAMS - grab into Zotero)}, driven by a shared objective of the U.S. Department of Energy and NASA to leverage satellite products better to evaluate models. \cred{This project has continued.. \citep{waliser_observations_2020}}
 
 
 
@@ -937,7 +938,7 @@ We acknowledge three anonymous reviewers for helpful feedback on the initial dra
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241025b}
+\bibliography{241103a}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
