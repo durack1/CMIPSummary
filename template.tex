@@ -318,9 +318,9 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \hline
 \textbf{Planning begins} & \textbf{1989} & \textbf{1993} & \textbf{1995} & \textbf{1997} & \textbf{2003} & \textbf{2008} & \textbf{2013} & \textbf{2022}\\ \hline
 \textbf{Project} & AMIP1 & AMIP2 & CMIP1 & CMIP2/2+ & CMIP3 & CMIP5 & CMIP6 & CMIP6+\\ \hline
-\textbf{Experiment count} & 1 & 1 & 1 & 2 & 12 & 37 \cred{sync \autoref{tab:tabAppA1-MIPExperiments}} & 322 & $\sim$\\ \hline
+\textbf{Experiment count} & 1 & 1 & 1 & 2 & 12 & 37 & 322 & $\sim$\\ \hline
 \textbf{"historical" period} & 1979-1988 & 1979-2001 & $\sim$ & $\sim$ & $\sim$1860-1999 & 1850-2010 & 1850-2014 & 1850-2022\\ \hline
-\textbf{Data volumes} & $\sim$1 GB & $\sim$500 GB & $\sim$1 GB & $\sim$500 GB & 39 TB & $\sim$2 PB & >27 PB & $\sim$5 PB\\ \hline
+\textbf{Data volumes} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & 39 TB & $\sim$2 PB & >27 PB & $\sim$5 PB\\ \hline
 \textbf{Standard output variables/ Tables} & 32/4$^{1}$ & 114/8$^{2}$ & 23/5$^{3}$ & 28/5$^{4}$ & 362/6$^{5}$ & 1026/18$^{6}$ & 2062/44$^{7}$ & $\sim$\\ \hline
 \textbf{Host infrastructure} & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP; ESG-CET & ESGF, \cred{41} nodes & ESGF, 30 nodes & ESGF, $\sim$8 nodes\\ \hline
 \textbf{Data formats} & Fortran formatted binary & Fortran formatted binary, GRIB {$\rightarrow$} DRS & GRIB {$\rightarrow$} DRS & GRIB {$\rightarrow$} DRS & CF netCDF-3 & CF netCDF-4 "classic" & CF netCDF-4 & CF netCDF-4\\ \hline
@@ -329,7 +329,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \end{tabularx}
 } % /resizebox
 \label{tab:tab1-MIPsThroughTime}
-\footnotesize{Note: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}. Sources for "Standard output variables/Tables superscript numbers are documented in \autoref{sec:secAppB1-MIPStandardOutput} and \autoref{tab:tabAppB1-MIPStandardOutput}}
+\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}. {}\textsuperscript{\textdagger}Volume estimates are difficult to quantify, as the source and the final data differ. GRIB and similar precursor formats were reprocessed to netCDF-3. Sources for "Standard output variables/Tables" noted by superscripts (1-7) are documented in \autoref{sec:secAppB1-MIPStandardOutput} and \autoref{tab:tabAppB1-MIPStandardOutput}. CF = NetCDF Climate and Forecast Metadata Conventions \cred{Eaton et al., 2023 to be added to bib}. CC = Creative Commons copyright licenses; CC-BY 4.0 = Creative Commons Attribution 4.0 International; CC0 = Creative Commons Public Domain Dedication; for more information, see \url{https://creativecommons.org/share-your-work/cclicenses/}.}
 \end{table*}
 % https://www.overleaf.com/learn/latex/Footnotes
 %\footnotemark[1]; \footnotetext[1]{AMIP1: Gates, 1991: https://doi.org/10.5281/zenodo.12109765}
@@ -715,11 +715,11 @@ Planning is underway for a future CMIP7 phase, with the expectation that project
 \label{sec:Conclusions}
 \cred{awaiting sections to be written above}
 
-\cred{Would explicitly calling out the Stevens, 2024 and Jakobs et al., 2024 CMIP commentary papers make sense in this section}
+\cred{Explicitly call out \citet{shukla_strategies_2009,shukla_toward_2010}, \citep{jakob_need_2023}, \citep{stevens_perspective_2024} commentary papers to highlight "operational" vs "science innovation" pressures that have been growing for the CMIP project across phases}
 
 
 %% Following commands are statements for data sets and/or software code availability corresponding to the manuscript.
-%% Use these sections if data sets and/or software code are part of what your research article is based.
+%% Use these sections if data sets and/or software code are part of what your research article is based on.
 
 %\codeavailability{TEXT} %% use this section when having only software code available
 
@@ -761,7 +761,7 @@ There is considerable continuity with experimental protocols across phases. The 
 			\hline
 			CMIP3 & Doutriaux \& Taylor, 2005; \citet{meehl_wcrp_2007} & 1pctto2x, 1pctto4x, 20c3m, amip, commit, pdcntrl, picntrl; \textbf{CFMIP:} 2xco2, slabcntl; \textbf{ScenarioMIP:} sresa1b, sresa2, sresb1 & https://pcmdi.llnl.gov/mips/ cmip3/experiment.html\#Experiments\\
 			\hline
-			CMIP5 & \cite{taylor_overview_2012}; Doutriaux \& Taylor, 2013 & 1pctCO2, abrupt4xCO2, amip, historical, piControl; \textbf{C4MIP:} esmControl, esmFdbk1, esmFdbk2, esmFixClim1, esmFixClim2, esmHistorical, esmrcp85; \textbf{CFMIP:} amip4K, amip4xCO2, amipFuture, aqua4K, aqua4xCO2, aquaControl, sst2030; \textbf{DCPP:} decadalXXXX, noVolcXXXX, volcIn2010; \textbf{DAMIP:} historicalExt, historicalGHG, historicalMisc, historicalNat; \textbf{PMIP:} lgm, midHolocene, past1000; \textbf{RFMIP:} sstClim, sstClim4xCO2, sstClimAerosol, sstClimSulfate; \textbf{ScenarioMIP:} rcp26, rcp45, rcp60, rcp85 \cred{needs to add up to 37} & https://pcmdi.llnl.gov/mips/ cmip5/experiment\_design.html\\
+			CMIP5 & \cite{taylor_overview_2012}; Doutriaux \& Taylor, 2013 & 1pctCO2, abrupt4xCO2, amip, historical, piControl; \textbf{C4MIP:} esmControl, esmFdbk1, esmFdbk2, esmFixClim1, esmFixClim2, esmHistorical, esmrcp85; \textbf{CFMIP:} amip4K, amip4xCO2, amipFuture, aqua4K, aqua4xCO2, aquaControl, sst2030; \textbf{DCPP:} decadalXXXX, noVolcXXXX, volcIn2010; \textbf{DAMIP:} historicalExt, historicalGHG, historicalMisc, historicalNat; \textbf{PMIP:} lgm, midHolocene, past1000; \textbf{RFMIP:} sstClim, sstClim4xCO2, sstClimAerosol, sstClimSulfate; \textbf{ScenarioMIP:} rcp26, rcp45, rcp60, rcp85 & https://pcmdi.llnl.gov/mips/ cmip5/experiment\_design.html\\
 			\hline			
 			CMIP6 & \citet{eyring_overview_2016}; Durack et al., 2024 & see CMIP6\_CVs; for MIPs contributing to the phase see \autoref{tab:tab2-CMIP6MIPs} & https://github.com/WCRP-CMIP/CMIP6\_CVs; https://wcrp-cmip.github.io/CMIP6\_CVs/ docs/CMIP6\_experiment\_id.html\\
 			\hline		
@@ -958,7 +958,7 @@ We thank numerous colleagues, collaborators, and past contributors to AMIP and C
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241104a}
+\bibliography{241105a}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
