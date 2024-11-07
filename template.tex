@@ -170,6 +170,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \textbf{Dean W.} (ESGF), \textbf{Bryan L.} (ESGF), ESGF-XC membership?.
 \textbf{CMIP Panel}: Jerry M., Ron S.; Broader panel.
 \textbf{WIP Panel}: Bryan L., Balaji, ?; Broader panel past and present.
+\textbf{CMIP7 handoff}: Helene H., John D., ?
 
 {Compiled: \DTMnow}
 
@@ -181,7 +182,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \introduction  %% \introduction[modified heading if necessary]
 \cred{Rewrite once other sections drafted}
 
-The Model Intercomparison Project (MIP) concept, a well-worn nomenclature in climate science \cred{\textbf{(Refs)}}, has existed for many decades. Among other things, the MIP era has delivered two critical advancements to climate science. The first is that modelling groups contributing to any particular MIP have agreed to make their model output available to be scrutinized by the research community. Before the advent of MIPs, this was generally not the case, as the model analysis was typically performed by individual modelling groups or close collaborators \cred{\textbf{(Refs)}}. The second, contributing to a MIP means agreeing to adhere to a defined experimental design, meaning simulation data could be directly compared.
+The Model Intercomparison Project (MIP) concept, a well-worn nomenclature in climate science \cred{(Refs)}, has existed for many decades. Among other things, the MIP era has delivered two critical advancements to climate science. The first is that modelling groups contributing to any particular MIP have agreed to make their model output available to be scrutinized by the research community. Before the advent of MIPs, this was generally not the case, as the model analysis was typically performed by individual modelling groups or close collaborators \cred{(Refs)}. The second, contributing to a MIP means agreeing to adhere to a defined experimental design, meaning simulation data could be directly compared.
 
 The acronyms of the Coupled Model Intercomparison Project (CMIP) and Intergovernmental Panel on Climate Change (IPCC) are interchangeably referenced by scientists, stakeholders, and policymakers to refer to the latest climate-model-based science. The MIPs further inspired international effort coordination, leading to considerable science collaboration that has enabled breakthroughs, including the building consensus that human influence is "\textit{unequivocal}" in driving the observed climate changes we are experiencing today \citep{eyring_human_2021}. More comprehensive international coordination has marked their development as a way to systematically evaluate observed climate changes, generate plausible future projections driven by varying futures of human development, and assess the fidelity of global climate models (GCMs) and Earth System Models (ESMs) to reproduce past changes and gauge their responses and sensitivities to realistic and idealised climate forcing. The multi-model approach to climate change assessment is now routine, with documented and reproducible experimental protocols and forcing datasets facilitating standardized simulations that can be directly compared across models and with observations to ascertain forced signal from noise and identify robust model responses versus outliers and anomalies that are not representative of our best estimates of the real world.
 
@@ -197,23 +198,13 @@ https://docs.google.com/document/d/1Bxu2djLsB0blUUjr4qtwNpZWqMFXkTQRY8kOR_EJvlA/
 
 \section{CMIP6 in context with the past}
 \label{sec:cmip6InContext}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
-
-\cred{fold pre-FANGIO back to 1982; 1984 date noted DoE called for GCM intercomparison - full 5-years before PCMDI/AMIP \citep{ellingson_atmospheric_2016}}
-
-\cred{Bryan L, what parallel activities were happening in UK/EU?}
+\cred{Jonathan G., Bryan L; Parallel activities in UK/EU?}
 
 CMIP6 is the latest in a long history of internationally coordinated climate modelling research projects. The activities grew out of self-organizing communities that built collaborations around science questions and the recognition that systematic multi-model evaluation was needed to build confidence in climate models as effective tools for climate change prediction.
 
-In the United States (US) the scientific motivation for early studies can be linked back to coordinated activities organized by the US Department of Energy (DoE), Carbon Dioxide Research Division. In the early 1980s, the CO$_{2}$ Climate Research Plan was established \citep{riches_co2_1983}, which laid out an ambitious plan to model, detect, and observe CO$_{2}$-induced global and regional climate changes, building on a growing international body of climate science extending back to early seminal works \citep[e.g.,][]{arrhenius_xxxi_1896,chamberlin_attempt_1899}. The program commissioned a set of six state-of-the-art reports \citep[e.g.,][]{maccracken_projecting_1985} highlighting uncertainties in the current-generation atmospheric general circulation models (GCMs), their simplifications and parameterizations well ahead of the Intergovernmental Panel on Climate Change (IPCC) program. The efforts led to a coordination of international efforts, first establishing the Intercomparison of Radiation Codes used in Climate Model (ICRCCM) in 1982 \citep{luther_intercomparison_1988,ellingson_intercomparison_1991}, which evolved into a World Climate Research Program (WCRP) and International Radiation Commission joint working group in 1984. This early comparison work highlighted longwave clear sky discrepancies of order 30-70 W m\textsuperscript{-2}, and led to the recommendation that these models needed to be validated against observations, leading to the Spectral Radiance Experiment \citep[SPECTRE;][]{ellingson_icrccm_1990} co-sponsored by US National Aeronautics and Space Administration \citep[NASA;][]{ellingson_icrccm_1990} Ellingson and Wiscombe, 1996. More than 22 participants submitted 29 sets of calculations to the project, with 7 of these GCM configurations \citep{ellingson_atmospheric_2016}. The observational design, and much of the SPECTRE proposal was reused to establish the US DoE Atmospheric Radiation Measurement Program \citep[NASA;][]{ellingson_icrccm_1990} US DoE 1990, initiated in January 1989. In 1984, the DoE initiated the first international GCM intercomparison project to understand the large differences across CO$_{2}$-forced simulations at the time, the first MIP.
+In the United States (US) the scientific motivation for early studies can be linked back to coordinated activities organized by the US Department of Energy (DoE), Carbon Dioxide Research Division. In the early 1980s, the DoE CO$_{2}$ Climate Research Plan was established \citep{riches_co2_1983}, which laid out an ambitious plan to model, detect, and observe CO$_{2}$-induced global and regional climate changes, building on a growing international body of climate science extending back to early seminal works \citep[e.g.,][]{arrhenius_xxxi_1896,chamberlin_attempt_1899}. The program commissioned a set of six state-of-the-art reports \citep[e.g.,][]{maccracken_projecting_1985} highlighting uncertainties in the current-generation atmospheric general circulation models (GCMs), their simplifications and parameterizations well ahead of the Intergovernmental Panel on Climate Change (IPCC) program. The efforts led to a coordination of international efforts, first establishing the Intercomparison of Radiation Codes used in Climate Model project (ICRCCM) in 1982 \citep{luther_intercomparison_1988,ellingson_intercomparison_1991}, which evolved into a World Climate Research Program (WCRP) and International Radiation Commission joint working group in 1984. The early comparison work highlighted longwave clear sky discrepancies across codes of order 30-70 W m\textsuperscript{-2}, and led to the recommendation that models needed to be validated against observations, leading to the follow-on Spectral Radiance Experiment \citep[SPECTRE;][]{ellingson_icrccm_1990} co-sponsored by US National Aeronautics and Space Administration \citep[NASA;][]{ellingson_spectral_1996}. More than 22 participants submitted 29 sets of calculations to the project, with 7 of these GCM configurations \citep{ellingson_atmospheric_2016}. The observational design, and much of the SPECTRE proposal was reused to establish the US DoE Atmospheric Radiation Measurement Program \citep[ARM;][]{us_department_of_energy_atmospheric_1990}, initiated in January 1989. In 1984, the DoE initiated the first international GCM intercomparison project to understand the large differences across CO$_{2}$-forced simulations at the time, the first MIP, FANGIO \citep[see \autoref{sec:amip1And2};][]{ellingson_atmospheric_2016}.
 
-
-
-\cred{still work to do..}
-
-
-
-The following section provides context around the preceding activities leading to the latest phase.
+The following sections provide context around the preceding MIPs that led to the latest phase, CMIP6.
 
 
 \mycomment{
@@ -413,13 +404,13 @@ While community consultation underpins the CMIP project planning and development
 
 \section{CMIP supporting organisations and infrastructure}
 \label{sec:CMIPSupportingOrgsAndInfra}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{To rewrite once other sections drafted}
 
-The early FANGIO success and the developing appetite to improve our understanding of climate change led to establishing the Program for Climate Model Diagnosis and Intercomparison (PCMDI) at Lawrence Livermore National Laboratory (LLNL) in 1989. PCMDI was created by the US Department of Energy (DoE) to develop improved methods and tools for the diagnosis, validation, and intercomparison of global climate models. LLNL was selected to host the PCMDI to leverage the co-location of the US Department of Energy Research Scientific Computing Center (NERSC) computing resource (1974-1996) and the pre-existing DoE-supported atmospheric climate modelling efforts that were already underway \citep{potter_celebrating_2011}. The existence of the NERSC high-performance computing infrastructure was one of the significant advantages to the program, enticing 12 international modelling groups to participate in AMIP1 and providing compute cycles to run their codes to develop simulations. These groups ran the ten simulation years (1979-1988), storing their output on the same system \citep{gates_amip_1991, gates_amip_1992}. By 2000, the recognition that the development of supporting infrastructure, data standards, software and hardware that facilitated data delivery to climate scientists, relied upon to serve the growing MIP communities, was now of equal importance to intercomparison, science coordination, and experimental protocols that defined a project with the "I" in the MIP acronym interchangeable across the \textit{intercomparison} and \emph{infrastructure} terms \citep{gleckler_amip_2001}.
+The early FANGIO success and the developing appetite to improve climate change understanding led to establishing the Program for Climate Model Diagnosis and Intercomparison (PCMDI) at Lawrence Livermore National Laboratory (LLNL) in 1989. PCMDI was created by the US Department of Energy (DoE) to develop improved methods and tools for the diagnosis, validation, and intercomparison of global climate models. LLNL was selected to host the PCMDI to leverage the co-location of the US Department of Energy Research Scientific Computing Center (NERSC) computing resource (1974-1996) and the pre-existing DoE-supported atmospheric climate modelling efforts that were already underway \citep{potter_celebrating_2011}. The existence of the NERSC high-performance computing infrastructure was one of the significant advantages to the program, enticing 12 international modelling groups to participate in AMIP1 and providing compute cycles to run their codes to develop simulations. These groups ran the ten simulation years (1979-1988), storing their output on the same system \citep{gates_amip_1991, gates_amip_1992}. By 2000, the recognition that the development of supporting infrastructure, data standards, software and hardware that facilitated data delivery to climate scientists, relied upon to serve the growing MIP communities, was now of equal importance to intercomparison, science coordination, and experimental protocols that defined a project with the "I" in the MIP acronym interchangeable across the \textit{intercomparison} and \emph{infrastructure} terms \citep{gleckler_amip_2001}.
 
-\cred{\citet{balaji_requirements_2018}, \citet{petrie_coordinating_2021}}
+\cred{\citet{balaji_requirements_2018}, \citet{petrie_coordinating_2021} \url{http://web.archive.org/web/20180731130715/http://go-essp.gfdl.noaa.gov/}}
 
 \begin{figure}
     \centering
@@ -460,7 +451,7 @@ Middleton, Foster and Williams et al., 2006: Earth System Grid II final report 2
 
 \subsection{Climate and Forecast (CF) Metadata conventions}
 \label{sec:CFConventions}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{Attn: Karl T., Bryan L., David H.? Could be markedly augmented with first-hand knowledge. Evolution from CF early days to v1.11, grid specs being folded in}
 
@@ -494,7 +485,7 @@ CF 2003 - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-c
 
 \subsection{Controlled vocabularies (CVs)}
 \label{sec:CMIPCVs}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{Attn: Karl T., Paul - consider realm evolution across mip eras, dovetailing Variable request section}
 
@@ -614,7 +605,7 @@ In addition to the core infrastructure that has delivered past CMIP phases, seve
 
 \subsection{input4MIPs: climate forcing data for model experiments}
 \label{sec:input4MIPs}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{Attn: Paul D., Vaishali N.}
 
@@ -640,7 +631,7 @@ Old information CMIP paths
 
 
 \subsection{obs4MIPs: observations for model evaluation}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{Attn: Peter G}
 
@@ -651,7 +642,7 @@ The expansion of satellite-based, global measurements of Earth properties has be
 
 
 \subsection{Coordinated evaluation}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{need to place community evaluation in context with the A/CMIP subprojects, ala \citet{gates_amip_1992}}
 
@@ -693,9 +684,9 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 \end{figure*}
 
 
-\section{CMIP6 impact and completion}
+\section{CMIP impact and CMIP6 completion}
 \label{sec:CMIP6Completion}
-\cblue{COMPLETE TODAY - Wed 6 Nov}
+\cblue{COMPLETE TODAY - Thu 7 Nov}
 
 \cred{John D., Helene H. handoff}
 
@@ -965,7 +956,7 @@ We thank numerous colleagues, collaborators, and past contributors to AMIP and C
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241106d}
+\bibliography{241106e}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
