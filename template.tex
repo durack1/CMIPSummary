@@ -82,6 +82,9 @@
 %\usepackage{subfig}
 %\usepackage{rotating}
 
+\usepackage{longtable}  % adding for table E1
+%%\usepackage{ltablex}  % adding for table E1
+
 
 %% define user commands
 \newcommand{\mycomment}[1]{}
@@ -282,6 +285,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 
 
 % all figures and data should live in standalone github repo
+% https://matplotlib.org/stable/users/explain/figure/backends.html#selecting-a-backend
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{230512T112843_MIPEvolution-Counts.png}
@@ -918,18 +922,20 @@ E3SM\_To\_CMIP & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_t
 
 Over the five decades of MIPs, many acronyms and identifiers have been developed and bled into standard nomenclature. Some of these are used repeatedly throughout the text, and we tabulate entries here (see \autoref{tab:tabAppE1-Acronyms}). Additional identifiers used to describe CMIP6 Community MIPs are detailed in \autoref{tab:tab2-CMIP6MIPs}.
 
+% https://www.overleaf.com/learn/latex/Tables
 % https://tex.stackexchange.com/questions/26462/make-a-table-span-multiple-pages
+% https://tex.stackexchange.com/questions/376790/tabularx-break-long-tables-over-several-pages
+% https://www.overleaf.com/latex/examples/a-longtable-example/xxwzfxkxxjmc
+% https://www.math.utah.edu/~golden/resources/Granular_Ice_Paper/Copernicus_Latex_Manual.pdf#page=13
 \begin{table*}[htp]
-%\begin{longtblr}
-%\begin{longtable}[htp]
 \renewcommand{\arraystretch}{2}
 \scriptsize
 \centering
-\caption{Acronyms used in this manuscript \cred{(to be completed)}}
+\caption{Acronyms used in this manuscript}
 \resizebox{\textwidth}{!} {
 	\begin{tabularx}{1\textwidth} { 
-	  | >{\raggedright\arraybackslash\hsize=.1\hsize}X
-	  | >{\centering\arraybackslash\hsize=.9\hsize}X | }
+	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
+	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
 \textbf{Acronym} & \textbf{Expansion and additional information}\\
 \hline
@@ -939,27 +945,27 @@ AGCM & Atmospheric General Circulation Model \\
 \hline
 AMIP & Atmospheric Model Intercomparison Project (also AMIP1 and AMIP2) \\
 \hline
-ANL & US Argonne National Laboratory \url{https://www.anl.gov} \\
+ANL & US Argonne National Laboratory; \url{https://www.anl.gov} \\
 \hline
 AOGCM & Atmospheric and Ocean General/Global Circulation Model \\
 \hline
-AR4 & IPCC Fourth Assessment Report \url{https://www.ipcc.ch/report/ar4/wg1} \\
+AR4 & IPCC Fourth Assessment Report; \url{https://www.ipcc.ch/report/ar4/wg1} \\
 \hline
-AR5 & IPCC Fifth Assessment Report \url{https://www.ipcc.ch/report/ar5/wg1}\\
+AR5 & IPCC Fifth Assessment Report; \url{https://www.ipcc.ch/report/ar5/wg1}\\
 \hline
-AR6 & IPCC Sixth Assessment Report \url{https://www.ipcc.ch/report/ar6/wg1} \\
+AR6 & IPCC Sixth Assessment Report; \url{https://www.ipcc.ch/report/ar6/wg1} \\
 \hline
 BADC/CEDA & UK British Atmospheric Data Centre (now CEDA; \url{https://www.ceda.ac.uk} \\
 \hline
-C4MIP & CMIP Coupled Climate-Carbon Cycle MIP \url{https://c4mip.net} \\
+C4MIP & CMIP Coupled Climate-Carbon Cycle MIP; \url{https://c4mip.net} \\
 \hline
-CCSM & NCAR Community Climate System Model \url{https://www.cesm.ucar.edu/models/ccsm} \\
+CCSM & NCAR Community Climate System Model; \url{https://www.cesm.ucar.edu/models/ccsm} \\
 \hline
-CF & NetCDF Climate and Forecast Metadata Conventions \url{https://cfconventions.org/} \\
+CF & NetCDF Climate and Forecast Metadata Conventions; \url{https://cfconventions.org/} \\
 \hline
 CFMIP & CMIP Cloud Feedbacks MIP (Also CFMIP1, CFMIP2, and CFMIP3; \url{https://www.cfmip.org}) \\
 \hline
-CLIVAR & WCRP Climate Variability and Predictability Core Project \url{https://www.clivar.org} \\
+CLIVAR & WCRP Climate Variability and Predictability Core Project; \url{https://www.clivar.org} \\
 \hline
 CMIP & Coupled Model Intercomparison Project (also CMIP1, CMIP2, CMIP2+, CMIP3, CMIP5, and CMIP6) \\
 \hline
@@ -969,31 +975,31 @@ COARDS & Cooperative Ocean/Atmosphere Research Data Service conventions \\
 \hline
 DAMIP & Detection and Attribution MIP \\
 \hline
-DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; url{https://www.wcrp-climate.org/dcp-overview}) \\
+DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; \url{https://www.wcrp-climate.org/dcp-overview}) \\
 \hline
 DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite) \\
 \hline
-DoE & US Department of Energy \url{https://www.energy.gov} \\
+DoE & US Department of Energy; \url{https://www.energy.gov} \\
 \hline
 DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum, DKRZ; \url{https://www.dkrz.de/en}) \\
 \hline
-ECMWF & European Centre for Medium-range Weather Forecasts \url{https://www.ecmwf.int} \\
+ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int} \\
 \hline
 ESG & Earth System Grid (also ESG I, ESG II) \\
 \hline
 ESG-CET & Earth System Grid Center for Enabling Technologies \\
 \hline
-ESGF & Earth System Grid Federation \url{https://esgf.llnl.gov} \\
+ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov} \\
 \hline
 ESM & Earth System Model \\
 \hline
-ESMValTool & A community diagnostic and performance metrics tool for evaluation and analysis of Earth system Models \url{https://esmvaltool.org/} \\
+ESMValTool & A community diagnostic and performance metrics tool for evaluation and analysis of Earth system Models; \url{https://esmvaltool.org} \\
 \hline
-ESMO & WCRP Earth System Modelling and Observations Core Project \url{https://www.wcrp-esmo.org} \\
+ESMO & WCRP Earth System Modelling and Observations Core Project; \url{https://www.wcrp-esmo.org} \\
 \hline
 FANGIO & Feedback ANalysis of GCMs and In Observations project \\
 \hline
-FAR & IPCC First Assessment Report \url{https://www.ipcc.ch/report/ar1/wg1} \\
+FAR & IPCC First Assessment Report; \url{https://www.ipcc.ch/report/ar1/wg1} \\
 \hline
 GCM & General/Global Circulation Model \\
 \hline
@@ -1001,49 +1007,65 @@ ICRCCM & Intercomparison of Radiation Codes used in Climate Models project \\
 \hline
 IGBP & International Geosphere-Biosphere Programme \\
 \hline
-ILAMB & ORNL International Land Model Benchmarking \url{https://www.ilamb.org} \\
+ILAMB & ORNL International Land Model Benchmarking; \url{https://www.ilamb.org} \\
 \hline
-IPCC & United Nations Intergovernmental Panel on Climate Change \url{https://www.ipcc.ch} \\
+IPCC & United Nations Intergovernmental Panel on Climate Change; \url{https://www.ipcc.ch} \\
 \hline
-IPCC-DDC & UN IPCC Data Distribution Centre \url{https://www.ipcc-data.org} \\
+IPCC-DDC & UN IPCC Data Distribution Centre; \url{https://www.ipcc-data.org} \\
 \hline
-IPSL & French Institut Pierre-Simon Laplace \url{https://www.ipsl.fr/en/home-en} \\
+IPSL & French Institut Pierre-Simon Laplace; \url{https://www.ipsl.fr/en/home-en} \\
 \hline
-LANL & US Los Alamos National Laboratory \url{https://www.lanl.gov} \\
+\end{tabularx}
+} % /resizebox
+\label{tab:tabAppE1-Acronyms}
+\end{table*}
+% Split table over multiple pages
+\addtocounter{table}{-1}
+\begin{table*}[htp]
+\renewcommand{\arraystretch}{2}
+\scriptsize
+\centering
+\caption{Acronyms used in this manuscript (continued)}
+\resizebox{\textwidth}{!} {
+	\begin{tabularx}{1\textwidth} { 
+	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
+	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
-LBNL & US Lawrence Berkeley National Laboratory \url{https://www.lbl.gov} \\
+LANL & US Los Alamos National Laboratory; \url{https://www.lanl.gov} \\
 \hline
-LLNL & US Lawrence Livermore National Laboratory \url{https://www.llnl.gov} \\
+LBNL & US Lawrence Berkeley National Laboratory; \url{https://www.lbl.gov} \\
+\hline
+LLNL & US Lawrence Livermore National Laboratory; \url{https://www.llnl.gov} \\
 \hline
 MIP & Model Intercomparison Project \\
 \hline
-NASA & US National Aeronautic and Space Administration \url{https://www.nasa.gov/} \\
+NASA & US National Aeronautic and Space Administration; \url{https://www.nasa.gov} \\
 \hline
-NASA-JPL & US NASA Jet Propulsion Laboratory \url{https://www.jpl.nasa.gov/} \\
+NASA-JPL & US NASA Jet Propulsion Laboratory; \url{https://www.jpl.nasa.gov} \\
 \hline
-NCAR & US National Center for Atmospheric Research \url{https://ncar.ucar.edu} \\
+NCAR & US National Center for Atmospheric Research; \url{https://ncar.ucar.edu} \\
 \hline
-NCI & Australian National Computational Infrastructure \url{https://nci.org.au} \\
+NCI & Australian National Computational Infrastructure; \url{https://nci.org.au} \\
 \hline
-NERSC & US Department of Energy Research Scientific Computing Center \url{https://www.nersc.gov} \\
+NERSC & US Department of Energy Research Scientific Computing Center; \url{https://www.nersc.gov} \\
 \hline
-NOAA & US National Oceanic and Atmospheric Administration \url{https://www.noaa.gov} \\
+NOAA & US National Oceanic and Atmospheric Administration; \url{https://www.noaa.gov} \\
 \hline
-NOAA-NCEP & US NOAA National Centers for Environmental Prediction \url{https://www.weather.gov/ncep} \\
+NOAA-NCEP & US NOAA National Centers for Environmental Prediction; \url{https://www.weather.gov/ncep} \\
 \hline
-NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory \url{https://www.pmel.noaa.gov/} \\
+NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory; \url{https://www.pmel.noaa.gov} \\
 \hline
-ORNL & Oak Ridge National Laboratory \url{https://www.ornl.gov} \\
+ORNL & Oak Ridge National Laboratory; \url{https://www.ornl.gov} \\
 \hline
 PMIP & CMIP Paleoclimate MIP (also PMIP1, PMIP2, PMIP3, and PMIP4; \url{https://pmip.lsce.ipsl.fr}) \\
 \hline
-PMP & PCMDI Metrics Package \url{https://pcmdi.github.io/pcmdi_metrics} \\
+PMP & PCMDI Metrics Package; \url{https://pcmdi.github.io/pcmdi_metrics} \\
 \hline
-PCMDI & Program for Climate Model Diagnosis and Intercomparison, LLNL \url{https://pcmdi.llnl.gov} \\
+PCMDI & Program for Climate Model Diagnosis and Intercomparison, LLNL; \url{https://pcmdi.llnl.gov} \\
 \hline
 RCP & Representative Concentration Pathways scenarios (Circa CMIP5) \\
 \hline
-SAR & IPCC Second Assessment Report \url{https://www.ipcc.ch/report/ar2/wg1} \\
+SAR & IPCC Second Assessment Report; \url{https://www.ipcc.ch/report/ar2/wg1} \\
 \hline
 SGGCM & WCRP Steering Group on Global Coupled Models (a precursor to WGCM) \\
 \hline
@@ -1053,17 +1075,17 @@ SRES & IPCC Special Report on Emission Scenarios (Circa CMIP3) \\
 \hline
 SST & Sea Surface Temperature \\
 \hline
-TAR & IPCC Third Assessment Report \url{https://www.ipcc.ch/report/ar3/wg1} \\
+TAR & IPCC Third Assessment Report; \url{https://www.ipcc.ch/report/ar3/wg1} \\
 \hline
-WCRP & World Climate Research Programme \url{https://www.wcrp-climate.org} \\
+WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org} \\
 \hline
-WGCM & WCRP Working Group on Coupled Modelling \url{https://www.wcrp-climate.org/ipo-esmo-groups/modelling-wgcm} \\
+WGCM & WCRP Working Group on Coupled Modelling; \url{https://www.wcrp-climate.org/ipo-esmo-groups/modelling-wgcm} \\
 \hline
-WIP & WCRP WGCM Infrastructure Panel \url{https://www.wcrp-climate.org/wgcm-cmip/wip} \\
+WIP & WCRP WGCM Infrastructure Panel; \url{https://www.wcrp-climate.org/wgcm-cmip/wip} \\
 \hline
-WGNE & WCRP Working Group on Numerical Experimentation \url{https://wgne.net} \\
+WGNE & WCRP Working Group on Numerical Experimentation; \url{https://wgne.net} \\
 \hline
-UN & United Nations \url{https://www.un.org/en} \\
+UN & United Nations; \url{https://www.un.org/en} \\
 \hline
 US & United States \\
 \hline
@@ -1071,8 +1093,6 @@ US & United States \\
 } % /resizebox
 \label{tab:tabAppE1-Acronyms}
 \end{table*}
-%\end{longtblr}
-%\end{longtable}
 
 
 \noappendix       %% use this to mark the end of the appendix section. Otherwise, the figures might be numbered incorrectly (e.g., 10 instead of 1).
