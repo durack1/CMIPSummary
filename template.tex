@@ -315,7 +315,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{230512T112843_MIPEvolution-Counts.png}
-    \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origin of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists. \cred{Update before submission - sync with \autoref{tab:tab1-MIPsThroughTime, tab:tabAppA1-MIPExperiments}}}
+    \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origin of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists. \cred{Update before submission - sync with \autoref{tab:tab1-MIPsThroughTime}, \autoref{tab:tabAppA1-MIPExperiments}}}
     \label{fig:fig1-MIPGrowth}
 \end{figure}
 
@@ -423,7 +423,7 @@ While community consultation underpins the CMIP project planning and development
 \end{tabularx}
 %} % /resizebox - expands table to larger page format (margin tweaks)
 \label{tab:tab2-CMIP6MIPs}
-\footnotesize{Note: MIPs 1 through 21 above are registered in the CMIP6 Controlled Vocabulary (CMIP6\_CVs) GitHub repository, the primary source of CMIP6 registered information. Due to inflexible infrastructure, experiments defined by MIPs 22 and 23 were registered under an existing MIP.}
+\footnotesize{Notes: MIPs 1 through 21 above are registered in the CMIP6 Controlled Vocabulary (CMIP6\_CVs) GitHub repository, the primary source of CMIP6 registered information. Due to inflexible infrastructure, experiments defined by MIPs 22 and 23 were registered under an existing MIP. \cred{Add number of experiments defined per MIP to meet 322 total?}}
 \end{table*}
 
 \section{CMIP supporting organisations and infrastructure}
@@ -700,7 +700,7 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{241111_durack1-cmip3-cmip5-cmip6-experiments.png}
-    \caption{Recorded downloads across the three phases of CMIP, for which download records are available. Left the CMIP3 downloads across the 12 experiments defining phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads across the \cred{39} experiments that defined the phase \citep[represented by the 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012} (\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}). And right the CMIP6 downloads, represented by the 20 MIPs that have published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 50\% of downloads were accounted for by the core CMIP/DECK simulations \citep{eyring_overview_2016}, with more than 30\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP). \cred{Cleanup and replot; appetite to tabulate these results?}}
+    \caption{Recorded downloads across the three phases of CMIP, for which download records are available. Left the CMIP3 downloads across the 12 experiments defining phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads across the 37 experiments that defined the phase \citep[represented by the 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012} (\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}). And right the CMIP6 downloads, represented by the 20 MIPs that have published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 50\% of downloads were accounted for by the core CMIP/DECK simulations \citep{eyring_overview_2016}, with more than 30\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP). \cred{Cleanup and replot; appetite to tabulate these results?}}
     \label{fig:fig5-MIPDownloads}
 \end{figure*}
 
@@ -769,7 +769,7 @@ Planning is underway for a future CMIP7 phase, with the expectation that project
 \section{Defined experiments across MIP phases}  %% Appendix A
 %\subsection{}     %% Appendix A1, A2, etc.
 \label{sec:secAppA1-MIPExperiments}
-There is considerable continuity with experimental protocols across phases. The "amip" AGCM experiment is where MIP science began, covering the 1979-1988 period for AMIP1, and 1979-2001 for AMIP2. The concept of a fixed climatological forced "control" experiment identified core experiments between CMIP1 and CMIP2, with the present-day control (pdcntrl, $\sim$1995 CMIP1) evolving to include a pre-industrial control (picntrl, $\sim$1850-1860 CMIP2) in subsequent phases. When assessing the "control" experiments, the nomenclature changed a little, with picntrl (before CMIP5) and piControl referring to the same experimental protocols, noting differing "pre-industrial" climatological fixed forcings were used across phases (see \autoref{sec:input4MIPs}). Idealized experiments were also incorporated in CMIP2, with the 1\% compounding (1pctCO2) first included and subsequently identified as 1pctto2x and 1pctto4x (before CMIP5), returning to the single 1pctCO2 identity in CMIP5 onward, and with differing simulation lengths across contributing models (2x 70 years, and 4x 140 years). The historical experiment, with transient time-evolving forcings included, was first defined in CMIP3, identified as 20C3M (climate of the twentieth century, $\sim$1860-1999). This is subsequently the historical experiment (CMIP5 and onward) and was extended to include additional forcing coverage (CMIP5: 1850-2011; CMIP6: 1850-2014). For further details and comparisons, see \autoref{tab:tabAppA1-MIPExperiments}, and to visualize the experiment growth over phases, see \autoref{fig:fig1-MIPGrowth}.
+There is considerable continuity with experimental protocols across phases. The "amip" AGCM experiment is where MIP science began, covering the 1979-1988 period for AMIP1, and 1979-2001 for AMIP2. The concept of a fixed climatological forced "control" experiment identified core experiments between CMIP1 and CMIP2, with the present-day control (pdcntrl, $\sim$1995 CMIP1) evolving to include a pre-industrial control (picntrl, $\sim$1850-1860 CMIP2) in subsequent phases. When assessing the "control" experiments, the nomenclature changed a little, with picntrl (before CMIP5) and piControl referring to the same experimental protocols, noting differing "pre-industrial" climatological fixed forcings were used across phases (see \autoref{sec:CMIP6SupportingProjects-input4MIPs}). Idealized experiments were also incorporated in CMIP2, with the 1\% compounding (1pctCO2) first included and subsequently identified as 1pctto2x and 1pctto4x (before CMIP5), returning to the single 1pctCO2 identity in CMIP5 onward, and with differing simulation lengths across contributing models (2x 70 years, and 4x 140 years). The historical experiment, with transient time-evolving forcings included, was first defined in CMIP3, identified as 20C3M (climate of the twentieth century, $\sim$1860-1999). This is subsequently the historical experiment (CMIP5 and onward) and was extended to include additional forcing coverage (CMIP5: 1850-2011; CMIP6: 1850-2014). For further details and comparisons, see \autoref{tab:tabAppA1-MIPExperiments}, and to visualize the experiment growth over phases, see \autoref{fig:fig1-MIPGrowth}.
 
 \begin{table*}[htp]
 	\renewcommand{\arraystretch}{1.5}
@@ -783,31 +783,24 @@ There is considerable continuity with experimental protocols across phases. The 
 				| >{\centering\arraybackslash\hsize=.46\hsize}X
 				| >{\centering\arraybackslash\hsize=.26\hsize}X | }
 			\hline
-			\textbf{MIP Phase} & \textbf{Citation/Year} & \textbf{Experiment(s)} & \textbf{URL/DOI}\\
-			\hline
-			AMIP1 & \citet{gates_amip_1991} & \textbf{AMIP:} amip & \href{http://doi.org/10.5281/zenodo.12109765}{10.5281/zenodo.12109765}; \url{https://web.archive.org/web/19970524094021/http://www-pcmdi.llnl.gov/amip/}\\
-			\hline
-			AMIP2 & \citet{gleckler_amip_1999} & \textbf{AMIP:} amip & \href{http://doi.org/10.5281/zenodo.12188729}{10.5281/zenodo.12188729}; \url{https://web.archive.org/web/19970524094021/http://www-pcmdi.llnl.gov/amip/}\\
-			\hline
-			CMIP1 & \citet{meehl_global_1995} & \textbf{CMIP:} pdcntrl & \url{https://web.archive.org/web/19970824235843/http://www-pcmdi.llnl.gov/cmip/Cmip.htm}\\
-			\hline
-			CMIP2 & \citet{meehl_intercomparison_1997} & \textbf{CMIP:} pdcntrl, picntrl, 1pctCO2 & \url{https://web.archive.org/web/19970825000210/http://www-pcmdi.llnl.gov/cmip/announ.htm}\\
-			\hline
-			CMIP3 & Doutriaux \& Taylor, 2005; \citet{meehl_wcrp_2007} & \textbf{CMIP:} 1pctto2x, 1pctto4x, 20C3M, amip, pdcntrl, picntrl; \textbf{CFMIP:} 2xco2, slabcntl; \textbf{ScenarioMIP:} commit, SRESA1B, SRESA2, SRESB1 & \url{https://pcmdi.llnl.gov/mips/cmip3/experiment.html\#Experiments}\\
-			\hline
-			CMIP5 & \cite{taylor_overview_2012}; Doutriaux \& Taylor, 2013 & \textbf{CMIP:} 1pctCO2, abrupt4xCO2, amip, historical, piControl; \textbf{C4MIP:} esmControl, esmFdbk1, esmFdbk2, esmFixClim1, esmFixClim2, esmHistorical, esmrcp85; \textbf{CFMIP:} amip4K, amip4xCO2, amipFuture, aqua4K, aqua4xCO2, aquaControl, sst2030 \textbf{DCPP:} decadalXXXX, noVolcXXXX, volcIn2010; \textbf{DAMIP:} historicalExt, historicalGHG, historicalMisc, historicalNat; \textbf{PMIP:} lgm, midHolocene, past1000; \textbf{RFMIP:} sstClim, sstClim4xCO2, sstClimAerosol, sstClimSulfate; \textbf{ScenarioMIP:} rcp26, rcp45, rcp60, rcp85 & \url{https://pcmdi.llnl.gov/mips/cmip5/experiment\_design.html}\\
-			\hline			
+			\textbf{MIP Phase} & \textbf{Citation/Year} & \textbf{Experiment(s)} & \textbf{URL/DOI}\\ \hline
+			AMIP1 & \citet{gates_amip_1991} & \textbf{AMIP:} amip & \href{http://doi.org/10.5281/zenodo.12109765}{10.5281/zenodo.12109765}; \url{https://web.archive.org/web/19970524094021/http://www-pcmdi.llnl.gov/amip/}\\ \hline
+			AMIP2 & \citet{gleckler_amip_1999} & \textbf{AMIP:} amip & \href{http://doi.org/10.5281/zenodo.12188729}{10.5281/zenodo.12188729}; \url{https://web.archive.org/web/19970524094021/http://www-pcmdi.llnl.gov/amip/}\\ \hline
+			CMIP1 & \citet{meehl_global_1995} & \textbf{CMIP:} pdcntrl & \url{https://web.archive.org/web/19970824235843/http://www-pcmdi.llnl.gov/cmip/Cmip.htm}\\ \hline
+			CMIP2 & \citet{meehl_intercomparison_1997} & \textbf{CMIP:} pdcntrl, picntrl, 1pctCO2 & \url{https://web.archive.org/web/19970825000210/http://www-pcmdi.llnl.gov/cmip/announ.htm}\\ \hline
+			CMIP3 & Doutriaux \& Taylor, 2005; \citet{meehl_wcrp_2007} & \textbf{CMIP:} 1pctto2x, 1pctto4x, 20C3M, amip, pdcntrl, picntrl; \textbf{CFMIP:} 2xco2, slabcntl; \textbf{ScenarioMIP:} commit, SRESA1B, SRESA2, SRESB1 & \url{https://pcmdi.llnl.gov/mips/cmip3/experiment.html\#Experiments}\\ \hline
+			CMIP5 & \cite{taylor_overview_2012}; Doutriaux \& Taylor, 2013 & \textbf{CMIP:} 1pctCO2, abrupt4xCO2, amip, historical, piControl; \textbf{C4MIP:} esmControl, esmFdbk1, esmFdbk2, esmFixClim1, esmFixClim2, esmHistorical, esmrcp85; \textbf{CFMIP:} amip4K, amip4xCO2, amipFuture, aqua4K, aqua4xCO2, aquaControl, sst2030 \textbf{DCPP:} decadalXXXX, noVolcXXXX, volcIn2010; \textbf{DAMIP:} historicalExt, historicalGHG, historicalMisc, historicalNat; \textbf{PMIP:} lgm, midHolocene, past1000; \textbf{RFMIP:} sstClim, sstClim4xCO2, sstClimAerosol, sstClimSulfate; \textbf{ScenarioMIP:} rcp26, rcp45, rcp60, rcp85 & \url{https://pcmdi.llnl.gov/mips/cmip5/experiment\_design.html}\\ \hline			
 			CMIP6 & \citet{eyring_overview_2016}; \citet{durack_cmip6_2024} & $\sim$190 (2016) to 322 (2024) see CMIP6\_CVs; for MIPs contributing to the phase see \autoref{tab:tab2-CMIP6MIPs} & \href{http://doi.org/10.5281/zenodo.12197150}{10.5281/zenodo.12197150}; \url{https://github.com/WCRP-CMIP/CMIP6\_CVs}; \url{https://wcrp-cmip.github.io/CMIP6\_CVs/docs/CMIP6\_experiment\_id.html}\\
 			\hline		
 		\end{tabularx}
 	} % /resizebox
 	\label{tab:tabAppA1-MIPExperiments}
-	\footnotesize{Note: Numbers are calculated in an Excel spreadsheet for the early text or web-based lists. In the CMIP5 phase, NOAA-GFDL submitted GFDL-HIRAM-C180 simulations for the CFMIP-motivated sst2090 and sst2090rcp45 experiments.}
+	\footnotesize{Notes: \cred{Numbers are calculated in an Excel spreadsheet for the early text or web-based lists.} In the CMIP5 phase, NOAA-GFDL submitted GFDL-HIRAM-C180 simulations for the CFMIP-motivated sst2090 and sst2090rcp45 experiments.}
  % Mappings see Taylor google doc XML filename construction https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/edit
 \end{table*}
 
 
-\section{MIP variable request and standard outputs}  %% Appendix B
+\section{MIP variable request and standard output}  %% Appendix B
 \label{sec:secAppB1-MIPStandardOutput}
 The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard output variables/Tables" was collated from numerous live and archived resources available from 1991 through to the CMIP6 CMOR Table files that are still being used today. The earliest resources were published in written form, the AMIP Newsletters \citep[e.g.,][]{gates_amip_1991}, and subsequently, became available on the PCMDI website for AMIP2, CMIP1 and CMIP2/2+ phases. CMIP3 marked a step change, with the development of the CMOR1 software \citep{taylor_cmor_2006} and CMIP3 Standard Output defined by the more complete CMIP3-CMOR-Tables \citep{doutriaux_cmip3_2005}. CMIP5 continued this trend with CMOR2 \citep{doutriaux_cmor_2011} and the CMIP5-CMOR-Tables \citep{doutriaux_cmip5_2013}. For CMIP6, project expansion to include 23 MIPs and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime} respectively) required the development of a dedicated CMIP6 Data Request (see \autoref{sec:CMIP6DR}) along with the parallel development of CMOR3 \citep{mauzey_cmor_2024} and the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}. For each tabulated value, superscript-identified links provide live connections to these sources.
 
@@ -817,7 +810,7 @@ The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard ou
 	\renewcommand{\arraystretch}{1.5}
 	\scriptsize
 	\centering
-	\caption{MIP standard output AMIP1 (1991) to CMIP6}
+	\caption{MIP variable request and standard output AMIP1 (1991) to CMIP6}
 	\resizebox{\textwidth}{!} {
 		\begin{tabularx}{0.9\textwidth} {
 				| >{\centering\arraybackslash\hsize=.09\hsize}X
@@ -827,37 +820,23 @@ The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard ou
                 | >{\centering\arraybackslash\hsize=.1\hsize}X
 				| >{\centering\arraybackslash\hsize=.6\hsize}X | }
 			\hline
-			\textbf{Table 1 superscript} & \textbf{MIP Phase} & \textbf{Variable Count} & \textbf{CMOR version} & \textbf{Citation/Year} & \textbf{URL/DOI}\\
-			\hline
-			1 & AMIP1 & 32 & $\sim$ & \citet{gates_amip_1991} & \href{http://doi.org/10.5281/zenodo.12109765}{10.5281/zenodo.12109765}; \url{https://pcmdi.llnl.gov/mips/amip/OUTPUT/WGNEDIAGS/index.html}\\
-			\hline
-			2 & AMIP2 & 114 & $\sim$ & 1998 & \url{https://pcmdi.llnl.gov/mips/amip/OUTPUT/AMIP2/outlist.html}\\
-			\hline
-			3 & CMIP1 & 23 & $\sim$ & 1997 & \url{https://web.archive.org/web/19970824233750/http://www-pcmdi.llnl.gov/cmip/diagsub.html}\\
-			\hline
-			4 & CMIP2 & 28 & $\sim$ & 1997 & \url{https://pcmdi.llnl.gov/mips/cmip2/}\\
-			\hline
+			\textbf{Table 1 superscript} & \textbf{MIP Phase} & \textbf{Variable Count} & \textbf{CMOR version} & \textbf{Citation/Year} & \textbf{URL/DOI}\\ \hline
+			1 & AMIP1 & 32 & $\sim$ & \citet{gates_amip_1991} & \href{http://doi.org/10.5281/zenodo.12109765}{10.5281/zenodo.12109765}; \url{https://pcmdi.llnl.gov/mips/amip/OUTPUT/WGNEDIAGS/index.html}\\ \hline
+			2 & AMIP2 & 114 & $\sim$ & 1998 & \url{https://pcmdi.llnl.gov/mips/amip/OUTPUT/AMIP2/outlist.html}\\ \hline
+			3 & CMIP1 & 23 & $\sim$ & 1997 & \url{https://web.archive.org/web/19970824233750/http://www-pcmdi.llnl.gov/cmip/diagsub.html}\\ \hline
+			4 & CMIP2 & 28 & $\sim$ & 1997 & \url{https://pcmdi.llnl.gov/mips/cmip2/}\\ \hline
 			5 & CMIP3 & 362 \cred{(sync with \autoref{tab:tab1-MIPsThroughTime})} & 1.0 & Doutriaux \& Taylor, 2005 & \href{http://doi.org/10.5281/zenodo.12792173}{10.5281/zenodo.12792173}; \url{https://github.com/PCMDI/cmip3-cmor-tables}\\ \hline
 			6 & CMIP5 & 970 & 2.0 & Doutriaux \& Taylor, 2013 & \href{http://doi.org/10.5281/zenodo.12792191}{10.5281/zenodo.12792191}; \url{https://github.com/PCMDI/cmip5-cmor-tables}\\ \hline
-			7 & CMIP6 & 2062 & 3.0 & Nadeau et al., 2018 & \href{http://doi.org/10.5281/zenodo.597650}{10.5281/zenodo.597650}; \url{https://github.com/PCMDI/cmip6-cmor-tables}\\
+			7 & CMIP6 & 2062 & 3.0 & Nadeau et al., 2018 & \href{http://doi.org/10.5281/zenodo.597650}{10.5281/zenodo.597650}; \url{https://github.com/PCMDI/cmip6-cmor-tables}\\ \hline
 			\hline
-			\hline
-			$\sim$ & CFMIP1 & & 1.0 & $\sim$ & \url{https://github.com/PCMDI/cfmip1-cmor-tables}\\
-			\hline
-			$\sim$ & C-LAMP1 & & 1.0 & $\sim$ & \url{https://github.com/PCMDI/c-lamp1-cmor-tables}\\
-			\hline
-			$\sim$ & IAEMIP1 & & 1.0 & $\sim$ & \url{https://github.com/PCMDI/iaemip1-cmor-tables}\\
-			\hline
-            $\sim$ & CORDEX (CMIP5) & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/cordex-cmor-tables}\\
-			\hline
-			$\sim$ & GEOMIP & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/geomip-cmor-tables}\\
-			\hline
-			$\sim$ & LUCID & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/lucid-cmor-tables}\\
-			\hline
-			$\sim$ & PMIP3 & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/pmip3-cmor-tables}\\
-			\hline
-			$\sim$ & CORDEX-CMIP6 & & 3.0 & \citet{gutowski_jr_wcrp_2016} & \url{https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables}\\
-            \hline
+			$\sim$ & CFMIP1 & & 1.0 & $\sim$ & \url{https://github.com/PCMDI/cfmip1-cmor-tables}\\ \hline
+			$\sim$ & C-LAMP1 & & 1.0 & $\sim$ & \url{https://github.com/PCMDI/c-lamp1-cmor-tables}\\ \hline
+			$\sim$ & IAEMIP1 & & 1.0 & $\sim$ & \url{https://github.com/PCMDI/iaemip1-cmor-tables}\\ \hline
+            $\sim$ & CORDEX (CMIP5) & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/cordex-cmor-tables}\\ \hline
+			$\sim$ & GEOMIP & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/geomip-cmor-tables}\\ \hline
+			$\sim$ & LUCID & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/lucid-cmor-tables}\\ \hline
+			$\sim$ & PMIP3 & & 2.0 & $\sim$ & \url{https://github.com/PCMDI/pmip3-cmor-tables}\\ \hline
+			$\sim$ & CORDEX-CMIP6 & & 3.0 & \citet{gutowski_jr_wcrp_2016} & \url{https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables}\\ \hline
 			others? & $\sim$ & & $\sim$ & $\sim$ & $\sim$\\
 			\hline
         \end{tabularx}
@@ -890,7 +869,7 @@ Tabulated entries of CMIP errata based on phase
 		\end{tabularx}
 	} % /resizebox
 	\label{tab:tabAppC1-MIPErrata}
-	\footnotesize{Note: All values are tabulated from archived or live webpages as of \DTMsetstyle{en-GB}\DTMnow}
+	\footnotesize{Notes: All values are tabulated from archived or live webpages as of \DTMsetstyle{en-GB}\DTMnow}
 \end{table*}
 
 \mycomment{
@@ -922,29 +901,18 @@ During MIP phases, several software tools have been developed and updated to mee
 	  | >{\centering\arraybackslash\hsize=.1\hsize}X
 	  | >{\centering\arraybackslash\hsize=.1\hsize}X | }
 \hline
-\textbf{Software name and version} & \textbf{Software Description} & \textbf{URL} & \textbf{Citation} & \textbf{DOI} \\
-\hline
-CMOR 1.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov/archive/cmor1}; \url{https://github.com/PCMDI/cmor} & \citet{taylor_cmor_2006} & \href{http://doi.org/10.5281/zenodo.12690071}{10.5281/ zenodo.12690071} \\
-\hline
-CMOR 2.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov}; \url{https://github.com/PCMDI/cmor} & \citet{doutriaux_cmor_2011} & \href{http://doi.org/10.5281/zenodo.12690366}{10.5281/ zenodo.12690366} \\
-\hline
-CMOR 3.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov}; \url{https://github.com/PCMDI/cmor} & \citet{doutriaux_cmor_2024} & \href{http://doi.org/10.5281/zenodo.592733}{10.5281/ zenodo.592733} \\
-\hline
-XIOS & Xml IO Server & \url{http://forge.ipsl.jussieu.fr/ioserver/chrome/site/XIOS\_DOC} &  &  \\
-\hline
-ECE2CMOR3 & EC-Earth to CMOR & \url{https://github.com/EC-Earth/ece2cmor3}; \url{https://github.com/EC-Earth/cmor-fixer} &  & \href{http://doi.org/10.5281/zenodo.1051094}{10.5281/ zenodo.1051094} \\
-\hline
-CDO CMOR & Climate Data Operators to CMOR & \url{https://code.mpimet.mpg.de/projects/cdo/wiki/CDO\_CMOR\_Operator} &  &  \\
-\hline
-NORESM2CMOR & NorESM to CMOR & \url{https://github.com/NorESMhub/noresm2cmor} &  &  \\
-\hline
-CCLM2CMOR & COSMO-CLM to CMOR & \url{https://github.com/C2SM-RCM/CCLM2CMOR}; \url{https://github.com/ssilje/CMOR} &  &  \\
-\hline
-FGOALS-g-cmor & FGOALS-g to CMOR & \url{https://github.com/dongli/FGOALS-g-cmor} &  &  \\
-\hline
-PRIMAVERA & HadGEM to CMOR & \url{https://github.com/goord/cmor} &  &  \\
-\hline
-E3SM\_To\_CMIP & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_to\_cmip} &  &  \\
+\textbf{Software name and version} & \textbf{Software Description} & \textbf{URL} & \textbf{Citation} & \textbf{DOI}\\ \hline
+CMOR 1.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov/archive/cmor1}; \url{https://github.com/PCMDI/cmor} & \citet{taylor_cmor_2006} & \href{http://doi.org/10.5281/zenodo.12690071}{10.5281/ zenodo.12690071}\\ \hline
+CMOR 2.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov}; \url{https://github.com/PCMDI/cmor} & \citet{doutriaux_cmor_2011} & \href{http://doi.org/10.5281/zenodo.12690366}{10.5281/ zenodo.12690366}\\ \hline
+CMOR 3.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov}; \url{https://github.com/PCMDI/cmor} & \citet{doutriaux_cmor_2024} & \href{http://doi.org/10.5281/zenodo.592733}{10.5281/ zenodo.592733}\\ \hline
+XIOS & Xml IO Server & \url{http://forge.ipsl.jussieu.fr/ioserver/chrome/site/XIOS\_DOC} &  &\\ \hline
+ECE2CMOR3 & EC-Earth to CMOR & \url{https://github.com/EC-Earth/ece2cmor3}; \url{https://github.com/EC-Earth/cmor-fixer} &  & \href{http://doi.org/10.5281/zenodo.1051094}{10.5281/ zenodo.1051094}\\ \hline
+CDO CMOR & Climate Data Operators to CMOR & \url{https://code.mpimet.mpg.de/projects/cdo/wiki/CDO\_CMOR\_Operator} &  &\\ \hline
+NORESM2CMOR & NorESM to CMOR & \url{https://github.com/NorESMhub/noresm2cmor} &  &\\ \hline
+CCLM2CMOR & COSMO-CLM to CMOR & \url{https://github.com/C2SM-RCM/CCLM2CMOR}; \url{https://github.com/ssilje/CMOR} &  &\\ \hline
+FGOALS-g-cmor & FGOALS-g to CMOR & \url{https://github.com/dongli/FGOALS-g-cmor} &  &\\ \hline
+PRIMAVERA & HadGEM to CMOR & \url{https://github.com/goord/cmor} &  &\\ \hline
+E3SM\_To\_CMIP & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_to\_cmip} &  &\\
 \hline
 \end{tabularx}
 } % /resizebox
@@ -973,86 +941,46 @@ Over the five decades of MIPs, many acronyms and identifiers have been developed
 	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
 	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
-\textbf{Acronym} & \textbf{Expansion and additional information}\\
-\hline
-20C3M & CMIP 20th Century Climate in Coupled Models pilot project (now known as the CMIP historical experiment) \\
-\hline
-AGCM & Atmospheric General Circulation Model \\
-\hline
-AMIP & Atmospheric Model Intercomparison Project (also AMIP1 and AMIP2) \\
-\hline
-ANL & US Argonne National Laboratory; \url{https://www.anl.gov} \\
-\hline
-AOGCM & Atmospheric and Ocean General/Global Circulation Model \\
-\hline
-AR4 & IPCC Fourth Assessment Report; \url{https://www.ipcc.ch/report/ar4/wg1} \\
-\hline
-AR5 & IPCC Fifth Assessment Report; \url{https://www.ipcc.ch/report/ar5/wg1}\\
-\hline
-AR6 & IPCC Sixth Assessment Report; \url{https://www.ipcc.ch/report/ar6/wg1} \\
-\hline
-BADC/CEDA & UK British Atmospheric Data Centre (now CEDA; \url{https://www.ceda.ac.uk} \\
-\hline
-C4MIP & CMIP Coupled Climate-Carbon Cycle MIP; \url{https://c4mip.net} \\
-\hline
-CCSM & NCAR Community Climate System Model; \url{https://www.cesm.ucar.edu/models/ccsm} \\
-\hline
-CF & NetCDF Climate and Forecast Metadata Conventions; \url{https://cfconventions.org/} \\
-\hline
-CFMIP & CMIP Cloud Feedbacks MIP (Also CFMIP1, CFMIP2, and CFMIP3; \url{https://www.cfmip.org}) \\
-\hline
-CLIVAR & WCRP Climate Variability and Predictability Core Project; \url{https://www.clivar.org} \\
-\hline
-CMIP & Coupled Model Intercomparison Project (also CMIP1, CMIP2, CMIP2+, CMIP3, CMIP5, and CMIP6) \\
-\hline
-CMOR & PCMDI Climate Model Output Rewriter (also CMOR1, CMOR2, and CMOR3; \url{https://cmor.llnl.gov/}) \\
-\hline
-COARDS & Cooperative Ocean/Atmosphere Research Data Service conventions \\
-\hline
-DAMIP & Detection and Attribution MIP \\
-\hline
-DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; \url{https://www.wcrp-climate.org/dcp-overview}) \\
-\hline
-DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite) \\
-\hline
-DoE & US Department of Energy; \url{https://www.energy.gov} \\
-\hline
-DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum, DKRZ; \url{https://www.dkrz.de/en}) \\
-\hline
-ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int} \\
-\hline
-ESG & Earth System Grid (also ESG I, ESG II) \\
-\hline
-ESG-CET & Earth System Grid Center for Enabling Technologies \\
-\hline
-ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov} \\
-\hline
-ESM & Earth System Model \\
-\hline
-ESMValTool & A community diagnostic and performance metrics tool for evaluation and analysis of Earth system Models; \url{https://esmvaltool.org} \\
-\hline
-ESMO & WCRP Earth System Modelling and Observations Core Project; \url{https://www.wcrp-esmo.org} \\
-\hline
-FANGIO & Feedback ANalysis of GCMs and In Observations project \\
-\hline
-FAR & IPCC First Assessment Report; \url{https://www.ipcc.ch/report/ar1/wg1} \\
-\hline
-GAIM & Global Analysis Interpretation and Modeling Task Force (IGBP sub-group) \\
-\hline
-GCM & General/Global Circulation Model \\
-\hline
-ICRCCM & Intercomparison of Radiation Codes used in Climate Models project \\
-\hline
-IGBP & International Geosphere-Biosphere Programme \\
-\hline
-ILAMB & ORNL International Land Model Benchmarking; \url{https://www.ilamb.org} \\
-\hline
-IPCC & United Nations Intergovernmental Panel on Climate Change; \url{https://www.ipcc.ch} \\
-\hline
-IPCC-DDC & UN IPCC Data Distribution Centre; \url{https://www.ipcc-data.org} \\
-\hline
-IPSL & French Institut Pierre-Simon Laplace; \url{https://www.ipsl.fr/en/home-en} \\
-\hline
+\textbf{Acronym} & \textbf{Expansion and additional information}\\ \hline
+20C3M & CMIP 20th Century Climate in Coupled Models pilot project (now known as the CMIP historical experiment)\\ \hline
+AGCM & Atmospheric General Circulation Model\\ \hline
+AMIP & Atmospheric Model Intercomparison Project (also AMIP1 and AMIP2)\\ \hline
+ANL & US Argonne National Laboratory; \url{https://www.anl.gov}\\ \hline
+AOGCM & Atmospheric and Ocean General/Global Circulation Model\\ \hline
+AR4 & IPCC Fourth Assessment Report; \url{https://www.ipcc.ch/report/ar4/wg1}\\ \hline
+AR5 & IPCC Fifth Assessment Report; \url{https://www.ipcc.ch/report/ar5/wg1}\\ \hline
+AR6 & IPCC Sixth Assessment Report; \url{https://www.ipcc.ch/report/ar6/wg1}\\ \hline
+BADC/CEDA & UK British Atmospheric Data Centre (now CEDA; \url{https://www.ceda.ac.uk}\\ \hline
+C4MIP & CMIP Coupled Climate-Carbon Cycle MIP; \url{https://c4mip.net}\\ \hline
+CCSM & NCAR Community Climate System Model; \url{https://www.cesm.ucar.edu/models/ccsm}\\ \hline
+CF & NetCDF Climate and Forecast Metadata Conventions; \url{https://cfconventions.org/}\\ \hline
+CFMIP & CMIP Cloud Feedbacks MIP (Also CFMIP1, CFMIP2, and CFMIP3; \url{https://www.cfmip.org})\\ \hline
+CLIVAR & WCRP Climate Variability and Predictability Core Project; \url{https://www.clivar.org}\\ \hline
+CMIP & Coupled Model Intercomparison Project (also CMIP1, CMIP2, CMIP2+, CMIP3, CMIP5, and CMIP6)\\ \hline
+CMOR & PCMDI Climate Model Output Rewriter (also CMOR1, CMOR2, and CMOR3; \url{https://cmor.llnl.gov/})\\ \hline
+COARDS & Cooperative Ocean/Atmosphere Research Data Service conventions\\ \hline
+DAMIP & Detection and Attribution MIP\\ \hline
+DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; \url{https://www.wcrp-climate.org/dcp-overview})\\ \hline
+DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite)\\ \hline
+DoE & US Department of Energy; \url{https://www.energy.gov}\\ \hline
+DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum, DKRZ; \url{https://www.dkrz.de/en})\\ \hline
+ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int}\\ \hline
+ESG & Earth System Grid (also ESG I, ESG II)\\ \hline
+ESG-CET & Earth System Grid Center for Enabling Technologies\\ \hline
+ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov}\\ \hline
+ESM & Earth System Model\\ \hline
+ESMValTool & A community diagnostic and performance metrics tool for evaluation and analysis of Earth system Models; \url{https://esmvaltool.org}\\ \hline
+ESMO & WCRP Earth System Modelling and Observations Core Project; \url{https://www.wcrp-esmo.org}\\ \hline
+FANGIO & Feedback ANalysis of GCMs and In Observations project\\ \hline
+FAR & IPCC First Assessment Report; \url{https://www.ipcc.ch/report/ar1/wg1}\\ \hline
+GAIM & Global Analysis Interpretation and Modeling Task Force (IGBP sub-group)\\ \hline
+GCM & General/Global Circulation Model\\ \hline
+ICRCCM & Intercomparison of Radiation Codes used in Climate Models project\\ \hline
+IGBP & International Geosphere-Biosphere Programme\\ \hline
+ILAMB & ORNL International Land Model Benchmarking; \url{https://www.ilamb.org}\\ \hline
+IPCC & United Nations Intergovernmental Panel on Climate Change; \url{https://www.ipcc.ch}\\ \hline
+IPCC-DDC & UN IPCC Data Distribution Centre; \url{https://www.ipcc-data.org}\\ \hline
+\multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
 \end{tabularx}
 } % /resizebox
 \label{tab:tabAppE1-Acronyms}
@@ -1069,63 +997,36 @@ IPSL & French Institut Pierre-Simon Laplace; \url{https://www.ipsl.fr/en/home-en
 	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
 	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
-LANL & US Los Alamos National Laboratory; \url{https://www.lanl.gov} \\
-\hline
-LBNL & US Lawrence Berkeley National Laboratory; \url{https://www.lbl.gov} \\
-\hline
-LLNL & US Lawrence Livermore National Laboratory; \url{https://www.llnl.gov} \\
-\hline
-MIP & Model Intercomparison Project \\
-\hline
-NASA & US National Aeronautic and Space Administration; \url{https://www.nasa.gov} \\
-\hline
-NASA-JPL & US NASA Jet Propulsion Laboratory; \url{https://www.jpl.nasa.gov} \\
-\hline
-NCAR & US National Center for Atmospheric Research; \url{https://ncar.ucar.edu} \\
-\hline
-NCI & Australian National Computational Infrastructure; \url{https://nci.org.au} \\
-\hline
-NERSC & US Department of Energy Research Scientific Computing Center; \url{https://www.nersc.gov} \\
-\hline
-NOAA & US National Oceanic and Atmospheric Administration; \url{https://www.noaa.gov} \\
-\hline
-NOAA-NCEP & US NOAA National Centers for Environmental Prediction; \url{https://www.weather.gov/ncep} \\
-\hline
-NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory; \url{https://www.pmel.noaa.gov} \\
-\hline
-ORNL & Oak Ridge National Laboratory; \url{https://www.ornl.gov} \\
-\hline
-PMIP & CMIP Paleoclimate MIP (also PMIP1, PMIP2, PMIP3, and PMIP4; \url{https://pmip.lsce.ipsl.fr}) \\
-\hline
-PMP & PCMDI Metrics Package; \url{https://pcmdi.github.io/pcmdi_metrics} \\
-\hline
-PCMDI & Program for Climate Model Diagnosis and Intercomparison, LLNL; \url{https://pcmdi.llnl.gov} \\
-\hline
-RCP & Representative Concentration Pathways scenarios (Circa CMIP5) \\
-\hline
-SAR & IPCC Second Assessment Report; \url{https://www.ipcc.ch/report/ar2/wg1} \\
-\hline
-SGGCM & WCRP Steering Group on Global Coupled Models (a precursor to WGCM) \\
-\hline
-SPECTRE & Spectral Radiance Experiment \\
-\hline
-SRES & IPCC Special Report on Emission Scenarios (Circa CMIP3) \\
-\hline
-SST & Sea Surface Temperature \\
-\hline
-TAR & IPCC Third Assessment Report; \url{https://www.ipcc.ch/report/ar3/wg1} \\
-\hline
-WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org} \\
-\hline
-WGCM & WCRP Working Group on Coupled Modelling; \url{https://www.wcrp-climate.org/ipo-esmo-groups/modelling-wgcm} \\
-\hline
-WIP & WCRP WGCM Infrastructure Panel; \url{https://www.wcrp-climate.org/wgcm-cmip/wip} \\
-\hline
-WGNE & WCRP Working Group on Numerical Experimentation; \url{https://wgne.net} \\
-\hline
-UN & United Nations; \url{https://www.un.org/en} \\
-\hline
-US & United States \\
+IPSL & French Institut Pierre-Simon Laplace; \url{https://www.ipsl.fr/en/home-en}\\ \hline
+LANL & US Los Alamos National Laboratory; \url{https://www.lanl.gov}\\ \hline
+LBNL & US Lawrence Berkeley National Laboratory; \url{https://www.lbl.gov}\\ \hline
+LLNL & US Lawrence Livermore National Laboratory; \url{https://www.llnl.gov}\\ \hline
+MIP & Model Intercomparison Project\\ \hline
+NASA & US National Aeronautic and Space Administration; \url{https://www.nasa.gov}\\ \hline
+NASA-JPL & US NASA Jet Propulsion Laboratory; \url{https://www.jpl.nasa.gov}\\ \hline
+NCAR & US National Center for Atmospheric Research; \url{https://ncar.ucar.edu}\\ \hline
+NCI & Australian National Computational Infrastructure; \url{https://nci.org.au}\\ \hline
+NERSC & US Department of Energy Research Scientific Computing Center; \url{https://www.nersc.gov}\\ \hline
+NOAA & US National Oceanic and Atmospheric Administration; \url{https://www.noaa.gov}\\ \hline
+NOAA-NCEP & US NOAA National Centers for Environmental Prediction; \url{https://www.weather.gov/ncep}\\ \hline
+NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory; \url{https://www.pmel.noaa.gov}\\ \hline
+ORNL & Oak Ridge National Laboratory; \url{https://www.ornl.gov}\\ \hline
+PMIP & CMIP Paleoclimate MIP (also PMIP1, PMIP2, PMIP3, and PMIP4; \url{https://pmip.lsce.ipsl.fr})\\ \hline
+PMP & PCMDI Metrics Package; \url{https://pcmdi.github.io/pcmdi_metrics}\\ \hline
+PCMDI & Program for Climate Model Diagnosis and Intercomparison, LLNL; \url{https://pcmdi.llnl.gov}\\ \hline
+RCP & Representative Concentration Pathways scenarios (Circa CMIP5)\\ \hline
+SAR & IPCC Second Assessment Report; \url{https://www.ipcc.ch/report/ar2/wg1}\\ \hline
+SGGCM & WCRP Steering Group on Global Coupled Models (a precursor to WGCM)\\ \hline
+SPECTRE & Spectral Radiance Experiment\\ \hline
+SRES & IPCC Special Report on Emission Scenarios (Circa CMIP3)\\ \hline
+SST & Sea Surface Temperature\\ \hline
+TAR & IPCC Third Assessment Report; \url{https://www.ipcc.ch/report/ar3/wg1}\\ \hline
+WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org}\\ \hline
+WGCM & WCRP Working Group on Coupled Modelling; \url{https://www.wcrp-climate.org/ipo-esmo-groups/modelling-wgcm}\\ \hline
+WIP & WCRP WGCM Infrastructure Panel; \url{https://www.wcrp-climate.org/wgcm-cmip/wip}\\ \hline
+WGNE & WCRP Working Group on Numerical Experimentation; \url{https://wgne.net}\\ \hline
+UN & United Nations; \url{https://www.un.org/en}\\ \hline
+US & United States\\
 \hline
 \end{tabularx}
 } % /resizebox
@@ -1152,7 +1053,7 @@ US & United States \\
 
 
 
-\authorcontribution{P.J.D. outlined the content, completed the initial outline, and shared responsibility for writing the manuscript. K.E.T. assisted in expanding the outline and shared responsibility for writing the manuscript. P.J.G. provided useful feedback on early drafts. All authors contributed to the final version of the manuscript.} %% This section is mandatory
+\authorcontribution{P.J.D. outlined the content, completed the initial outline, and shared responsibility for writing the manuscript. K.E.T. assisted in expanding the outline and shared responsibility for writing the manuscript. P.J.G. provided useful feedback on early drafts, which reformulated the outline. All authors contributed to the final version of the manuscript.} %% This section is mandatory
 
 \competinginterests{All authors declare no competing or conflicting interests} %% this section is mandatory even if you declare that no competing interests are present
 
