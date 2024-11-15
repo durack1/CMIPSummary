@@ -135,7 +135,8 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \Author[3]{Paola}{Nassisi} % 0000-0003-2857-4391
 \Author[4]{Matthew}{Mizielinski} % 0000-0002-3457-4702
 \Author[5]{Daniel}{Ellis} % 0000-0001-6733-7028
-\Author[30]{others please}{add yourselves - will alphabetically reorder once final}
+\Author[30,\textdagger]{others please}{add yourselves - will alphabetically reorder once final}
+
 % \affil % Affiliations
 \affil[1]{Program for Climate Model Diagnosis and Intercomparison (PCMDI), Lawrence Livermore National Laboratory (LLNL), Livermore, California, USA}
 \affil[2]{German Climate Computing Center (DKRZ), Hamburg, Germany}
@@ -143,6 +144,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \affil[4]{Met Office Hadley Centre (MOHC), Exeter, UK}
 \affil[5]{CMIP International Project Office (CMIP-IPO), Oxfordshire, UK}
 \affil[30]{Affiliation, location, country}
+\affil[\textdagger]{Formerly} %%\textdagger
 
 %% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
 
@@ -168,7 +170,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 
 
 \begin{abstract}
-\cred{Rewrite once other sections are drafted}
+\cred{Rewrite once other sections drafted}
 
    The CMIP6 project was the most expansive and ambitious Model Intercomparison Project (MIP). Project planning began in 2013, with the first data available in 2018, and new data publication continues today. Over the planning to delivery period, the project grew from 21 to 26 MIPs and from around 190 to 322 experiments defined across them, providing comprehensive coverage of contemporary climate science. Project contributors, primarily modelling groups, also grew considerably in the latest phase, with 45 institutions representing 24 countries providing climate model simulation data to the project. Now that CMIP6 is nearing completion, we review its status, evolution over more than a decade of project planning and delivery, and opportunities and plans for future phases.
 
@@ -178,6 +180,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
   \item Phases: planning 2013-2017, operational 2018-present 
   \item Realized potential of distributed Community MIPs
   \item Realization no one modelling system can accurately simulate Earth complexity, with approximations/parameterizations, multi-model approach cross-checks assumptions
+  \item "in the end, it is the contributing modelling groups that decide what experiments to prioritize and simulation data to provide for broader community consumption" \citep{stouffer_cmip5_2017}
   \item Built long-standing contributor goodwill and data sharing culture: facilitating groups by providing compute time; tools to aid data creation to meet formats; developing hosting solutions allowing data collation/dissemination; generating projects allowing individual contributions to be uniquely identified, feeding into national and international/IPCC assessments preserving identities to ensure recognition received
   \item "infrastructure delivering the project has become as important as the science that it serves"
   \item Realized the potential of open-access data enabling science discovery and reproducibility
@@ -199,13 +202,13 @@ Co-authors to engage
 
 \cred{
 \begin{itemize}
-    \item \textbf{\sout{Jiwoo Lee, PCMDI}} (\autoref{sec:CMIP6SupportingProjects-CoordEval}: Coordinated evaluation);
+    \item \textbf{\sout{Jiwoo Lee}, \sout{Curt Covey}, Ken Sperber, Ben Santer, Charles Doutriaux, Tom Phillips, PCMDI}: (\autoref{sec:cmip6InContext}: A/CMIP history, \autoref{sec:CMIP6SupportingProjects-CoordEval}: Coordinated evaluation);
     \item \textbf{\underline{Martina Stockhause, DKRZ}} (\autoref{sec:IPCC-DDC}: IPCC DDC; \autoref{sec:DataCitation}: Data citation);
     \item \textbf{\underline{Bryan Lawrence, David Hassell, UReading}}; Eric Guilyardi, IPSL (\autoref{sec:ModelDocumentation}: Model (and data) documentation);
     \item \textbf{\underline{Guillaume Levavasseur, Atef Ben-Nasser, IPSL}} (\autoref{sec:CMIPErrata}: CMIP errata);
     \item \textbf{\underline{Sandro Fiore, CMCC/UTrento}} (\autoref{sec:CMIPDataDownloads}: Data downloads);
     \item \textbf{\underline{Helene Hewitt, John Dunne}, CMIP Panel}: CMIP7 handoff;
-    \item \textbf{Vaishali Naik}: (\autoref{sec:CMIP6SupportingProjects-input4MIPs} forcing);
+    \item \textbf{\underline{Vaishali Naik}}: (\autoref{sec:CMIP6SupportingProjects-input4MIPs} forcing);
     \item \textbf{Sebastien Denvil, Ruth Petrie, CDNOT}: (\autoref{tab:tab1-MIPsThroughTime}/ESGF)
 \end{itemize}
 }
@@ -269,7 +272,7 @@ https://documents.un.org/doc/resolution/gen/nr0/530/32/img/nr053032.pdf?OpenElem
 
 \subsection{Atmospheric Model Intercomparison Project phases (AMIP1/2)}
 \label{sec:amip1And2}
-\cred{Attn: Peter G., details of AMIP2 are light, can we augment}
+\cred{Attn: Peter G.; AMIP2 details light, can we augment?}
 
 Intercomparison of the results from different atmospheric model simulations focused on near-term weather prediction, began soon after the first large-scale atmospheric models were developed in the 1950s, with the WCRP Working Group on Numerical Experimentation (WGNE) coordinating these activities since the early 1970s \citep{gates_ams_1992}. The first internationally coordinated climate model experimentation occurred in the late 1980s, scientifically focused on cloud feedbacks in the Feedback ANalysis of GCMs and In Observations (FANGIO) project with contributions from 19 unique atmospheric model configurations \citep{cess_methodology_1988, cess_interpretation_1989, cess_intercomparison_1990, cess_first_1991}. The nascent community success quickly expanded into the first phase of the Atmospheric Model Intercomparison Project \citep[AMIP, hereafter referred to as AMIP1;][]{gates_amip_1992}, which was organized under the purview of WGNE for the World Climate Research Programme (WCRP) to help identify and ultimately reduce systematic errors in atmospheric climate models. The acronym AGCM (Atmospheric General Circulation Model) was coined to define model configurations for the project, with many of the contributing model configurations also including simplified land-surface representations \citep[e.g.,][]{budyko_heat_1961,manabe_climate_1969,vargas_godoy_global_2021}. AMIP1 augmented total atmospheric model configurations to 27, more definitively documenting AGCM experimental protocols by prescribing standardized "forcing" sea surface temperature (SST) and sea-ice boundary conditions for the 1979-1988 period, in addition to recommended solar constant (1365 W m\textsuperscript{-2}) and carbon dioxide concentrations \citep[345 ppm;][]{gates_amip_1991}. The project expanded the required model output from simple global and zonal means in FANGIO to monthly mean time series (120 covering the 10-year AMIP1 period) in three dimensions. For many participating models, AMIP1 was the first opportunity to run their model longer than one annual cycle, with computer time provided by the Program for Climate Model Diagnosis and Intercomparison (PCMDI; see \autoref{sec:CMIPSupportingOrgsAndInfra}). Early AMIP1 results were incorporated into the IPCC First Assessment Report (FAR) \citep{gates_validation_1990}. As the second phase (AMIP2) was being planned, including an improved experimental design and updated forcing \citep{liang_pcmdi_1997, taylor_pcmdi_2000}, considerable efforts were made to leverage AMIP analysis in the IPCC Second Assessment Report \citep[SAR;][]{gates_climate_1996}, with a focus on assessing mean errors and multi-model consistency across the archive \citep{gates_amip_1995}.
 
@@ -532,13 +535,13 @@ CF 2003 - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-c
 
 \subsection{Controlled Vocabularies (CVs)}
 \label{sec:CMIPCVs}
-\cred{Attn: Paul D.; MIP era realm evolution, dovetailing Variable request section}
+\mycomment{Attn: IPSL folks; MIP era realm evolution, dovetailing Variable request section}
 
 As coordinated international climate science activities grew from AMIP1 and 2 through the early CMIP phases, it was recognized that imposing increasingly detailed requirements on the data reported would facilitate its use and increase its value. Early on, it was decided that rather than store multiple variables in a single file, the model output should be organized such that each file contained a single variable. This was done to reduce data download volumes since most analysts of the CMIP data were expected to consider only a small number of variables.
 
-Beginning with CMIP3, each requested variable was assigned a unique name (e.g., “ts” for surface temperature and “pr” for precipitation rate), and all data were written compliant with the CF conventions. Additionally, the names of the coordinates and their ordering were standardized, and certain CF optional attributes were made mandatory (e.g., "cell\_methods"). Standardisation simplified analysis codes, which could now ingest data produced by multiple models in a common way. In addition, specific metadata were required to be recorded in each file identifying the source of the data (institution, model name, version) and experiment conditions (e.g., experiment name). Thus, the detailed specifications for CMIP3 \citep[see][]{taylor_pcmdi_2005} imposed uniformity on the format and structure of the data and metadata that facilitated its use.
+Beginning with CMIP3, each requested variable was assigned a unique name (e.g., “ts” for surface temperature and “pr” for precipitation rate), and all data were written compliant with the CF conventions \citep[e.g.,][]{taylor_pcmdi_2009}. Additionally, the names of the coordinates and their ordering were standardized, and certain CF optional attributes were made mandatory (e.g., "cell\_methods"). Standardisation simplified analysis codes, which could now ingest data produced by multiple models in a common way. In addition, specific metadata were required to be recorded in each file identifying the source of the data (institution, model name, version) and experiment conditions (e.g., experiment name). Thus, the detailed specifications for CMIP3 \citep[see][]{taylor_pcmdi_2005} imposed uniformity on the format and structure of the data and metadata that facilitated its use.
 
-The first collection of controlled vocabularies (CVs) was also introduced in CMIP3. In its simplest form, a CV lists the terms used to describe a specific dataset attribute. In CMIP3, there were CVs for variable names (e.g., "tas", "pr", "ua"), experiments (e.g., "picntrl", "SRESB1", "amip"), institutions and models (e.g., "BCC-CM1", "GFDL-CM2.1", "UKMO-HadGEM1"), and table names (e.g., "O1", "A1", "A2", "A3"). The table names identified collections of variables reported at a common "frequency" (1=monthly, 2=daily, 3=3-hourly) and were all associated with either the atmosphere (A) or ocean (O). The CVs were used to construct the directory structure for the data archive, with output from different experiments, models, and variables placed in separate sub-directories. The structure ensured that although the loosely defined template for naming files would not ensure name uniqueness across the entire CMIP3 archive, it would ensure that the names were unique within each lowest-level sub-directory.
+The first collection of controlled vocabularies (CVs) was also introduced in CMIP3 \citep[e.g.,][]{taylor_pcmdi_2005}. In its simplest form, a CV lists the terms used to describe a specific dataset attribute. In CMIP3, there were CVs for variable names (e.g., "tas", "pr", "ua", this subsequently evolved into "standard output" see \autoref{sec:CMIP6DR}), experiments (e.g., "picntrl", "SRESB1", "amip"), institutions and models (e.g., "BCC-CM1", "GFDL-CM2.1", "UKMO-HadGEM1"), and table names (e.g., "O1", "A1", "A2", "A3", see \autoref{tab:tabAppB1-MIPStandardOutput}). The table names identified collections of variables reported at a common "frequency" (1=monthly, 2=daily, 3=3-hourly) and were all associated with either the atmosphere (A) or ocean (O). The CVs were used to construct the directory structure for the data archive, with output from different experiments, models, and variables placed in separate sub-directories. The structure ensured that although the loosely defined template for naming files would not ensure name uniqueness across the entire CMIP3 archive, it would ensure that the names were unique within each lowest-level sub-directory.
 
 The increased uniformity of the CMIP3 data requirements facilitated subsequent research. Still, it burdened modelling groups, who were required to rewrite their data in a new way and an unfamiliar format to some. To assist modelling groups in complying with the model output requirements, the Climate Model Output Rewriter (CMOR1) software \citep{taylor_cmor_2006} along with the CMIP3-CMOR-Tables \citep{doutriaux_cmip3_2005} were developed and made available. In the tables, the 143 requested variables (see \autoref{tab:tab1-MIPsThroughTime}) were grouped so variables likely to be processed under a common procedure appeared together (e.g., ocean or atmosphere variables). The detailed data specifications and the clearly defined variables were documented in the CMIP3-CMOR-Tables and an "output requirements" document \citep{taylor_pcmdi_2005}. Once the modelling groups prepared their output according to the specifications, it was collected and organized on the PCMDI computing system in an easily searchable directory. The data archive could be searched and downloaded directly via anonymous ftp or through the ESG web-based data service.
 
@@ -738,6 +741,8 @@ Through CMIP5, this progress continued, with the aspiration of climate model sys
 These and other community-developed tools (see Hoffman et al., [in prep]) will play increasingly pivotal roles in ensuring climate models are useful tools for climate change prediction and continue to improve through rigorous and systematic community evaluation. It is likely, as the use of CMIP output continues to expand into climate change impacts and adaptation planning, that these tools will be more and more heavily utilized to evaluate simulation data fitness-for-purpose and potentially lead to more advanced methods for model selection and weighting \citep{eyring_taking_2019}.
 
 \mycomment{
+Hoffman, F.M., Hassler, B., Beadling, R., Blockley, E., Francis, F., Huang, B., Lee, J., Lembo, V., Lewis, J., Lu, J., Madaus, L., Malinina, E., Medeiros, B., Pokam, W., Scoccimarro, E., Swaminathan, R., and Marquez, A.L., 2024. Systematic Benchmarking of Climate Models: Methodologies, Applications, and New Directions [to be submitted soon]
+
 The history continues back into the early 1990s, e.g., PILPS (The project for Intercomparison of land surface parameterisaton schemes PILPS) Henderson-Sellers et al., 1995, see 
 https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips-2/268-modelling-wgcm-catalogue-pilps
 
@@ -787,20 +792,22 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 
 \section{CMIP impact and CMIP6 completion}
 \label{sec:CMIP6Completion}
-\cblue{COMPLETE OUTLINE TODAY - Wed 13 Nov}
+\cblue{COMPLETE OUTLINE - Fri 15 Nov}
 
 \cred{
-For a project like CMIP, which has evolved markedly over its four decades of operation, it is challenging to accurately capture its impact, apportion recognition to its contributors and participants, and identify the breadth and diversity of users of generated data downstream. Moving to an open data paradigm (and equivalent open data licenses, \autoref{tab:tab1-MIPsThroughTime}) with CMIP3, further complicated project attribution, leading to mirror sites creating secondary data repositories outside the ESGF licensing and access control \citep{balaji_requirements_2018}. In addition, compute services co-located with the primary ESGF replication nodes (e.g., PCMDI LLNL, DKRZ, and CEDA), other regional nodes (e.g., NCAR, NCI) and the replication of datasets into the commercial cloud \citep[e.g., PANGEO;][]{abernathey_cmip6_2020} began to serve larger and more diverse online communities, further complicating data access and use assessment.
+For a project like CMIP, which has evolved markedly over its four decades of operation, it is challenging to accurately quantify its impact, apportion recognition to its contributors and participants, and identify the breadth and diversity of users of generated data downstream. Moving to an open data paradigm (and equivalent open data licenses, \autoref{tab:tab1-MIPsThroughTime}) with CMIP3, further complicated project attribution, leading to mirror sites creating secondary data repositories outside the ESGF licensing and access control \citep{balaji_requirements_2018}. In addition, compute services co-located with the primary ESGF replication nodes (e.g., PCMDI, DKRZ, and CEDA), other regional nodes (e.g., NCAR, NCI) and the replication of datasets into the commercial cloud \citep[e.g., PANGEO;][]{abernathey_cmip6_2020} began to serve larger and more diverse online communities, further complicating data access and use assessment.
 }
 \cred{
-CMIP data is now routinely used outside the physical climate science community and, more broadly, outside the academic community. Consequently, literature citations are an imperfect metric for quantifying impact. Regardless, as a representative "overview" paper exists for each phase, it is useful to evaluate MIP phase impact per citation dating back to the earliest of these publications \citep[FANGIO;][]{cess_intercomparison_1990}. The place citations in context, the seminal work of the \citep{charney_carbon_1979}
+CMIP data is now routinely used outside the physical climate science community and, more broadly, outside the academic community. Consequently, literature citations are an imperfect metric for quantifying impact. Regardless, as a representative "overview" paper exists for each phase, it is useful to evaluate MIP phase impact per citation dating back to the earliest of these publications \citep[FANGIO;][]{cess_intercomparison_1990}. To place citations in context, the seminal work of the \citep{charney_carbon_1979} report has also been included, noting that due to this not being published in the conventional peer-reviewed literature, Web of Science citation counts are not available. 
 }
 \cred{
 \autoref{fig:fig3-MIPPhaseCitations} citations per MIP phase, \autoref{fig:fig4-MIPCitations} citations per CMIP6 Community MIP, \autoref{fig:fig5-MIPDownloads} CMIP data downloads per experiment across the CMIP3, CMIP5 and CMIP6 phases, and \autoref{fig:fig6-MIPImpact} an attempt at documenting the broader impact of climate science chronologically aligned with the MIP phases that anchored the science on which these IPCC assessments, and community agreements were made.
 }
 \cred{
-Downloads, citations.. imperfect measures of impact.
+Downloads, citations.. imperfect measures of impact, but relevant measures of community interest in Community MIPs and their experiments.
 }
+
+in the end, it is the contributing modelling groups that decide what experiments to prioritize and simulation data to provide for broader community consumption
 
 \cred{
 CMIP6 closure, CMIP6Plus continuation as interim phase, allowing MIPs to continue to leverage infrastructure while preparation for CMIP7 occurs (with infrastructure overhaul)
