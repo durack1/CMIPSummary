@@ -82,6 +82,7 @@
 %\usepackage{subfig}
 %\usepackage{rotating}
 %%\usepackage{xparse} %% required for multicite custom function
+\usepackage[inkscapelatex=false]{svg} %% use SVG graphics
 
 
 %% define user commands
@@ -338,7 +339,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 % https://medium.com/@aaron_imn/a-quick-guide-to-use-scalable-vector-graphics-svg-on-overleaf-ca69448f7177
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{230512T112843_MIPEvolution-Counts.png}
+    \includesvg[width=1\linewidth]{241115T170138_Fig1.svg}
     \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origin of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists. \cred{Update before submission - sync with \autoref{tab:tab1-MIPsThroughTime}, \autoref{tab:tabAppA1-MIPExperiments}}}
     \label{fig:fig1-MIPGrowth}
 \end{figure}
@@ -782,7 +783,7 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 % Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includegraphics[width=\textwidth]{241111_durack1-cmip3-cmip5-cmip6-experiments.png}
+    \includesvg[width=\textwidth]{241115T170138_Fig5.svg}
     \caption{Recorded downloads across the three phases of CMIP, for which download records are available. Left the CMIP3 downloads across the 12 experiments defining phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads across the 37 experiments that defined the phase \citep[represented by the 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012} (\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}). And right the CMIP6 downloads, represented by the 20 MIPs that have published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 50\% of downloads were accounted for by the core CMIP/DECK simulations \citep{eyring_overview_2016}, with more than 30\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP). \cred{Cleanup and replot; appetite to tabulate these results?}}
     \label{fig:fig5-MIPDownloads}
 \end{figure*}
