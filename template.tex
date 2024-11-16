@@ -369,7 +369,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \textbf{"historical" period} & 1979-1988 & 1979-2001 & $\sim$ & $\sim$ & $\sim$1860-1999 & 1850-2010 & 1850-2014 & 1850-2022\\ \hline
 \textbf{Data volumes} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & 39 TB & $\sim$2 PB & >27 PB & $\sim$5 PB\\ \hline
 \textbf{Standard output variables/ Tables} & 32/4$^{1}$ & 114/8$^{2}$ & 23/5$^{3}$ & 28/5$^{4}$ & 143/6$^{5}$ & 986/18$^{6}$ & 2062/44$^{7}$ & $\sim$\\ \hline
-\textbf{Host infrastructure} & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP; ESG-CET & ESGF, \cred{41; Attn: Sebastien D., Sandro F. <2015 records} nodes & ESGF, 30 nodes & ESGF, \cred{$\sim$8} nodes\\ \hline
+\textbf{Host infrastructure} & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP; ESG-CET & ESGF, \cred{41; Attn: Sebastien D., Ruth P., Sandro F. <2015 records} nodes & ESGF, 30 nodes & ESGF, \cred{$\sim$8} nodes\\ \hline
 \textbf{Data formats} & Fortran formatted binary & Fortran formatted binary, GRIB {$\rightarrow$} P-DRS & GRIB {$\rightarrow$} P-DRS & GRIB {$\rightarrow$} P-DRS & CF netCDF-3 & CF netCDF-4 "classic" & CF netCDF-4 & CF netCDF-4\\ \hline
 \textbf{Data licenses} & Registered subprojects & Registered subprojects & Registered subprojects & Registered subprojects & Registered subprojects/Open & Open & CC-BY 4.0/CC0 & CC-BY 4.0/CC0\\ \hline
 \textbf{Operations begin} & \textbf{1989} & \textbf{1996} & \textbf{1996} & \textbf{1999} & \textbf{2004} & \textbf{2011} & \textbf{2018} & \textbf{2024}\\ \hline
@@ -391,7 +391,7 @@ When planning for CMIP6 began in 2013, the breadth of science represented and th
 
 Embodying the federated design, after the \citet{eyring_overview_2016} CMIP6 overview paper was published, MIP growth and additional experiment registrations were received, augmenting the experiment count from 190 to well over 200 experiments \citep{balaji_requirements_2018}. The project growth continued in the following years with two new MIPs, the Climate Dioxide Removal \citep[CDRMIP;][]{keller_carbon_2018} and Polar Amplification \citep[PAMIP;][]{smith_polar_2019} registered in 2018 (see \autoref{tab:tab2-CMIP6MIPs}). During the process of the IPCC AR6 assessment, the development of the COVID pandemic and some additional science questions led to a further augmentation of CMIP6 official experiments, with the Zero Emissions Commitment MIP \citep[ZECMIP;][]{jones_zero_2019} and COVIDMIP \citep{lamboll_modifying_2021} being defined. Their experiments folded into C4MIP and DAMIP, respectively (\autoref{tab:tab2-CMIP6MIPs}). In addition, some sensitivity experiments were also added to the DECK, enabling a single modelling group to contribute simulations comparing the impact of changed climate forcing from CMIP5 to CMIP6 in a single model large ensemble \citep{fyfe_significant_2021}.
 
-Before CMIP5, PCMDI and its collaborators managed all the data distribution responsibilities for AMIP and CMIP. With CMIP5's growth, it became clear that more distributed infrastructure support was needed, and new partnerships were established. To coordinate CMIP technical aspects, the WGCM established the WGCM Infrastructure Panel (WIP), which works in parallel and in collaboration with the CMIP Panel to ensure that CMIP data is made widely available. The WIP maintains standards and policies for model data sharing and ensures that the various infrastructure components can be integrated and function smoothly. Its work was critical to the success of CMIP6. 
+\cred{Should this para be moved into sect 4, supporting orgs?} Before CMIP5, PCMDI and its collaborators managed all the data distribution responsibilities for AMIP and CMIP. With CMIP5's growth, it became clear that more distributed infrastructure support was needed, and new partnerships were established. To coordinate CMIP technical aspects, the WGCM established the WGCM Infrastructure Panel (WIP), which works in parallel and in collaboration with the CMIP Panel to ensure that CMIP data is made widely available. The WIP maintains standards and policies for model data sharing and ensures that the various infrastructure components can be integrated and function smoothly. Its work was critical to the success of CMIP6. 
 
 At its conclusion, the CMIP6 project included 322 experiments, contributed across 23 MIPs (\autoref{tab:tab2-CMIP6MIPs}). When compared to the prior phases, this order of magnitude growth marked enhanced participation and complexity (\autoref{fig:fig1-MIPGrowth}), capturing an expansion of climate science, and the successful federation of the project structure and management \citep{eyring_overview_2016}.
 
@@ -791,7 +791,7 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{241115_durack1-AMIP-CMIP-IPCC-Impact-trim-large.png}
-    \caption{A time history of MIPs and their broader impact, with particular relevance to the IPCC Assessment Report phases and statements of human influence on the climate (in parentheses, FAR through AR6; see \autoref{sec:amip1And2} through \autoref{sec:cmip6ProjectDesign}). \cred{IPCC DDC (1997) missing, what else, ESG I, II, ?}}
+    \caption{A time history of MIPs and their broader impact, with particular relevance to the IPCC Assessment Report phases and statements of human influence on the climate (in parentheses, FAR through AR6; see \autoref{sec:amip1And2} through \autoref{sec:cmip6ProjectDesign}). \cred{ESG I, II, missing, what else?}}
     \label{fig:fig6-MIPImpact}
 \end{figure*}
 
@@ -861,7 +861,7 @@ Planning is underway for a future CMIP7 phase, with the expectation that project
 
 %\dataavailability{TEXT} %% use this section when having only data sets available
 
-\codedataavailability{Data underpinning figures in the paper, in addition to tabulated additional information can be viewed in a paper-dedicated GitHub repository at \href{}{}, or online using NBViewer at \url{https://nbviewer.org/github/durack1/CMIPSummary/blob/main/figuresAndTables.ipynb}.} %% use this section when having data sets and software code available
+\codedataavailability{Data underpinning figures in the paper, in addition to tabulated additional information can be viewed in a paper-dedicated GitHub repository at \url{https://github.com/durack1/CMIPSummary}, or online using NBViewer at \url{https://nbviewer.org/github/durack1/CMIPSummary/blob/main/figuresAndTables.ipynb}.} %% use this section when having data sets and software code available
 
 %\sampleavailability{TEXT} %% use this section when having geoscientific samples available
 
