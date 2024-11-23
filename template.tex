@@ -113,9 +113,9 @@
 
 \begin{document}
 
-\title{The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, and future}
+\title{The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, infrastructure and implementation}
 \mycomment{
-Veronika E alternate: The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, and infrastructure
+Veronika E alternate: The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, and infrastructure; it would be nice if the title could somehow include the word "infrastructure", as it is a big part of the paper. Maybe just replace future with infrastructure? Karl: I like that idea
 was: The Coupled Model Intercomparison Project phase 6 (CMIP6): A review of project evolution and future
 Pete G alternate: The Coupled Model Intercomparison Project phase 6 (CMIP6) was made possible by an evolution of project implementation
 Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of project history, evolution and future
@@ -144,7 +144,9 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \Author[8\textdagger]{Dean N.}{Williams} % ?
 \Author[9,10\textdagger]{Sebastien}{Denvil} % 0000-0002-6715-3533
 \Author[11,12]{Veronika}{Eyring} % 0000-0002-6887-4885
-\Author[13]{Martin}{Juckes} % 0000-0003-1770-2132
+\Author[13,14]{Martin}{Juckes} % 0000-0003-1770-2132
+\Author[1]{Gerald L.}{Potter} % 0000-0003-0291-7229
+\Author[15,6\textdagger]{Jean-Francois}{Lamarque} % 0000-0002-4225-5074
 %\Author[xx]{and past/present members of the}{WGCM Infrastructure Panel (WIP), CMIP Panel, and Earth System Grid Federation (ESGF)}
 \Author[30\textdagger]{others please}{add yourselves - will alphabetically reorder once final}
 
@@ -161,7 +163,9 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \affil[10]{Institut Pierre Simon Laplace (IPSL); Centre National de Recherche Scientifique (CNRS), Paris, France}
 \affil[11]{Deutsches Zentrum f{\"u}r Luft- und Raumfahrt (DLR), Institut f{\"u}r Physik der Atmosph{\"a}re, Oberpfaffenhofen, Germany}
 \affil[12]{University of Bremen, Institute of Environmental Physics (IUP), Bremen, Germany}
-\affil[13]{University of Oxford, and UK Research and Innovation (UKRI) Science and Technology Facilities Council (STFC), Oxfordshire, UK}
+\affil[13]{Kellogg College, University of Oxford, Oxford, UK}
+\affil[14]{UK Research and Innovation (UKRI) Science and Technology Facilities Council (STFC), Oxfordshire, UK}
+\affil[15]{SilverLining, Washington, District of Columbia, USA}
 %\affil[xx]{C/o PCMDI, LLNL, Livermore, California, USA}
 \affil[30]{Affiliation, location, country}
 \affil[\textdagger]{Formerly} %%\textdagger
@@ -221,14 +225,14 @@ Co-authors to engage
 
 \cred{
 \begin{itemize}
-    \item \textbf{\sout{Jiwoo Lee}, \sout{Curt Covey}, \underline{Jeff Painter}, Ken Sperber, Ben Santer, Charles Doutriaux, Tom Phillips, PCMDI}: (\autoref{sec:cmip6InContext}: A/CMIP history, \autoref{sec:CMIP6SupportingProjects-CoordEval}: Coordinated evaluation);
-    \item \textbf{\underline{Martin Juckes, STFC}} (\autoref{sec:CMIP6DR}: Variable request and standard output);
+    \item \textbf{\sout{Jiwoo Lee}, \sout{Curt Covey}, \sout{Jeff Painter}, PCMDI}: (\autoref{sec:cmip6InContext}: A/CMIP history, \autoref{sec:CMIP6SupportingProjects-CoordEval}: Coordinated evaluation);
+    \item \textbf{\sout{Martin Juckes, STFC}} (\autoref{sec:CMIP6DR}: Variable request and standard output);
     \item \textbf{\underline{Martina Stockhause, DKRZ}} (\autoref{sec:IPCC-DDC}: IPCC DDC; \autoref{sec:DataCitation}: Data citation);
     \item \textbf{\underline{Bryan Lawrence, David Hassell, UReading}}; Eric Guilyardi, IPSL (\autoref{sec:ModelDocumentation}: Model (and data) documentation);
     \item \textbf{\underline{Guillaume Levavasseur, Atef Ben-Nasser, IPSL}} (\autoref{sec:CMIPErrata}: CMIP errata);
     \item \textbf{\underline{Sandro Fiore, CMCC/UTrento}} (\autoref{sec:CMIPDataDownloads}: Data downloads);
     \item \textbf{\underline{Helene Hewitt, John Dunne}, CMIP Panel}: CMIP7 handoff;
-    \item \textbf{\underline{Vaishali Naik}}: (\autoref{sec:CMIP6SupportingProjects-input4MIPs} forcing);
+    \item \textbf{\sout{Vaishali Naik}}: (\autoref{sec:CMIP6SupportingProjects-input4MIPs} forcing);
     \item \textbf{\underline{Sebastien Denvil, Ruth Petrie}, CDNOT}: (\autoref{tab:tab1-MIPsThroughTime}/ESGF)
 \end{itemize}
 }
@@ -239,13 +243,13 @@ Co-authors/Reviewers to engage: Mon 18 Nov
 
 \cred{
 \begin{itemize}
-    \item \textbf{\underline{Jerry Meehl, Ron Stouffer}} (CMIP Panel, long-term leadership);
-    \item \textbf{\sout{Curt Covey}, \underline{Gerry Potter}, \underline{Dave Bader}} (DOE/PCMDI);
-    \item \textbf{\underline{Dean Williams}, \underline{Bryan Lawrence}, \underline{Jonathan Gregory}} (\autoref{sec:CMIPSupportingOrgsAndInfra}: ESGF/CF);
-    \item \textbf{\underline{Vaishali Naik}, \underline{Jean-Francois Lamarque}, \underline{Veronika Eyring}}; (\autoref{sec:CMIP6SupportingProjects-input4MIPs}: forcing data CMIP5 through CMIP6);
-    \item \textbf{\underline{Bryan Lawrence}, Balaji V., \underline{Sebastien Denvil}, \underline{Luca Cinquini}, Mark Elkington, \underline{Eric Guilyardi}, Michael Lautenschlager, \underline{Ruth Petrie}, \underline{Dean Williams}}: WIP Panel
-    \item \cblue{\textbf{Paul:}} \textbf{\sout{Curt Covey}, \underline{Jerry Meehl}, \underline{Ron Stouffer}, \underline{Veronika Eyring}, \underline{Jean-Francois Lamarque}, Cath Senior, Greg Flato, Sandrine Bony, Bjorn Stevens}: CMIP Panel
-    \item \cblue{\textbf{Paul:}} \textbf{Ghaleb Abdulla, Michael Lautenschlager, \underline{Sasha Ames}, \underline{V. Balaji}, Laura Carriere, Ben Evans, Robert Ferraro, \underline{Phil Kershaw}, \underline{Stephan Kindermann}, Tom Landry, \underline{Guillaume Levavasseur}, \underline{Forrest Hoffman}}: ESGF-XC; \textbf{Jay Hnilo, Sylvie Joussaume, Tsengdar Lee, Ben Evans, Annarita Mariotti}: ESGF-SC;    
+    \item \textbf{\underline{Jerry Meehl} \sout{Ron Stouffer}} (CMIP Panel, long-term leadership);
+    \item \textbf{\sout{Curt Covey}, \sout{Gerry Potter}, \sout{Dave Bader}}, Ken Sperber, Ben Santer, Charles Doutriaux, Tom Phillips (DOE/PCMDI);
+    \item \textbf{\sout{Dean Williams}, \underline{Bryan Lawrence}, \underline{Jonathan Gregory}} (\autoref{sec:CMIPSupportingOrgsAndInfra}: ESGF/CF);
+    \item \textbf{\sout{Vaishali Naik}, \sout{Jean-Francois Lamarque}, \sout{Veronika Eyring}}; (\autoref{sec:CMIP6SupportingProjects-input4MIPs}: forcing data CMIP5 through CMIP6);
+    \item \textbf{\underline{Bryan Lawrence}, Balaji V., \sout{Sebastien Denvil}, \underline{Luca Cinquini}, Mark Elkington, \underline{Eric Guilyardi}, Michael Lautenschlager, \underline{Ruth Petrie}, \sout{Dean Williams}}: WIP Panel
+    \item \cblue{\textbf{Paul:}} \textbf{\sout{Curt Covey}, \sout{Ron Stouffer}, \sout{Veronika Eyring}, \sout{Jean-Francois Lamarque}, \underline{Jerry Meehl}, Cath Senior, Greg Flato, Sandrine Bony, Bjorn Stevens}: CMIP Panel
+    \item \cblue{\textbf{Paul:}} \textbf{Ghaleb Abdulla, Michael Lautenschlager, \sout{Sasha Ames}, \underline{V. Balaji}, Laura Carriere, Ben Evans, Robert Ferraro, \underline{Phil Kershaw}, \underline{Stephan Kindermann}, Tom Landry, \underline{Guillaume Levavasseur}, \underline{Forrest Hoffman}}: ESGF-XC; \textbf{Jay Hnilo, Sylvie Joussaume, Tsengdar Lee, Ben Evans, Annarita Mariotti}: ESGF-SC;    
 \end{itemize} 
 }
 
@@ -296,6 +300,8 @@ https://documents.un.org/doc/resolution/gen/nr0/530/32/img/nr053032.pdf?OpenElem
 \subsection{Atmospheric Model Intercomparison Project phases (AMIP1/2)}
 \label{sec:amip1And2}
 
+\mycomment{Jerry P: I really don’t have anything to add other that The FANGIO project was specifically designed to look at feedback mechanisms. We invited the participants to run exactly the same experiment using a prescribed sea surface perturbation so by prescribing the climate change we sorted out various feedback mechanisms. We concluded that cloud feedback among different models was the major cause of the differences in model sensitivity.}
+
 Intercomparison of near-term weather, as simulated with different atmospheric models, occurred soon after the first global models were developed in the 1950s \citep[e.g.,][]{gates_ams_1992,edwards_history_2011}. These activities became more coordinated in the early-1970s through the guidance of the Working Group on Numerical Experimentation (WGNE) which was formed in 1967 under the Global Atmospheric Research Program (GARP), a precursor to the World Climate Research Programme \citep[WCRP;][]{gates_ams_1992}. The first internationally coordinated climate model experimentation occurred in the late 1980s with the scientifically targeted Feedback ANalysis of GCMs and In Observations (FANGIO) project. This project attracted contributions from 19 distinct atmospheric model configurations \citep{cess_methodology_1988, cess_interpretation_1989, cess_intercomparison_1990, cess_first_1991}. The nascent community progress quickly expanded into the first phase of the Atmospheric Model Intercomparison Project \citep[AMIP, hereafter referred to as AMIP1;][]{gates_amip_1992}, which was organized under the purview of the WGNE to help identify systematic errors, narrow the range of model results, and assist prioritizing model development to reduce those errors. The acronym AGCM (Atmospheric General Circulation Model) was coined to define model configurations for AMIP, with many of the contributing model configurations also including simplified land-surface representations \citep[e.g.,][]{budyko_heat_1961,manabe_climate_1969,vargas_godoy_global_2021}. AMIP1 provided a community AGCM experimental protocol with time-varying boundary conditions (later referred to as "forcing") of sea surface temperature (SST) and sea-ice for the 1979-1988 period, in addition to the recommended solar constant (1365 W m\textsuperscript{-2}) and carbon dioxide concentration \citep[345 ppm;][]{gates_amip_1991}. It augmented contributing atmospheric model configurations to 27, with 26 community "diagnostic subprojects" established to analyze the simulations \citep{gates_amip_1995}. The project expanded the required model output from simple global and zonal means for the perpetual July experiment requested in FANGIO to monthly mean time series (120 covering the 10-year AMIP1 period) in three dimensions. For many participating models, AMIP1 was the first opportunity to run their model longer than one annual cycle, with computer time provided by the Program for Climate Model Diagnosis and Intercomparison (PCMDI; see \autoref{sec:CMIPSupportingOrgsAndInfra}). Early AMIP1 results were assessed in the IPCC First Assessment Report \citep[FAR;][]{gates_validation_1990}. The successes of AMIP1, including the entrainment of a broader analysis community to assist in model evaluation, motivated the modelling community to revisit the exercise to determine if and how models were improving. To do so, a second phase was established (AMIP2), including an expanded experimental design with improved boundary conditions \citep{liang_pcmdi_1997, taylor_pcmdi_2000}. The AMIP2 requested model "Standard Output" (see \autoref{tab:tab1-MIPsThroughTime} and \autoref{sec:CMIP6DR}) was increased considerably beyond AMIP1, with selected higher frequency data to facilitate process-level analysis. In preparation for AMIP2, an AMIP Panel established by the WGNE reviewed 38 diagnostic subproject proposals \citep{gleckler_amip_2001}, ultimately leading to comprehensive and systematic model evaluation. As with AMIP1, the AMIP2 community analysis was assessed in the IPCC Second Assessment Report \citep[SAR;][]{gates_climate_1996}, with a focus on assessing mean errors and multi-model consistency across the archive \citep{gates_amip_1995}. The core AGCM experiment pioneered by AMIP1/2 is now a defacto modelling community benchmark experiment included in each subsequent phase (e.g., \autoref{tab:tabAppA1-MIPExperiments}).
 
 
@@ -308,8 +314,10 @@ CMIP2+ enabled research beyond the scope possible with CMIP1 and CMIP2, most not
 
 \mycomment{
 %%##### COMMENTS %#####
-Curt C to provide a sentence or two about the dramatic growth of the registered subprojects that had been the standard engagement way in AMIP1/2, CMIP1/2 and how that
-led to the opening up of the CMIP3 archive to open-access FTP, and no registered subprojects? - If I have that right? (already above)
+Curt C to provide a sentence or two about the dramatic growth of the registered subprojects that had been the standard engagement way in AMIP1/2, CMIP1/2 and how that led to the opening up of the CMIP3 archive to open-access FTP, and no registered subprojects? - If I have that right? (already above)
+
+ETH Zurich CMIP1/2 data pools
+https://data.iac.ethz.ch/atmos/index.html#/data/cmip2 - 3 GB, 526 files
 
 WGOMD establishment after WGCM-2 in Melbourne Oct 1998 - see https://eprints.soton.ac.uk/30149/1/040_wgcm4.pdf#Page=9 /sect3.5 also JSC-21 also see https://www.wcrp-climate.org/modelling-wgcm-publications
 CMIP1/2/2+ announcement emails for timing - https://web.archive.org/web/20040827091054/http://www-pcmdi.llnl.gov/cmip/
@@ -326,10 +334,10 @@ Also Meehl 2019 https://www.wcrp-climate.org/images/AGU2019/presentations/Sympos
 
 \mycomment{
 %%##### COMMENTS %#####
-Dave B 241120: I think the CMIP3 section understates the transformational change that occurred in data availability and distribution.
-Susan Solomon, WGI head, asked WGCM chairs John Mitchell and ?? (maybe J. Meehl) to prepare an archive of standard model experiments for use by the, and this is critical, the WG1 community. And, as you would have expected, WGCM then asked PCMDI  to take the lead. After talking to Dean, I responded “yes” with two requirements – the data needed to be in standardized format before being sent to PCMDI and that the users were expected to be familiar with the data and its format.
-Standardization of output format (Karl and Peter G.) and standing up the ESGF data server to have all of the CMIP3 data on line and in one place.  (Dean, Bob and Jenny) was not done in AMIP or CMIP before CMIP3. 
-The WGCM’s best guess at the time was that the data would be accessed by 50 users and the data volume would be ~17 TBytes. You know the rest of the story.
+Dave B 241120: I think the CMIP3 section understates the transformational change in data availability and distribution.
+Susan Solomon, WGI head, asked WGCM chairs John Mitchell and ?? (maybe J. Meehl) to prepare an archive of standard model experiments for use by the, and this is critical, the WG1 community. And, as you would have expected, WGCM then asked PCMDI  to take the lead. After talking to Dean, I responded “yes” with two requirements – the data needed to be in a standardized format before being sent to PCMDI, and the users were expected to be familiar with the data and its format.
+Before CMIP3, output format standardization (Karl and Peter G.) and setting up the ESGF data server to have all of the CMIP3 data online and in one place (Dean, Bob, and Jenny) were not done in AMIP or CMIP. 
+The WGCM’s best guess at the time was that 50 users would access the data, and the data volume would be ~17 TBytes. You know the rest of the story.
 %#####
 }
 
@@ -349,7 +357,13 @@ C4MIP ~2002 https://web.archive.org/web/20040804013119/http://www.c4mip.cnrs-gif
 
 
 \subsection{Coupled Model Intercomparison Project phase 4 (CMIP4)}
-\cred{\textbf{Attn: Jerry M., Ron S. representative of reality?}}
+\cred{\textbf{Attn: Jerry M. representative of reality?}}
+
+\mycomment{
+%%##### COMMENTS %#####
+Ron S: This text seems right to me. CMIP4 was labeled as such in hindsight
+%#####
+}
 
 While no formal phase was identified CMIP4, some CMIP3 follow-on simulations focused on climate change detection and attribution, specifically single-forcing experiments that held all but one of the 20C3M forcings fixed, were undertaken by several modelling groups. However, these were never formally contributed to a managed multi-model CMIP archive \citep{stouffer_cmip5_2017}. The early effort was a precursor to the CMIP6 Detection and Attribution Model Intercomparison Project \citep[DAMIP;][]{gillett_detection_2016}, building off early work focused on resolving the regional patterns of greenhouse gas and sulphate aerosol forcing \citep{taylor_response_1994, santer_towards_1995, hegerl_optimal_2000, gillett_detecting_2002, hegerl_20c3m_2003}. As planning began for the experiments targeting the next IPCC Fifth Assessment (AR5), aligning the CMIP and the IPCC report phases was an additional motivation to skip the CMIP4 identifier. This additionally also avoided unnecessary confusion with the developing coordinated carbon-cycle modelling activities, with the Coupled Climate-Carbon Cycle Model Intercomparison Project (C4MIP) an active collaborative project of the WGCM and the IGBP that had been running in parallel to the prior CMIP phases \citep[e.g.,][]{fung_full-form_2000, cox_modelling_2002, friedlingstein_climatecarbon_2006}. C4MIP was one of numerous parallel efforts leveraging the science coordination nurtured by the growing MIP community.
 \mycomment{
@@ -434,7 +448,13 @@ Also WGNE diagnostics, which likely built the original AMIP output list - https:
 
 When planning for CMIP6 began in 2013, the breadth of science represented and the broad and growing community of contributors and users was recognized. This led to broad community consultation involving the modelling centres whose simulations are the tangible substance of CMIP and the broad and growing communities that rely on CMIP model output for their work \citep{eyring_overview_2016}. The formal development of a core suite of experiments was the result, focused on model evaluation, connecting the activity to the preceding CMIP and AMIP phases. These experiments are referred to as the CMIP DECK (Diagnostic, Evaluation, and Characterization of Klima; "klima" being the German word for "climate"). The four primary DECK experiments were named amip, 1pctCO2, abrupt-4xCO2, and piControl. These, along with a historical simulation and ESM variants of the control and historical experiments (esm-piControl, esm-hist), were the CMIP6 entry cards \cite{eyring_overview_2016}. The reason for selecting these experiments was that those simulations are typically run by modelling groups during each model development cycle and therefore are not only valuable to benchmark model performance but also for comparing different model versions. These were previously considered CMIP5 "core" experiments \citep{stouffer_cmip5_2011}. The interest in CMIP6-Endorsed MIPs continued, and the initially endorsed number was 21 \citep[\autoref{tab:tab2-CMIP6MIPs};][]{eyring_overview_2016}. It was recognized that better coordination was needed to align the growing parallel and sometimes overlapping activities with an awareness of the demands imposed on modelling group resources. In planning CMIP6, the CMIP Panel distributed an open call for community MIP proposals in April 2014 to encourage and enhance synergies across activities to address this concern. To reduce duplication and burden on contributing modelling groups, a further standardization around the common standards and infrastructure developed and delivered in CMIP5 was recommended \citep{eyring_overview_2016}. The revised MIP proposals were reviewed in the 2015 Northern Hemisphere summer to prioritize activities that addressed the WCRP Grand Challenges in climate science.
 
-Embodying the federated design of MIPs and autonomy, after the \citet{eyring_overview_2016} CMIP6 overview paper was published, MIP growth and additional experiment registrations were received, augmenting the experiment count from 190 to well over 200 experiments \citep{balaji_requirements_2018}. The project growth continued in the following years with two new CMIP6-Endorsed MIPs, the Climate Dioxide Removal \citep[CDRMIP;][]{keller_carbon_2018} and Polar Amplification \citep[PAMIP;][]{smith_polar_2019} registered in 2018 (see \autoref{tab:tab2-CMIP6MIPs}). During the process of the IPCC AR6 assessment, the development of the COVID pandemic and some additional science questions led to a further augmentation of CMIP6 official experiments, with the Zero Emissions Commitment MIP \citep[ZECMIP;][]{jones_zero_2019} and COVIDMIP \citep{lamboll_modifying_2021} being defined, and their experiments were folded into C4MIP and DAMIP, respectively (\autoref{tab:tab2-CMIP6MIPs}). In addition, some sensitivity experiments were also added to the DECK, enabling a single modelling group to contribute simulations comparing the impact of changed climate forcing from CMIP5 to CMIP6 in a single model large ensemble \citep[e.g.,][]{fyfe_significant_2021,holland_new_2024}.
+Embodying the federated design of MIPs and autonomy, after the \citet{eyring_overview_2016} CMIP6 overview paper was published, MIP growth and additional experiment registrations were received, augmenting the experiment count from 190 to well over 200 experiments \citep{balaji_requirements_2018}. The project growth continued in the following years with two new CMIP6-Endorsed MIPs, the Climate Dioxide Removal \citep[CDRMIP;][]{keller_carbon_2018} and Polar Amplification \citep[PAMIP;][]{smith_polar_2019} registered in 2018 (see \autoref{tab:tab2-CMIP6MIPs}). During the process of the IPCC AR6 assessment, the development of the COVID pandemic and some additional science questions led to a further augmentation of CMIP6 official experiments, with the Zero Emissions Commitment MIP \citep[ZECMIP;][]{jones_zero_2019} and COVIDMIP \citep{lamboll_modifying_2021} being defined, and their experiments were folded into C4MIP and DAMIP, respectively (\autoref{tab:tab2-CMIP6MIPs}). In addition, in early 2020 some sensitivity experiments were also added to the DECK and ScenarioMIP, enabling a single modelling group to contribute simulations comparing the impact of changed climate forcing from CMIP5 to CMIP6 in a single model large ensemble \citep[e.g.,][]{fyfe_significant_2021,holland_new_2024,durack_cmip6_2024}.
+
+\mycomment{
+%%##### COMMENTS %#####
+https://github.com/WCRP-CMIP/CMIP6_CVs/issues/805 Proposed CMIP5-era experiment_ids for CMIP and ScenarioMIP
+%#####
+}
 
 By March 2020, the CMIP6 project included 322 experiments, contributed across 23 MIPs (\autoref{tab:tab2-CMIP6MIPs}). Compared to the prior phases, this order of magnitude growth marked enhanced participation and complexity (\autoref{fig:fig1-MIPGrowth}), capturing an expansion of climate science and the successful federation of the project structure and management.
 
@@ -499,9 +519,9 @@ While community consultation underpins the CMIP project planning and development
 \footnotesize{Notes: MIPs 1 through 21 above are registered in the CMIP6 Controlled Vocabulary (CMIP6\_CVs) GitHub repository, the primary source of CMIP6 registered information. Due to inflexible infrastructure, experiments defined by MIPs 22 and 23 were registered under an existing MIP (C4MIP and DAMIP respectively). \cred{Add number of experiments defined per MIP to meet 322 total?}}
 \end{table*}
 
-\section{CMIP supporting organisations and infrastructure}
+\section{CMIP supporting infrastructure and organisations}
 \label{sec:CMIPSupportingOrgsAndInfra}
-\cred{\textbf{Attn: Bryan L. GO-ESSP initiated in 2003, I can only find an archived website - how does this relate to ESGF? You, Michael, Balaji, Dean, Don, etc all listed. Would be useful to get your take}}
+\cred{\textbf{Attn: Bryan L. GO-ESSP initiated in 2003 \citep[mentioned in][]{williams_earth_2009}, I can only find an archived website - how does this relate to ESGF? You, Michael, Balaji, Dean, Don, etc all listed. Would be useful to get your take}}
 
 The early FANGIO success and the developing appetite to improve climate change understanding led to establishing the Program for Climate Model Diagnosis and Intercomparison (PCMDI) at Lawrence Livermore National Laboratory (LLNL) in 1989. PCMDI was created by the US Department of Energy (DoE) to develop improved methods and tools for the diagnosis, validation, and intercomparison of global climate models. LLNL was selected to host the PCMDI to leverage the co-location of the US DoE Research Scientific Computing Center (NERSC) computing resource (1974-1996) and the pre-existing DoE-supported atmospheric climate modelling efforts that were already underway \citep{potter_celebrating_2011}. The existence of the NERSC high-performance computing infrastructure was one of the significant advantages to the program, enticing 12 international modelling groups to participate in AMIP1 and providing compute cycles to run their codes to develop simulations. These groups ran the ten simulation years (1979-1988), storing their output on the same system \citep{gates_amip_1991, gates_amip_1992}. By 2000, the recognition that the development of supporting infrastructure, data standards, software and hardware that facilitated data delivery to climate scientists, relied upon to serve the growing MIP communities, was now of equal importance to intercomparison, science coordination, and experimental protocols that defined a project with the "I" in the MIP acronym interchangeable across the \textit{intercomparison} and \emph{infrastructure} terms \citep{gleckler_amip_2001}.
 
@@ -565,6 +585,11 @@ CF 2003 - https://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-c
 \mycomment{
 %%##### COMMENTS %#####
 \textbf{Attn: IPSL folks; MIP era realm evolution, dovetailing Variable request section}
+Google docs yet to be finalized
+CMIP6 global atts - https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit
+CMIP6 output metadata reqs - https://docs.google.com/document/d/1os9rZ11U0ajY7F8FWtgU4B49KcB59aFlBVGfLC4ahXs/edit
+XML filenames/exps across eras - https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/edit
+CMIP5 standard output update - https://docs.google.com/document/d/1qOrdq6YOv8Tyx_NuqfKEw_EFBX_cvp8WTmRDzfuqn5s/edit
 %#####
 }
 
@@ -607,13 +632,11 @@ For CMIP6Plus (in preparation for CMIP7) the planning has been to address issues
 
 \subsection{Variable request and standard output}
 \label{sec:CMIP6DR}
-\cred{\textbf{Attn: Martin J.}}
+
 \mycomment{
 %%##### COMMENTS %#####
-Consider realm/frequency evolution across mip eras. RE: realm evolution, started in CMIP3 with tables (A1, O1, etc), built around the history files, from model components - so all ocean history files contained ocean, and sea ice variable, etc - Karl to augment; RE: frequencies, 3D fields, vs 2D fields were separated across tables as these had different temporal requests, to keep request sizes down; \autoref{tab:tab1-MIPsThroughTime} and \autoref{tab:tabAppB1-MIPStandardOutput}
-
+Consider realm/frequency evolution across mip eras. RE: realm evolution, started in CMIP3 with tables (A1, O1, etc), built around the history files, from model components - so all ocean history files contained ocean, and sea ice variable, etc - Karl to augment; RE: frequencies, 3D fields, vs 2D fields were separated across tables as these had different temporal requests, to keep request sizes down; \autoref{tab:tab1-MIPsThroughTime} and \autoref{tab:tabAppB1-MIPStandardOutput}.
 Old: A critical component MIP experimentation is specifying what simulation output to save. It is a trade-off between the efforts required by modelling groups to fulfill a request, available storage, and existing and potential future science needs. Despite advancing technology, saving everything (i.e., all prognostic variables at every timestep) has never been realistic. In AMIP1/2, CMIP1/2/2+/3/5, consideration was made in consultation with MIP chairs and modelling groups about what questions or analyses will be pursued with a given simulation that dictates how much data is saved.
-
 As MIPs emerged, more scientists began analyzing simulations, and it was not always clear a priori what would be studied.
 %#####
 }
@@ -671,11 +694,16 @@ While addressing current climate science questions through coordinated experimen
 
 For AMIP1/2 and early CMIP phases, the requested standard output was shipped from modelling centres on hard drives or, in some cases, transmitted via FTP to PCMDI. To facilitate management and analysis, PCMDI developed data formats and software packages for storing and visualizing gridded climate data. Rather than attempt to read data stored in several different native formats and structures, the contributed data was rewritten into the PCMDI "standard" DRS \citep[Data Retrieval and Storage;][]{drach_data_1995} format, a netCDF file format precursor, and these data were made available to AMIP subproject registrants through a PCMDI file transfer protocol (FTP) server \citep[see \autoref{tab:tab1-MIPsThroughTime};][]{gates_amip_1995}.
 
-By 2000, there was recognition in the US that connecting parallel climate science activities and the associated data archives across institutes could maximize investments across independently funded projects. Besides the PCMDI single-site archive of internationally-contributed AMIP and CMIP data, other institutes were beginning to share data proactively. Activities of this kind were underway at the National Center for Atmospheric Research (NCAR, US) with the Community Climate System Model (CCSM) and the Carbon-Land Model Intercomparison Project (C-LAMP) hosted at Oak Ridge National Laboratory (ORNL, US), and copies of data produced by several projects were hosted on the NERSC system at the Lawrence Berkeley National Laboratory (LBNL, US; 1996-). These groups began collaborating to develop a federated US infrastructure supporting data sharing and archival. This became known as the "Earth System Grid" \citep[ESG I;][]{bernholdt_earth_2007} and was supported by DoE. It quickly gathered momentum with an extension of support from the DoE Scientific Discovery through Advanced Computing (SciDAC) program in 2002 in a second phase \citep[ESG II;][]{williams_earth_2009}. By late 2004, ESG II began distributing the CMIP3 data in preparation for the IPCC Fourth Assessment Report (AR4). By the conclusion of CMIP3 in 2009, the 39 terabyte archive of model data had accumulated an order of magnitude more downloads \citep[420 terabytes;][]{ananthakrishnan_building_2007, williams_earth_2009}. Throughout the project's lifetime, the hardware hosting the CMIP3 archive had occasional failures, and there was a recognition that the centralized dependence on a single operational system was unsustainable in the long term, particularly with the growing demand to access and download these data.
+By 2000, there was recognition in the US that connecting parallel climate science activities and the associated data archives across institutes could maximize investments across independently funded projects. Besides the PCMDI single-site archive of internationally-contributed AMIP and CMIP data, other institutes were beginning to share data proactively. Activities of this kind were underway at the National Center for Atmospheric Research (NCAR, US) with the Community Climate System Model (CCSM) and the Carbon-Land Model Intercomparison Project (C-LAMP) hosted at Oak Ridge National Laboratory (ORNL, US), and copies of data produced by several projects were hosted on the NERSC system at the Lawrence Berkeley National Laboratory (LBNL, US; 1996-). These groups began collaborating to develop a federated US infrastructure supporting data sharing and archival. This became known as the "Earth System Grid" \citep[ESG I;][]{bernholdt_earth_2007} and was supported by DoE. It quickly gathered momentum with an extension of support from the DoE Scientific Discovery through Advanced Computing (SciDAC) program in 2002 in a second phase \citep[ESG II;][]{williams_earth_2009}. By late 2004, ESG II began distributing the CMIP3 data in preparation for the IPCC Fourth Assessment Report (AR4). By the conclusion of CMIP3 in 2009, the 39 terabyte archive of model data (see \autoref{tab:tab1-MIPsThroughTime}) had accumulated an order of magnitude more downloads \citep[470 terabytes;][]{ananthakrishnan_building_2007, williams_earth_2009}. Throughout the project's lifetime, the hardware hosting the CMIP3 archive had occasional failures, and there was a recognition that the centralized dependence on a single operational system was unsustainable in the long term, particularly with the growing demand to access and download these data.
 
 By 2006, planning for the IPCC Fifth Assessment Report (AR5) was underway, and with it, CMIP5 (\autoref{sec:cmip5ProjectDesign}). The previous ESG successes led to the development of the next-generation Earth System Grid Center for Enabling Technologies (ESG-CET), which involved an expanded collaboration of institutions including Argonne National Laboratory (ANL, US), Los Alamos National Laboratory (LANL, US), National Oceanographic and Atmospheric Administration Pacific Marine Environmental Laboratory (NOAA-PMEL, US) and the University of Southern California Information Sciences Institute (US) \citep{ananthakrishnan_building_2007}, supported by the US DoE Offices of Advanced Scientific Computing Research (ASCR) and Biological and Environmental Research (OBER).
 
-By 2008, infrastructure planning for CMIP5 had commenced, and recognition was building that there might be opportunities to connect the somewhat US-centric ESG-CET with complementary efforts in Europe \citep{williams_global_2016}. An agreement was signed in December 2008 between PCMDI, the British Atmospheric Data Centre (BADC; subsequently the Centre for Environmental Data Analysis, CEDA, UK), and the World Data Centre for Climate, German Climate Computing Centre (DKRZ, Germany), committing to development and support of the international Earth System Grid Federation (ESGF), which would, as a primary responsibility, serve the needs of CMIP and related activities. The two European centres were leads of the IPCC Data Distribution Centre (IPCC DDC; \autoref{sec:IPCC-DDC}), collating and archiving the climate model data used in preparing previous IPCC Assessment Reports, and they had funding to support CMIP. The ESGF goal was to develop a distributed federated architecture with dedicated compute storage resources at each of the three centres to facilitate the publication of CMIP5 model data at the most convenient location. This data could then be replicated across the federation, allowing the users to download or access CMIP5 data from whatever ESGF node served them best \citep{williams_earth_2011}. In addition to the three core centres, additional ESGF nodes were established at the National Computational Infrastructure (NCI, Australia), National Aeronautics and Space Administration Jet Propulsion Laboratory (NASA-JPL, US), NERSC (LBNL, US), ORNL, and NCAR. During peak interest in CMIP5, the ESGF had 31 active nodes publishing data from contributing modelling groups \citep[see \autoref{tab:tab1-MIPsThroughTime};][]{williams_global_2016}.
+By 2008, infrastructure planning for CMIP5 had commenced, and recognition was building that there might be opportunities to connect the somewhat US-centric ESG-CET with complementary efforts in Europe \citep{williams_global_2016}. An agreement was signed in December 2008 between PCMDI, the British Atmospheric Data Centre (BADC; subsequently the Centre for Environmental Data Analysis, CEDA, UK), and the World Data Centre for Climate, German Climate Computing Centre (DKRZ, Germany), committing to development and support of the international Earth System Grid Federation (ESGF), which would, as a primary responsibility, serve the needs of CMIP and related activities. The two European centres were leads of the IPCC Data Distribution Centre (IPCC DDC; \autoref{sec:IPCC-DDC}), collating and archiving the climate model data used in preparing previous IPCC Assessment Reports, and they had funding to support CMIP. The ESGF goal was to develop a distributed federated architecture with dedicated compute storage resources at each of the three centres to facilitate the publication of CMIP5 model data at the most convenient location. This data could then be replicated across the federation, allowing the users to download or access CMIP5 data from whatever ESGF node served them best \citep{williams_earth_2011}. In addition to the three core centres, additional ESGF nodes were established at the National Computational Infrastructure (NCI, Australia), National Aeronautics and Space Administration Jet Propulsion Laboratory (NASA-JPL, US), NERSC (LBNL, US), ORNL, and NCAR. During peak interest in CMIP5, the ESGF had 30 active nodes publishing data from contributing modelling groups \citep[see \autoref{tab:tab1-MIPsThroughTime};][]{williams_global_2016}.
+
+\cred{Karl to describe CMIP6 era of ESGF: The ESGF success in delivering CMIP5 led to the CMIP6 planning that began in 2013. the \citep{petrie_coordinating_2021} paper lays out the CMIP6-era infrastructure in some detail - summarising that information in 1-2 paras would be perfect. \citep{petrie_coordinating_2021} also which lays out how the data challenges etc went - fortify the CMIP5-era systems to make CMIP6 a success
+WGCM17?
+Also \citep{kershaw_esgf_2020} which laid out plans for an architecture overhaul, post CMIP6-era infrastructure
+}
 
 \mycomment{
 %%##### COMMENTS %#####
@@ -686,8 +714,6 @@ ESG-CET NCAR, LLNL, ORNL https://extranet.gfdl.noaa.gov/~vb/curator/AR5-20071017
 Middleton, Foster and Williams et al., 2006: Earth System Grid II final report 2001-2006 SCIDAC https://www.osti.gov/servlets/purl/1113798 https://doi.org/10.2172/1113798
 %#####
 }
-
-\cred{Karl? Dean? to describe the CMIP6 era of ESGF: The ESGF success in delivering CMIP5 led to the CMIP6 planning that began in 2013. WGCM17 - also \citep{kershaw_esgf_2020} which laid out plans for an architecture overhaul - and \citep{pascoe_documenting_2020} which lays out how the data challenges etc went - fortify the CMIP5-era systems to make CMIP6 a success}
 
 
 \subsection{The IPCC Data Distribution Centre (IPCC DDC)}
@@ -704,25 +730,13 @@ Text available \url{https://docs.google.com/document/d/1aQbZj6xQYr-5_Ub9tw9hucm6
 
 \subsection{Infrastructure for the European Network for Earth System Modelling (IS-ENES)}
 \label{sec:IS-ENES}
-\cblue{\textbf{Karl/Paul to draft}}
+\cred{\textbf{Attn: Bryan L.}}
 
-In parallel to the building coordination across institutions and agencies in the US (see \autoref{sec:earthSystemGridFederation}), a similar coordinated approach was being developed across CMIP contributing institutions and agencies across Europe. The InfraStructure for the European Network for Earth System modelling (IS-ENES) consortium was officially established in March 2009 supported by the European Commission Capacities Programme.
+In parallel to the building coordination across institutions and agencies in the US (see \autoref{sec:earthSystemGridFederation}), a similar coordinated approach was being developed in Europe across CMIP contributing institutions and agencies. The InfraStructure for the European Network for Earth System modelling (IS-ENES) consortium was officially established in March 2009 supported by the European Commission Capacities Programme.
 
-Over three phases of the project, extending from 2009 through 2023, the project coordinated the activities of X contributing institutions across 15 countries.
+Over three phases of the project, extending from 2009 through 2023, the project coordinated the activities of 30 contributing institutions across 15 countries Many of these projects led or collaborated on the activities summarised in the preceding and following sections (e.g., \autoref{sec:CFConventions} through \autoref{sec:CMIP6DR}, \autoref{sec:ModelDocumentation} through \autoref{sec:CMIPDataDownloads}, and \autoref{sec:CMIP6SupportingProjects-CoordEval}).
 
-Goals: The project aimed to coordinate European activities across climate modelling, computer science, data management, climate impacts and climate services
-
-Outputs: 
-
-\cred{Do we have written materials for this, note \url{https://is.enes.org/objectives}, see also \url{https://is.enes.org/isenes-phase-1-project}, \url{https://is.enes.org/isenes-phase-2-project}, \url{https://is.enes.org/partners}}
-
-\cred{
-\begin{itemize}
-	\item Pursue the integration of the Earth’s climate system modelling community and prepare the sustainability of its infrastructure
-	\item Foster the common development of models and tools, and the efficient use of High-Performance Computing
-	\item Support the exploitation of model data by the Earth system science community, the climate change impact community and the climate service community
-\end{itemize}
-}
+IS-ENES aimed to coordinate European activities across climate modelling, computer science, data management, climate impacts and climate services, and was responsible for much of the coordinated infrastructure work that led to the delivery of the European contribution to CMIP5 and CMIP6 phases. It led to the development of common models and tools, and the efficient use of High-Performance Computing across contributing infrastructure. The project also paved the way for the exploitation of model data by the Earth system science community, the climate change impact community and the climate service community, with much of this work continuing through original member institutions today.
 
 
 \subsection{Model (and data) documentation}
@@ -757,7 +771,7 @@ Following CMIP5, for CMIP6, a more ambitious plan was established to meet the ne
 %%##### COMMENTS %#####
 https://www.ipcc-data.org/sim/gcm_monthly/AR5/WG1-Archive.html
 https://www.wdc-climate.de/ui/statistics?type=cmip6_doi_registration
-https://commons.datacite.org/repositories/8orcv25 - Master overview 6012 citations
+https://commons.datacite.org/repositories/8orcv25 - Master overview 6720 citations
 https://www.wdc-climate.de/ords/f?p=127:2 - CMIP6 data references
 https://www.wdc-climate.de/ui/cmip6?input=CMIP6.ScenarioMIP.NOAA-GFDL.GFDL-CM4.ssp585
 https://www.wdc-climate.de/ui/cmip6?input=input4MIPs.CMIP6.CMIP.PCMDI
@@ -781,6 +795,44 @@ The growing coherence across successive CMIP archives allowed for more complete 
 \label{sec:CMIPDataDownloads}
 \cblue{\textbf{Paul to draft}}
 
+As the infrastructure collating and serving the building multi-model archives became better coordinated, questions began to be raised, both how much was there, how was this distributed across contributing experiments, and by download requests, what users were targeting for download. For CMIP3, this was relatively simple, as a single location and ESG II system hosted the complete archive, statistics were readily available, for both the total project data volume (see \autoref{tab:tab1-MIPsThroughTime}, \autoref{sec:earthSystemGridFederation}) and for total downloads, which by the end of the project in 2009 (first data publication occurred in late 2004) were well in excess of an order of magnitude larger than 39 TB total project footprint \citep{ananthakrishnan_building_2007,williams_earth_2009}.
+
+As the ESGF federated design was realised, in preparation for CMIP5 (see \autoref{sec:earthSystemGridFederation}, the added complexity - no one ESGF node would initially host the data, and users downloading data could download from any node, not just a single one - brought a new challenge for CMIP infrastructure, how best to quantify project size by modelling group contributions, and the user demands. This new challenge was a focus of discussions at just commenced ESGF Face-to-face meetings, with the metrics issue and the need for a dashboard documenting the number of published data, downloads and users (Williams et al., 2011 OSTI)
+
+Through IS-ENES funding, CMCC..
+
+Imperfect:
+CMIP3, single node, single report, 2004-2008
+CMIP5, 30 nodes, 7 reporting statistics (all CMIP6 data node), 2018-present (missing 2010-2015, 2015-2018)
+CMIP6, 30 nodes, 9 reporting statistics, 2018-present
+Number of downloads (how time split across files matters), or per GB downloads
+
+
+
+The increased models’ resolution in the development of
+comprehensive Earth System Models is rapidly leading to a
+very large climate simulations output that poses significant
+scientific data management challenges in terms of data
+sharing, processing, analysis, visualization, preservation,
+curation, and archiving [1][2][3].
+
+It provides a
+distributed and scalable software infrastructure responsible
+for capturing a comprehensive set of data usage and data
+archive metrics both at the single site and federation level. The
+data usage information is related to the number of downloads
+and successful downloads and the number of distinct
+downloaded files, grouped by variable, model, experiment, etc.
+On the other hand, the data archive information is related to
+the total number of published datasets, total data volume and
+CMIP5 models and modelling institutes. All the above metrics
+relate to both cross and specific projects that are very notable
+in the climate community, such as, CMIP5, CMIP6, Obs4MIPs
+and CORDEX. From a Science Gateway perspective, the
+ESGF Dashboard presents the collected metrics through its
+Community Gateway (ESGF Dashboard User Interface). 
+
+
 \cred{Attn: Sandro Fiore}
 \cred{
 \begin{itemize}
@@ -799,7 +851,6 @@ In addition to the core infrastructure that has delivered past CMIP phases, seve
 
 \subsection{input4MIPs: climate forcing for MIP experiments}
 \label{sec:CMIP6SupportingProjects-input4MIPs}
-\cred{\textbf{Attn: Vaishali N.}}
 
 As the scientific scope and experiment count broadened through MIP phases (\autoref{fig:fig1-MIPGrowth}, \autoref{tab:tab1-MIPsThroughTime}), the need for climate "forcing" datasets to guide simulation evolution continued to increase. For the initial AMIP1 experiment (1979-1988; AGCM), greenhouse gas concentration and solar irradiance were preset as fixed fields (CO$_{2}$ 345 ppm, and 1365 Wm$^{-2}$ respectively), with time-varying sea surface temperature (SST) and sea ice boundary conditions imposed. As model and experiment complexity increased, more and more complex suites of forcing agents needed to be collated for modelling centre use.
 
@@ -947,6 +998,10 @@ CMIP5 $\sim$35 data nodes publishing, 7 reporting download statistics (all CMIP6
 \label{sec:CMIP6Completion}
 
 \cred{
+For CMIP6Plus (in preparation for CMIP7) the planning has been to address issues raised with the CMIP6 infrastructure (a high-level overview of the issues are outlined in the CMIP6Plus whitepaper here. Numerous other feedback has been collected over the past years, with some more complete than others, e.g., feedback from CERFACS, CNRM, and IPSL here). We have recognized repeating issues over CMIP phases that are far better addressed modularly. After broad consultation, the approach being prototyped through CMIP6Plus\_CVs (https://github.com/WCRP-CMIP/CMIP6Plus\_CVs) is now in place. The CVs Drop-in, held online on the 8 November 2023 summarised the plans and progress (slides here, other materials here, drop-in report here, recording ?here?). It was an open opportunity for feedback across everyone interested in contributing. Indeed both GitHub repositories are open access, with anyone with a GitHub account able to clone the repo, create issues or submit a pull request with content.
+}
+
+\cred{
 \begin{itemize}
 	\item Broad community consultation
 	\item Larger, more coordinated activities
@@ -963,8 +1018,11 @@ CMIP5 $\sim$35 data nodes publishing, 7 reporting download statistics (all CMIP6
 \cred{\textbf{awaiting sections to be written above}}
 
 \cred{\textbf{John D., Helene H. handoff}}
+Overview paper link \url{https://office.wcrp-cmip.org/Products/Files/DocEditor.aspx?fileid=9733}
 
 \cred{Call out \citet{shukla_strategies_2009,shukla_toward_2010}, \citep{jakob_need_2023}, \citep{stevens_perspective_2024} commentary papers highlighting "operational" vs "science innovation" pressures have been growing across phases}
+
+\citep{dunne_climate_2023} - closest thing to CMIP7 overview paper
 
  The next phase of CMIP (CMIP7) is underway with the expectation that project data will become available in 2025. Following the CMIP6 broad expansion, CMIP7 will likely further federate discrete activities and encompass climate model simulations from an even broader contributor pool. Infrastructure providers are undertaking considerable updates to modernize the supporting hardware and software for project delivery to facilitate the transition. In preparation for the transition, continued publications to the CMIP6 archive will cease in early 2025, with the project sunsetting soon after that. CMIP6 data will continue to be made available through the federated ESGF network, however, the priority for data curation and maintenance will shift in favour of CMIP7 soon after the first datasets become available.
 
