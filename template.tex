@@ -144,7 +144,8 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \Author[8\textdagger]{Dean N.}{Williams} % ?
 \Author[9,10\textdagger]{Sebastien}{Denvil} % 0000-0002-6715-3533
 \Author[11,12]{Veronika}{Eyring} % 0000-0002-6887-4885
-%\Author[13]{and past/present members of the}{WGCM Infrastructure Panel (WIP), CMIP Panel, and Earth System Grid Federation (ESGF)}
+\Author[13]{Martin}{Juckes} % 0000-0003-1770-2132
+%\Author[xx]{and past/present members of the}{WGCM Infrastructure Panel (WIP), CMIP Panel, and Earth System Grid Federation (ESGF)}
 \Author[30\textdagger]{others please}{add yourselves - will alphabetically reorder once final}
 
 % \affil % Affiliations
@@ -160,7 +161,8 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \affil[10]{Institut Pierre Simon Laplace (IPSL); Centre National de Recherche Scientifique (CNRS), Paris, France}
 \affil[11]{Deutsches Zentrum f\"ur Luft- und Raumfahrt (DLR), Institut f\"ur Physik der Atmosphäre, Oberpfaffenhofen,Germany}
 \affil[12]{University of Bremen, Institute of Environmental Physics (IUP), Bremen,Germany}
-%\affil[13]{C/o PCMDI, LLNL, Livermore, California, USA}
+\affil[13]{University of Oxford, and UK Research and Innovation (UKRI) Science and Technology Facilities Council (STFC), Oxfordshire, UK}
+%\affil[xx]{C/o PCMDI, LLNL, Livermore, California, USA}
 \affil[30]{Affiliation, location, country}
 \affil[\textdagger]{Formerly} %%\textdagger
 
@@ -710,7 +712,7 @@ Text available \url{https://docs.google.com/document/d/1aQbZj6xQYr-5_Ub9tw9hucm6
 
 \cred{Peter G.: Before model intercomparisons were firmly established community exercises, high-level model documentation was intermittently provided in peer-reviewed publications with more detailed institutional gray literature reports. Early in AMIP, it was recognized that improved documentation could help analysts better interpret their results. A first attempt to coordinate model documentation was made available for the AMIP1 simulations on the PCMDI website \citep{phillips_documentation_1996}}
 
-\cred{David noted WIP telco 241022: CMIP5/Metafor \citep{guilyardi_cmip5_2011} overly constrained [drop down boxes]; CMIP6/ES-Docs \citep{pascoe_documenting_2020} too loosely constrained; CMIP7 EMD this should hopefully hit the sweet spot; Note comprehensive model documentation allows for more quantitative use of data; model genealogy (cf Knutti et al., ${\sim}$2010) can be incorporated into multi-model assessment}
+\cred{David noted WIP telco 241022: CMIP5/Metafor \citep{guilyardi_cmip5_2011} overly constrained [drop down boxes]; CMIP6/ES-Docs \citep{pascoe_documenting_2020} too loosely constrained; CMIP7 EMD this should hopefully hit the sweet spot; Note comprehensive model documentation allows for more quantitative use of data; model genealogy \citep[e.g.,][]{masson_climate_2011,knutti_climate_2013} can be incorporated into multi-model assessment}
 
 \cred{Ron S: The notable MOM ocean model documentation needs to be noted here. It was the first complete model documentation that I know, and it is still the best that I know.}
 
@@ -784,9 +786,9 @@ AMIP2 incorporated additional greenhouse gases, ozone, aerosols, and more comple
 
 With the definition of the CMIP3 20C3M/historical experiment \citep[$\sim$1850-2000;][]{meehl_wcrp_2007}, considerable augmentation occurred, with the first historical period datasets hosted by PCMDI alongside existing early AMIP/CMIP data. These data mainly addressed the SRES future scenarios \citep[2001-2100/2200/2300;][]{nakicenovic_summary_2000}, but did include a small number of historical period forcings including those that had already been collated for the AMIP2 experiment period (1979-2001; \autoref{tab:tab1-MIPsThroughTime}). Additional forcing needs were met independently by each contributing modelling group and model configuration.
 
-For CMIP5, increased model complexity (many models included atmospheric chemistry by this stage) necessitated a far more comprehensive approach to meet the historical experiment forcing needs \citep[1850-2005;][]{taylor_overview_2012}, and to share the workload, considerable coordination across modelling groups occurred. For anthropogenic emissions of short-lived climate forcers (SLCFs 1850-2000; e.g., CH$_{4}$, CO, NOx, etc) dataset creation was led by NCAR, with contributions from a broad community including observationalists and climate modellers \citep{lamarque_historical_2010}. A similar community approach was taken with well-mixed greenhouse gases (WMGHGs; 1765-2300), however, this dataset development was dovetailed with the generation of the RCP future scenario data extending out to 2300 and consequently also entrained and even broader Integrated Assessment Modelling (IAM) community tasked with scenario development \citep{meinshausen_rcp_2011}. Additional dataset developments contributed to the project fell back to an existing community of researchers who had developed earlier datasets. As an example of forcing differences across the historical simulations, the NOAA-GFDL GFDL-CM3 \cite{donner_dynamical_2011} used solar variability \citep{frohlich_solar_2004}, volcanic stratospheric aerosol emissions \citep{stenchikov_arctic_2006} and land-use changes \citep{hurtt_underpinnings_2006}, whereas NASA-GISS GISS-E2 \citep{miller_cmip5_2014} used solar variability (Wang et al 2005), with spectral variations from Lean 2009, volcanic stratospheric aerosol emissions \citep[][updated]{sato_stratospheric_1993}, and land-use changes Pongratz et al 2008 and [HYDE3.0](Klein Goldweijk 2010) thereafter. However, during CMIP5, there was limited standardisation of forcing datasets, particularly those used in the historical and piControl experiments, which differed markedly across modelling groups \citep[e.g.,][]{donner_dynamical_2011,miller_cmip5_2014} due to the lack of a centralised and coordinated approach.
+For CMIP5, increased model complexity (many models included atmospheric chemistry by this stage) necessitated a far more comprehensive approach to meet the historical experiment forcing needs \citep[1850-2005;][]{taylor_overview_2012}, and to share the workload, considerable coordination across modelling groups occurred. For anthropogenic emissions of short-lived climate forcers (SLCFs 1850-2000; e.g., CH$_{4}$, CO, NOx, etc) dataset creation was led by NCAR, with contributions from a broad community including observationalists and climate modellers \citep{lamarque_historical_2010}. A similar community effort was taken with tropospheric and stratospheric ozone, led by the German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re \citep[DLR;][]{cionni_ozone_2011}. Well-mixed greenhouse gases (WMGHGs; 1765-2300) were also community-developed, however, this dataset development was dovetailed with the generation of the RCP future scenario data extending out to 2300 and consequently also entrained and even broader Integrated Assessment Modelling (IAM) community tasked with scenario development \citep{meinshausen_rcp_2011}. Additional dataset developments contributed to the project fell back to an existing community of researchers who had developed earlier datasets. However, during CMIP5, there was limited standardisation of forcing datasets, particularly those used in the historical and piControl experiments, which differed markedly across modelling groups due to the lack of a centralised and coordinated approach. As an example of forcing differences across the historical simulations, the NOAA-GFDL GFDL-CM3 \citep{donner_dynamical_2011} used solar variability \citep{frohlich_solar_2004}, volcanic stratospheric aerosol emissions \citep{stenchikov_arctic_2006} and land-use changes \citep{hurtt_underpinnings_2006}. Whereas NASA-GISS GISS-E2 \citep{miller_cmip5_2014} used solar variability \citep{wang_modeling_2005}, with spectral variations \citep[][updated 2009]{lean_new_2003}, volcanic stratospheric aerosol emissions \citep[][updated]{sato_stratospheric_1993}, and land-use changes \citep{pongratz_reconstruction_2008} and HYDE3.0 \citep[e.g.,][]{klein_goldewijk_hyde_2011} thereafter.
 
-For CMIP6, it was recognised that forcing dataset coordination was needed. The input datasets for model intercomparison projects (input4MIPs) ESGF project was established, and the collation of forcing data required for the CMIP6 DECK experiments commenced. In addition, the collation of additional data supporting 14 other Community MIPs was also published and made available to participating groups \citep{durack_toward_2018}. The input4MIPs project collated next-generation forcing datasets extending from 1850 to 2014 for SLCFs \citep{hoesly_historical_2018,feng_generation_2020}, biomass burning \citep[e.g., fire;][]{van_marle_historic_2017}, land use changes \citep{hurtt_harmonization_2020,chini_land-use_2021}, WMGHGs \citep{meinshausen_historical_2017}, volcanic stratospheric aerosol optical depth \citep[e.g.,][]{aubry_new_2020,aubry_independent_2021,aubry_new_2023}, ozone \citep{checa-garcia_historical_2018}, nitrogen deposition \citep{hegglin_ccmi_2016}, solar irradiance \citep{matthes_solar_2017}, SSTs and sea ice boundary conditions \citep{durack_pcmdi_2018} and anthropogenic aerosol optical properties \citep[e.g.,][]{fiedler_anthropogenic_2019}.
+For CMIP6, it was recognised that forcing dataset coordination was needed. The input datasets for model intercomparison projects (input4MIPs) ESGF project was established, and the collation of forcing data required for the CMIP6 DECK experiments commenced. In addition, the collation of additional data supporting 14 other Community MIPs was also published and made available to participating groups \citep{durack_toward_2018}. The input4MIPs project collated next-generation forcing datasets extending from 1850 to 2014 for SLCFs \citep{hoesly_historical_2018,feng_generation_2020}, biomass burning \citep[e.g., fire;][]{van_marle_historic_2017}, land use changes \citep{hurtt_harmonization_2020}, WMGHGs \citep{meinshausen_historical_2017}, volcanic stratospheric aerosol optical depth \citep[e.g.,][]{thomason_global_2018}, ozone \citep{checa-garcia_historical_2018}, nitrogen deposition \citep{hegglin_ccmi_2016}, solar irradiance \citep{matthes_solar_2017}, SSTs and sea ice boundary conditions \citep{durack_pcmdi_2018} and anthropogenic aerosol optical properties \citep[e.g.,][]{fiedler_anthropogenic_2019}.
 
 \mycomment{
 %%##### COMMENTS %#####
@@ -1184,7 +1186,8 @@ DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Wo
 DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite)\\ \hline
 DoE & US Department of Energy; \url{https://www.energy.gov}\\ \hline
 DOI & Digital Object Identifier \url{https://www.doi.org}\\ \hline
-DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum, DKRZ; \url{https://www.dkrz.de/en})\\ \hline
+DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum; \url{https://www.dkrz.de/en})\\ \hline
+DLR & German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re; \url{https://www.dlr.de/en}\\ \hline
 DRS & Data Reference Syntax\\ \hline
 ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int}\\ \hline
 ESG & Earth System Grid (also ESG I, ESG II)\\ \hline
@@ -1196,6 +1199,7 @@ ESMO & WCRP Earth System Modelling and Observations Core Project; \url{https://w
 FANGIO & Feedback ANalysis of GCMs and In Observations project\\ \hline
 FAR & IPCC First Assessment Report; \url{https://www.ipcc.ch/report/ar1/wg1}\\ \hline
 GAIM & Global Analysis Interpretation and Modeling Task Force (IGBP sub-group)\\ \hline
+GARP & Global Atmospheric Research Program (a precursor to the WCRP; 1967-1982)\\ \hline
 \multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
 \end{tabularx}
 } % /resizebox
@@ -1214,7 +1218,6 @@ GAIM & Global Analysis Interpretation and Modeling Task Force (IGBP sub-group)\\
 	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
 	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
-GARP & Global Atmospheric Research Program (a precursor to the WCRP; 1967-1982)\\ \hline
 GCM & General/Global Circulation Model\\ \hline
 GDT & Gregory, Drach, and Tett conventions (see \cite{gregory_gdt_1999})\\ \hline
 GS & Google Scholar citation service; \url{https://scholar.google.com}\\ \hline
@@ -1251,6 +1254,9 @@ SLCF & short-lived climate forcers\\ \hline
 SPECTRE & Spectral Radiance Experiment\\ \hline
 SRES & IPCC Special Report on Emission Scenarios (Circa CMIP3)\\ \hline
 SST & Sea Surface Temperature\\ \hline
+TAR & IPCC Third Assessment Report; \url{https://www.ipcc.ch/report/ar3/wg1}\\ \hline
+WoS & Clarivate Web of Science Core Collection citation service; \url{https://www.webofscience.com/wos/woscc}\\ \hline
+WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org}\\ \hline
 \multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
 \end{tabularx}
 } % /resizebox
@@ -1268,17 +1274,14 @@ SST & Sea Surface Temperature\\ \hline
 	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
 	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
-TAR & IPCC Third Assessment Report; \url{https://www.ipcc.ch/report/ar3/wg1}\\ \hline
-WoS & Clarivate Web of Science Core Collection citation service; \url{https://www.webofscience.com/wos/woscc}\\ \hline
-WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org}\\ \hline
 WDAC & WCRP Data Advisory Council (2011-2020; \url{https://www.wcrp-climate.org/data-wdac}\\ \hline
 WGCM & WCRP Working Group on Coupled Modelling; \url{https://www.wcrp-climate.org/ipo-esmo-groups/modelling-wgcm}\\ \hline
 WGNE & WCRP Working Group on Numerical Experimentation; \url{https://wgne.net}\\ \hline
 WIP & WCRP WGCM Infrastructure Panel; \url{https://www.wcrp-climate.org/wgcm-cmip/wip}\\ \hline
 WMGHG & well-mixed greenhouse gases\\ \hline
 UN & United Nations; \url{https://www.un.org/en}\\ \hline
-US & United States\\
-\hline
+US & United States\\ \hline
+VIACS AB & Vulnerability, Impacts, Adaptation and Climate Services Advisory Board; \url{https://viacsab.gerics.de}\\ \hline
 \end{tabularx}
 } % /resizebox
 \label{tab:tabAppE1-Acronyms}
@@ -1318,6 +1321,8 @@ We acknowledge all past and present members of the WGCM Infrastructure Panel (WI
 
 The work of P.J.D., K.E.T., P.J.G., J.L., C.C., S.A., and C.M. from Lawrence Livermore National Laboratory (LLNL) is supported by the Regional and Global Model Analysis (RGMA) program area under the Earth and Environmental System Modeling (EESM) program within the Earth and Environmental Systems Sciences Division (EESSD) of the United States Department of Energy’s (DoE) Office of Science (OSTI). This work was performed under the auspices of the US DoE by LLNL under contract DE-AC52-07NA27344. LLNL IM Release: LLNL-JRNL-871359. V.E.’s work is supported by the European Research Council (ERC) Synergy Grant ‘Understanding and Modeling the Earth System with Machine Learning’ (USMILE) under the Horizon 2020 Research and Innovation programme (grant agreement no. 855187) and the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) through the Gottfried Wilhelm Leibniz Prize awarded to V.E. (reference no. EY 22/2-1).
 
+We gratefully acknowledge the assistance of Vaishali Naik (NOAA Geophysical Fluid Dynamics Laboratory, Princeton, USA) for assistance better understanding the climate forcing experience of modelling groups through the CMIP5 phase.
+
 We thank numerous colleagues, collaborators, past AMIP and CMIP contributors for their valuable input and feedback.
 
 %We acknowledge three anonymous reviewers for helpful feedback on the initial draft, which strongly improved the manuscript.
@@ -1333,7 +1338,7 @@ We thank numerous colleagues, collaborators, past AMIP and CMIP contributors for
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241122b}
+\bibliography{241122c}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
