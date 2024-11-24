@@ -793,53 +793,26 @@ The growing coherence across successive CMIP archives allowed for more complete 
 
 \subsection{Data downloads}
 \label{sec:CMIPDataDownloads}
-\cblue{\textbf{Paul to draft}}
-\cred{Attn: Sandro Fiore}
+\cred{\textbf{Attn: Sandro Fiore}}
 
-As the infrastructure collating and serving the building multi-model archives became better coordinated, questions began to be raised, how much data was there, how was it distributed across contributing experiments, and by download requests, what were users targeting for download. For CMIP3, this was simple, as a single location and ESG II system hosted the complete archive (see \autoref{sec:earthSystemGridFederation}), statistics were readily available, for both the total project data volume (see \autoref{tab:tab1-MIPsThroughTime}) and for total downloads, which by the end of the project in 2009 (first data publication occurred in late 2004, \autoref{tab:tab1-MIPsThroughTime}) were well in excess of an order of magnitude larger than 39 TB total project footprint \citep{ananthakrishnan_building_2007,williams_earth_2009}.
+As the infrastructure collating and serving the building multi-model archives became better coordinated, questions began to be raised, how much data was there, how was it distributed across contributing experiments, and by download requests, what were users targeting for download. For CMIP3, this was simple, as a single location and ESG II system hosted the complete archive (see \autoref{sec:earthSystemGridFederation}), statistics were readily available, for both the total project data volume (see \autoref{tab:tab1-MIPsThroughTime}) and for total downloads, which by the end of the project in 2009 (first data publication occurred in late 2004, \autoref{tab:tab1-MIPsThroughTime}) were well in excess of an order of magnitude larger than 39 TB total project footprint \citep[470 TB;][]{ananthakrishnan_building_2007,williams_earth_2009}.
 
-As the ESGF federated design was realised, in preparation for CMIP5 (see \autoref{sec:earthSystemGridFederation}), the added complexity - no one ESGF node would initially host the data, and users downloading data could download from any node, not just a single one - brought a new challenge for CMIP infrastructure, how best to quantify project size by modelling group contributions, and the user demands. This new challenge was a focus of discussions at the just commenced ESGF international Face-to-face meetings, and by late 2011, the need for a dashboard documenting the number of published data, downloads and user metrics identified as a high priority improvement for the coming months \citep{williams_doe_2011}.
+As the ESGF federated design was realised, in preparation for CMIP5 (see \autoref{sec:earthSystemGridFederation}), the added complexity - no one ESGF node would initially host the data, and users downloading data could download from any node, not just a single one - brought a new challenge for CMIP infrastructure, how best to quantify project size by modelling group contributions, and the user demands. This new challenge was a focus of discussions at the just commenced annual ESGF international Face-to-Face meetings, and by late 2011, the need for a dashboard documenting the number of published data, downloads and user metrics identified as a high priority improvement for the coming months \citep{williams_doe_2011}.
 
-With the support of IS-ENES (see \autoref{sec:IS-ENES}) in collaboration with DoE, ESGF contributors from the Italian CMCC Foundation (Euro-Mediterranean Center on Climate Change), took on the responsibility to build out the metrics and dashboard capability, providing project-based metrics of published data available and user downloads from contributing ESGF nodes. By 2015, the first version of the ESGF dashboard was live
+With the support of IS-ENES (see \autoref{sec:IS-ENES}) in collaboration with DoE, ESGF contributors from the Italian CMCC Foundation (Euro-Mediterranean Center on Climate Change), developed the metrics and dashboard capability. By 2015, the first version of the ESGF dashboard was live providing project statistics for CMIP5, in addition to the smaller supporting projects obs4MIPs (see \autoref{sec:CMIP6SupportingProjects-obs4MIPs}) and CORDEX-CMIP5 \citep{williams_5th_2016}. This service captures a comprehensive set of data usage and data archive metrics both for a single ESGF node, and at the cumulative federation level. The data usage information provides the number of successful downloads, along with the number of distinct downloaded files, with granularity that enables an interrogation of these metrics by project, variable, institution, model, and experiment. In addition, data archive information is available per project, quantifying the total number of published datasets, data volume and granular information around the CMIP project contributing models and institutions.
 
-Through IS-ENES funding, CMCC..
+Today, the CMCC ESGF Dashboard continues to provide metrics across the ESGF projects: CMIP6, CMIP5, CORDEX-CMIP5, input4MIPs (see \autoref{sec:CMIP6SupportingProjects-input4MIPs}) and obs4MIPs \citep{fiore_climate_2019}. The service is collating project data and download statistics from a subset of the total contributing nodes across projects (see \autoref{tab:tab1-MIPsThroughTime}). For the CMIP5 project, 7 ESGF nodes are currently reporting data and download statistics, and for CMIP6 9 nodes are reporting, with temporal coverage from 2018 through to the present. This is a subset of the total 30 nodes that are currently publishing data to the archive.
 
+The CMCC-provided dashboard statistics, in addition to archived ESG II statistics from the single LLNL/PCMDI CMIP3 project portal (2004-2009) have been used in the preparation of \autoref{fig:fig5-MIPDownloads}.
+
+\mycomment{
+%%##### COMMENTS %#####
 Imperfect:
 CMIP3, single node, single report, 2004-2008
 CMIP5, 30 nodes, 7 reporting statistics (all CMIP6 data node), 2018-present (missing 2010-2015, 2015-2018)
 CMIP6, 30 nodes, 9 reporting statistics, 2018-present
 Number of downloads (how time split across files matters), or per GB downloads
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The increased models’ resolution in the development of comprehensive Earth System Models is rapidly leading to a very large climate simulations output that poses significant scientific data management challenges in terms of data sharing, processing, analysis, visualization, preservation, curation, and archiving [1][2][3].
-
-It provides a distributed and scalable software infrastructure responsible for capturing a comprehensive set of data usage and data archive metrics both at the single site and federation level. The data usage information is related to the number of downloads and successful downloads and the number of distinct downloaded files, grouped by variable,  model, experiment, etc. On the other hand, the data archive information is related to the total number of published datasets, total data volume and CMIP5 models and modelling institutes. All the above metrics relate to both cross and specific projects that are very notable in the climate community, such as, CMIP5, CMIP6, Obs4MIPs and CORDEX. From a Science Gateway perspective, the ESGF Dashboard presents the collected metrics through its Community Gateway (ESGF Dashboard User Interface). 
-
-
-
-\cred{
-\begin{itemize}
-	\item ESG download history and CMIP3 (LLNL/PCMDI; see \autoref{fig:fig5-MIPDownloads})
-	\item History of CMCC ESGF involvement, see \url{https://ceur-ws.org/Vol-2975/paper5.pdf}
-	\item CMIP5 statistics (are CMCC available stats correct back to $\sim$2010?)
-	\item CMIP6 statistics
-\end{itemize}
+%%#####
 }
 
 
@@ -945,7 +918,7 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 
 \section{CMIP impact}
 \label{sec:CMIP6Impact}
-\cred{\textbf{Karl this would benefit from you taking a pass}}
+\cblue{\textbf{Karl this would benefit from you taking a pass}}
 
 \cred{
 %%##### COMMENTS %#####
@@ -995,6 +968,9 @@ CMIP5 $\sim$35 data nodes publishing, 7 reporting download statistics (all CMIP6
 
 \section{CMIP6 completion}
 \label{sec:CMIP6Completion}
+\cblue{\textbf{Paul to draft}}
+
+\citep{mizielinski_cmip6plus_2024}
 
 \cred{
 For CMIP6Plus (in preparation for CMIP7) the planning has been to address issues raised with the CMIP6 infrastructure (a high-level overview of the issues are outlined in the CMIP6Plus whitepaper here. Numerous other feedback has been collected over the past years, with some more complete than others, e.g., feedback from CERFACS, CNRM, and IPSL here). We have recognized repeating issues over CMIP phases that are far better addressed modularly. After broad consultation, the approach being prototyped through CMIP6Plus\_CVs (https://github.com/WCRP-CMIP/CMIP6Plus\_CVs) is now in place. The CVs Drop-in, held online on the 8 November 2023 summarised the plans and progress (slides here, other materials here, drop-in report here, recording ?here?). It was an open opportunity for feedback across everyone interested in contributing. Indeed both GitHub repositories are open access, with anyone with a GitHub account able to clone the repo, create issues or submit a pull request with content.
@@ -1014,7 +990,7 @@ For CMIP6Plus (in preparation for CMIP7) the planning has been to address issues
 
 \section{Conclusions and next steps} %% \conclusions[modified heading if necessary]
 \label{sec:Conclusions}
-\cred{\textbf{awaiting sections to be written above}}
+\cblue{\textbf{Paul to draft}}
 
 \cred{\textbf{John D., Helene H. handoff}}
 Overview paper link \url{https://office.wcrp-cmip.org/Products/Files/DocEditor.aspx?fileid=9733}
@@ -1418,7 +1394,7 @@ We thank numerous colleagues, collaborators, past AMIP and CMIP contributors for
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241123a}
+\bibliography{241123b}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
