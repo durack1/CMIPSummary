@@ -794,10 +794,13 @@ The growing coherence across successive CMIP archives allowed for more complete 
 \subsection{Data downloads}
 \label{sec:CMIPDataDownloads}
 \cblue{\textbf{Paul to draft}}
+\cred{Attn: Sandro Fiore}
 
-As the infrastructure collating and serving the building multi-model archives became better coordinated, questions began to be raised, both how much was there, how was this distributed across contributing experiments, and by download requests, what users were targeting for download. For CMIP3, this was relatively simple, as a single location and ESG II system hosted the complete archive, statistics were readily available, for both the total project data volume (see \autoref{tab:tab1-MIPsThroughTime}, \autoref{sec:earthSystemGridFederation}) and for total downloads, which by the end of the project in 2009 (first data publication occurred in late 2004) were well in excess of an order of magnitude larger than 39 TB total project footprint \citep{ananthakrishnan_building_2007,williams_earth_2009}.
+As the infrastructure collating and serving the building multi-model archives became better coordinated, questions began to be raised, how much data was there, how was it distributed across contributing experiments, and by download requests, what were users targeting for download. For CMIP3, this was simple, as a single location and ESG II system hosted the complete archive (see \autoref{sec:earthSystemGridFederation}), statistics were readily available, for both the total project data volume (see \autoref{tab:tab1-MIPsThroughTime}) and for total downloads, which by the end of the project in 2009 (first data publication occurred in late 2004, \autoref{tab:tab1-MIPsThroughTime}) were well in excess of an order of magnitude larger than 39 TB total project footprint \citep{ananthakrishnan_building_2007,williams_earth_2009}.
 
-As the ESGF federated design was realised, in preparation for CMIP5 (see \autoref{sec:earthSystemGridFederation}, the added complexity - no one ESGF node would initially host the data, and users downloading data could download from any node, not just a single one - brought a new challenge for CMIP infrastructure, how best to quantify project size by modelling group contributions, and the user demands. This new challenge was a focus of discussions at just commenced ESGF Face-to-face meetings, with the metrics issue and the need for a dashboard documenting the number of published data, downloads and users (Williams et al., 2011 OSTI)
+As the ESGF federated design was realised, in preparation for CMIP5 (see \autoref{sec:earthSystemGridFederation}), the added complexity - no one ESGF node would initially host the data, and users downloading data could download from any node, not just a single one - brought a new challenge for CMIP infrastructure, how best to quantify project size by modelling group contributions, and the user demands. This new challenge was a focus of discussions at the just commenced ESGF international Face-to-face meetings, and by late 2011, the need for a dashboard documenting the number of published data, downloads and user metrics identified as a high priority improvement for the coming months \citep{williams_doe_2011}.
+
+With the support of IS-ENES (see \autoref{sec:IS-ENES}) in collaboration with DoE, ESGF contributors from the Italian CMCC Foundation (Euro-Mediterranean Center on Climate Change), took on the responsibility to build out the metrics and dashboard capability, providing project-based metrics of published data available and user downloads from contributing ESGF nodes. By 2015, the first version of the ESGF dashboard was live
 
 Through IS-ENES funding, CMCC..
 
@@ -809,31 +812,27 @@ Number of downloads (how time split across files matters), or per GB downloads
 
 
 
-The increased models’ resolution in the development of
-comprehensive Earth System Models is rapidly leading to a
-very large climate simulations output that poses significant
-scientific data management challenges in terms of data
-sharing, processing, analysis, visualization, preservation,
-curation, and archiving [1][2][3].
-
-It provides a
-distributed and scalable software infrastructure responsible
-for capturing a comprehensive set of data usage and data
-archive metrics both at the single site and federation level. The
-data usage information is related to the number of downloads
-and successful downloads and the number of distinct
-downloaded files, grouped by variable, model, experiment, etc.
-On the other hand, the data archive information is related to
-the total number of published datasets, total data volume and
-CMIP5 models and modelling institutes. All the above metrics
-relate to both cross and specific projects that are very notable
-in the climate community, such as, CMIP5, CMIP6, Obs4MIPs
-and CORDEX. From a Science Gateway perspective, the
-ESGF Dashboard presents the collected metrics through its
-Community Gateway (ESGF Dashboard User Interface). 
 
 
-\cred{Attn: Sandro Fiore}
+
+
+
+
+
+
+
+
+
+
+
+
+
+The increased models’ resolution in the development of comprehensive Earth System Models is rapidly leading to a very large climate simulations output that poses significant scientific data management challenges in terms of data sharing, processing, analysis, visualization, preservation, curation, and archiving [1][2][3].
+
+It provides a distributed and scalable software infrastructure responsible for capturing a comprehensive set of data usage and data archive metrics both at the single site and federation level. The data usage information is related to the number of downloads and successful downloads and the number of distinct downloaded files, grouped by variable,  model, experiment, etc. On the other hand, the data archive information is related to the total number of published datasets, total data volume and CMIP5 models and modelling institutes. All the above metrics relate to both cross and specific projects that are very notable in the climate community, such as, CMIP5, CMIP6, Obs4MIPs and CORDEX. From a Science Gateway perspective, the ESGF Dashboard presents the collected metrics through its Community Gateway (ESGF Dashboard User Interface). 
+
+
+
 \cred{
 \begin{itemize}
 	\item ESG download history and CMIP3 (LLNL/PCMDI; see \autoref{fig:fig5-MIPDownloads})
@@ -1256,6 +1255,7 @@ CEDA & UK Centre for Environmental Data Analysis; \url{https://www.ceda.ac.uk}\\
 CF & NetCDF Climate and Forecast Metadata Conventions; \url{https://cfconventions.org/}\\ \hline
 CFMIP & CMIP Cloud Feedbacks MIP (Also CFMIP1, CFMIP2, and CFMIP3; \url{https://www.cfmip.org})\\ \hline
 CLIVAR & WCRP Climate Variability and Predictability Core Project; \url{https://www.clivar.org}\\ \hline
+CMCC & CMCC Foundation (Euro-Mediterranean Center on Climate Change), Lecce, Italy; \url{https://www.cmcc.it}\\ \hline
 CMIP & Coupled Model Intercomparison Project (also CMIP1, CMIP2, CMIP2+, CMIP3, CMIP5, and CMIP6)\\ \hline
 CMOR & PCMDI Climate Model Output Rewriter (also CMOR1, CMOR2, and CMOR3; \url{https://cmor.llnl.gov/})\\ \hline
 COARDS & Cooperative Ocean/Atmosphere Research Data Service conventions\\ \hline
@@ -1308,6 +1308,7 @@ IPCC & United Nations Intergovernmental Panel on Climate Change; \url{https://ww
 IPCC DDC & UN IPCC Data Distribution Centre; \url{https://www.ipcc-data.org}\\ \hline
 IPO & International Project Office (e.g., CMIP-IPO, \url{https://wcrp-cmip.org/cmip-governance/project-office/}\\ \hline
 IPSL & French Institut Pierre-Simon Laplace; \url{https://www.ipsl.fr/en/home-en}\\ \hline
+IS-ENES & Infrastructure for the European Network for Earth System Modelling; \url{https://is.enes.org}\\ \hline
 LANL & US Los Alamos National Laboratory; \url{https://www.lanl.gov}\\ \hline
 LBNL & US Lawrence Berkeley National Laboratory; \url{https://www.lbl.gov}\\ \hline
 LLNL & US Lawrence Livermore National Laboratory; \url{https://www.llnl.gov}\\ \hline
@@ -1417,7 +1418,7 @@ We thank numerous colleagues, collaborators, past AMIP and CMIP contributors for
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241122d}
+\bibliography{241123a}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
