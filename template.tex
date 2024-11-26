@@ -190,6 +190,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \correspondence{Paul J. Durack (durack1@llnl.gov)}
 \runningtitle{MIP: history and evolution}
 \runningauthor{Durack et al.}
+\keywords{AMIP, CMIP, AMIP1, AMIP2, CMIP1, CMIP2, CMIP3, CMIP5, CMIP6, CMIP6Plus, climate, earth system, climate modelling, earth system modelling, atmosphere, ocean, land, sea ice, land ice, model, intercomparison, science}
 
 
 \received{}
@@ -490,7 +491,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \textbf{Project} & AMIP1 & AMIP2 & CMIP1 & CMIP2/2+ & CMIP3 & CMIP5 & CMIP6 & CMIP6+\\ \hline
 \textbf{Experiment count} & 1 & 1 & 1 & 2 & 12 & 37 & 322 & $\sim$\\ \hline
 \textbf{"historical" period} & 1979-1988 & 1979-2001 & $\sim$ & $\sim$ & $\sim$1860-1999 & 1850-2010 & 1850-2014 & 1850-2022\\ \hline
-\textbf{Data volumes} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & 39 TB & $\sim$2 PB & >27 PB & $\sim$5 PB\\ \hline
+\textbf{Data volumes} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & 39 TB & 1.5 PB\textsuperscript{\textdaggerdbl} & >16 PB\textsuperscript{\textdaggerdbl} & $\sim$5 PB\\ \hline
 \textbf{Standard output variables/ Tables} & 32/4$^{1}$ & 114/8$^{2}$ & 23/5$^{3}$ & 28/5$^{4}$ & 143/6$^{5}$ & 986/18$^{6}$ & 2062/44$^{7}$ & $\sim$\\ \hline
 \textbf{Host infrastructure} & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP; ESG-CET & ESGF, 30 nodes & ESGF, 30 nodes & ESGF\\ \hline
 \textbf{Data formats} & Fortran formatted binary & Fortran formatted binary, GRIB {$\rightarrow$} P-DRS & GRIB {$\rightarrow$} P-DRS & GRIB {$\rightarrow$} P-DRS & CF netCDF-3 & CF netCDF-4 "classic" & CF netCDF-4 & CF netCDF-4\\ \hline
@@ -499,7 +500,17 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \end{tabularx}
 } % /resizebox
 \label{tab:tab1-MIPsThroughTime}
-\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}. {}\textsuperscript{\textdagger}Volume estimates are difficult to quantify, as the provided source and the final archived data differ. GRIB and similar precursor formats were reprocessed to netCDF-3. Sources for "Standard output variables/Tables" noted by superscripts (1-7) are documented in \autoref{sec:secAppB1-MIPStandardOutput} and \autoref{tab:tabAppB1-MIPStandardOutput}. CC = Creative Commons copyright licenses; CC-BY 4.0 = Creative Commons Attribution 4.0 International; CC0 = Creative Commons Public Domain Dedication; for more information, see \url{https://creativecommons.org/share-your-work/cclicenses/}. CF = NetCDF Climate and Forecast Metadata Conventions \citep{eaton_netcdf_2024}. P-DRS = PCMDI Data Retrieval and Storage software library, a precursor to NetCDF. FTP = File Transfer Protocol, a common data transfer protocol. GRIB = General Regularly-distributed Information in Binary format, a precursor to NetCDF, which is still used by the weather community today.}
+\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}.
+
+{}\textsuperscript{\textdagger}Volume estimates are difficult to quantify, as the provided source and the final archived data differ. GRIB and similar precursor formats were reprocessed to netCDF-3.
+
+{}\textsuperscript{\textdaggerdbl}Volume estimates are are for unique project data only. For ESGF federated projects, data was replicated across multiple nodes. Current replicated totals are 5.3 and 27.5 PB for CMIP5 and CMIP6 projects respectively (see \autoref{sec:CMIPDataDownloads}).
+
+Sources for "Standard output variables/Tables" noted by superscripts (1-7) are documented in \autoref{sec:secAppB1-MIPStandardOutput} and \autoref{tab:tabAppB1-MIPStandardOutput}.
+
+CC = Creative Commons copyright licenses; CC-BY 4.0 = Creative Commons Attribution 4.0 International; CC0 = Creative Commons Public Domain Dedication; for more information, see \url{https://creativecommons.org/share-your-work/cclicenses/}.
+
+CF = NetCDF Climate and Forecast Metadata Conventions \citep{eaton_netcdf_2024}. P-DRS = PCMDI Data Retrieval and Storage software library, a precursor to NetCDF. FTP = File Transfer Protocol, a common data transfer protocol. GRIB = General Regularly-distributed Information in Binary format, a precursor to NetCDF, which is still used by the weather community today.}
 \end{table*}
 % https://www.overleaf.com/learn/latex/Footnotes
 %\footnotemark[1]; \footnotetext[1]{AMIP1: Gates, 1991: https://doi.org/10.5281/zenodo.12109765}
@@ -1007,7 +1018,7 @@ These and other community-developed tools (see Hoffman et al., [in prep]) will p
 
 \mycomment{
 %%##### COMMENTS %#####
-Hoffman, F.M., Hassler, B., Beadling, R., Blockley, E., Francis, F., Huang, B., Lee, J., Lembo, V., Lewis, J., Lu, J., Madaus, L., Malinina, E., Medeiros, B., Pokam, W., Scoccimarro, E., Swaminathan, R., and Marquez, A.L., 2024. Systematic Benchmarking of Climate Models: Methodologies, Applications, and New Directions [to be submitted soon]
+Hoffman, F.M., Hassler, B., Beadling, R., Blockley, E., Francis, F., Huang, B., Lee, J., Lembo, V., Lewis, J., Lu, J., Madaus, L., Malinina, E., Medeiros, B., Pokam, W., Scoccimarro, E., Swaminathan, R., and Marquez, A.L., 2024. Systematic Benchmarking of Climate Models: Methodologies, Applications, and New Directions. Geoscientific Model Development. [to be submitted soon]
 The history continues back into the early 1990s, e.g., PILPS (The project for Intercomparison of land surface parameterisaton schemes PILPS) Henderson-Sellers et al., 1995, see 
 https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips-2/268-modelling-wgcm-catalogue-pilps
 Also https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips (18), and https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips-2 (1:10, 2:10, 3:10, 4:7)
@@ -1082,7 +1093,7 @@ The CMIP6 endorsed MIP experiment design papers also provide an opportunity to g
 \end{figure*}
 
 
-An alternative, although similarly imperfect, impact metric is based on data download statistics. Like citation counts, these provide relevant measures of interest across the CMIP phases, their contributing or endorsed paticipating MIPs, and their respective experiments. An advantage of download assessment is that it should capture interest outside the academic community, which may be less inclined to record its use of data through peer-reviewed publications.    Before CMIP3, however, no data download records are available, which limits a comprehensive assessment. An additional complexity is that direct comparison across phases in impossible directly comparing downloads across phases, considering the marked increase in activities and experiments over time (see \autoref{tab:tab1-MIPsThroughTime}, \autoref{tab:tabAppA1-MIPExperiments}).
+An alternative, although similarly imperfect, impact metric is based on data download statistics. Like citation counts, these provide relevant measures of interest across the CMIP phases, their contributing or endorsed paticipating MIPs, and their respective experiments. An advantage of download assessment is that it should capture interest outside the academic community, which may be less inclined to record its use of data through peer-reviewed publications.    Before CMIP3, however, no data download records are available, which limits a comprehensive assessment. An additional complexity is that direct comparison across phases in impossible due to the marked increase in activities and experiments over time (see \autoref{tab:tab1-MIPsThroughTime}, \autoref{tab:tabAppA1-MIPExperiments}).
 
 Like the literature citations, a clear picture emerges when download data is assessed comparably across phases (\autoref{fig:fig5-MIPDownloads}). These show an evident repeating dominance of three key experiments, the CMIP/DECK 20C3M/historical (dark orange) and piControl (light orange), and all flavours of the ScenarioMIP experiments (which have been cumulatively totalled, red; CMIP3: SRES; CMIP5: RCPs; and CMIP6: SSPs) dominating downloads. For each of the successive phases, 6 of 12 CMIP3 experiments represent the top 94.3\% of downloads (top), 10 of 37 CMIP5 experiments represent the top 90.3\% (middle), and 16 of 322 CMIP6 experiments represent the top 90.7\% of downloads (bottom). Considering just the top three experiments across phases (with all ScenarioMIP experiment downloads pooled), these account for 89\%, 80\%, and 76\% of total downloads for CMIP3, CMIP5, and CMIP6, respectively. A similar assessment can be made when assessing the same download records grouped across activities, with the CMIP/DECK and ScenarioMIP dominating totals (\autoref{fig:figA1-MIPDownloads}).
 
@@ -1102,7 +1113,7 @@ CMIP5 $\sim$35 data nodes publishing, 7 reporting download statistics (all CMIP6
 
 \section{CMIP6 completion}
 \label{sec:CMIP6Completion}
-\cred{\textbf{Attn: Karl T.}}
+\cred{\textbf{Karl T. comment:  I'm not sure how important this section is for our review of infrastructure.  I'll leave it up to others to work on this if deemed of interest. }}
 
 The CMIP6 project is mostly complete, with nearly all CMIP modelling groups prioritizing ongoing model development over running new simulations. Consequently, the growth of the ESGF CMIP6 archive has markedly slowed (see \autoref{fig:fig2-CMIP6DataGrowth}).
 
