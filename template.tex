@@ -152,17 +152,22 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \Author[10,17]{Guillaume}{Levavasseur} % 0000-0002-0801-0890
 \Author[10,18]{Atef}{Ben-Nasser} % 0000-0001-6948-8735
 \Author[10,17]{Sven}{Rodriguez} % ?
+\Author[16,4]{Jonathan M.}{Gregory} % 0000-0003-1296-8644
+\Author[20,14]{Philip}{Kershaw} % 0000-0002-7646-291X
 %\Author[xx]{and past/present members of the}{WGCM Infrastructure Panel (WIP), CMIP Panel, and Earth System Grid Federation (ESGF)}
 \Author[30\textdagger]{others please}{add yourselves - will alphabetically reorder once final}
 % Edits: Jerry, Bryan, Curt, Ron, Guillaume, Atef, Sebastien;
 % Feedback: Jeff, Martin, Veronika, Martina, Dave, Gerry, Sandro, Alessandra
 % Jerry: tracked changed edits
+%\autoref{sec:cmip6InContext,sec:cmip6ProjectDesign}
 % Bryan: tracked changed edits
+%\autoref{sec:CFConventions,sec:earthSystemGridFederation,sec:ModelDocumentation}
 % Curt: Written edits
 % Ron: email edits
 % Guillaume, Atef, Sebastien: https://docs.google.com/document/d/1bb_3GdAXgiPrcAIUZhydNbAXfcv9zkwuAFuVSLWkQ8E/edit
+%\autoref{sec:CMIPDataReplication,sec:CMIPErrata}
 % Martina: https://docs.google.com/document/d/1aQbZj6xQYr-5_Ub9tw9hucm6WzcPIImYMShONPYrpyo/edit
-
+%\autoref{sec:IPCC-DDC,sec:DataCitation}
 
 % \affil % Affiliations
 \affil[1]{Program for Climate Model Diagnosis and Intercomparison (PCMDI), Lawrence Livermore National Laboratory (LLNL), Livermore, California, USA}
@@ -184,6 +189,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \affil[17]{Sorbonne University (SU), Paris, France}
 \affil[18]{Centre National de Recherche Scientifique (CNRS), Paris, France}
 \affil[19]{University of Trento, Trento, Italy}
+\affil[20]{Centre for Environmental Data Analysis (CEDA), RAL Space, Oxfordshire, UK}
 %\affil[xx]{C/o PCMDI, LLNL, Livermore, California, USA}
 \affil[30]{Affiliation, location, country}
 \affil[\textdagger]{Formerly} %%\textdagger
@@ -247,7 +253,7 @@ Co-authors to engage
 \begin{itemize}
     \item \textbf{\sout{Jiwoo Lee}, \sout{Curt Covey}, \sout{Jeff Painter}, PCMDI}: (\autoref{sec:cmip6InContext}: A/CMIP history, \autoref{sec:CMIP6SupportingProjects-CoordEval}: Coordinated evaluation);
     \item \textbf{\sout{Martin Juckes, STFC}} (\autoref{sec:CMIP6DR}: Variable request and standard output);
-    \item \textbf{Ag Stephens, Alan Iwi, (\underline{Phil Kershaw}) CEDA}: ESGF; \autoref{sec:earthSystemGridFederation}
+    \item \textbf{\sout{Phil Kershaw}, Ag Stephens, Alan Iwi, Charlotte Pascoe, CEDA}: ESGF; \autoref{sec:earthSystemGridFederation}
     % ag.stephens@stfc.ac.uk, alan.iwi@stfc.ac.uk
     \item \textbf{\sout{Martina Stockhause, DKRZ}} (\autoref{sec:IPCC-DDC}: IPCC DDC; \autoref{sec:DataCitation}: Data citation);
     \item \textbf{\sout{Bryan Lawrence}, \underline{David Hassell}, UReading}; \textbf{\underline{Eric Guilyardi}, IPSL} (\autoref{sec:ModelDocumentation}: Model (and data) documentation);
@@ -267,11 +273,11 @@ Co-authors/Reviewers to engage: Mon 18 Nov
 \begin{itemize}
     \item \textbf{\sout{Jerry Meehl} \sout{Ron Stouffer}} (CMIP Panel, long-term leadership);
     \item \textbf{\sout{Curt Covey}, \sout{Gerry Potter}, \sout{Dave Bader}}, Ken Sperber, Ben Santer, Charles Doutriaux, Tom Phillips (DOE/PCMDI);
-    \item \textbf{\sout{Dean Williams}, \sout{Bryan Lawrence}, \underline{Jonathan Gregory}} (\autoref{sec:CMIPSupportingOrgsAndInfra}: ESGF/CF);
+    \item \textbf{\sout{Dean Williams}, \sout{Bryan Lawrence}, \sout{Jonathan Gregory}} (\autoref{sec:CMIPSupportingOrgsAndInfra}: ESGF/CF);
     \item \textbf{\sout{Vaishali Naik}, \sout{Jean-Francois Lamarque}, \sout{Veronika Eyring}}; (\autoref{sec:CMIP6SupportingProjects-input4MIPs}: forcing data CMIP5 through CMIP6);
     \item \textbf{\sout{Eric Guilyardi}, \sout{Dean Williams}, \underline{Balaji V.}, \underline{Luca Cinquini}, \underline{Ruth Petrie}, Mark Elkington, Michael Lautenschlager}: WIP Panel
     \item \cblue{\textbf{Paul:}} \textbf{\sout{Curt Covey}, \sout{Jerry Meehl}, \sout{Ron Stouffer}, \sout{Veronika Eyring}, \sout{Jean-Francois Lamarque}, Cath Senior, Greg Flato, Sandrine Bony, Bjorn Stevens}: CMIP Panel
-    \item \cblue{\textbf{Paul:}} \sout{Sasha Ames}, \sout{Guillaume Levavasseur}, \sout{Sylvie Joussaume}, \textbf{\underline{V. Balaji}, \underline{Ben Evans}, \underline{Phil Kershaw}, \underline{Stephan Kindermann}, \underline{Forrest Hoffman}, Ghaleb Abdulla, Michael Lautenschlager, Laura Carriere, Tom Landry, Robert Ferraro}: ESGF-XC; \textbf{Jay Hnilo, Tsengdar Lee, Annarita Mariotti}: ESGF-SC;    
+    \item \cblue{\textbf{Paul:}} \sout{Sasha Ames}, \sout{Guillaume Levavasseur}, \sout{Sylvie Joussaume}, \sout{Phil Kershaw}, \textbf{\underline{V. Balaji}, \underline{Ben Evans}, \underline{Stephan Kindermann}, \underline{Forrest Hoffman}, Ghaleb Abdulla, Michael Lautenschlager, Laura Carriere, Tom Landry, Robert Ferraro}: ESGF-XC; \textbf{Jay Hnilo, Tsengdar Lee, Annarita Mariotti}: ESGF-SC;    
 \end{itemize} 
 }
 
@@ -828,7 +834,7 @@ The scope expanded during the IPCC TAR and following the AR4 period, with additi
 
 Work continued over the AR5 cycle, with the far larger CMIP5 project design (see \autoref{sec:cmip5ProjectDesign}) leading to two orders of magnitude growth in the DKRZ reference archive size, comprising 1.7 PB and 910000 datasets at completion, in contrast to 1500 datasets and 1 TB, and 400 datasets and 10 GB for AR4 and SAR/TAR respectively \citep{stockhause_twenty-five_2022}. During this phase, an augmentation of the data quality control procedures was implemented, and Digital Object Identifiers (DOIs) were assigned, making these data citable \citep{stockhause_quality_2012}.
 
-For the AR6 cycle, a considerable augmentation occurred. With the recent development of the Findability, Accessibility, Interoperability, and Reusability guidelines \citep[FAIR;][]{wilkinson_fair_2016}, the additional aim of enhancing data transparency was added and implemented \citep{stockhause_data_2019}. Building on the CMIP5 success, upon publication to the ESGF, contributing CMIP6 datasets were issued a DOI embedded alongside the data, and made available in the ESGF search results \citep{stockhause_cmip6_2017}.
+For the AR6 cycle, a considerable augmentation occurred. With the recent development of the Findability, Accessibility, Interoperability, and Reusability guidelines \citep[FAIR;][]{wilkinson_fair_2016}, the additional aim of enhancing the transparency of the AR6 report, especially the traceability of the figures, was added and implemented \citep{stockhause_data_2019}. Building on the CMIP5 success, DOIs were issued for CMIP6 datasets upon publication to the ESGF (see \autoref{sec:DataCitation}). This citation information was embedded alongside the data, made available in the ESGF search results, and used for the CMIP6 data subset preserved in the DDC long-term archive \citep{stockhause_cmip6_2017}.
 
 The CMIP6 data augmentation is also linked with improved transparency across observational data products used to produce analyses and figures in the AR6 report.
 
@@ -882,9 +888,9 @@ With exponential growth in the climate community using data, the archive of CMIP
 
 For CMIP5, the three primary ESGF nodes at PCMDI (US), DKRZ (Germany), and CEDA (UK), shared the hosting role for the CMIP5 archive - distributed across nodes and not complete at any one centre (\autoref{sec:earthSystemGridFederation}). Data federation led to a more complex task of uniquely identifying datasets and their downstream downloads and broader use. To solve this problem, DKRZ led an effort to both quality control and assign Digital Object Identifiers (DOIs) to CMIP5 datasets \citep[\autoref{sec:IPCC-DDC};][]{stockhause_quality_2012}, delivered alongside the long-term archival as part of the IPCC Data Distribution Centre \citep[IPCC DDC, \autoref{sec:IPCC-DDC};][]{stockhause_twenty-five_2022}. However, these DOIs were maintained in the IPCC DDC long-term archive managed by the DKRZ, and were not made available alongside the data that was hosted and made available for download on the ESGF.
 
-Following CMIP5, for CMIP6, a more ambitious plan was established to meet the needs of IPCC DDC archived data and the evolving data real-time \citep{stockhause_cmip6_2017}. Considering the CMIP project evolution across phases and the federated design that underpinned CMIP6 \citep[see \autoref{sec:cmip6ProjectDesign};][]{eyring_overview_2016}, data citation needed to account for model configurations that were targeted across the 22 MIPs that published data to the project (\autoref{tab:tab2-CMIP6MIPs}). The DKRZ, began a process to identify and generate CMIP6 DOIs that provided two levels of citation support, leveraging the CMIP6 Controlled Vocabularies \citep[see \autoref{sec:CMIPCVs};][]{durack_cmip6_2024}. One targeted the upper level, a single model (source\_id) configuration published in the ESGF CMIP6 archive, and another at a lower experiment (experiment\_id) level, allowing users to attribute the dataset used more tightly - identifying a unique dataset matching a model, MIP (activity\_id) and experiment.
+Following CMIP5, for CMIP6, a more ambitious plan was established to meet the needs of IPCC DDC archived data and the evolving data real-time \citep{stockhause_cmip6_2017}. Considering the CMIP project evolution across phases and the federated design that underpinned CMIP6 \citep[see \autoref{sec:cmip6ProjectDesign};][]{eyring_overview_2016}, data citation needed to account for model configurations that were targeted across the 22 MIPs that published data to the project (\autoref{tab:tab2-CMIP6MIPs}). The DKRZ, began a process to identify and generate CMIP6 DOIs that provided two levels of citation support, leveraging the CMIP6 Controlled Vocabularies \citep[see \autoref{sec:CMIPCVs};][]{durack_cmip6_2024}. One targeted the upper level, a single model (source\_id) for a unique MIP (activity\_id) configuration published in the ESGF CMIP6 archive, and another at the lower experiment (experiment\_id) level, allowing users to attribute the dataset used more tightly - identifying a unique dataset matching a model, MIP and experiment.
 
-To date, 2,724 CMIP6 DOIs have been generated, with the first issued in June 2018 to the first CMIP6 dataset published in May 2018 (see \autoref{fig:fig2-CMIP6DataGrowth}). In addition, DKRZ also provided DOI support for the input4MIPs project, minting 210 DOIs for the forcing datasets being used by modelling groups to meet CMIP6 experimental protocols (see \autoref{sec:CMIP6SupportingProjects-input4MIPs}). Currently, more than 6700 recorded citations have been made against these ESGF datasets, approximately the same counts recorded against the CMIP6 overview paper \citep[see \autoref{sec:CMIP6Impact};][]{eyring_overview_2016}.
+To date, 2,727 CMIP6 DOIs have been generated, with the first issued in June 2018 to the first CMIP6 dataset published in May 2018 (see \autoref{fig:fig2-CMIP6DataGrowth}). In addition, DKRZ also provided DOI support for the input4MIPs project, minting 210 DOIs for the forcing datasets being used by modelling groups to meet CMIP6 experimental protocols (see \autoref{sec:CMIP6SupportingProjects-input4MIPs}). Currently, more than 6700 recorded citations have been made against these ESGF datasets, approximately the same counts recorded against the CMIP6 overview paper \citep[see \autoref{sec:CMIP6Impact};][]{eyring_overview_2016}.
 
 \mycomment{
 %%##### COMMENTS %#####
@@ -1103,7 +1109,7 @@ The CMIP6 endorsed MIP experiment design papers also provide an opportunity to g
 % https://www.ipcc.ch/site/assets/uploads/2018/04/FS_timeline.pdf
 \begin{figure*}
     \centering
-    \includegraphics[width=\textwidth]{241119T110937_Fig6.pdf}
+    \includegraphics[width=\textwidth]{241126T171500_Fig6.pdf}
     \caption{A time history of MIPs and their broader impact, with particular relevance to the IPCC Assessment Report phases and statements of human influence on the climate (in parentheses, FAR through AR6; see \autoref{sec:amip1And2} through \autoref{sec:cmip6ProjectDesign}). \cred{ESG I, II, missing, what else?}}
     \label{fig:fig6-MIPImpact}
 \end{figure*}
@@ -1141,20 +1147,54 @@ An interim phase, CMIP6Plus, was established to address this need and expand the
 As discussions of the core science foci to define the upcoming CMIP7 phase continue \citep[e.g.,][]{dunne_climate_2023}, CMIP infrastructure providers are undertaking ongoing work \citep[e.g.,][]{kershaw_esgf_2020} to modernise and ready services for the CMIP7 AR7 Fast Track, expected to begin mid-2025. This transition will signal the end of the CMIP6 phase and conclude publications to the project in favour of next-generation simulations leveraging the latest model versions, forcing datasets (\autoref{sec:CMIP6SupportingProjects-input4MIPs}, and experimental protocols.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Conclusions and next steps} %% \conclusions[modified heading if necessary]
 \label{sec:Conclusions}
 \cblue{\textbf{Paul to draft}}
 
-\cred{\textbf{John D., Helene H. handoff}}
+\cred{
+CMIP6 is the latest in a long history of internationally coordinated and scientifically collaborative climate model-based research projects. The project has developed standard approaches to evaluate and intercompare climate models and a standardised infrastructure delivering these data to a broad and expanding community. This arrangement ensures that projections of future climate conditions are based on a robust and consistent framework. The progress embedded in the phase marks 35 years since coordinated MIP activities began at an informal meeting of experts focused on modelling standards and intercomparison of climate models in Boulder, Colorado, August 1989, becoming the first MIP, AMIP1 \citep{gates_amip_1991}. Since this foundational work, MIPs have captivated and engaged a broad and growing community and had a tangible impact, improving our knowledge of Earth's climate system and our ability to quantify and attribute the drivers and responses of the observed climate changes we are experiencing today.
+}
 
-\cred{Overview paper link \url{https://office.wcrp-cmip.org/Products/Files/DocEditor.aspx?fileid=9733}}
+\cred{
+CMIP has generated profound insights and information that define how we understand and address climate change. It has improved climate prediction, provided quantified insights guiding policy and decision-making, informed risk and adaptation strategies and climate change mitigation planning, improved public awareness and climate education, and provided quantitative insights to help best inform and allocate international climate finance.
+}
+
+\cred{
+While the project has been a demonstrable success, focused on the dual goals of facilitating the climate research community
+}
+
+\cred{
+Like in past CMIP phases, this, in part, will target the expected needs of the upcoming IPCC AR7 cycle, but is also 
+}
+
+\cred{
+Following the CMIP6 broad expansion, CMIP7 will likely further federate discrete activities and encompass climate model simulations from an even broader contributor pool. Infrastructure providers are undertaking considerable updates to modernize the supporting hardware and software for project delivery to facilitate the transition. In preparation for the transition, continued publications to the CMIP6 archive will cease in early 2025, with the project sunsetting soon after that. CMIP6 data will continue to be made available through the federated ESGF network. However, the priority for data curation and maintenance will shift in favor of CMIP7 soon after the first datasets become available.
+}
+
+\cred{
+The CMIP project has been a cornerstone of modern climate science, enabling better predictions of future climate conditions, fostering international collaboration, guiding policy and adaptation strategies, and raising awareness of the urgent need for global action on climate change. Its contributions have touched nearly every aspect of society, from science and policy to the economy and the environment, playing a pivotal role in the fight against climate change.
+}
 
 \cred{Call out \citet{shukla_strategies_2009,shukla_toward_2010}, \citep{jakob_need_2023}, \citep{stevens_perspective_2024} commentary papers highlighting "operational" vs "science innovation" pressures have been growing across phases}
 
-Like in past CMIP phases, this, in part, will target the expected needs of the upcoming IPCC AR7 cycle, but is also 
+\cred{John D.: As planning continues for the 7th phase of CMIP \citep{dunne_climate_2023}, it draws from a rich legacy of international cooperation and increasing community engagement with lessons learned from decades of dedicated efforts to optimize the value and utility of model data for climate model systematic evaluation and diverse applications.}
 
-
-\cred{\citep{dunne_climate_2023} - closest thing to CMIP7 overview paper}
+\cred{GMD CMIP7 Special Issue; GMD CMIP7 Forcings Special Issue; Infrastructure concepts of multiverse/CMIP, planet/project and continent/user}
 
 \cred{
 \begin{itemize}
@@ -1164,19 +1204,6 @@ Like in past CMIP phases, this, in part, will target the expected needs of the u
     \item In the end, it is the contributing modelling groups that decide what experiments to prioritize and simulation data to provide for broader community consumption
     \item CMIP6 closure, CMIP6Plus continuation as interim phase, allowing MIPs to continue to reuse and leverage infrastructure, minimizing non-science efforts while preparation for CMIP7 occurs (with infrastructure overhaul)
     \item Pull/harmonize items from abstract section; Coordinated activities, ESMO benefits from model side well organized, no organize obs. Obs community have model targets to aspire to aid, higher resolution observations - target observations for model evaluation?
-\end{itemize}
-}
-
-\cred{
- The next phase of CMIP (CMIP7) is underway with the expectation that project data will become available in 2025. Following the CMIP6 broad expansion, CMIP7 will likely further federate discrete activities and encompass climate model simulations from an even broader contributor pool. Infrastructure providers are undertaking considerable updates to modernize the supporting hardware and software for project delivery to facilitate the transition. In preparation for the transition, continued publications to the CMIP6 archive will cease in early 2025, with the project sunsetting soon after that. CMIP6 data will continue to be made available through the federated ESGF network. However, the priority for data curation and maintenance will shift in favor of CMIP7 soon after the first datasets become available.
- }
-
-\cred{John D.: As planning continues for the 7th phase of CMIP \citep{dunne_climate_2024}, it draws from a rich legacy of international cooperation and increasing community engagement with lessons learned from decades of dedicated efforts to optimize the value and utility of model data for climate model systematic evaluation and diverse applications.}
-
-\cred{GMD CMIP7 Special Issue; GMD CMIP7 Forcings Special Issue; Infrastructure concepts of multiverse/CMIP, planet/project and continent/user}
-
-\cred{
-\begin{itemize}
 	\item Need for CMIP IPO identified in 2019 and open call for tenders
 	\item CMIP IPO awarded 2021
 	\item Aiding broad community engagement and formalization of governance, allowing the development of Task Teams to meet CMIP7 planning needs
@@ -1184,6 +1211,17 @@ Like in past CMIP phases, this, in part, will target the expected needs of the u
     \item Fresh eyes, early career engagement
 \end{itemize}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 %% Following commands are statements for data sets and/or software code availability corresponding to the manuscript.
@@ -1386,24 +1424,24 @@ Over the five decades of MIPs, many acronyms and identifiers have been developed
 \hline
 \textbf{Acronym} & \textbf{Expansion and additional information}\\ \hline
 20C3M & CMIP 20th Century Climate in Coupled Models pilot project (now known as the CMIP historical experiment)\\ \hline
-AGCI & Aspen Global Change Institute; \url{https://www.agci.org}\\ \hline
+AGCI & US Aspen Global Change Institute; \url{https://www.agci.org}\\ \hline
 AGCM & Atmospheric General Circulation Model\\ \hline
 AMIP & Atmospheric Model Intercomparison Project (also AMIP1 and AMIP2)\\ \hline
 ANL & US Argonne National Laboratory; \url{https://www.anl.gov}\\ \hline
 AOGCM & Atmospheric and Ocean General/Global Circulation Model\\ \hline
-AR4 & IPCC Fourth Assessment Report; \url{https://www.ipcc.ch/report/ar4/wg1}\\ \hline
-AR5 & IPCC Fifth Assessment Report; \url{https://www.ipcc.ch/report/ar5/wg1}\\ \hline
-AR6 & IPCC Sixth Assessment Report; \url{https://www.ipcc.ch/report/ar6/wg1}\\ \hline
+AR4 & IPCC Fourth Assessment Report, 2007; \url{https://www.ipcc.ch/report/ar4/wg1}\\ \hline
+AR5 & IPCC Fifth Assessment Report, 2013; \url{https://www.ipcc.ch/report/ar5/wg1}\\ \hline
+AR6 & IPCC Sixth Assessment Report, 2021; \url{https://www.ipcc.ch/report/ar6/wg1}\\ \hline
 BADC/CEDA & UK British Atmospheric Data Centre (now CEDA; \url{https://www.ceda.ac.uk})\\ \hline
 C-LAMP & Carbon-Land Model Intercomparison Project; (now ILAMB; \url{https://www.ilamb.org})\\ \hline
-C4MIP & CMIP Coupled Climate-Carbon Cycle MIP; \url{https://c4mip.net}\\ \hline
+C4MIP & Coupled Climate-Carbon Cycle MIP; \url{https://c4mip.net}\\ \hline
 CCSM & NCAR Community Climate System Model; \url{https://www.cesm.ucar.edu/models/ccsm}\\ \hline
 CEDA & UK Centre for Environmental Data Analysis; \url{https://www.ceda.ac.uk}\\ \hline
 CF & NetCDF Climate and Forecast Metadata Conventions; \url{https://cfconventions.org/}\\ \hline
-CFMIP & CMIP Cloud Feedbacks MIP (Also CFMIP1, CFMIP2, and CFMIP3; \url{https://www.cfmip.org})\\ \hline
+CFMIP & Cloud Feedbacks MIP (Also CFMIP1, CFMIP2, and CFMIP3; \url{https://www.cfmip.org})\\ \hline
 CIESIN & US Center for Integrated Earth System Information (Columbia University); \url{https://sedac.ciesin.columbia.edu/ddc/}\\ \hline
 CLIVAR & WCRP Climate Variability and Predictability Core Project; \url{https://www.clivar.org}\\ \hline
-CMCC & CMCC Foundation (Euro-Mediterranean Center on Climate Change), Lecce, Italy; \url{https://www.cmcc.it}\\ \hline
+CMCC & Italian CMCC Foundation (Euro-Mediterranean Center on Climate Change); \url{https://www.cmcc.it}\\ \hline
 CMIP & Coupled Model Intercomparison Project (also CMIP1, CMIP2, CMIP2+, CMIP3, CMIP5, and CMIP6)\\ \hline
 CMOR & PCMDI Climate Model Output Rewriter (also CMOR1, CMOR2, and CMOR3; \url{https://cmor.llnl.gov/})\\ \hline
 COARDS & Cooperative Ocean/Atmosphere Research Data Service conventions\\ \hline
@@ -1414,13 +1452,13 @@ DAMIP & Detection and Attribution MIP\\ \hline
 DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; \url{https://www.wcrp-climate.org/dcp-overview})\\ \hline
 DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite)\\ \hline
 DoE & US Department of Energy; \url{https://www.energy.gov}\\ \hline
-DOI & Digital Object Identifier \url{https://www.doi.org}\\ \hline
+DOI & Digital Object Identifier; \url{https://www.doi.org}\\ \hline
 DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum; \url{https://www.dkrz.de/en})\\ \hline
 DLR & German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re; \url{https://www.dlr.de/en}\\ \hline
 DRS & Data Reference Syntax\\ \hline
 ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int}\\ \hline
-ESG & Earth System Grid (also ESG I, ESG II)\\ \hline
-ESG-CET & Earth System Grid Center for Enabling Technologies\\ \hline
+ESG & US Earth System Grid (also ESG I, ESG II)\\ \hline
+ESG-CET & US Earth System Grid Center for Enabling Technologies\\ \hline
 ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov}\\ \hline
 ESM & Earth System Model\\ \hline
 ESMValTool & A community diagnostic and performance metrics tool for evaluation and analysis of Earth system Models; \url{https://esmvaltool.org}\\ \hline
@@ -1444,15 +1482,15 @@ ESMValTool & A community diagnostic and performance metrics tool for evaluation 
 \hline
 ESMO & WCRP Earth System Modelling and Observations Core Project; \url{https://www.wcrp-esmo.org}\\ \hline
 FANGIO & Feedback ANalysis of GCMs and In Observations project\\ \hline
-FAR & IPCC First Assessment Report; \url{https://www.ipcc.ch/report/ar1/wg1}\\ \hline
+FAR & IPCC First Assessment Report, 1990; \url{https://www.ipcc.ch/report/ar1/wg1}\\ \hline
 FMI & Finnish Meteorological Institute; \url{https://en.ilmatieteenlaitos.fi}\\ \hline
 FTP & File Transfer Protocol (the standard protocol used to transfer files from a server to a client on a network; \url{https://en.wikipedia.org/wiki/File_Transfer_Protocol}\\ \hline
-GridFTP & an extension of FTP for grid computing; \url{https://www.globus.org/blog/gridftp-a-brief-history-of-fast-file-transfer}\\ \hline
+GridFTP & Extension of FTP for grid computing; \url{https://www.globus.org/blog/gridftp-a-brief-history-of-fast-file-transfer}\\ \hline
 GAIM & Global Analysis Interpretation and Modeling Task Force (IGBP sub-group)\\ \hline
-GARP & Global Atmospheric Research Program (a precursor to the WCRP; 1967-1982)\\ \hline
+GARP & International Global Atmospheric Research Program (a precursor to the WCRP; 1967-1982)\\ \hline
 GB & Gigabyte (one billion bytes, 10$^{9}$)\\ \hline
 GCM & General/Global Circulation Model\\ \hline
-GDT & Gregory, Drach, and Tett conventions (see \cite{gregory_gdt_1999})\\ \hline
+GDT & Gregory, Drach, and Tett conventions; \cite[see][]{gregory_gdt_1999}\\ \hline
 GS & Google Scholar citation service; \url{https://scholar.google.com}\\ \hline
 HTTP & HyperText Transfer Protocol (the default protocol underlying internet transactions; \url{https://httpwg.org/specs}\\ \hline
 IAM & Integrated Assessment Model\\ \hline
@@ -1460,8 +1498,8 @@ IAV & Impacts, Adaptation and Vulnerability research\\ \hline
 ICRCCM & Intercomparison of Radiation Codes used in Climate Models project\\ \hline
 IGBP & International Geosphere-Biosphere Programme (closed in 2015; \url{http://www.igbp.net}\\ \hline
 ILAMB & ORNL International Land Model Benchmarking; \url{https://www.ilamb.org}\\ \hline
-IPCC & United Nations Intergovernmental Panel on Climate Change; \url{https://www.ipcc.ch}\\ \hline
-IPCC DDC & UN IPCC Data Distribution Centre; \url{https://www.ipcc-data.org}\\ \hline
+IPCC & UN Intergovernmental Panel on Climate Change; \url{https://www.ipcc.ch}\\ \hline
+IPCC DDC & IPCC Data Distribution Centre; \url{https://www.ipcc-data.org}\\ \hline
 IPO & International Project Office (e.g., CMIP-IPO, \url{https://wcrp-cmip.org/cmip-governance/project-office/}\\ \hline
 IPSL & French Institut Pierre-Simon Laplace; \url{https://www.ipsl.fr/en/home-en}\\ \hline
 IS-ENES & Infrastructure for the European Network for Earth System Modelling; \url{https://is.enes.org}\\ \hline
@@ -1479,7 +1517,7 @@ NOAA & US National Oceanic and Atmospheric Administration; \url{https://www.noaa
 NOAA-NCEP & US NOAA National Centers for Environmental Prediction; \url{https://www.weather.gov/ncep}\\ \hline
 NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory; \url{https://www.pmel.noaa.gov}\\ \hline
 OCMIP & Ocean Carbon-Cycle Model Intercomparison Project; \url{https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips-2/267-modelling-wgcm-catalogue-ocmip}\\ \hline
-ORNL & Oak Ridge National Laboratory; \url{https://www.ornl.gov}\\ \hline
+ORNL & US Oak Ridge National Laboratory; \url{https://www.ornl.gov}\\ \hline
 PB & Petabyte (one quadrillion bytes, 10$^{15}$)\\ \hline
 \multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
 \end{tabularx}
@@ -1503,14 +1541,14 @@ PMP & PCMDI Metrics Package; \url{https://pcmdi.github.io/pcmdi_metrics}\\ \hlin
 PCMDI & Program for Climate Model Diagnosis and Intercomparison, LLNL; \url{https://pcmdi.llnl.gov}\\ \hline
 P-DRS & PCMDI Data Retrieval and Storage software library \citep[digital format;][]{drach_data_1995}\\ \hline
 RCP & Representative Concentration Pathways scenarios (Circa CMIP5)\\ \hline
-SAR & IPCC Second Assessment Report; \url{https://www.ipcc.ch/report/ar2/wg1}\\ \hline
+SAR & IPCC Second Assessment Report, 1995; \url{https://www.ipcc.ch/report/ar2/wg1}\\ \hline
 SGGCM & WCRP Steering Group on Global Coupled Models (a precursor to WGCM)\\ \hline
 SLCF & short-lived climate forcers\\ \hline
 SOLR & Apache SOLR, open-source enterprise-search database; \url{https://solr.apache.org}\\ \hline
 SPECTRE & Spectral Radiance Experiment\\ \hline
 SRES & IPCC Special Report on Emission Scenarios (Circa CMIP3)\\ \hline
 SST & Sea Surface Temperature\\ \hline
-TAR & IPCC Third Assessment Report; \url{https://www.ipcc.ch/report/ar3/wg1}\\ \hline
+TAR & IPCC Third Assessment Report, 2001; \url{https://www.ipcc.ch/report/ar3/wg1}\\ \hline
 TB & Terabyte (one trillion bytes, 10$^{12}$)\\ \hline
 WoS & Clarivate Web of Science Core Collection citation service; \url{https://www.webofscience.com/wos/woscc}\\ \hline
 WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org}\\ \hline
