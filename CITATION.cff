@@ -95,6 +95,6 @@ authors:
   given-names: "Dean N."
 title: "Durack et al. 2025: The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, infrastructure and implementation"
 version: 1.0
-doi: 10.5281/zenodo.12197150 
+doi:
 date-released: 2024-11-27
 url: "https://github.com/durack1/CMIPSummary"
