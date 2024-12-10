@@ -7,6 +7,7 @@ import copy
 import logging
 import requests
 import numpy as np
+import pdb
 
 # %% notes
 """
@@ -231,7 +232,7 @@ def pullStats(wosId, doi, padArray):
         tmp1.extend(citingYrs[2:])
         citingYrs = tmp1
         del (tmp, tmp1)
-        citingYrsPad[0 : indEnd - 1] = citingYrs
+        citingYrsPad[0 : indEnd - 1] = list(map(int, citingYrs))
     elif startInd == 1:
         citingYrsPad[0] = 0
         citingYrsPad[startInd : indEnd + 1] = list(map(int, citingYrs))
