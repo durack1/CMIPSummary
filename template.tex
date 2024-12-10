@@ -450,15 +450,14 @@ C4MIP ~2002 https://web.archive.org/web/20040804013119/http://www.c4mip.cnrs-gif
 }
 
 
-% Migrate figures/data to GitHub repo
 % https://www.overleaf.com/learn/latex/Inserting_Images
 % https://matplotlib.org/stable/users/explain/figure/backends.html#selecting-a-backend
 % https://medium.com/@aaron_imn/a-quick-guide-to-use-scalable-vector-graphics-svg-on-overleaf-ca69448f7177
 \begin{figure*}
     \centering
     %\includegraphics[width=1\linewidth]{fileName.png}
-    \includesvg[width=\textwidth]{241118T170837_Fig1.svg}
-    \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origin of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists.}
+    \includesvg[width=\textwidth]{241210T131439_Fig1.svg}
+    \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origins of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists.}
     \label{fig:fig1-MIPGrowth}
 \end{figure*}
 
@@ -540,7 +539,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \end{tabularx}
 } % /resizebox
 \label{tab:tab1-MIPsThroughTime}
-\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}.
+\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}. A visual representation of the growth of data volumes is captured in \autoref{fig:figB1-MIPDataGrowth}.
 
 {}\textsuperscript{\textdagger}Volume estimates are difficult to quantify, as the provided source and the final archived data differ. GRIB and similar precursor formats were reprocessed to netCDF-3.
 
@@ -685,8 +684,8 @@ Additional initiatives to collect and organize model and experiment documentatio
 
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_Fig2.svg}
-    \caption{Growth of the CMIP6 project over time, with data sizes (PB) identified by colours for each of the CMIP6 Community MIPs (see \autoref{tab:tab2-CMIP6MIPs}) from the initial date of data publication (9th May 2018) through to the latest publication (November 2024). The legend denotes MIP project sizes in Terabytes (TB). The largest data contributions in CMIP6 are from the CMIP (light blue) and ScenarioMIP (dark grey) activities, comprising 8.4 PB of the >15 PB total. Data growth fluctuated throughout the project's life, with current 2024 publication rates of 2.1 PB/yr (prorated). This compares to previous years: 0.8 in 2023, 3.3 in 2022, 1.8 in 2021, 3.1 in 2020, 3.3 in 2019, and 0.1 PB in 2018.}
+    \includesvg[width=\textwidth]{241210T131439_Fig2.svg}
+    \caption{Growth of the CMIP6 project over time, with data sizes (PB) identified by colours for each of the CMIP6 Community MIPs (see \autoref{tab:tab2-CMIP6MIPs}) from the initial date of data publication (9th May 2018) through to the latest publication (December 2024). The legend denotes MIP project sizes in Terabytes (TB). The largest data contributions in CMIP6 are from the CMIP (light blue) and ScenarioMIP (dark grey) activities, comprising 8.4 PB of the >15 PB total. Data growth fluctuated throughout the project's life, with current 2024 publication rates of 2.1 PB/yr (prorated). This compares to previous years: 0.8 in 2023, 3.3 in 2022, 1.8 in 2021, 3.1 in 2020, 3.3 in 2019, and 0.1 PB in 2018.}
     \label{fig:fig2-CMIP6DataGrowth}
 \end{figure*}
 
@@ -1023,7 +1022,7 @@ AMIP2 incorporated additional greenhouse gases, ozone, aerosols, and more comple
 
 With the definition of the CMIP3 20C3M/historical experiment \citep[$\sim$1850-2000;][]{meehl_wcrp_2007}, considerable augmentation occurred, with the first historical period datasets hosted by PCMDI alongside existing early AMIP/CMIP data. These data mainly addressed the SRES future scenarios \citep[2001-2100/2200/2300;][]{nakicenovic_summary_2000}, but did include a small number of historical period forcings including those that had already been collated for the AMIP2 experiment period (1979-2001; \autoref{tab:tab1-MIPsThroughTime}). Additional forcing needs were met independently by each contributing modelling group and model configuration.
 
-For CMIP5, increased model complexity (many models included atmospheric chemistry by this stage) necessitated a far more comprehensive approach to meet the historical experiment forcing needs \citep[1850-2005;][]{taylor_overview_2012}, and to share the workload, considerable coordination across modelling groups occurred. For anthropogenic emissions of short-lived climate forcers (SLCFs 1850-2000; e.g., CO, NOx, etc) dataset creation was led by NCAR, with contributions from a broad community including observationalists and climate modellers \citep{lamarque_historical_2010}. This effort was also extended to cover nitrogen and sulfur deposition over the historical and future period \citep[e.g.,][]{lamarque_multi-model_2013}. A similar community effort was taken with tropospheric and stratospheric ozone, led by the German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re \citep[DLR;][]{cionni_ozone_2011}. Well-mixed greenhouse gas concentrations (WMGHGs; 1765-2300) were also community-developed, however, this dataset development was dovetailed with the generation of the RCP future scenario data extending out to 2300 and consequently also entrained and even broader Integrated Assessment Modelling (IAM) community tasked with scenario development \citep{meinshausen_rcp_2011}. The concentrations and the anthropogenic emission datasets were developed to span both the historical and future projection periods, which for the first time necessitated a harmonization of these quantities across the historical-RCP 2005-2006 transition. Additional dataset development contributed to the project fell back to an existing community of researchers who had been involved in forcing production for early phases.
+For CMIP5, increased model complexity (many models included atmospheric chemistry by this stage) necessitated a far more comprehensive approach to meet the historical experiment forcing needs \citep[1850-2005;][]{taylor_overview_2012}, and to share the workload, considerable coordination across modelling groups occurred. For anthropogenic emissions of short-lived climate forcers (SLCFs 1850-2000; e.g., CO, NOx, etc), dataset creation was led by NCAR, with contributions from a broad community including observationalists and climate modellers \citep{lamarque_historical_2010}. This effort was also extended to cover nitrogen and sulfur deposition over the historical and future period \citep[e.g.,][]{lamarque_multi-model_2013}. A similar community effort was taken with tropospheric and stratospheric ozone, led by the German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re \citep[DLR;][]{cionni_ozone_2011}. Well-mixed greenhouse gas concentrations (WMGHGs; 1765-2300) were also community-developed, however, this dataset development was dovetailed with the generation of the RCP future scenario data extending out to 2300 and consequently also entrained and even broader Integrated Assessment Modelling (IAM) community tasked with scenario development \citep{meinshausen_rcp_2011}. The concentrations and the anthropogenic emission datasets were developed to span both the historical and future projection periods, which for the first time necessitated harmonizing these quantities across the historical-RCP 2005-2006 transition. Additional dataset development contributed to the project fell back to an existing community of researchers involved in forcing production for early phases.
 
 However, during CMIP5, there was limited standardisation of forcing datasets, particularly those used in the historical and piControl experiments, which differed markedly across modelling groups due to the lack of a centralised and coordinated approach. As an example of forcing differences across the historical simulations, the NOAA-GFDL GFDL-CM3 \citep{donner_dynamical_2011} used solar variability \citep{frohlich_solar_2004}, volcanic stratospheric aerosol emissions \citep{stenchikov_arctic_2006} and land-use changes \citep{hurtt_underpinnings_2006}. Whereas NASA-GISS GISS-E2 \citep{miller_cmip5_2014} used solar variability \citep{wang_modeling_2005}, with spectral variations \citep[][updated 2009]{lean_new_2003}, volcanic stratospheric aerosol emissions \citep[][updated]{sato_stratospheric_1993}, and land-use changes \citep[1850-1900;][]{pongratz_reconstruction_2008} and HYDE3.0 \citep[e.g.,][]{klein_goldewijk_hyde_2011} thereafter.
 
@@ -1099,19 +1098,18 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 }
 
 
-% Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_Fig3.svg}
-    \caption{Web of Science citations for key overview papers of each MIP phase, from FANGIO \citep{cess_intercomparison_1990} through CMIP6, plotted relative to their year of publication. For CMIP6, citations are plotted for the project overview paper \citep{eyring_overview_2016}, for the cumulative total across each of the satellite Community MIPs that comprise the phase (see \autoref{tab:tab2-CMIP6MIPs}), and for the composite sum of these two sources. Citation counts are an imperfect way to capture MIP impact but reflect a large and strongly growing user community using MIP data across numerous phases.}
+    \includesvg[width=\textwidth]{241210T131439_Fig3.svg}
+    \caption{Web of Science citations for key overview papers of each MIP phase, from FANGIO \citep{cess_intercomparison_1990} through CMIP6 \citep{eyring_overview_2016}, plotted relative to their year of publication. For CMIP6, citations are plotted for the project overview paper \citep{eyring_overview_2016}, for the cumulative total across each of the satellite Community MIPs that comprise the phase (see \autoref{tab:tab2-CMIP6MIPs}), and for the composite sum of these two sources. Citation counts are an imperfect way to capture MIP impact but reflect a large and strongly growing user community using MIP data across numerous phases.}
     \label{fig:fig3-MIPPhaseCitations}
 \end{figure*}
 
-% Migrate figures/data to GitHub repo
+
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_Fig4.svg}
-    \caption{Web of Science citations for the 23 endorsed MIP overview papers contributing to CMIP6 (see \autoref{tab:tab2-CMIP6MIPs}) from their publication to today. Black text numbers on each coloured bar denote citation counts. Citation counts are an imperfect way to capture MIP impact. Still, they are reflective of the large interest in the future climate change projections captured by ScenarioMIP \citep{oneill_scenario_2016} and the high-resolution simulations captured in HighResMIP \citep{haarsma_high_2016}.}
+    \includesvg[width=\textwidth]{241210T131439_Fig4.svg}
+    \caption{Web of Science citations for the 23 endorsed MIP overview papers contributing to CMIP6 (see \autoref{tab:tab2-CMIP6MIPs}) from their publication to today. Black text numbers on each coloured bar denote citation counts. Citation counts are an imperfect way to capture MIP impact, however, reflect the large interest in the ScenarioMIP future climate change projections \citep{oneill_scenario_2016} and the HighResMIP high-resolution simulations \citep{haarsma_high_2016}.}
     \label{fig:fig4-MIPCitations}
 \end{figure*}
 
@@ -1144,17 +1142,16 @@ The CMIP5 \citep{taylor_overview_2012} and CMIP6 \citep{eyring_overview_2016} pa
 The CMIP6-endorsed MIP experiment design papers also provide an opportunity to gauge interest by comparing across individual activities and their experiments (\autoref{fig:fig4-MIPCitations}). These results show very strong interest in two primary activities: the future-focused ScenarioMIP \citep{oneill_scenario_2016}, and the high-resolution focused HighResMIP \citep{haarsma_high_2016}, which received more than 2400 and 700 WoS citations respectively. Before CMIP6, MIP experiment design papers often appeared in the gray literature, so a systematic analysis of citations through time is impossible. It can, however, be claimed that the seminal science enabled by MIP results grew as momentum was built behind the MIP paradigm.
 
 
-% Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_Fig5.svg}
-    \caption{Downloads across the three most recent phases of CMIP, for which records are available, presented as a percentage total. Each horizontal stacked plot represents total download counts as percentages from 2018-November 2024 for CMIP5 and CMIP6, and 2004-2008 for CMIP3. For display, all ScenarioMIP experiments (CMIP3: SRES; CMIP5: RCP; CMIP6: SSP) are presented as cumulative totals across all contributing experiments, with other results displaying single experiment downloads. Top, the CMIP3 \citep{meehl_wcrp_2007} downloads across the top 6 experiments (3x ScenarioMIP) of 12 experiments total (see \autoref{tab:tabAppA1-MIPExperiments}), representing 94.3\%. Middle, the CMIP5 downloads across 10 experiments (4x ScenarioMIP), representing 90.3\%, of 37 experiments that defined the phase \citep[representing 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. Bottom, the CMIP6 downloads across 16 experiments (8x ScenarioMIP), representing 90.7\% representing 20 MIPs that published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 50\% of downloads were accounted for by the 7 core CMIP/DECK simulations \citep{eyring_overview_2016}, with 34\% accounted for in the 8 ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
+    \includesvg[width=\textwidth]{241210T131439_Fig5.svg}
+    \caption{Downloads across the three most recent phases of CMIP, for which records are available, presented as a percentage total. Each horizontal stacked plot represents total download counts as percentages from 2018-November 2024 for CMIP5 and CMIP6, and 2004-2008 for CMIP3. For display, all ScenarioMIP experiments (CMIP3: SRES; CMIP5: RCP; CMIP6: SSP) are presented as cumulative totals across all contributing experiments, with other results displaying single experiment downloads. Top, the CMIP3 \citep{meehl_wcrp_2007} downloads across the top 6 experiments (3x ScenarioMIP) of 12 experiments total (see \autoref{tab:tabAppA1-MIPExperiments}), representing 94.3\%. Middle, the CMIP5 downloads across 10 experiments (4x ScenarioMIP), representing 90.0\%, of 37 experiments that defined the phase \citep[representing 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. Bottom, the CMIP6 downloads across 17 experiments (11x ScenarioMIP), representing 90.4\% representing 20 MIPs that published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 45\% of downloads were accounted for by the 12 core CMIP/DECK simulations \citep{eyring_overview_2016}, with 38\% accounted for in the 11 ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, CMIP5 (CMIP 61\%, ScenarioMIP 25\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
     %\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}
     %\cred{Appetite to tabulate results?}
     \label{fig:fig5-MIPDownloads}
 \end{figure*}
 
-% Migrate figures/data to GitHub repo
+
 % https://superuser.com/questions/415707/export-excel-graphs-as-vector-graphics-files-e-g-svgs
 % https://www.ipcc.ch/site/assets/uploads/2018/04/FS_timeline.pdf
 \begin{figure*}
@@ -1269,11 +1266,10 @@ There is considerable continuity with experimental protocols across phases. The 
 \end{table*}
 
 
-% Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_FigA1.svg}
-    \caption{Recorded downloads across the three phases of CMIP, for which download records are available, following \autoref{fig:fig5-MIPDownloads}. Left the top 6 CMIP3 experiment downloads across the 12 experiments that defined phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads for the top 4 MIPs of the 8 that defined the phase \citep[\autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. And right the CMIP6 downloads for the top 4 MIPs of the 22 that defined the phase \cite[[see \autoref{tab:tab2-CMIP6MIPs};][]{eyring_overview_2016}. For CMIP6, almost 50\% of downloads were accounted for by the core CMIP/DECK simulations, with more than 30\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
+    \includesvg[width=\textwidth]{241210T131439_FigA1.svg}
+    \caption{Recorded downloads across the three phases of CMIP, for which download records are available, following \autoref{fig:fig5-MIPDownloads}. Left the top 6 CMIP3 experiment downloads across the 12 experiments that defined phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads for the top 4 MIPs of the 8 that defined the phase \citep[\autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. And right the CMIP6 downloads for the top 4 MIPs of the 22 that defined the phase \cite[[see \autoref{tab:tab2-CMIP6MIPs};][]{eyring_overview_2016}. For CMIP6, almost 45\% of downloads were accounted for by the core CMIP/DECK simulations, and 38\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with CMIP5 (CMIP 61\%, ScenarioMIP 25\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
     \label{fig:figA1-MIPDownloads}
     %\cred{Appetite to tabulate these results?}}.
     %\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}
@@ -1281,7 +1277,7 @@ There is considerable continuity with experimental protocols across phases. The 
 
 
 
-\section{MIP variable request and standard output}  %% Appendix B
+\section{MIP variable request, standard output and data growth}  %% Appendix B
 \label{sec:secAppB1-MIPStandardOutput}
 The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard output variables/Tables" was collated from numerous live and archived resources available from 1991 through to the CMIP6 CMOR Table files that are still being used today. The earliest resources were published in written form, the AMIP Newsletters \citep[e.g.,][]{gates_amip_1991}, and subsequently, became available on the PCMDI website for AMIP2, CMIP1 and CMIP2/2+ phases. CMIP3 marked a step change, with the development of the CMOR1 software \citep{taylor_cmor_2006} and CMIP3 Standard Output defined by the more complete CMIP3-CMOR-Tables \citep{doutriaux_cmip3_2005}. CMIP5 continued this trend with CMOR2 \citep{doutriaux_cmor_2011} and the CMIP5-CMOR-Tables \citep{doutriaux_cmip5_2013}. For CMIP6, project expansion to include 22 MIPs and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime} respectively) required the development of a dedicated CMIP6 Data Request (see \autoref{sec:CMIP6DR}) along with the parallel development of CMOR3 \citep{mauzey_cmor_2024} and the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}. For each tabulated value, superscript-identified links provide live connections to these sources, see \autoref{tab:tabAppB1-MIPStandardOutput}.
 
@@ -1324,6 +1320,14 @@ The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard ou
 	\label{tab:tabAppB1-MIPStandardOutput}
 	\footnotesize{Notes: {}\textsuperscript{\textdagger}In the CMIP3 phase, the total defined A5 table variables were 4, both adjusted/instantaneous shortwave forcing and its clearsky equivalent. This differs from the 223 identities in the table, which identified similar quantities (either top of atmosphere or tropopause, and variations due to unique forcing, e.g., all greenhouse gases, carbon dioxide only, total sulphate aerosol, direct effect only of sulphate aerosol, indirect effect only of sulphate aerosols, "black carbon", ozone, tropospheric ozone only, stratospheric ozone only, vegetation and other land surface changes, all anthropogenic factors, inclusive, volcanic aerosols, solar constant changes, all-natural factors inclusive.}
 \end{table*}
+
+
+\begin{figure*}
+    \centering
+    \includesvg[width=\textwidth]{241210T131439_FigA2.svg}
+    \caption{Data growth across all MIP phases, AMIP1 1989 through CMIP6 today. This figure is a visual representation of tabulated data volumes in \autoref{tab:tab1-MIPsThroughTime}. Note a y-axis log-scale, capturing data growth from gigabytes/10$^9$ bytes for AMIP1 and CMIP1 through to the tens of petabyte/10$^{15}$ bytes scale in CMIP6.}
+    \label{fig:figB1-MIPDataGrowth}
+\end{figure*}
 
 
 \section{MIP errata}  %% Appendix C
