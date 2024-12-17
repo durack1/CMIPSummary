@@ -10,7 +10,8 @@
 
 %% 2-column papers and preprints
 %\documentclass[journal abbreviation, manuscript]{copernicus} % default
-\documentclass[gmd, preprint]{copernicus}
+%\documentclass[gmd, preprint]{copernicus}
+\documentclass[manuscript]{copernicus}
 
 
 %% Journal abbreviations (please use the same for preprints and final revised papers)
@@ -139,11 +140,12 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \Author[1]{Sasha K.}{Ames} % 0000-0001-9981-2997
 \Author[13]{Fabrizio}{Antonio} % 0000-0002-7693-0111
 \Author[1]{David C.}{Bader} % 0000-0003-3210-339X
-\Author[14]{Daniel}{Ellis} % 0000-0001-6733-7028
-\Author[15,16]{Veronika}{Eyring} % 0000-0002-6887-4885
-\Author[17,13\textdagger]{Sandro L.}{Fiore} % 0000-0002-8430-6087
+\Author[14]{John P.}{Dunne} % 0000-0002-8794-0489
+\Author[15]{Daniel}{Ellis} % 0000-0001-6733-7028
+\Author[16,17]{Veronika}{Eyring} % 0000-0002-6887-4885
+\Author[18,13\textdagger]{Sandro L.}{Fiore} % 0000-0002-8430-6087
 \Author[5,7]{Sylvie}{Joussaume} % 0000-0002-1510-3964
-\Author[18,12]{Philip}{Kershaw} % 0000-0002-7646-291X
+\Author[19,12]{Philip}{Kershaw} % 0000-0002-7646-291X
 \Author[2\textdagger]{Jean-Francois}{Lamarque} % 0000-0002-4225-5074
 \Author[9\textdagger]{Michael}{Lautenschlager} % no ORCID, no reply, move to acknowledgements
 \Author[1]{Jiwoo}{Lee} % 0000-0002-0016-7199
@@ -153,8 +155,8 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \Author[13]{Alessandra}{Nuzzo} % 0000-0002-8801-6917
 \Author[1\textdagger]{Jeffrey}{Painter} % 0000-0001-7920-4337
 \Author[1\textdagger]{Gerald L.}{Potter} % 0000-0003-0291-7229
-\Author[5,6]{Sven}{Rodriguez} % ?
-\Author[19\textdagger]{Dean N.}{Williams} % ?
+\Author[5,6]{Sven}{Rodriguez} % 0009-0000-4283-3228
+\Author[20\textdagger]{Dean N.}{Williams} % ?
 
 %\Author[xx]{and past/present members of the}{WGCM Infrastructure Panel (WIP), CMIP Panel, and Earth System Grid Federation (ESGF)}
 %\Author[30\textdagger]{others please}{add yourselves - will alphabetically reorder once final}
@@ -190,13 +192,14 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \affil[12]{UK Research and Innovation (UKRI) Science and Technology Facilities Council (STFC), Oxfordshire, UK}
 %---
 \affil[13]{CMCC Foundation - Euro-Mediterranean Center on Climate Change (CMCC), Lecce, Italy}
-\affil[14]{CMIP International Project Office (CMIP-IPO); European Space Agency (ESA), Oxfordshire, UK}
-\affil[15]{Deutsches Zentrum f{\"u}r Luft- und Raumfahrt (DLR), Institut f{\"u}r Physik der Atmosph{\"a}re, Oberpfaffenhofen, Germany}
-\affil[16]{University of Bremen, Institute of Environmental Physics (IUP), Bremen, Germany}
-\affil[17]{University of Trento, Trento, Italy}
-\affil[18]{Centre for Environmental Data Analysis (CEDA), RAL Space, Oxfordshire, UK}
+\affil[14]{Geophysical Fluid Dynamics Laboratory, National Oceanic and Atmospheric Administration (NOAA-GFDL), Princeton, New Jersey, USA}
+\affil[15]{CMIP International Project Office (CMIP-IPO); European Space Agency (ESA), Oxfordshire, UK}
+\affil[16]{Deutsches Zentrum f{\"u}r Luft- und Raumfahrt (DLR), Institut f{\"u}r Physik der Atmosph{\"a}re, Oberpfaffenhofen, Germany}
+\affil[17]{University of Bremen, Institute of Environmental Physics (IUP), Bremen, Germany}
+\affil[18]{University of Trento, Trento, Italy}
+\affil[19]{Centre for Environmental Data Analysis (CEDA), RAL Space, Oxfordshire, UK}
 %\affil[19]{SilverLining, Washington, District of Columbia, USA}
-\affil[19]{Earth System Grid Federation (ESGF), Livermore, California, USA}
+\affil[20]{Earth System Grid Federation (ESGF), Livermore, California, USA}
 %\affil[xx]{C/o PCMDI, LLNL, Livermore, California, USA}
 %\affil[30]{Affiliation, location, country}
 \affil[\textdagger]{Formerly} %%\textdagger
@@ -218,18 +221,23 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \revised{}
 \accepted{}
 \published{}
-
 %% These dates will be inserted by Copernicus Publications during the typesetting process.
 
 \firstpage{1}
 \maketitle
 
+\section*{Correspondence}
+Paul J. Durack (pauldurack@llnl.gov)
 
+%{\cred{\textbf{This is a working draft document, dated \DTMnow} - The 28th November 2024 submitted draft can be downloaded \href{https://github.com/durack1/CMIPSummary/blob/main/241128_0653_durack1-egusphere-2024-3729.pdf}{\underline{HERE}}}}
+
+
+\newpage   %% Force a new page start so abstract is not cut in half
 \begin{abstract}
 
-The CMIP6 project was the most expansive and ambitious Model Intercomparison Project (MIP), the latest in a long history, extending back four decades. CMIP has captivated and engaged a broad, growing community focused on improving our climate understanding. It has anchored our ability to quantify and attribute the drivers and responses of the observed climate changes we are experiencing today.
+The CMIP6 project was the most expansive and ambitious Model Intercomparison Project (MIP), the latest in a long history, extending back four decades. CMIP has captivated and engaged a broad, growing international community focused on improving our climate understanding. It has anchored our ability to quantify and attribute the drivers and responses of the observed climate changes we are experiencing today.
 
-The project's profound impact has been achieved by combining the latest climate science and technology. This has enabled the production of latest-generation climate simulations and the dissemination of their output, which has seen increased community attention in every successive phase. The review emphasizes the pragmatics of progressively scaling up efforts, the evolution of how the MIPs were implemented, and the coordinated efforts to establish a minimal infrastructure to make that possible, most recently delivering CMIP6. 
+The project's profound impact has been achieved by combining the latest climate science and technology. This has enabled the production of the latest-generation climate simulations and disseminating their output, which has seen increased community attention in every successive phase. The review emphasizes the pragmatics of progressively scaling up efforts, the evolution of how the MIPs were implemented, and the coordinated international efforts to establish a minimal infrastructure to make that possible, most recently delivering CMIP6. 
 
 
 \mycomment{
@@ -305,7 +313,7 @@ Co-authors/Reviewers to engage: Mon 18 Nov
 
 The Model Intercomparison Project (MIP) concept, a well-worn terminology in climate science, has existed for many decades. Among other things, the MIP era has delivered two critical advancements to climate science. The first is that modelling groups contributing to any MIP have agreed to make their model output available to be scrutinized by the research community. Before the advent of MIPs, this was generally not the case, with model analysis typically performed by individual modelling groups or close collaborators. The second, contributing to a MIP means agreeing to adhere to a defined experimental design, meaning simulation data could be directly compared.
 
-Scientists, stakeholders, and policymakers often refer to the acronyms of the Coupled Model Intercomparison Project (CMIP) and Intergovernmental Panel on Climate Change (IPCC) interchangeably. However, this nomenclature does not correctly reflect their independence, which is scientifically and organizationally separate. Historically, CMIP phases were implemented before IPCC phases, which assessed CMIP-enabled climate science. The MIPs further inspired international effort coordination, leading to considerable science collaboration that has enabled breakthroughs, including the building consensus that human influence is "\textit{unequivocal}" in driving the observed climate changes we are experiencing today \citep[see \autoref{fig:fig6-MIPImpact};][]{eyring_human_2021}. More comprehensive international coordination has marked their development as a way to systematically evaluate observed climate changes, generate plausible future projections driven by varying futures of human development, and assess the fidelity of global climate models (GCMs) and Earth System Models (ESMs) to reproduce past changes and gauge their responses and sensitivities to realistic and idealised climate forcing. The multi-model approach to climate change assessment is now routine, with documented and reproducible experimental protocols and input "forcing" datasets facilitating standardised simulations that can be directly compared across models and with observations to ascertain the externally-forced signal from noise and identify robust model responses versus outliers and anomalies that are not representative of our real world best estimates.
+Scientists, stakeholders, and policymakers often refer to the acronyms of the Coupled Model Intercomparison Project (CMIP) and Intergovernmental Panel on Climate Change (IPCC) interchangeably. However, this incorrectly reflects their independence, which is scientifically and organizationally separate. Historically, CMIP phases were implemented before IPCC phases, which assessed CMIP-enabled climate science. The MIPs further inspired international effort coordination, leading to considerable science collaboration that has enabled breakthroughs, including the building consensus that human influence is "\textit{unequivocal}" in driving the observed climate changes we are experiencing today \citep[see \autoref{fig:fig6-MIPImpact};][]{eyring_human_2021}. More comprehensive international coordination has marked their development as a way to systematically evaluate observed climate changes, generate plausible future projections driven by varying futures of human development, and assess the fidelity of global climate models (GCMs) and Earth System Models (ESMs) to reproduce past changes and gauge their responses and sensitivities to realistic and idealised climate forcing. The multi-model approach to climate change assessment is now routine, with documented and reproducible experimental protocols and input "forcing" datasets facilitating standardised simulations that can be directly compared across models and with observations to ascertain the externally-forced signal from noise and identify robust model responses versus outliers and anomalies that are not representative of our real world best estimates.
 
 To provide context for the most recent phase \citep[CMIP6;][]{eyring_overview_2016} and the planning of the project’s future, we discuss the efforts dating back to the MIP origins and their contribution to making climate community collaboration what it is today. Small teams or individuals initiated many of the steps taken. While evidence of this history is scattered in the literature, we attempt to bring them together to tell a coherent story of how CMIP got to where it is today. Our emphasis details the pragmatics of what it took to progressively scale up efforts, most recently delivering CMIP6. Thus, this review describes the evolution of how the MIPs were implemented and the coordinated efforts to establish a minimal infrastructure to make that possible.
 
@@ -345,7 +353,7 @@ https://documents.un.org/doc/resolution/gen/nr0/530/32/img/nr053032.pdf?OpenElem
 \subsection{Atmospheric Model Intercomparison Project phases (AMIP1/2)}
 \label{sec:amip1And2}
 
-Intercomparison of near-term weather, as simulated with different atmospheric models, occurred soon after the first global models were developed in the 1950s \citep[e.g.,][]{gates_ams_1992,edwards_history_2011}. These activities became more coordinated in the early-1970s through the guidance of the Working Group on Numerical Experimentation (WGNE) which was formed in 1967 under the international Global Atmospheric Research Program (GARP), a precursor to the World Climate Research Programme \citep[WCRP;][]{gates_ams_1992}. The first internationally coordinated climate model experimentation occurred in the late 1980s with the scientifically targeted Feedback ANalysis of GCMs and In Observations (FANGIO) project. FANGIO was specifically designed to look at feedback mechanisms, defining a sea surface temperature perturbation that prescribed a defined climate change. This project attracted contributions from 19 distinct atmospheric model configurations, and concluded that the cloud feedbacks across models was the major cause of the differences in modelled climate sensitivity \citep{cess_methodology_1988, cess_interpretation_1989, cess_intercomparison_1990, cess_first_1991}.
+Intercomparison of near-term weather, as simulated with different atmospheric models, occurred soon after the first global models were developed in the 1950s \citep[e.g.,][]{gates_ams_1992,edwards_history_2011}. These activities became more coordinated in the early-1970s through the guidance of the Working Group on Numerical Experimentation (WGNE), which was formed in 1967 under the international Global Atmospheric Research Program (GARP), a precursor to the World Climate Research Programme \citep[WCRP;][]{gates_ams_1992}. The first internationally coordinated climate model experimentation occurred in the late 1980s with the scientifically targeted Feedback ANalysis of GCMs and In Observations (FANGIO) project. FANGIO was explicitly designed to look at feedback mechanisms, defining a sea surface temperature perturbation that prescribed a defined climate change. This project attracted contributions from 19 distinct atmospheric model configurations, and concluded that the cloud feedbacks across models was the major cause of the differences in modelled climate sensitivity \citep{cess_methodology_1988, cess_interpretation_1989, cess_intercomparison_1990, cess_first_1991}.
 
 The nascent community progress quickly expanded into the first phase of the Atmospheric Model Intercomparison Project \citep[AMIP, hereafter referred to as AMIP1;][]{gates_amip_1992}, which was organized under the WGNE purview to help identify systematic errors, narrow the range of model results, and assist in prioritizing model development to reduce those errors. The acronym AGCM (Atmospheric General Circulation Model) was coined to define model configurations for AMIP, with many of the contributing model configurations also including simplified land-surface representations \citep[e.g.,][]{budyko_heat_1961,manabe_climate_1969,vargas_godoy_global_2021}.
 
@@ -409,7 +417,7 @@ The WGCM’s best guess was that 50 users would access the data, and the data vo
 
 The considerable growth in coordinated MIPs continued throughout the early 2000s and led to the development of what became known as the third phase of CMIP, CMIP3 \citep{meehl_wcrp_2007}. In the early stages, activities that came to define the project were more identified by discrete subprojects, targeting science questions of ocean realism in comparison to observations \citep[e.g.,][]{orr_ocean_1999, dutay_evaluation_2002,dutay_evaluation_2004}, and climate change detection and attribution research targeting the "historical" period \citep[e.g.,][]{hegerl_20c3m_2003}. Subsequently, many of the initial activities evolved into a more coordinated collection of experiments, which entrained an even greater number of contributing modelling groups (\autoref{fig:fig1-MIPGrowth}).
 
-The project saw a step-change across numerous facets, driven by growing and emerging science themes (such as climate change commitment) and an increasing appetite from a growing community to access these model data. All contributing models were coupled, simulating the atmosphere, ocean, sea-ice, and in some cases, the first dynamic land components. By this phase, the flux adjustment, used by many CMIP1/2 contributing models, was largely unnecessary for most contributing AOGCM configurations \citep{durack_ocean_2012}. There was also a dramatic scientific expansion from the fixed pre-industrial control (picntrl) and idealized 1 percent compounding CO$_{2}$ (1pctto2x, 1pctto4x) CMIP2 experiments to include for the first time a "Twentieth-century" simulation (20C3M; $\sim$1860-1999), extending from the mid-19th to late 20th centuries, and directly comparable to the growing observational record \citep[][\autoref{tab:tabAppA1-MIPExperiments}]{meehl_wcrp_2007}.
+The project saw a step-change across numerous facets, driven by growing and emerging science themes (such as climate change commitment) and an increasing appetite from a growing community to access these model data. All contributing models were coupled, simulating the atmosphere, ocean, sea-ice, and in some cases, the first dynamic land components. By this phase, the flux adjustment, used by many CMIP1/2 contributing models, was largely unnecessary for most contributing AOGCM configurations \citep{durack_ocean_2012}. There was also a dramatic scientific expansion from the fixed pre-industrial control (picntrl) and idealized 1 percent compounding CO$_{2}$ (1pctto2x, 1pctto4x) CMIP2 experiments to include for the first time a "Twentieth-century" simulation ("20th Century Climate in Coupled Models", 20C3M; $\sim$1860-1999), extending from the mid-19th to late 20th centuries, and directly comparable to the growing observational record \citep[][\autoref{tab:tabAppA1-MIPExperiments}]{meehl_wcrp_2007}.
 
 The 20C3M experiment, along with parallel 21st century future projection simulations as documented in the Special Report on Emission Scenarios \citep[SRES 2000-2100;][]{nakicenovic_summary_2000} was a CMIP step-change, for the first time providing model data that could be directly compared to the growing observational datasets, and outlining a project design that would be replicated to great effect in subsequent phases (to become the DECK and ScenarioMIP in CMIP6). Partial motivation for the 20C3M experiment was to address the growing science around climate change detection and attribution \citep[DandA; e.g.,][]{santer_detection_1996-1,hegerl_20c3m_2003} a research focus that was rapidly expanding since the "..\emph{discernable} human influence on global climate" statement was published in the IPCC SAR \citep{santer_detection_1996}.
 
@@ -436,15 +444,14 @@ C4MIP ~2002 https://web.archive.org/web/20040804013119/http://www.c4mip.cnrs-gif
 }
 
 
-% Migrate figures/data to GitHub repo
 % https://www.overleaf.com/learn/latex/Inserting_Images
 % https://matplotlib.org/stable/users/explain/figure/backends.html#selecting-a-backend
 % https://medium.com/@aaron_imn/a-quick-guide-to-use-scalable-vector-graphics-svg-on-overleaf-ca69448f7177
 \begin{figure*}
     \centering
     %\includegraphics[width=1\linewidth]{fileName.png}
-    \includesvg[width=1.5\columnwidth]{241118T170837_Fig1.svg}
-    \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origin of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists.}
+    \includesvg[width=\textwidth]{241212T091503_Fig1.svg}
+    \caption{Experiments, models, institutions, and countries contributing to completed Model Intercomparison Project (MIP) phases, from 1989 to today. The project's growth over the most recent phase reflects a growing community appetite for the latest climate data to inform decision-making, a distant evolution from the climate science origins of AMIP1. See \autoref{tab:tabAppA1-MIPExperiments} for an expansion of the experiment lists.}
     \label{fig:fig1-MIPGrowth}
 \end{figure*}
 
@@ -471,13 +478,13 @@ CMIP4 comment - https://www.wcrp-climate.org/images/modelling/WGCM/WGCM17/WGCM17
 
 Late in CMIP3, during the IPCC AR4 process, it became clear that a profound climate change science paradigm shift would happen. The end of CMIP3 and the publication of the IPCC AR4 in 2007 saw the end of 20 years of relatively coarse grid AOGCMs, run with climate change non-mitigation scenarios. The new scientific paradigm that was emerging had three elements. First, decadal climate prediction began to use climate models that had been initialized to predict near-term climate variability over the next decade. Second, Earth System Models (ESMs) with coupled carbon cycle components were being formulated to study longer-term feedbacks past mid-century with new mitigation scenarios. Third, new tangible linkages throughout the climate science community (WCRP, IGBP, IPCC Working Group II [WG2: Impacts, Adaptation, and Vulnerability], and IPCC Working Group III [WG3: Mitigation of Climate Change]) were required to advance the science. Consequently, a landmark Aspen Global Change Institute (AGCI) session, which reflected this new paradigm, was convened in August 2006, to formulate CMIP5 with participants consisting of climate modellers, chemistry and aerosol modellers, land surface modellers, biogeochemistry modellers, Integrated Assessment Model (IAM) scientists, and Impacts-Adaptation-Vulnerability (IAV) researchers.
 
-Several "firsts" emerged from the 2006 AGCI session that formulated the CMIP5 experiment design \citep{hibbard_strategy_2007}. CMIP5 marked the first time that the future climate change problem was divided into near-term and long-term timescales, reflecting a science shift with the emergence of decadal climate prediction and the needs of the stakeholder community for near-term climate change information. This outcome led to a subsequent 2008 AGCI workshop where the experiment design for coordinated decadal climate prediction experiments for CMIP5 was formulated, launching a new area of climate science \citep{meehl_decadal_2009}. CMIP5 was the first time ESM experiments were included in a CMIP phase, reflecting the rise of the carbon cycle being included as standard AOGCM components. The CMIP5 planning process marked the first time the Earth System Modelling (ESM) Community connected with the Integrated Assessment Modelling (IAM) community to agree on new future emission scenarios.
+Several "firsts" emerged from the 2006 AGCI session that formulated the CMIP5 experiment design \citep{hibbard_strategy_2007}. CMIP5 marked the first time that the future climate change problem was divided into near-term and long-term timescales, reflecting a science shift with the emergence of decadal climate prediction and the needs of the stakeholder community for near-term climate change information. This outcome led to a subsequent 2008 AGCI workshop where the experiment design for coordinated decadal climate prediction experiments for CMIP5 was formulated, launching a new area of climate science \citep{meehl_decadal_2009}. CMIP5 was the first time ESM experiments were included in a CMIP phase, reflecting the rise of the carbon cycle being included as standard AOGCM components. The CMIP5 planning process marked the first time the Earth System Modelling (ESM) Community connected with the Integrated Assessment Modelling (IAM) community to agree on new future emission scenarios \citep{moss_towards_2008}.
 
 Thus, the marked expansion of activities over preceding decades and an ever-expanding data user base led to a considerable project augmentation for CMIP5 \citep{meehl_introduction_2011}. By this stage, many climate research subcommunities had identified MIPs as an effective way to scientifically collaborate, addressing the dual purposes of answering scientific questions through coordinated experimentation and identifying opportunities for model improvement by identifying common errors and biases across the multi-model ensembles. The developing data standards and delivery infrastructure also considerably aided collaboration, easing access to obtaining and using CMIP output (see \autoref{sec:CMIPSupportingOrgsAndInfra}).
 
-For CMIP5, the "core" experiments included CMIP simulations AMIP, piControl, historical (20C3M), 1pctCO2 (previously 1pctto2x, 1pctto4x), and an instantaneous CO$_{2}$ quadrupling experiment (abrupt4xCO2) included, targeting model behaviour assessment and climate sensitivity, preempting the CMIP6 "DECK". In addition, the success and attention of the future-focused SRES projections in CMIP3 led to an augmentation of four next-generation Representative Concentration Pathway (RCP) scenarios being defined \citep{moss_next_2010}.
+For CMIP5, the "core" experiments included CMIP simulations AMIP, piControl, historical (20C3M), 1pctCO2 (previously 1pctto2x, 1pctto4x), and an instantaneous CO$_{2}$ quadrupling experiment (abrupt4xCO2) included, targeting model behaviour assessment and climate sensitivity, preempting the CMIP6 "DECK". In addition, the success and attention of the three future-focused SRES projections included CMIP3 led to an augmentation and four of the next-generation Representative Concentration Pathway (RCP) scenarios being identified for inclusion in CMIP5 \citep{moss_next_2010}.
 
-The importance of the carbon cycle through land and ocean biogeochemistry had also been recognized, which led to several experiments being included forced with CO$_{2}$ emissions (rather than the imposed atmospheric concentrations of the preceding phases) which depended on ESM configurations to contribute \citep{hibbard_strategy_2007,meehl_introduction_2011}.
+The importance of the carbon cycle through land and ocean biogeochemistry had also been recognized, which led to several experiments being included forced with CO$_{2}$ emissions (rather than the imposed atmospheric concentrations of the preceding phases) which depended on ESM configurations to contribute \citep{hibbard_strategy_2007,meehl_introduction_2011}. In addition, anthropogenic aerosol emissions had also been identified as important climate drivers, and were generated and used by a number of modelling groups in model configurations including more complex atmospheric chemistry \citep[e.g.,][]{lamarque_historical_2010}.
 
 After considerable input and iterations with the international climate science community, the CMIP5 experiment design was approved by the WGCM in 2008 \citep{taylor_overview_2012}. The CMIP5 project design evolution already reflected the more formal MIP structure defined in the following CMIP6 phase (see \autoref{sec:cmip6ProjectDesign}, \autoref{tab:tabAppA1-MIPExperiments}). Projected future scenarios rcp45 and rcp85 were defined \citep{stouffer_cmip5_2011}, with second tier scenarios rcp26 and rcp60 also included \citep[precursors to CMIP6 ScenarioMIP experiments;][]{hibbard_primer_2011}.
 
@@ -496,7 +503,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 
 %https://tex.stackexchange.com/questions/343028/vertical-centering-of-all-columns-in-tabularx-environment 
 \begin{table*}[htp]
-\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.5}  % two-column
 \scriptsize
 \centering
 \caption{The Model Intercomparison Projects (MIPs), through time}
@@ -526,7 +533,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \end{tabularx}
 } % /resizebox
 \label{tab:tab1-MIPsThroughTime}
-\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}.
+\footnotesize{Notes: sources for "Experiment count" are documented in \autoref{sec:secAppA1-MIPExperiments} and \autoref{tab:tabAppA1-MIPExperiments}. A visual representation of the growth of data volumes is captured in \autoref{fig:figB1-MIPDataGrowth}.
 
 {}\textsuperscript{\textdagger}Volume estimates are difficult to quantify, as the provided source and the final archived data differ. GRIB and similar precursor formats were reprocessed to netCDF-3.
 
@@ -587,13 +594,13 @@ While community consultation underpins the CMIP project planning and development
 %\resizebox{\textwidth}{!} {
 \begin{tabularx}{1\textwidth} {
   | >{\centering\arraybackslash\hsize=.04\hsize}X 
-  | >{\centering\arraybackslash\hsize=.08\hsize}X 
-  | >{\centering\arraybackslash\hsize=.33\hsize}X 
+  | >{\centering\arraybackslash\hsize=.12\hsize}X 
+  | >{\centering\arraybackslash\hsize=.29\hsize}X 
   | >{\centering\arraybackslash\hsize=.37\hsize}X 
   | >{\centering\arraybackslash\hsize=.18\hsize}X | }
 \hline
 \textbf{Count} & \textbf{MIP identity} & \textbf{MIP Description} & \textbf{Science focus} & \textbf{Citation} \\ \hline
-1 & AerChemMIP & Aerosol Chemistry & Short-lived climate forcers & \citet{collins_aerchemmip_2017} \\ \hline
+1 & AerChemMIP & Atmospheric Aerosols and Chemistry & Short-lived climate forcers & \citet{collins_aerchemmip_2017} \\ \hline
 2 & C4MIP & Climate-Carbon Cycle & Carbon cycle & \citet{jones_c4mip_2016} \\ \hline
 3 & CDRMIP & Carbon Dioxide Removal & Carbon dioxide removal & \citet{keller_carbon_2018} \\ \hline
 4 & CFMIP & Cloud Feedback & Cloud feedbacks & \citet{webb_cloud_2017} \\ \hline
@@ -614,11 +621,27 @@ While community consultation underpins the CMIP project planning and development
 18 & RFMIP & Radiative Forcing & Radiative forcing, transfers and model responses & \citet{pincus_radiative_2016} \\ \hline
 19 & ScenarioMIP & Scenarios & Future climate change projections & \citet{oneill_scenario_2016} \\ \hline
 20 & VolMIP & Volcanic forcing & Volcanic forcing climate responses & \citet{zanchettin_model_2016} \\ \hline
+\multicolumn{5}{l}{\textbf{\autoref{tab:tab2-CMIP6MIPs} continued overpage..}}\\
+\end{tabularx}
+\footnotesize{Notes: MIPs 1 through 20 above are registered in the CMIP6 Controlled Vocabulary (CMIP6\_CVs) GitHub repository, the primary source of CMIP6 registered information. Due to inflexible infrastructure, experiments defined by MIPs 21 and 22 were registered under an existing MIP (C4MIP and DAMIP, respectively).}
+\end{table*}
 
+% Split table over multiple pages
+\addtocounter{table}{-1}
+\begin{table*}[htp]
+\renewcommand{\arraystretch}{2}
+\scriptsize
+\centering
+\caption{The CMIP6-Endorsed Model Intercomparison Projects (MIPs), their science focus, and citation (continued)}
+\begin{tabularx}{1\textwidth} {
+  | >{\centering\arraybackslash\hsize=.04\hsize}X 
+  | >{\centering\arraybackslash\hsize=.12\hsize}X 
+  | >{\centering\arraybackslash\hsize=.29\hsize}X 
+  | >{\centering\arraybackslash\hsize=.37\hsize}X 
+  | >{\centering\arraybackslash\hsize=.18\hsize}X | }
 \multicolumn{5}{l}{\textbf{MIPs (added as an existing MIP subactivity)}} \\ \hline
 21 & C4MIP: ZECMIP & Zero Emissions Commitment & CO$_{2}$ emissions and remaining carbon budget & \citet{jones_zero_2019} \\ \hline
 22 & DAMIP: COVIDMIP & Modifying emissions to account for COVID-19 & Updated GHG, aerosols, ozone, and optical properties in response to COVID-19 lockdowns & \citet{lamboll_modifying_2021} \\ \hline
-
 \multicolumn{5}{l}{\textbf{Diagnostic MIPs (requesting output from CMIP6 experiments, but having no MIP child experiments, and no data published to the ESGF CMIP6 project)}} \\ \hline
  & WCRP CORDEX & WCRP COordinated Regional Downscaling EXperiment & Regional downscaling related variable request & \cite{gutowski_jr_wcrp_2016} \\ \hline
  & DynVarMIP & Dynamics and Variability & Momentum and energy transport and model bias related variable request & \citet{gerber_dynamics_2016} \\ \hline
@@ -655,8 +678,8 @@ Additional initiatives to collect and organize model and experiment documentatio
 
 \begin{figure*}
     \centering
-    \includesvg[width=1.5\columnwidth]{241118T170837_Fig2.svg}
-    \caption{Growth of the CMIP6 project over time, with data sizes (PB) identified by colours for each of the CMIP6 Community MIPs (see \autoref{tab:tab2-CMIP6MIPs}) from the initial date of data publication (9th May 2018) through to the latest publication (November 2024). The legend denotes MIP project sizes in Terabytes (TB). The largest data contributions in CMIP6 are from the CMIP (light blue) and ScenarioMIP (dark grey) activities, comprising 8.4 PB of the >15 PB total. Data growth fluctuated throughout the project's life, with current 2024 publication rates of 2.1 PB/yr (prorated). This compares to previous years: 0.8 in 2023, 3.3 in 2022, 1.8 in 2021, 3.1 in 2020, 3.3 in 2019, and 0.1 PB in 2018.}
+    \includesvg[width=\textwidth]{241212T091503_Fig2.svg}
+    \caption{Growth of the CMIP6 project over time, with data sizes (PB) identified by colours for each of the CMIP6 Community MIPs (see \autoref{tab:tab2-CMIP6MIPs}) from the initial date of data publication (9th May 2018) through to the latest publication (December 2024). The legend denotes MIP project sizes in Terabytes (TB). The largest data contributions in CMIP6 are from the CMIP (light blue) and ScenarioMIP (dark grey) activities, comprising 8.4 PB of the >15 PB total. Data growth fluctuated throughout the project's life, with current 2024 publication rates of 2.1 PB/yr (prorated). This compares to previous years: 0.8 in 2023, 3.3 in 2022, 1.8 in 2021, 3.1 in 2020, 3.3 in 2019, and 0.1 PB in 2018.}
     \label{fig:fig2-CMIP6DataGrowth}
 \end{figure*}
 
@@ -675,11 +698,13 @@ Also NCAR CSM - see http://cfconventions.org/conventions.html
 %#####
 }
 
-By 1997, the large and growing MIP archives had accumulated tens of thousands of output files from dozens of model configurations. The diverse and growing international community interested in analyzing and applying results from the models was hampered by the diversity of data formats, structures, and nomenclatures that climate modelling centres had adopted. There would be obvious benefits in standardizing the data. To fill the void, the Gregory, Drach, and Tett \citep[GDT v0;][]{gregory_gdt_1999} standards were first introduced in June 1997. The GDT standard expanded markedly on COARDS, focusing on better enabling GCM output to be self-describing and to conform to standard conventions. These conventions enabled the explicit definition of the location and sizes of the grid cells, coordinates specified by tuples [CF "formula\_terms"], multiple coordinate systems for a given data variable [CF "grid\_mapping"], provisions for time series and vertical profiles at points and trajectories [CF "discrete sampling geometries"], and metadata describing subgrid variation [CF "cell\_methods"].
+By 1997, the large and growing MIP archives had accumulated tens of thousands of output files from dozens of model configurations. The diverse and growing international community interested in analyzing and applying results from the models was hampered by the diversity of data formats, structures, and nomenclatures that climate modelling centres had adopted. There would be obvious benefits in standardizing the data. To fill the void, the Gregory, Drach, and Tett \citep[GDT v1.4;][]{gregory_gdt_1999} standards were first introduced in June 1997. The GDT standard expanded markedly on COARDS, focusing on better enabling GCM output to be self-describing and to conform to standard conventions. These conventions enabled the explicit definition of the location and sizes of the grid cells, coordinates specified by tuples [CF "formula\_terms"], multiple coordinate systems for a given data variable [CF "grid\_mapping"], provisions for time series and vertical profiles at points and trajectories [CF "discrete sampling geometries"], and metadata describing subgrid variation [CF "cell\_methods"].
 
-In 1999, the continued development of GDT ceased at v1.4. In parallel, work continued at the National Center for Atmospheric Research (NCAR, US) on the Community Climate System Model (CCSM) netCDF Conventions (CCSM netCDF Conventions). In December 1999, at a meeting at NCAR, it was decided to merge these efforts, leading to a collaboration of a larger group of authors who began work developing what became known as the NetCDF Climate and Forecast (CF) Metadata Conventions. Building on and going far beyond COARDS, GDT, CCSM netCDF Conventions, and similar efforts, version 1.0 of the CF Conventions was released in October 2003 \citep[e.g.,][]{eaton_netcdf_2024}.
+In parallel with the development of GDT, work had been going on the National Center for Atmospheric Research (NCAR, US) on the Community Climate System Model (CCSM) netCDF Conventions (CCSM netCDF Conventions). Both conventions were superseded following a meeting in December 1999 at NCAR, when it was decided to merge these efforts, leading to a collaboration of a larger group of authors who began work developing what became known as the NetCDF Climate and Forecast (CF) Metadata Conventions. Building on and going far beyond COARDS, GDT, CCSM netCDF Conventions, and similar efforts, version 1.0 of the CF Conventions was released in October 2003 \citep[e.g.,][]{eaton_netcdf_2024}.
 
 Subsequently, the CF conventions were adopted by CMIP, starting in phase 3. Since that time, CF gained in popularity across climate sciences and beyond. By 2006, the contributor community was rapidly growing, and a formal governance structure was established in response \citep{lawrence_maintaining_2006}. Today, an ever-expanding group of volunteers maintains and continues to augment these conventions (see \url{https://cfconventions.org}). The evolution (while maintaining backward compatibility) has been ongoing through several releases, the latest being version 1.12-draft. The stability of CF, the vibrant community supporting it, and the development of software that can interpret CF data have been foundational to the widespread use of CMIP data.
+
+From the inception of CF, in parallel with the elaboration of the conventions, work has proceeded on compiling the CF standard name table. Originating in the "quantity" concept of the preceding GDT conventions \citep{gregory_gdt_1999}, a standard name is a self-explanatory phrase identifying a particular geophysical quantity. CF currently defines about 4900 standard names. Standard names have become an element of CMIP controlled vocabularies, work which began with AMIP1, and were formalised during CMIP3 (see \autoref{sec:CMIPCVs}).
 
 From the inception of CF, parallel work continued compiling the CF standard name table. This idea originated as a "quantity" concept in the preceding GDT conventions \citep{gregory_gdt_1999}. This ongoing work led naturally to the development of CMIP Controlled vocabularies, which were formalised during CMIP3 (see \autoref{sec:CMIPCVs}).
 
@@ -991,7 +1016,7 @@ AMIP2 incorporated additional greenhouse gases, ozone, aerosols, and more comple
 
 With the definition of the CMIP3 20C3M/historical experiment \citep[$\sim$1850-2000;][]{meehl_wcrp_2007}, considerable augmentation occurred, with the first historical period datasets hosted by PCMDI alongside existing early AMIP/CMIP data. These data mainly addressed the SRES future scenarios \citep[2001-2100/2200/2300;][]{nakicenovic_summary_2000}, but did include a small number of historical period forcings including those that had already been collated for the AMIP2 experiment period (1979-2001; \autoref{tab:tab1-MIPsThroughTime}). Additional forcing needs were met independently by each contributing modelling group and model configuration.
 
-For CMIP5, increased model complexity (many models included atmospheric chemistry by this stage) necessitated a far more comprehensive approach to meet the historical experiment forcing needs \citep[1850-2005;][]{taylor_overview_2012}, and to share the workload, considerable coordination across modelling groups occurred. For anthropogenic emissions of short-lived climate forcers (SLCFs 1850-2000; e.g., CH$_{4}$, CO, NOx, etc) dataset creation was led by NCAR, with contributions from a broad community including observationalists and climate modellers \citep{lamarque_historical_2010}. A similar community effort was taken with tropospheric and stratospheric ozone, led by the German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re \citep[DLR;][]{cionni_ozone_2011}. Well-mixed greenhouse gases (WMGHGs; 1765-2300) were also community-developed, however, this dataset development was dovetailed with the generation of the RCP future scenario data extending out to 2300 and consequently also entrained and even broader Integrated Assessment Modelling (IAM) community tasked with scenario development \citep{meinshausen_rcp_2011}. Additional dataset developments contributed to the project fell back to an existing community of researchers who had developed earlier datasets.
+For CMIP5, increased model complexity (many models included atmospheric chemistry by this stage) necessitated a far more comprehensive approach to meet the historical experiment forcing needs \citep[1850-2005;][]{taylor_overview_2012}, and to share the workload, considerable coordination across modelling groups occurred. For anthropogenic emissions of short-lived climate forcers (SLCFs 1850-2000; e.g., CO, NOx, etc), dataset creation was led by NCAR, with contributions from a broad community including observationalists and climate modellers \citep{lamarque_historical_2010}. This effort was also extended to cover nitrogen and sulfur deposition over the historical and future period \citep[e.g.,][]{lamarque_multi-model_2013}. A similar community effort was taken with tropospheric and stratospheric ozone, led by the German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re \citep[DLR;][]{cionni_ozone_2011}. Well-mixed greenhouse gas concentrations (WMGHGs; 1765-2300) were also community-developed, however, this dataset development was dovetailed with the generation of the RCP future scenario data extending out to 2300 and consequently also entrained and even broader Integrated Assessment Modelling (IAM) community tasked with scenario development \citep{meinshausen_rcp_2011}. The concentrations and the anthropogenic emission datasets were developed to span both the historical and future projection periods, which for the first time necessitated harmonizing these quantities across the historical-RCP 2005-2006 transition. Additional dataset development contributed to the project fell back to an existing community of researchers involved in forcing production for early phases.
 
 However, during CMIP5, there was limited standardisation of forcing datasets, particularly those used in the historical and piControl experiments, which differed markedly across modelling groups due to the lack of a centralised and coordinated approach. As an example of forcing differences across the historical simulations, the NOAA-GFDL GFDL-CM3 \citep{donner_dynamical_2011} used solar variability \citep{frohlich_solar_2004}, volcanic stratospheric aerosol emissions \citep{stenchikov_arctic_2006} and land-use changes \citep{hurtt_underpinnings_2006}. Whereas NASA-GISS GISS-E2 \citep{miller_cmip5_2014} used solar variability \citep{wang_modeling_2005}, with spectral variations \citep[][updated 2009]{lean_new_2003}, volcanic stratospheric aerosol emissions \citep[][updated]{sato_stratospheric_1993}, and land-use changes \citep[1850-1900;][]{pongratz_reconstruction_2008} and HYDE3.0 \citep[e.g.,][]{klein_goldewijk_hyde_2011} thereafter.
 
@@ -1067,19 +1092,18 @@ To leverage these tools more efficiently and immediately, the WCRP established t
 }
 
 
-% Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includesvg[width=1.5\columnwidth]{241118T170837_Fig3.svg}
-    \caption{Web of Science citations for key overview papers of each MIP phase, from FANGIO \citep{cess_intercomparison_1990} through CMIP6, plotted relative to their year of publication. For CMIP6, citations are plotted for the project overview paper \citep{eyring_overview_2016}, for the cumulative total across each of the satellite Community MIPs that comprise the phase (see \autoref{tab:tab2-CMIP6MIPs}), and for the composite sum of these two sources. Citation counts are an imperfect way to capture MIP impact but reflect a large and strongly growing user community using MIP data across numerous phases.}
+    \includesvg[width=\textwidth]{241212T091503_Fig3.svg}
+    \caption{Web of Science citations for key overview papers of each MIP phase, from FANGIO \citep{cess_intercomparison_1990} through CMIP6 \citep{eyring_overview_2016}, plotted relative to their year of publication. For CMIP6, citations are plotted for the project overview paper \citep{eyring_overview_2016}, for the cumulative total across each of the satellite Community MIPs that comprise the phase (see \autoref{tab:tab2-CMIP6MIPs}), and for the composite sum of these two sources. Citation counts are an imperfect way to capture MIP impact but reflect a large and strongly growing user community using MIP data across numerous phases.}
     \label{fig:fig3-MIPPhaseCitations}
 \end{figure*}
 
-% Migrate figures/data to GitHub repo
+
 \begin{figure*}
     \centering
-    \includesvg[width=1\textwidth]{241118T170837_Fig4.svg}
-    \caption{Web of Science citations for the 23 endorsed MIP overview papers contributing to CMIP6 (see \autoref{tab:tab2-CMIP6MIPs}) from their publication to today. Black text numbers on each coloured bar denote citation counts. Citation counts are an imperfect way to capture MIP impact. Still, they are reflective of the large interest in the future climate change projections captured by ScenarioMIP \citep{oneill_scenario_2016} and the high-resolution simulations captured in HighResMIP \citep{haarsma_high_2016}.}
+    \includesvg[width=\textwidth]{241212T091503_Fig4.svg}
+    \caption{Web of Science citations for the 23 endorsed MIP overview papers contributing to CMIP6 (see \autoref{tab:tab2-CMIP6MIPs}) from their publication to today. Black text numbers on each coloured bar denote citation counts. Citation counts are an imperfect way to capture MIP impact, however, reflect the large interest in the ScenarioMIP future climate change projections \citep{oneill_scenario_2016} and the HighResMIP high-resolution simulations \citep{haarsma_high_2016}.}
     \label{fig:fig4-MIPCitations}
 \end{figure*}
 
@@ -1112,17 +1136,16 @@ The CMIP5 \citep{taylor_overview_2012} and CMIP6 \citep{eyring_overview_2016} pa
 The CMIP6-endorsed MIP experiment design papers also provide an opportunity to gauge interest by comparing across individual activities and their experiments (\autoref{fig:fig4-MIPCitations}). These results show very strong interest in two primary activities: the future-focused ScenarioMIP \citep{oneill_scenario_2016}, and the high-resolution focused HighResMIP \citep{haarsma_high_2016}, which received more than 2400 and 700 WoS citations respectively. Before CMIP6, MIP experiment design papers often appeared in the gray literature, so a systematic analysis of citations through time is impossible. It can, however, be claimed that the seminal science enabled by MIP results grew as momentum was built behind the MIP paradigm.
 
 
-% Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_Fig5.svg}
-    \caption{Downloads across the three most recent phases of CMIP, for which records are available, presented as a percentage total. Each horizontal stacked plot represents total download counts as percentages from 2018-November 2024 for CMIP5 and CMIP6, and 2004-2008 for CMIP3. For display, all ScenarioMIP experiments (CMIP3: SRES; CMIP5: RCP; CMIP6: SSP) are presented as cumulative totals across all contributing experiments, with other results displaying single experiment downloads. Top, the CMIP3 \citep{meehl_wcrp_2007} downloads across the top 6 experiments (3x ScenarioMIP) of 12 experiments total (see \autoref{tab:tabAppA1-MIPExperiments}), representing 94.3\%. Middle, the CMIP5 downloads across 10 experiments (4x ScenarioMIP), representing 90.3\%, of 37 experiments that defined the phase \citep[representing 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. Bottom, the CMIP6 downloads across 16 experiments (8x ScenarioMIP), representing 90.7\% representing 20 MIPs that published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 50\% of downloads were accounted for by the 7 core CMIP/DECK simulations \citep{eyring_overview_2016}, with 34\% accounted for in the 8 ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
+    \includesvg[width=\textwidth]{241212T091503_Fig5.svg}
+    \caption{Downloads across the three most recent phases of CMIP, for which records are available, presented as a percentage total. Each horizontal stacked plot represents total download counts as percentages from 2018-November 2024 for CMIP5 and CMIP6, and 2004-2008 for CMIP3. For display, all ScenarioMIP experiments (CMIP3: SRES; CMIP5: RCP; CMIP6: SSP) are presented as cumulative totals across all contributing experiments, with other results displaying single experiment downloads. Top, the CMIP3 \citep{meehl_wcrp_2007} downloads across the top 6 experiments (3x ScenarioMIP) of 12 experiments total (see \autoref{tab:tabAppA1-MIPExperiments}), representing 94.3\%. Middle, the CMIP5 downloads across 10 experiments (4x ScenarioMIP), representing 90.0\%, of 37 experiments that defined the phase \citep[representing 8 MIPs identified in \autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. Bottom, the CMIP6 downloads across 17 experiments (11x ScenarioMIP), representing 90.4\% representing 20 MIPs that published data to ESGF (see \autoref{tab:tab2-CMIP6MIPs}). For CMIP6, almost 45\% of downloads were accounted for by the 12 core CMIP/DECK simulations \citep{eyring_overview_2016}, with 38\% accounted for in the 11 ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, CMIP5 (CMIP 61\%, ScenarioMIP 25\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
     %\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}
     %\cred{Appetite to tabulate results?}
     \label{fig:fig5-MIPDownloads}
 \end{figure*}
 
-% Migrate figures/data to GitHub repo
+
 % https://superuser.com/questions/415707/export-excel-graphs-as-vector-graphics-files-e-g-svgs
 % https://www.ipcc.ch/site/assets/uploads/2018/04/FS_timeline.pdf
 \begin{figure*}
@@ -1231,17 +1254,16 @@ There is considerable continuity with experimental protocols across phases. The 
 		\end{tabularx}
 	} % /resizebox
 	\label{tab:tabAppA1-MIPExperiments}
-	\footnotesize{Notes: In the CMIP5 phase, NOAA-GFDL submitted GFDL-HIRAM-C180 simulations for the CFMIP-motivated sst2090 and sst2090rcp45 experiments.}
+	\footnotesize{Notes: For CMIP3 and CMIP5, no "Endorsed-MIPs" were identified, rather experiments were included without recognizing the community that defined these experiments. To attempt to provide connectivity across CMIP phases, CMIP6-era MIP identities (see \autoref{tab:tab2-CMIP6MIPs}, e.g., CFMIP, ScenarioMIP) have been retrofitted back to prior phase experiments which led to corresponding experiments in CMIP6. In CMIP5, NOAA-GFDL submitted GFDL-HIRAM-C180 simulations for the CFMIP-motivated sst2090 and sst2090rcp45 experiments (as these were single model experiments they are not listed above).}
     % Mappings see Taylor google doc XML filename construction https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/edit
     %\cred{Numbers are calculated in an Excel spreadsheet for the early text or web-based lists.} 
 \end{table*}
 
 
-% Migrate figures/data to GitHub repo
 \begin{figure*}
     \centering
-    \includesvg[width=\textwidth]{241118T170837_FigA1.svg}
-    \caption{Recorded downloads across the three phases of CMIP, for which download records are available, following \autoref{fig:fig5-MIPDownloads}. Left the top 6 CMIP3 experiment downloads across the 12 experiments that defined phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads for the top 4 MIPs of the 8 that defined the phase \citep[\autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. And right the CMIP6 downloads for the top 4 MIPs of the 22 that defined the phase \cite[[see \autoref{tab:tab2-CMIP6MIPs};][]{eyring_overview_2016}. For CMIP6, almost 50\% of downloads were accounted for by the core CMIP/DECK simulations, with more than 30\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with an inversion in CMIP5 (ScenarioMIP 44\%, CMIP 41\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
+    \includesvg[width=\textwidth]{241212T091503_FigA1.svg}
+    \caption{Recorded downloads across the three phases of CMIP, for which download records are available, following \autoref{fig:fig5-MIPDownloads}. Left the top 6 CMIP3 experiment downloads across the 12 experiments that defined phase \citep{meehl_wcrp_2007}. Middle the CMIP5 downloads for the top 4 MIPs of the 8 that defined the phase \citep[\autoref{tab:tabAppA1-MIPExperiments};][]{taylor_overview_2012}. And right the CMIP6 downloads for the top 4 MIPs of the 22 that defined the phase \cite[[see \autoref{tab:tab2-CMIP6MIPs};][]{eyring_overview_2016}. For CMIP6, almost 45\% of downloads were accounted for by the core CMIP/DECK simulations, and 38\% accounted for in the ScenarioMIP future projection experiments \citep{oneill_scenario_2016}. This pattern of data download priority is mirrored across the prior phases, with CMIP5 (CMIP 61\%, ScenarioMIP 25\%) and a more dominant 20C3M/picntrl demand in CMIP3 (CMIP 64\%, 35\% ScenarioMIP).}
     \label{fig:figA1-MIPDownloads}
     %\cred{Appetite to tabulate these results?}}.
     %\cred{Sandro F., can these numbers, obtained Nov 2024 be relied upon to represent the full 2010-2018 CMIP5 project downloads?}
@@ -1249,7 +1271,7 @@ There is considerable continuity with experimental protocols across phases. The 
 
 
 
-\section{MIP variable request and standard output}  %% Appendix B
+\section{MIP variable request, standard output and data growth}  %% Appendix B
 \label{sec:secAppB1-MIPStandardOutput}
 The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard output variables/Tables" was collated from numerous live and archived resources available from 1991 through to the CMIP6 CMOR Table files that are still being used today. The earliest resources were published in written form, the AMIP Newsletters \citep[e.g.,][]{gates_amip_1991}, and subsequently, became available on the PCMDI website for AMIP2, CMIP1 and CMIP2/2+ phases. CMIP3 marked a step change, with the development of the CMOR1 software \citep{taylor_cmor_2006} and CMIP3 Standard Output defined by the more complete CMIP3-CMOR-Tables \citep{doutriaux_cmip3_2005}. CMIP5 continued this trend with CMOR2 \citep{doutriaux_cmor_2011} and the CMIP5-CMOR-Tables \citep{doutriaux_cmip5_2013}. For CMIP6, project expansion to include 22 MIPs and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime} respectively) required the development of a dedicated CMIP6 Data Request (see \autoref{sec:CMIP6DR}) along with the parallel development of CMOR3 \citep{mauzey_cmor_2024} and the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}. For each tabulated value, superscript-identified links provide live connections to these sources, see \autoref{tab:tabAppB1-MIPStandardOutput}.
 
@@ -1292,6 +1314,14 @@ The information presented in \autoref{tab:tab1-MIPsThroughTime} row "Standard ou
 	\label{tab:tabAppB1-MIPStandardOutput}
 	\footnotesize{Notes: {}\textsuperscript{\textdagger}In the CMIP3 phase, the total defined A5 table variables were 4, both adjusted/instantaneous shortwave forcing and its clearsky equivalent. This differs from the 223 identities in the table, which identified similar quantities (either top of atmosphere or tropopause, and variations due to unique forcing, e.g., all greenhouse gases, carbon dioxide only, total sulphate aerosol, direct effect only of sulphate aerosol, indirect effect only of sulphate aerosols, "black carbon", ozone, tropospheric ozone only, stratospheric ozone only, vegetation and other land surface changes, all anthropogenic factors, inclusive, volcanic aerosols, solar constant changes, all-natural factors inclusive.}
 \end{table*}
+
+
+\begin{figure*}
+    \centering
+    \includesvg[width=\textwidth]{241212T091503_FigB1.svg}
+    \caption{Data growth across all MIP phases, AMIP1 1989 through CMIP6 today. This figure is a visual representation of tabulated data volumes in \autoref{tab:tab1-MIPsThroughTime}. Note a y-axis log-scale, capturing data growth from gigabytes/10$^9$ bytes for AMIP1 and CMIP1 through to the tens of petabyte/10$^{15}$ bytes scale in CMIP6.}
+    \label{fig:figB1-MIPDataGrowth}
+\end{figure*}
 
 
 \section{MIP errata}  %% Appendix C
@@ -1417,21 +1447,6 @@ CMIP-IPO & UK CMIP International Project Office; \url{https://wcrp-cmip.org}\\ \
 CMOR & PCMDI Climate Model Output Rewriter (also CMOR1, CMOR2, and CMOR3; \url{https://cmor.llnl.gov/})\\ \hline
 COARDS & Cooperative Ocean/Atmosphere Research Data Service conventions\\ \hline
 CRU & UK University of East Anglia, Climatic Research Unit; \url{https://www.uea.ac.uk/groups-and-centres/climatic-research-unit}\\ \hline
-CV & Controlled Vocabulary\\ \hline
-DandA & climate change Detection and Attribution research\\ \hline
-DAMIP & Detection and Attribution MIP\\ \hline
-DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; \url{https://www.wcrp-climate.org/dcp-overview})\\ \hline
-DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite)\\ \hline
-DoE & US Department of Energy; \url{https://www.energy.gov}\\ \hline
-DOI & Digital Object Identifier; \url{https://www.doi.org}\\ \hline
-DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum; \url{https://www.dkrz.de/en})\\ \hline
-DLR & German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re; \url{https://www.dlr.de/en}\\ \hline
-DRS & Data Reference Syntax\\ \hline
-ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int}\\ \hline
-ESA & European Space Agency; \url{https://www.esa.int}\\ \hline
-ESG & US Earth System Grid (also ESG I, ESG II)\\ \hline
-ESG-CET & US Earth System Grid Center for Enabling Technologies\\ \hline
-ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov}\\ \hline
 \multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
 \end{tabularx}
 } % /resizebox
@@ -1450,6 +1465,21 @@ ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov}\\ \hline
 	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
 	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
+CV & Controlled Vocabulary\\ \hline
+DandA & climate change Detection and Attribution research\\ \hline
+DAMIP & Detection and Attribution MIP\\ \hline
+DCPP & Decadal Climate Prediction Project (CMIP6 Community MIP, and WCRP ESMO Working Group; \url{https://www.wcrp-climate.org/dcp-overview})\\ \hline
+DECK & Diagnostic, Evaluation and Characterisation of Klima (Core CMIP experiment suite)\\ \hline
+DoE & US Department of Energy; \url{https://www.energy.gov}\\ \hline
+DOI & Digital Object Identifier; \url{https://www.doi.org}\\ \hline
+DKRZ & German Climate Computing Center (Deutsches Klimarechenzentrum; \url{https://www.dkrz.de/en})\\ \hline
+DLR & German Deutsches Zentrum f{\"u}r Luft- und Raumfahrt, Institut f{\"u}r Physik der Atmosph{\"a}re; \url{https://www.dlr.de/en}\\ \hline
+DRS & Data Reference Syntax\\ \hline
+ECMWF & European Centre for Medium-range Weather Forecasts; \url{https://www.ecmwf.int}\\ \hline
+ESA & European Space Agency; \url{https://www.esa.int}\\ \hline
+ESG & US Earth System Grid (also ESG I, ESG II)\\ \hline
+ESG-CET & US Earth System Grid Center for Enabling Technologies\\ \hline
+ESGF & Earth System Grid Federation; \url{https://esgf.llnl.gov}\\ \hline
 ESM & Earth System Model\\ \hline
 ESMValTool & A community diagnostic and performance metrics tool for evaluation and analysis of Earth system Models; \url{https://esmvaltool.org}\\ \hline
 ESMO & WCRP Earth System Modelling and Observations Core Project; \url{https://www.wcrp-esmo.org}\\ \hline
@@ -1460,6 +1490,24 @@ FTP & File Transfer Protocol (the standard protocol used to transfer files from 
 GridFTP & Extension of FTP for grid computing; \url{https://www.globus.org/blog/gridftp-a-brief-history-of-fast-file-transfer}\\ \hline
 GAIM & Global Analysis Interpretation and Modeling Task Force (IGBP sub-group)\\ \hline
 GARP & International Global Atmospheric Research Program (a precursor to the WCRP; 1967-1982)\\ \hline
+\multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
+\end{tabularx}
+} % /resizebox
+\label{tab:tabAppE1-Acronyms}
+\end{table*}
+
+% Split table over multiple pages
+\addtocounter{table}{-1}
+\begin{table*}[htp]
+\renewcommand{\arraystretch}{2}
+\scriptsize
+\centering
+\caption{Acronyms used in this manuscript (continued)}
+\resizebox{\textwidth}{!} {
+	\begin{tabularx}{1\textwidth} { 
+	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
+	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
+\hline
 GB & Gigabyte (one billion bytes, 10$^{9}$)\\ \hline
 GCM & General/Global Circulation Model\\ \hline
 GDT & Gregory, Drach, and Tett conventions; \cite[see][]{gregory_gdt_1999}\\ \hline
@@ -1485,10 +1533,6 @@ NASA-JPL & US NASA Jet Propulsion Laboratory; \url{https://www.jpl.nasa.gov}\\ \
 NCAR & US National Center for Atmospheric Research; \url{https://ncar.ucar.edu}\\ \hline
 NCI & Australian National Computational Infrastructure; \url{https://nci.org.au}\\ \hline
 NERSC & US Department of Energy Research Scientific Computing Center; \url{https://www.nersc.gov}\\ \hline
-NOAA & US National Oceanic and Atmospheric Administration; \url{https://www.noaa.gov}\\ \hline
-NOAA-NCEP & US NOAA National Centers for Environmental Prediction; \url{https://www.weather.gov/ncep}\\ \hline
-NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory; \url{https://www.pmel.noaa.gov}\\ \hline
-OCMIP & Ocean Carbon-Cycle Model Intercomparison Project; \url{https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips-2/267-modelling-wgcm-catalogue-ocmip}\\ \hline
 \multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
 \end{tabularx}
 } % /resizebox
@@ -1506,6 +1550,10 @@ OCMIP & Ocean Carbon-Cycle Model Intercomparison Project; \url{https://www.wcrp-
 	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
 	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
 \hline
+NOAA & US National Oceanic and Atmospheric Administration; \url{https://www.noaa.gov}\\ \hline
+NOAA-NCEP & US NOAA National Centers for Environmental Prediction; \url{https://www.weather.gov/ncep}\\ \hline
+NOAA-PMEL & US NOAA Pacific Marine Environmental Laboratory; \url{https://www.pmel.noaa.gov}\\ \hline
+OCMIP & Ocean Carbon-Cycle Model Intercomparison Project; \url{https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/modelling-wgcm-mips-2/267-modelling-wgcm-catalogue-ocmip}\\ \hline
 ORNL & US Oak Ridge National Laboratory; \url{https://www.ornl.gov}\\ \hline
 PB & Petabyte (one quadrillion bytes, 10$^{15}$)\\ \hline
 PMIP & CMIP Paleoclimate MIP (also PMIP1, PMIP2, PMIP3, and PMIP4; \url{https://pmip.lsce.ipsl.fr})\\ \hline
@@ -1527,6 +1575,23 @@ WoS & Clarivate Web of Science Core Collection citation service; \url{https://ww
 WCRP & World Climate Research Programme; \url{https://www.wcrp-climate.org}\\ \hline
 WDAC & WCRP Data Advisory Council (2011-2020; \url{https://www.wcrp-climate.org/data-wdac}\\ \hline
 WG1 & IPCC Working Group I (the Physical Science Basis); \url{https://www.ipcc.ch/working-group/wg1}\\ \hline
+\multicolumn{2}{l}{\textbf{\autoref{tab:tabAppE1-Acronyms} continued overpage..}}\\
+\end{tabularx}
+} % /resizebox
+\end{table*}
+
+% Split table over multiple pages
+\addtocounter{table}{-1}
+\begin{table*}[htp]
+\renewcommand{\arraystretch}{2}
+\scriptsize
+\centering
+\caption{Acronyms used in this manuscript (continued)}
+\resizebox{\textwidth}{!} {
+	\begin{tabularx}{1\textwidth} { 
+	  | >{\raggedright\arraybackslash\hsize=.09\hsize}X
+	  | >{\centering\arraybackslash\hsize=.91\hsize}X | }
+\hline
 WG2 & IPCC Working Group II (Impacts, Adaptation, and Vulnerability); \url{https://www.ipcc.ch/working-group/wg2}\\ \hline
 WG3 & IPCC Working Group III (Mitigation of Climate Change); \url{https://www.ipcc.ch/working-group/wg3}\\ \hline
 WGCM & WCRP Working Group on Coupled Modelling; \url{https://www.wcrp-climate.org/ipo-esmo-groups/modelling-wgcm}\\ \hline
@@ -1569,7 +1634,7 @@ Bryan edits - https://github.com/durack1/CMIPSummary/commit/9a00c06a5adb299cd9aa
 }
 
 
-\competinginterests{All authors declare no competing or conflicting interests} %% this section is mandatory even if you declare that no competing interests are present
+\competinginterests{All authors declare no competing or conflicting interests. M.S. is a Topic Editor for Geoscientific Model Development.} %% this section is mandatory even if you declare that no competing interests are present
 
 \disclaimer{The views and opinions expressed in this document do not necessarily state or reflect those of the United States Government, the Department of Energy (DoE), or Lawrence Livermore National Laboratory (LLNL). They shall not be used for advertising or product endorsement purposes.} %% optional section
 
@@ -1606,7 +1671,7 @@ V.E.’s work is supported by the European Research Council (ERC) Synergy Grant 
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{241127a}
+\bibliography{241206a}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
