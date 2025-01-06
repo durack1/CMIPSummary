@@ -84,7 +84,7 @@
 %\usepackage{rotating}
 %%\usepackage{xparse} %% required for multicite custom function
 \usepackage[inkscapelatex=false]{svg} %% use SVG graphics
-
+% https://forum.manjaro.org/t/getting-usepackage-svglatex-in-texstudio-to-work/140125/7 - texstudio
 
 %% define user commands
 \newcommand{\mycomment}[1]{}
@@ -229,10 +229,10 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \section*{Correspondence}
 Paul J. Durack (pauldurack@llnl.gov)
 
-%{\cred{\textbf{This is a working draft document, dated \DTMnow} - The 28th November 2024 submitted draft can be downloaded \href{https://github.com/durack1/CMIPSummary/blob/main/241128_0653_durack1-egusphere-2024-3729.pdf}{\underline{HERE}}}}
+{\cred{\textbf{This is a working draft document, dated \DTMnow} - The 12th December 2024 submitted draft can be downloaded \href{https://github.com/durack1/CMIPSummary/blob/main/241212_2047_durack1-egusphere-2024-3729-manuscript-version1.pdf}{\underline{HERE}}}}
 
 
-\newpage   %% Force a new page start so abstract is not cut in half
+\newpage   %% Force a new page start so the abstract is not cut in half
 \begin{abstract}
 
 The CMIP6 project was the most expansive and ambitious Model Intercomparison Project (MIP), the latest in a long history, extending back four decades. CMIP has captivated and engaged a broad, growing international community focused on improving our climate understanding. It has anchored our ability to quantify and attribute the drivers and responses of the observed climate changes we are experiencing today.
@@ -1393,7 +1393,8 @@ NORESM2CMOR & NorESM to CMOR & \url{https://github.com/NorESMhub/noresm2cmor} & 
 CCLM2CMOR & COSMO-CLM to CMOR & \url{https://github.com/C2SM-RCM/CCLM2CMOR}; \url{https://github.com/ssilje/CMOR} & &\\ \hline
 FGOALS-g-cmor & FGOALS-g to CMOR & \url{https://github.com/dongli/FGOALS-g-cmor} & &\\ \hline
 PRIMAVERA & HadGEM to CMOR & \url{https://github.com/goord/cmor} & &\\ \hline
-E3SM\_To\_CMIP & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_to\_cmip} & &\\
+E3SM\_To\_CMIP & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_to\_cmip} & &\\ \hline
+ACCESS MOPPeR & A Model Output Post-Processor for the ACCESS climate model & \url{https://access-mopper.readthedocs.io/} & &\\
 \hline
 \end{tabularx}
 } % /resizebox
