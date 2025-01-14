@@ -9,6 +9,9 @@ authors:
 - family-names: "Taylor"
   given-names: "Karl E."
   orcid: "https://orcid.org/0000-0002-6491-2135"
+- family-names: "Gleckler"
+  given-names: "Peter J."
+  orcid: "https://orcid.org/0000-0003-2816-6224"
 - family-names: "Meehl"
   given-names: "Gerald A."
   orcid: "https://orcid.org/0000-0002-8760-9534"
@@ -48,6 +51,9 @@ authors:
 - family-names: "Bader"
   given-names: "David C."
   orcid: "https://orcid.org/0000-0003-3210-339X"
+- family-names: "Dunne"
+  given-names: "John P."
+  orcid: "https://orcid.org/0000-0002-8794-0489"
 - family-names: "Ellis"
   given-names: "Daniel"
   orcid: "https://orcid.org/0000-0001-6733-7028"
@@ -83,6 +89,9 @@ authors:
 - family-names: "Nuzzo"
   given-names: "Alessandra"
   orcid: "https://orcid.org/0000-0002-8801-6917"
+- family-names: "O'Rourke"
+  given-names: "Eleanor"
+  orcid: "https://orcid.org/0000-0002-0775-0811"
 - family-names: "Painter"
   given-names: "Jeffrey"
   orcid: "https://orcid.org/0000-0001-7920-4337"
@@ -94,7 +103,7 @@ authors:
 - family-names: "Williams"
   given-names: "Dean N."
 title: "Durack et al. 2025: The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, infrastructure and implementation"
-version: 1.0
-doi:
-date-released: 2024-11-28
+version: 1.2
+doi: "https://doi.org/10.5194/egusphere-2024-3729"
+date-released: 2025-01-14
 url: "https://github.com/durack1/CMIPSummary"
