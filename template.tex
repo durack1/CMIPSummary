@@ -980,12 +980,6 @@ Challenges accessing CMIP-scale data are rooted in the limitations of traditiona
 
 By 2023, much of Synda’s code had become obsolete and needed deep refactoring. The IPSL released the ``esgpull'' successor in early 2024 \citep{rodriguez_esgf_2024}. This tool offers similar functionality with lower latency based on asynchronous technologies and streamlined implementation. It facilitates data managers seeking to replicate data across ESGF nodes and regular users searching and downloading specific datasets. ``esgpull'' was also integrated into the data synchronisation workflow between ESGF and the subset of climate projections provided to Copernicus Climate Change Service (C3S).
 
-In 2024, ESGF participants developed an initial specification for a modernized architecture that can support the large-scale and reliable replication and publication needs of CMIP7 and related use cases. 
-This new architecture will employ an event stream-based service to distribute information required to support data publication, replication, and retraction, with access control via federated authentication as provided by Globus Auth \citep{tuecke2016globus} and EGI Check-In.
-This event stream will be employed to maintain two global replicas of the search index, distributed geographically in the US and Europe. This approach will eliminate the requirements for most data node sites to operate their own index servers.
-
-In a related effort, the ESGF-2-US team has developed a data publication service that uses Globus Flows \citep{chard2023globus} to enable reliable automated data publication via a web browser. A Globus Flow transfers a dataset that is to be published to a compute facility (e.g., a DoE facility), invokes the pre-configured ESGF publisher code to extract metadata, and publishes the resulting metadata into the facility’s ESGF index. This approach eliminates the need for modeling teams to download and configure publisher code, making it significantly easier for modeling teams to publish their datasets.
-
 
 \subsection{Data downloads}
 \label{sec:CMIPDataDownloads}
