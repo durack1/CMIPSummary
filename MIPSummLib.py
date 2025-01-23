@@ -7,7 +7,8 @@ import copy
 import logging
 import requests
 import numpy as np
-import pdb
+
+# import pdb
 
 # %% notes
 """
@@ -22,6 +23,8 @@ being used in this repo
 PJD 16 Nov 2024 - started
 PJD 17 Nov 2024 - updated serpapi call to use cluster vs doi query
 PJD 18 Nov 2024 - add updateLineColours func
+PJD 22 Jan 2025 - tweak pullstats to deal with int64 string mapping (cfmip, omip2)
+                  citation before publication
 
 @author: durack1
 """
@@ -230,7 +233,7 @@ def pullStats(wosId, doi, padArray):
         tmp = list(map(int, citingYrs))
         tmp1 = [np.sum(tmp[:2])]
         tmp1.extend(citingYrs[2:])
-        citingYrs = tmp1
+        citingYrs = list(map(int, tmp1))  # catch issue with omip2 wos first entry "6"
         del (tmp, tmp1)
         citingYrsPad[0 : indEnd - 1] = list(map(int, citingYrs))
     elif startInd == 1:
