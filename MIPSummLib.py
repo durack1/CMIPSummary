@@ -4,10 +4,13 @@
 # %% imports
 
 import copy
+import datetime
 import logging
 import requests
 import numpy as np
 
+# import sys
+# import json
 # import pdb
 
 # %% notes
@@ -25,6 +28,8 @@ PJD 17 Nov 2024 - updated serpapi call to use cluster vs doi query
 PJD 18 Nov 2024 - add updateLineColours func
 PJD 22 Jan 2025 - tweak pullstats to deal with int64 string mapping (cfmip, omip2)
                   citation before publication
+PJD 23 Jan 2025 - augmented pullstats to track citeStart, pub and end yrs
+PJD 24 Jan 2025 - add padCitationCounts
 
 @author: durack1
 """
@@ -179,6 +184,65 @@ def grabQueryReport(queryId, params={}):
         raise
 
 
+def padCiteCounts(citeDict, pubYr):
+    """
+    Take WoS citation year:count, sum earlier citations to pubYr, fill missing
+    years and expand to previous year (e.g., in 2025, stop with complete 2024)
+    """
+    currentYr = datetime.date.today().year
+    # targetYr = currentYr - 1
+    # print("currentYr:", currentYr, "targetYr:", targetYr)
+
+    # ascertain cite start year build list
+    citingYrs = list(map(int, citeDict["CitingYears"].keys()))
+    citingCounts = list(map(int, citeDict["CitingYears"].values()))
+    citeStartYr = citingYrs[0]
+    print("citingYrs:", citingYrs)
+    print("citingCounts:", citingCounts)
+
+    # if citeStartYr < pubYr sum first entries
+    startInd = citeStartYr - pubYr  # 0 if cited same year published
+    startIndAbs = abs(startInd)
+    print("startInd:", startInd)
+    if startInd < 0:  # cfmip, omip2 = -1; = 0; ar1 = 1; dynvarmip = 2
+        print("**case citeStartYr < pubYr")
+        # sum entries before publication yr into pubYr
+        tmp = copy.deepcopy(citingCounts)
+        print("citingCounts:", citingCounts)
+        print("tmp:       ", tmp)
+        newInd = abs(startInd) + 1
+        tmp1 = [np.sum(tmp[:newInd])]
+        tmp1.extend(citingCounts[newInd:])
+        print("tmp1.ext:", tmp1)
+        citingCounts = tmp1  # list(map(int, tmp1))
+        citingYrs = citingYrs[startIndAbs:]
+        del (tmp, tmp1)
+
+    # preallocate target - ar1 has holes
+    citingYrsComplete = np.arange(pubYr, currentYr).tolist()
+    citingCountsComplete = np.zeros(len(citingYrsComplete), dtype="int8").tolist()
+
+    # iterate and fill - ignoring current year
+    for count, yr in enumerate(citingYrs):
+        # fix issue with currentYr partial counts
+        if yr == currentYr:  # fangio, cmip3, ar4, cmip5, cmip6,  250124
+            print(
+                "Current year:",
+                currentYr,
+                "total citations:",
+                citingCounts[count],
+                "skipped",
+            )
+            continue
+        ind = citingYrsComplete.index(yr)
+        citingCountsComplete[ind] = citingCounts[count]
+
+    print("citingYrsComplete:", len(citingYrsComplete), citingYrsComplete)
+    print("citingCountsComplete:", len(citingCountsComplete), citingCountsComplete)
+
+    return citingYrs, citingCounts, citingYrsComplete, citingCountsComplete
+
+
 def pullStats(wosId, doi, padArray):
     """
     From WoS Expanded API DOI object extract time history of citations
@@ -191,6 +255,13 @@ def pullStats(wosId, doi, padArray):
     queryId = grabQueryId(params)
     # query
     query = grabQueryReport(queryId)
+
+    #### drop json to file
+    # with open("query-dynvarmip.json", "w") as f:
+    #    json.dump(
+    #        query, f, ensure_ascii=True, sort_keys=True, indent=4, separators=(",", ":")
+    #    )
+
     pubYr = query["Records"]["records"]["REC"][0]["static_data"]["summary"]["pub_info"][
         "pubyear"
     ]
@@ -213,40 +284,89 @@ def pullStats(wosId, doi, padArray):
     # citation-report
     crParams = {"reportLevel": "WOS"}
     crData = grabCitationReport(queryId, crParams)
+
+    #### drop json to file
+    # with open("crData-cordex.json", "w") as f:
+    #    json.dump(
+    #        crData,
+    #        f,
+    #        ensure_ascii=True,
+    #        sort_keys=True,
+    #        indent=4,
+    #        separators=(",", ":"),
+    #    )
+
     # pull entries out of data object
-    citingYrsDict = crData[0]["CitingYears"]
-    citingYrs = list(map(int, citingYrsDict.values()))
-    timesCited = crData[0]["TimesCited"]
+    # citingYrsDict = crData[0]["CitingYears"]
+    # citingYrs = list(map(int, citingYrsDict.values()))
+    # timesCited = crData[0]["TimesCited"]
 
     # ascertain length; generate padded citingYears - check pubYr against citeStartYr
-    citeStartYr = int(list(citingYrsDict.keys())[0])
-    startInd = citeStartYr - pubYr  # 0 if cited same year published
+    # citeStartYr = int(list(citingYrsDict.keys())[0])
+    # citeEndYr = int(list(citingYrsDict.keys())[-1])
+    # startInd = citeStartYr - pubYr  # 0 if cited same year published
     # print("startInd:", startInd)
     # print("len(citingYrsPad):", len(citingYrsPad))
-    indEnd = len(citingYrs)
+    # indEnd = len(citingYrs)
 
-    # padArray copy.deepcopy()
-    citingYrsPad = copy.deepcopy(padArray)
+    # padArray copy.deepcopy() NaN length array
+    citingCountsCompletePad = copy.deepcopy(padArray)
+    del padArray
 
-    if startInd == -1:
-        # count first two entries as one
-        tmp = list(map(int, citingYrs))
-        tmp1 = [np.sum(tmp[:2])]
-        tmp1.extend(citingYrs[2:])
-        citingYrs = list(map(int, tmp1))  # catch issue with omip2 wos first entry "6"
-        del (tmp, tmp1)
-        citingYrsPad[0 : indEnd - 1] = list(map(int, citingYrs))
-    elif startInd == 1:
-        citingYrsPad[0] = 0
-        citingYrsPad[startInd : indEnd + 1] = list(map(int, citingYrs))
-    elif startInd > 1:
-        citingYrsPad[0:startInd] = list(map(int, np.zeros(startInd)))
-        citingYrsPad[startInd : indEnd + startInd] = list(map(int, citingYrs))
-    else:
-        citingYrsPad[0:indEnd] = list(map(int, citingYrs))
+    print(
+        "citingCountsCompletePad 1:",
+        len(citingCountsCompletePad),
+        citingCountsCompletePad,
+    )
+
+    # pass info to padCiteCounts providing a time complete entry to currentYr-1
+    citingYrs, citingCounts, citingYrsComplete, citeCountsComplete = padCiteCounts(
+        crData[0], pubYr
+    )
+    indEnd = len(citingYrsComplete)  # stop prior to currentYr, index in zero space
+    print("indEnd:", indEnd, "len(citingYrsComplete):", len(citingYrsComplete))
+    citingCountsCompletePad[0:indEnd] = citeCountsComplete
+
+    print(
+        "citingCountsCompletePad 2:",
+        len(citingCountsCompletePad),
+        citingCountsCompletePad,
+    )
+    print("**********")
+
+    citingYrsDict = crData[0]["CitingYears"]
+    timesCited = crData[0]["TimesCited"]
+    citeStartYr = citingYrs[0]
+    citeEndYr = citingYrs[-1]
+
+    # old and delete-able
+    # if startInd == -1:
+    #    # count first two entries as one
+    #    tmp = list(map(int, citingYrs))
+    #    tmp1 = [np.sum(tmp[:2])]
+    #    tmp1.extend(citingYrs[2:])
+    #    citingYrs = list(map(int, tmp1))  # catch issue with omip2 wos first entry "6"
+    #    del (tmp, tmp1)
+    #    citingYrsPad[0 : indEnd - 1] = list(map(int, citingYrs))
+    # elif startInd == 1:
+    #    citingYrsPad[0] = 0
+    #    citingYrsPad[startInd : indEnd + 1] = list(map(int, citingYrs))
+    # elif startInd > 1:
+    #    citingYrsPad[0:startInd] = list(map(int, np.zeros(startInd)))
+    #    citingYrsPad[startInd : indEnd + startInd] = list(map(int, citingYrs))
+    # else:
+    #    citingYrsPad[0:indEnd] = list(map(int, citingYrs))
     # print("len(citingYrsPad):", len(citingYrsPad))
 
-    return pubYr, timesCited, citingYrs, citingYrsPad, citingYrsDict
+    return (
+        pubYr,
+        timesCited,
+        citingYrs,
+        citingCountsCompletePad,
+        citingYrsDict,
+        citeStartYr,
+        citeEndYr,
+    )
 
 
 def updateLineColours(ax, cm):
@@ -258,6 +378,3 @@ def updateLineColours(ax, cm):
     colours = cm(np.linspace(0, 1, len(lines)))
     for line, c in zip(lines, colours):
         line.set_color(c)
-
-
-# %%
