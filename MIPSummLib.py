@@ -9,10 +9,6 @@ import logging
 import requests
 import numpy as np
 
-# import sys
-# import json
-# import pdb
-
 # %% notes
 """
 Created on Sat Nov 16 06:34:21 2024
@@ -194,7 +190,7 @@ def grabQueryReport(queryId, params={}):
 def padCiteCounts(citeDict, pubYr):
     """
     Take WoS citation year:count, sum earlier citations to pubYr, fill missing
-    years and expand to previous year (e.g., in 2025, stop with complete 2024)
+    years and expand to current year, even if not citations to fill
     """
     currentYr = datetime.date.today().year
     # targetYr = currentYr - 1
@@ -226,21 +222,14 @@ def padCiteCounts(citeDict, pubYr):
         del (tmp, tmp1)
 
     # preallocate target - ar1 has holes
-    citingYrsComplete = np.arange(pubYr, currentYr, dtype="int16").tolist()
+    citingYrsComplete = np.arange(pubYr, currentYr + 1, dtype="int16").tolist()
     citingCountsComplete = np.zeros(len(citingYrsComplete), dtype="int16").tolist()
 
     # iterate and fill - ignoring current year
     for count, yr in enumerate(citingYrs):
-        # fix issue with currentYr partial counts
-        if yr == currentYr:  # fangio, cmip3, ar4, cmip5, cmip6,  250124
-            print(
-                "Current year:",
-                currentYr,
-                "total citations:",
-                citingCounts[count],
-                "skipped",
-            )
-            continue
+        # report currentYr partial counts
+        if yr == currentYr:  # fangio, cmip3, ar4, cmip5, cmip6, 250124
+            print("Current year:", currentYr, "total citations:", citingCounts[count])
         ind = citingYrsComplete.index(yr)
         citingCountsComplete[ind] = citingCounts[count]
 
