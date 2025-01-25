@@ -66,6 +66,13 @@ def apiKeyG():
     return key
 
 
+def convertToFloat(inList):
+    """
+    Convert all list integers to float type
+    """
+    return [float(x) for x in inList]
+
+
 def grabCitationReport(queryId, params={}):
     """
     Use queryId to grab json output - every query counts as 1 against quota
@@ -197,30 +204,30 @@ def padCiteCounts(citeDict, pubYr):
     citingYrs = list(map(int, citeDict["CitingYears"].keys()))
     citingCounts = list(map(int, citeDict["CitingYears"].values()))
     citeStartYr = citingYrs[0]
-    print("citingYrs:", citingYrs)
-    print("citingCounts:", citingCounts)
+    # print("citingYrs:", citingYrs)
+    # print("citingCounts:", citingCounts)
 
     # if citeStartYr < pubYr sum first entries
     startInd = citeStartYr - pubYr  # 0 if cited same year published
     startIndAbs = abs(startInd)
-    print("startInd:", startInd)
+    # print("startInd:", startInd)
     if startInd < 0:  # cfmip, omip2 = -1; = 0; ar1 = 1; dynvarmip = 2
         print("**case citeStartYr < pubYr")
         # sum entries before publication yr into pubYr
         tmp = copy.deepcopy(citingCounts)
-        print("citingCounts:", citingCounts)
-        print("tmp:       ", tmp)
+        # print("citingCounts:", citingCounts)
+        # print("tmp:       ", tmp)
         newInd = abs(startInd) + 1
         tmp1 = [np.sum(tmp[:newInd])]
         tmp1.extend(citingCounts[newInd:])
-        print("tmp1.ext:", tmp1)
+        # print("tmp1.ext:", tmp1)
         citingCounts = tmp1  # list(map(int, tmp1))
         citingYrs = citingYrs[startIndAbs:]
         del (tmp, tmp1)
 
     # preallocate target - ar1 has holes
-    citingYrsComplete = np.arange(pubYr, currentYr).tolist()
-    citingCountsComplete = np.zeros(len(citingYrsComplete), dtype="int8").tolist()
+    citingYrsComplete = np.arange(pubYr, currentYr, dtype="int16").tolist()
+    citingCountsComplete = np.zeros(len(citingYrsComplete), dtype="int16").tolist()
 
     # iterate and fill - ignoring current year
     for count, yr in enumerate(citingYrs):
@@ -237,8 +244,8 @@ def padCiteCounts(citeDict, pubYr):
         ind = citingYrsComplete.index(yr)
         citingCountsComplete[ind] = citingCounts[count]
 
-    print("citingYrsComplete:", len(citingYrsComplete), citingYrsComplete)
-    print("citingCountsComplete:", len(citingCountsComplete), citingCountsComplete)
+    # print("citingYrsComplete:", len(citingYrsComplete), citingYrsComplete)
+    # print("citingCountsComplete:", len(citingCountsComplete), citingCountsComplete)
 
     return citingYrs, citingCounts, citingYrsComplete, citingCountsComplete
 
@@ -313,26 +320,26 @@ def pullStats(wosId, doi, padArray):
     citingCountsCompletePad = copy.deepcopy(padArray)
     del padArray
 
-    print(
-        "citingCountsCompletePad 1:",
-        len(citingCountsCompletePad),
-        citingCountsCompletePad,
-    )
+    # print(
+    #    "citingCountsCompletePad 1:",
+    #    len(citingCountsCompletePad),
+    #    citingCountsCompletePad,
+    # )
 
     # pass info to padCiteCounts providing a time complete entry to currentYr-1
     citingYrs, citingCounts, citingYrsComplete, citeCountsComplete = padCiteCounts(
         crData[0], pubYr
     )
     indEnd = len(citingYrsComplete)  # stop prior to currentYr, index in zero space
-    print("indEnd:", indEnd, "len(citingYrsComplete):", len(citingYrsComplete))
+    # print("indEnd:", indEnd, "len(citingYrsComplete):", len(citingYrsComplete))
     citingCountsCompletePad[0:indEnd] = citeCountsComplete
 
-    print(
-        "citingCountsCompletePad 2:",
-        len(citingCountsCompletePad),
-        citingCountsCompletePad,
-    )
-    print("**********")
+    # print(
+    #    "citingCountsCompletePad 2:",
+    #    len(citingCountsCompletePad),
+    #    citingCountsCompletePad,
+    # )
+    # print("**********")
 
     citingYrsDict = crData[0]["CitingYears"]
     timesCited = crData[0]["TimesCited"]
@@ -357,6 +364,18 @@ def pullStats(wosId, doi, padArray):
     # else:
     #    citingYrsPad[0:indEnd] = list(map(int, citingYrs))
     # print("len(citingYrsPad):", len(citingYrsPad))
+
+    # print("type(pubYr):", type(pubYr))
+    # print("type(timesCited):", type(timesCited))
+    # print("type(citingYrs):", type(citingYrs))
+    # print("type(citingCountsCompletePad):", type(citingCountsCompletePad))
+    # print("type(citingYrsDict):", type(citingYrsDict))
+    # print("type(citeStartYr):", type(citeStartYr))
+    # print("type(citeEndYr):", type(citeEndYr))
+
+    # explicitly convert int64 to int16 - json.dump can't write it
+    citingYrs = convertToFloat(citingYrs)
+    citingCountsCompletePad = convertToFloat(citingCountsCompletePad)
 
     return (
         pubYr,
