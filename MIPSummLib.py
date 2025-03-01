@@ -26,6 +26,7 @@ PJD 22 Jan 2025 - tweak pullstats to deal with int64 string mapping (cfmip, omip
                   citation before publication
 PJD 23 Jan 2025 - augmented pullstats to track citeStart, pub and end yrs
 PJD 24 Jan 2025 - add padCitationCounts
+PJD 28 Feb 2025 - updated to deal with ar2/gates gsch author=researchgate.net
 
 @author: durack1
 """
@@ -102,7 +103,9 @@ def grabGoogleScholarCites(doi):
     }
     queryUrl = "https://serpapi.com/search.json?"
     r = requests.get(queryUrl, params=params, timeout=10)
+
     # catch case of allocation time out
+    pubYr = ""
     if "organic_results" not in r.json().keys():
         print("Processing GS: API allocation exceeded")
         googleScholCites = None
@@ -120,6 +123,13 @@ def grabGoogleScholarCites(doi):
                 firstAuthorLastName = rj["organic_results"][0]["publication_info"][
                     "authors"
                 ][0]["name"]
+            # catch issue with ar2/gates - researchgate.net author
+            elif (
+                rj["organic_results"][0]["publication_info"]["summary"]
+                == "researchgate.net"
+            ):
+                authorCount = 0
+                firstAuthorLastName = "researchgate.net"
             else:
                 authorCount = 0
                 firstAuthorLastName = (
@@ -131,12 +141,14 @@ def grabGoogleScholarCites(doi):
                 etal = "et al."
             else:
                 etal = ""
-            pubYr = (
-                rj["organic_results"][0]["publication_info"]["summary"]
-                .split("-")[1]
-                .split(",")[-1]
-                .strip()
-            )
+
+            if pubYr != "":
+                pubYr = (
+                    rj["organic_results"][0]["publication_info"]["summary"]
+                    .split("-")[1]
+                    .split(",")[-1]
+                    .strip()
+                )
             print("Processing GS:", firstAuthorLastName, etal, pubYr, googleScholCites)
         except Exception:
             logging.exception(doi)
