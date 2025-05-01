@@ -538,7 +538,7 @@ https://docs.google.com/document/d/1bUwK6G_fVZO53UjLZbQUOuBP47PsT8lqKKhL1pjRnKg/
 \textbf{Experiment count} & 1 & 1 & 1 & 2 & 12 & 37 & 322 & $\sim$\\ \hline
 \textbf{``historical'' period} & 1979-1988 & 1979-2001 & $\sim$ & $\sim$ & $\sim$1860-1999 & 1850-2010 & 1850-2014 & 1850-2022\\ \hline
 \textbf{Data volumes} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & $\sim$1 GB{}\textsuperscript{\textdagger} & $\sim$500 GB{}\textsuperscript{\textdagger} & 39 TB & 1.5 PB\textsuperscript{\textdaggerdbl} & >16 PB\textsuperscript{\textdaggerdbl} & $\sim$5 PB\\ \hline
-\textbf{Standard output variables/ Tables} & 32/4$^{1}$ & 114/8$^{2}$ & 23/5$^{3}$ & 28/5$^{4}$ & 143/6$^{5}$ & 986/18$^{6}$ & 2062/44$^{7}$ & $\sim$\\ \hline
+\textbf{Standard output variables/ Tables} & 32/4$^{1}$ & 114/8$^{2}$ & 23/5$^{3}$ & 28/5$^{4}$ & 143/6$^{5}$ & 986/18$^{6}$ & 2062/44$^{7}$ & \cred{$\sim$/77}\\ \hline
 \textbf{Host infrastructure} & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP & PCMDI FTP; ESG-CET & ESGF, 30 nodes & ESGF, 30 nodes & ESGF\\ \hline
 \textbf{Data formats} & Fortran formatted binary & Fortran formatted binary, GRIB {$\rightarrow$} P-DRS & GRIB {$\rightarrow$} P-DRS & GRIB {$\rightarrow$} P-DRS & CF netCDF-3 & CF netCDF-4 ``classic'' & CF netCDF-4 & CF netCDF-4\\ \hline
 \textbf{Data licenses} & Registered subprojects & Registered subprojects & Registered subprojects & Registered subprojects & Registered subprojects/Open & Open & Open, CC-BY 4.0/CC0 & Open, CC-BY 4.0/CC0\\ \hline
@@ -763,7 +763,7 @@ In CMIP5, the trend toward further standardization continued as the project expa
 
 A major advance in enabling communication among the various components of software infrastructure supporting CMIP5 was the development of a ``Data Reference Syntax'' \citep[DRS;][]{taylor_pcmdi_2012}. The DRS relied on several dataset descriptors and associated CVs that uniquely defined each dataset contributing to the CMIP5 archive. For example, the DRS elements were used to define the CMIP5 directory structure and to construct filenames that were guaranteed to be unique across the entire archive. The DRS was also essential for communication and sharing among the data nodes, which comprised a now federated ESGF data distribution infrastructure \citep[\autoref{sec:earthSystemGridFederation};][]{williams_earth_2011}. The DRS dataset descriptors were supplemented with dataset version information assigned during the data preparation and ESGF publication processes, which greatly aided the replication of datasets across the major federated ESGF data nodes.
 
-For CMIP6, the evolution of the data standards, CVs, and supporting infrastructure continued as the project ballooned in size to include 22 specialized ``endorsed MIPs'' (now referred to as ``Community MIPs''), 49 contributing modelling groups, and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime}, \autoref{fig:fig1-MIPGrowth}). Due to the broadening of model diversity and configurations and the concomitant increase in variables of interest, a new approach to defining the data request was tried whereby the needed variables were placed in a database that could be accessed via an API or displayed in different human-readable forms (see \autoref{sec:CMIP6DR}). In total, 2062 variables were requested across all experiments, and these were all transferred into the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017} and were relied on by a revised CMOR3 \citep{mauzey_cmor_2024} (also see \autoref{tab:tabAppD1-CMIP6PrepTools}).
+For CMIP6, the evolution of the data standards, CVs, and supporting infrastructure continued as the project ballooned in size to include 22 specialized ``endorsed MIPs'' (now referred to as ``Community MIPs''), 49 contributing modelling groups, and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime}, \autoref{fig:fig1-MIPGrowth}). Due to the broadening of model diversity and configurations and the concomitant increase in variables of interest, a new approach to defining the data request was tried whereby the needed variables were placed in a database that could be accessed via an API or displayed in different human-readable forms (see \autoref{sec:CMIP6DR}). In total, 2062 variables were requested across all experiments, and these were all transferred into the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017} and were relied on by a revised CMOR3 \citep{mauzey_cmor_2024} (also see \autoref{tab:secAppE1-CMIP6DataPrep}).
 
 As new services that provided centralized access to extensive model documentation (see \autoref{sec:ModelDocumentation}) and enabled formal data citation (see \autoref{sec:DataCitation}) began supplementing CMIP's basic service of providing access to CMIP data through ESGF and the IPCC DDC (see \autoref{sec:earthSystemGridFederation} and \autoref{sec:IPCC-DDC}), the CVs became more critical for maintaining consistency across the infrastructure components. The earlier practice of publishing simple human-readable lists of descriptors to identify CMIP datasets had resulted in different parts of the infrastructure replicating this CV information in different specialized formats more suitable for specific purposes. In some cases, the information needed to populate a CV was gathered independently by different components of the infrastructure (e.g., the acronyms used to identify each CMIP experiment), which led to some inconsistency in CV content that hampered transparency and communication across the infrastructure and sometimes confused users of the CMIP data. Consequently, the WIP decided that for CMIP6, a reference repository of CVs would be established, and all infrastructure components would rely on this reference source \citep{durack_cmip6_2024}. The CVs were in JavaScript Object Notation (JSON) files, which humans and machines read easily. Building on the CVs relied on in CMIP5, a few new ones were added. Still, the main advance was providing a definitive source for defining the terms used to uniquely identify CMIP6 datasets and managing them transparently on GitHub.
 
@@ -776,7 +776,7 @@ By CMIP3, more than a dozen modelling groups had participated in multiple earlie
 
 This process continued in CMIP5, with an increase to 26 modelling groups and an expansion in sub-MIPs leading to 37 experiments making up the phase (\autoref{tab:tab1-MIPsThroughTime}, \autoref{fig:fig1-MIPGrowth}). For CMIP5, the CMOR2 software was developed \citep{doutriaux_cmor_2011} along with the CMIP5-CMOR-Tables \citep{doutriaux_cmip5_2013}, which captured a dramatic increase in the variables requested, now totalling 986 (see \autoref{tab:tab1-MIPsThroughTime}). CMOR2 expanded the standardized metadata that was written to output files, building on the improvements in CMIP3 \citep{taylor_pcmdi_2010}, and in addition imposed standard filenames and directory structures \citep{taylor_pcmdi_2012}, which further aided unique data identities and was necessary to facilitate the growing archives across the now federated ESGF data distribution infrastructure (see \autoref{sec:earthSystemGridFederation}). This phase also incorporated dataset version information, assigned during the data preparation and ESGF publication process, allowing errors to be identified and associated with a data version, greatly aiding more systematic replication and dataset status identity. 
 
-For CMIP6 this evolution continued, with the development of CMOR3 \citep{mauzey_cmor_2024}. The dramatic project expansion with federated sub-MIPs led to a ballooning project, increasing to include 49 contributing modelling groups and 322 experiments (\autoref{tab:tab1-MIPsThroughTime}). Due to the broadening of model diversity and configurations used across this large experimental expansion, a dedicated data request was needed, tying variables requested by MIP/experiment (see \autoref{sec:CMIP6DR}). In total, 2062 variables were requested across all experiments, encoded into the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}. Like the phases before it, this led to a further expansion of identifiers and metadata \citep{taylor_pcmdi_2018}, aiding unique data identities and the routine replication of data across the now large international ESGF federation. In addition to CMOR, the community has developed several additional software packages and tools to aid MIP data preparation (see \autoref{tab:tabAppD1-CMIP6PrepTools}).
+For CMIP6 this evolution continued, with the development of CMOR3 \citep{mauzey_cmor_2024}. The dramatic project expansion with federated sub-MIPs led to a ballooning project, increasing to include 49 contributing modelling groups and 322 experiments (\autoref{tab:tab1-MIPsThroughTime}). Due to the broadening of model diversity and configurations used across this large experimental expansion, a dedicated data request was needed, tying variables requested by MIP/experiment (see \autoref{sec:CMIP6DR}). In total, 2062 variables were requested across all experiments, encoded into the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}. Like the phases before it, this led to a further expansion of identifiers and metadata \citep{taylor_pcmdi_2018}, aiding unique data identities and the routine replication of data across the now large international ESGF federation. In addition to CMOR, the community has developed several additional software packages and tools to aid MIP data preparation (see \autoref{tab:secAppE1-CMIP6DataPrep}).
 
 old notes
 For CMIP6, as work on numerous parts of the infrastructure began, their collation of CMIP6 project information occurred independently from one another (ES-Docs, CMIP6 Data Request, and WIP CVs). There was agreement at a WIP meeting in June 2016 (here) that core CMIP6 information needed to be centralized in a single authoritative format for all downstream infrastructure to use, which by that time included the CMIP6 Data Request, ES-Docs, DKRZ Citation Service, ESGF and the modelling-group-serving CMOR and cmip6-cmor-tables. In November 2016, the WIP initiated the first instance of the centralized CVs and developed as the CMIP6_CVs - https://github.com/WCRP-CMIP/CMIP6_CVs. Previous to this, the CMIP6 Data Request (Martin), ES-Docs (Eric Guilyardi and team) and the WIP (Balaji and Karl) had been collating information from the CMIP Panel and MIP Chairs directly. There had been no direct information collation from modelling groups, however, discussions with the CMIP Panel Chair had been ongoing. Once there was a WIP agreement to centralize this information, the activity_id’s, experiment_id’s, institution_id’s and source_id’s were defined (see initial release here), which became the centralized and managed source of information about the CMIP6 project phase, and began the process of harmonizing activity_id/MIP and experiment_id’s across the infrastructure. This also allowed the late registration of new MIPs (CDRMIP and PAMIP in April 2018) and amendments and augmentations to existing MIP experiments, to weed out duplication and more tightly refine the experiment list.
@@ -1383,10 +1383,16 @@ Also Potter et al. 2011 https://doi.org/10.1175/2011BAMS3018.1
 }
 
 
-\section{CMIP6 data preparation tools}  %% Appendix D
-\label{sec:secAppD1-CMIP6DataPrep}
+\section{\cred{CMIP download statistics}}  %% Appendix D
+\label{sec:secAppD1-CMIPDownloads}
 
-During MIP phases, several software tools have been developed and updated to meet augmented phase requirements. These tools build on the MIP nomenclature and digital formats that are now standard. Some prominent packages are tabulated below (see \autoref{tab:tabAppD1-CMIP6PrepTools}).
+\cred{\textbf{Some info about download stats}}
+
+
+\section{CMIP6 data preparation tools}  %% Appendix E
+\label{sec:secAppE1-CMIP6DataPrep}
+
+During MIP phases, several software tools have been developed and updated to meet augmented phase requirements. These tools build on the MIP nomenclature and digital formats that are now standard. Some prominent packages are tabulated below (see \autoref{tab:secAppE1-CMIP6DataPrep}).
 
 \begin{table*}[htp]
 \renewcommand{\arraystretch}{2}
@@ -1407,23 +1413,28 @@ CMOR 2.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov}; \url
 CMOR 3.0 & The Climate Model Output Rewriter & \url{https://cmor.llnl.gov}; \url{https://github.com/PCMDI/cmor} & \citet{doutriaux_cmor_2024} & \href{http://doi.org/10.5281/zenodo.592733}{10.5281/ zenodo.592733}\\ \hline
 XIOS & Xml IO Server & \url{http://forge.ipsl.jussieu.fr/ioserver/chrome/site/XIOS\_DOC} & &\\ \hline
 ECE2CMOR3 & EC-Earth to CMOR & \url{https://github.com/EC-Earth/ece2cmor3}; \url{https://github.com/EC-Earth/cmor-fixer} & & \href{http://doi.org/10.5281/zenodo.1051094}{10.5281/ zenodo.1051094}\\ \hline
+CDDS 3.0 & The Climate Data Dissemination System & \url{https://github.com/MetOffice/CDDS}; \url{https://metoffice.github.io/CDDS/} & &\\ \hline
 CDO CMOR & Climate Data Operators to CMOR & \url{https://code.mpimet.mpg.de/projects/cdo/wiki/CDO\_CMOR\_Operator} & &\\ \hline
 NORESM2CMOR & NorESM to CMOR & \url{https://github.com/NorESMhub/noresm2cmor} & &\\ \hline
-CCLM2CMOR & COSMO-CLM to CMOR & \url{https://github.com/C2SM-RCM/CCLM2CMOR}; \url{https://github.com/ssilje/CMOR} & &\\ \hline
+CCLM2CMOR & COSMO-CLM to CMOR & \url{https://github.com/C2SM-RCM/CCLM2CMOR} & &\\ \hline
 FGOALS-g-cmor & FGOALS-g to CMOR & \url{https://github.com/dongli/FGOALS-g-cmor} & &\\ \hline
 PRIMAVERA & HadGEM to CMOR & \url{https://github.com/goord/cmor} & &\\ \hline
-E3SM\_To\_CMIP & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_to\_cmip} & &\\ \hline
-ACCESS MOPPeR & A Model Output Post-Processor for the ACCESS climate model & \url{https://access-mopper.readthedocs.io/} & &\\
+E3SM\_To\_CMIP 1.11.3 & DoE-E3SM to CMOR & \url{https://github.com/E3SM-Project/e3sm\_to\_cmip} & Asay-Davis et al. (2025) &\\ \hline
+ACCESS MOPPeR 2.0.0a & A Model Output Post-Processor for the ACCESS climate model & \url{https://github.com/ACCESS-NRI/ACCESS-MOPPeR} & &\\ \hline
+pymorize 6.9.32 & A Python based Tool to CMORize NetCDF Data & \url{https://pymorize.readthedocs.io} & Gierz, P. et al. (2025) &\\
 \hline
+py-cordex 0.9.0 & A Python based Tool to create cordex grids and meta data & \url{https://py-cordex.readthedocs.io} & Buntemeyer, L. (2025) & \href{http://doi.org/10.5281/zenodo.5841741}{10.5281/ zenodo.5841741} \\
+\hline
+
 \end{tabularx}
 } % /resizebox
-\label{tab:tabAppD1-CMIP6PrepTools}
+\label{tab:secAppE1-CMIP6DataPrep}
 \footnotesize{}
 \end{table*}
 
 
-\section{Acronyms}  %% Appendix E
-\label{sec:secAppE1-Acronyms}
+\section{Acronyms}  %% Appendix F
+\label{sec:secAppF1-Acronyms}
 
 Over the five decades of MIPs, many acronyms and identifiers have been developed and bled into standard nomenclature. Some of these are used repeatedly throughout the text, and we tabulate entries here (see \autoref{tab:tabAppE1-Acronyms}). Additional identifiers used to describe CMIP6 Community MIPs are detailed in \autoref{tab:tab2-CMIP6MIPs}.
 
@@ -1670,6 +1681,8 @@ We acknowledge the Program for Climate Model Diagnosis and Intercomparison (PCMD
 
 We gratefully acknowledge Vaishali Naik (NOAA Geophysical Fluid Dynamics Laboratory, Princeton, USA) for helping us better understand the climate forcing experience of modelling groups through the CMIP3, and CMIP5 phases.
 
+\cred{\textbf{We gratefully acknowledge Bjorn Stevens (MPI-M, Hamburg, Germany), Rasmus Benestad (Meteorologisk Institutt, Norway), Cath Senior (University of Leeds, UK), Juan Antonio Anel (Universidade de Vigo, Ourense, Spain), Annalisa Cherchi (CNR-ISAC, Italy), Benjamin D. Santer (Formerly PCMDI, Livermore , USA), and an anonymous reviewer for formal feedback. The authors would also like to thank Krishna AchutaRao (IITM, New Delhi, India), John T. Mitchell (Formerly MOHC, Exeter, UK), and Gavin Schmidt (NASA-GISS, New York, USA) for additional feedback on numerous manuscript drafts. All reviewer feedback strongly improved the manuscript}}
+
 We thank numerous colleagues, collaborators, and past AMIP, CMIP, and ESGF contributors for their valuable input and feedback.
 
 The work of P.J.D., K.E.T., P.J.G., C.C., S.K.A., D.C.B, J.L., C.F.M., J.P. and G.L.P. from Lawrence Livermore National Laboratory (LLNL) is supported by the Regional and Global Model Analysis (RGMA) program area under the Earth and Environmental System Modeling (EESM) program within the Earth and Environmental Systems Sciences Division (EESSD) of the United States Department of Energy’s (DoE) Office of Science (OSTI). This work was performed under the auspices of the US DoE by LLNL under contract DE-AC52-07NA27344. LLNL IM Release: LLNL-JRNL-871359.
@@ -1679,6 +1692,7 @@ The work of G.A.M. is supported by the Regional and Global Model Analysis (RGMA)
 V.E’s work is supported by the European Research Council (ERC) Synergy Grant ‘Understanding and Modeling the Earth System with Machine Learning’ (USMILE) under the Horizon 2020 Research and Innovation programme (grant agreement no. 855187) and the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) through the Gottfried Wilhelm Leibniz Prize awarded to V.E. (reference no. EY 22/2-1).
 
 D.E. and E.O's work at the CMIP-IPO is hosted by the European Space Agency, with staff provided on contract by HE Space Operations Ltd.
+
 
 %We acknowledge three anonymous reviewers for helpful feedback on the initial draft, which strongly improved the manuscript.
 \end{acknowledgements}
