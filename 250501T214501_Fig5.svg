@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-01-24T17:23:24.041200</dc:date>
+    <dc:date>2025-05-01T21:46:02.840854</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.1, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -43,7 +43,7 @@ L 282.31945 62.491636
 L 282.31945 89.674182 
 L 48.4 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #d62f27"/>
+" clip-path="url(#p3af223f54a)" style="fill: #d62f27"/>
    </g>
    <g id="patch_4">
     <path d="M 48.4 116.856727 
@@ -51,7 +51,7 @@ L 218.0258 116.856727
 L 218.0258 144.039273 
 L 48.4 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #d62f27"/>
+" clip-path="url(#p3af223f54a)" style="fill: #d62f27"/>
    </g>
    <g id="patch_5">
     <path d="M 48.4 171.221818 
@@ -59,7 +59,7 @@ L 311.0464 171.221818
 L 311.0464 198.404364 
 L 48.4 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #d62f27"/>
+" clip-path="url(#p3af223f54a)" style="fill: #d62f27"/>
    </g>
    <g id="patch_6">
     <path d="M 282.31945 62.491636 
@@ -67,7 +67,7 @@ L 544.96585 62.491636
 L 544.96585 89.674182 
 L 282.31945 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #ee613e"/>
+" clip-path="url(#p3af223f54a)" style="fill: #ee613e"/>
    </g>
    <g id="patch_7">
     <path d="M 218.0258 116.856727 
@@ -75,7 +75,7 @@ L 553.857525 116.856727
 L 553.857525 144.039273 
 L 218.0258 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #ee613e"/>
+" clip-path="url(#p3af223f54a)" style="fill: #ee613e"/>
    </g>
    <g id="patch_8">
     <path d="M 311.0464 171.221818 
@@ -83,7 +83,7 @@ L 527.866475 171.221818
 L 527.866475 198.404364 
 L 311.0464 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #ee613e"/>
+" clip-path="url(#p3af223f54a)" style="fill: #ee613e"/>
    </g>
    <g id="patch_9">
     <path d="M 544.96585 62.491636 
@@ -91,7 +91,7 @@ L 659.87365 62.491636
 L 659.87365 89.674182 
 L 544.96585 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #f99355"/>
+" clip-path="url(#p3af223f54a)" style="fill: #f99355"/>
    </g>
    <g id="patch_10">
     <path d="M 553.857525 116.856727 
@@ -99,7 +99,7 @@ L 606.5236 116.856727
 L 606.5236 144.039273 
 L 553.857525 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #f99355"/>
+" clip-path="url(#p3af223f54a)" style="fill: #f99355"/>
    </g>
    <g id="patch_11">
     <path d="M 527.866475 171.221818 
@@ -107,7 +107,7 @@ L 586.688325 171.221818
 L 586.688325 198.404364 
 L 527.866475 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #f99355"/>
+" clip-path="url(#p3af223f54a)" style="fill: #f99355"/>
    </g>
    <g id="patch_12">
     <path d="M 659.87365 62.491636 
@@ -115,7 +115,7 @@ L 659.87365 62.491636
 L 659.87365 89.674182 
 L 659.87365 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #fdc372"/>
+" clip-path="url(#p3af223f54a)" style="fill: #fdc372"/>
    </g>
    <g id="patch_13">
     <path d="M 606.5236 116.856727 
@@ -123,7 +123,7 @@ L 606.5236 116.856727
 L 606.5236 144.039273 
 L 606.5236 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #fdc372"/>
+" clip-path="url(#p3af223f54a)" style="fill: #fdc372"/>
    </g>
    <g id="patch_14">
     <path d="M 586.688325 171.221818 
@@ -131,7 +131,7 @@ L 632.51465 171.221818
 L 632.51465 198.404364 
 L 586.688325 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #fdc372"/>
+" clip-path="url(#p3af223f54a)" style="fill: #fdc372"/>
    </g>
    <g id="patch_15">
     <path d="M 659.87365 62.491636 
@@ -139,7 +139,7 @@ L 693.388425 62.491636
 L 693.388425 89.674182 
 L 659.87365 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #fee695"/>
+" clip-path="url(#p3af223f54a)" style="fill: #fee695"/>
    </g>
    <g id="patch_16">
     <path d="M 606.5236 116.856727 
@@ -147,7 +147,7 @@ L 606.5236 116.856727
 L 606.5236 144.039273 
 L 606.5236 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #fee695"/>
+" clip-path="url(#p3af223f54a)" style="fill: #fee695"/>
    </g>
    <g id="patch_17">
     <path d="M 632.51465 171.221818 
@@ -155,7 +155,7 @@ L 632.51465 171.221818
 L 632.51465 198.404364 
 L 632.51465 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #fee695"/>
+" clip-path="url(#p3af223f54a)" style="fill: #fee695"/>
    </g>
    <g id="patch_18">
     <path d="M 693.388425 62.491636 
@@ -163,7 +163,7 @@ L 693.388425 62.491636
 L 693.388425 89.674182 
 L 693.388425 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #feffbe"/>
+" clip-path="url(#p3af223f54a)" style="fill: #feffbe"/>
    </g>
    <g id="patch_19">
     <path d="M 606.5236 116.856727 
@@ -171,7 +171,7 @@ L 627.726825 116.856727
 L 627.726825 144.039273 
 L 606.5236 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #feffbe"/>
+" clip-path="url(#p3af223f54a)" style="fill: #feffbe"/>
    </g>
    <g id="patch_20">
     <path d="M 632.51465 171.221818 
@@ -179,7 +179,7 @@ L 632.51465 171.221818
 L 632.51465 198.404364 
 L 632.51465 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #feffbe"/>
+" clip-path="url(#p3af223f54a)" style="fill: #feffbe"/>
    </g>
    <g id="patch_21">
     <path d="M 693.388425 62.491636 
@@ -187,7 +187,7 @@ L 693.388425 62.491636
 L 693.388425 89.674182 
 L 693.388425 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #e0f295"/>
+" clip-path="url(#p3af223f54a)" style="fill: #e0f295"/>
    </g>
    <g id="patch_22">
     <path d="M 627.726825 116.856727 
@@ -195,7 +195,7 @@ L 627.726825 116.856727
 L 627.726825 144.039273 
 L 627.726825 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #e0f295"/>
+" clip-path="url(#p3af223f54a)" style="fill: #e0f295"/>
    </g>
    <g id="patch_23">
     <path d="M 632.51465 171.221818 
@@ -203,7 +203,7 @@ L 645.510175 171.221818
 L 645.510175 198.404364 
 L 632.51465 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #e0f295"/>
+" clip-path="url(#p3af223f54a)" style="fill: #e0f295"/>
    </g>
    <g id="patch_24">
     <path d="M 693.388425 62.491636 
@@ -211,7 +211,7 @@ L 693.388425 62.491636
 L 693.388425 89.674182 
 L 693.388425 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #bbe278"/>
+" clip-path="url(#p3af223f54a)" style="fill: #bbe278"/>
    </g>
    <g id="patch_25">
     <path d="M 627.726825 116.856727 
@@ -219,7 +219,7 @@ L 640.038375 116.856727
 L 640.038375 144.039273 
 L 627.726825 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #bbe278"/>
+" clip-path="url(#p3af223f54a)" style="fill: #bbe278"/>
    </g>
    <g id="patch_26">
     <path d="M 645.510175 171.221818 
@@ -227,7 +227,7 @@ L 645.510175 171.221818
 L 645.510175 198.404364 
 L 645.510175 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #bbe278"/>
+" clip-path="url(#p3af223f54a)" style="fill: #bbe278"/>
    </g>
    <g id="patch_27">
     <path d="M 693.388425 62.491636 
@@ -235,7 +235,7 @@ L 693.388425 62.491636
 L 693.388425 89.674182 
 L 693.388425 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #8ccd67"/>
+" clip-path="url(#p3af223f54a)" style="fill: #8ccd67"/>
    </g>
    <g id="patch_28">
     <path d="M 640.038375 116.856727 
@@ -243,7 +243,7 @@ L 651.66595 116.856727
 L 651.66595 144.039273 
 L 640.038375 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #8ccd67"/>
+" clip-path="url(#p3af223f54a)" style="fill: #8ccd67"/>
    </g>
    <g id="patch_29">
     <path d="M 645.510175 171.221818 
@@ -251,7 +251,7 @@ L 645.510175 171.221818
 L 645.510175 198.404364 
 L 645.510175 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #8ccd67"/>
+" clip-path="url(#p3af223f54a)" style="fill: #8ccd67"/>
    </g>
    <g id="patch_30">
     <path d="M 693.388425 62.491636 
@@ -259,7 +259,7 @@ L 693.388425 62.491636
 L 693.388425 89.674182 
 L 693.388425 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #57b65f"/>
+" clip-path="url(#p3af223f54a)" style="fill: #57b65f"/>
    </g>
    <g id="patch_31">
     <path d="M 651.66595 116.856727 
@@ -267,7 +267,7 @@ L 651.66595 116.856727
 L 651.66595 144.039273 
 L 651.66595 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #57b65f"/>
+" clip-path="url(#p3af223f54a)" style="fill: #57b65f"/>
    </g>
    <g id="patch_32">
     <path d="M 645.510175 171.221818 
@@ -275,7 +275,7 @@ L 656.453775 171.221818
 L 656.453775 198.404364 
 L 645.510175 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #57b65f"/>
+" clip-path="url(#p3af223f54a)" style="fill: #57b65f"/>
    </g>
    <g id="patch_33">
     <path d="M 693.388425 62.491636 
@@ -283,7 +283,7 @@ L 732.375 62.491636
 L 732.375 89.674182 
 L 693.388425 89.674182 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #199750"/>
+" clip-path="url(#p3af223f54a)" style="fill: #199750"/>
    </g>
    <g id="patch_34">
     <path d="M 651.66595 116.856727 
@@ -291,7 +291,7 @@ L 732.375 116.856727
 L 732.375 144.039273 
 L 651.66595 144.039273 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #199750"/>
+" clip-path="url(#p3af223f54a)" style="fill: #199750"/>
    </g>
    <g id="patch_35">
     <path d="M 656.453775 171.221818 
@@ -299,18 +299,18 @@ L 732.375 171.221818
 L 732.375 198.404364 
 L 656.453775 198.404364 
 z
-" clip-path="url(#p26a2aa3d76)" style="fill: #199750"/>
+" clip-path="url(#p3af223f54a)" style="fill: #199750"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="ytick_1">
      <g id="line2d_1">
       <defs>
-       <path id="md878d5c9a4" d="M 0 0 
+       <path id="md8bd73c2c2" d="M 0 0 
 L -3.5 0 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#md878d5c9a4" x="48.4" y="76.082909" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#md8bd73c2c2" x="48.4" y="76.082909" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -416,17 +416,17 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#MicrosoftSansSerif-43"/>
-       <use xlink:href="#MicrosoftSansSerif-4d" x="72.216797"/>
-       <use xlink:href="#MicrosoftSansSerif-49" x="155.517578"/>
-       <use xlink:href="#MicrosoftSansSerif-50" x="183.300781"/>
-       <use xlink:href="#MicrosoftSansSerif-33" x="250"/>
+       <use xlink:href="#MicrosoftSansSerif-4d" transform="translate(72.216797 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-49" transform="translate(155.517578 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-50" transform="translate(183.300781 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-33" transform="translate(250 0)"/>
       </g>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#md878d5c9a4" x="48.4" y="130.448" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#md8bd73c2c2" x="48.4" y="130.448" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -459,17 +459,17 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#MicrosoftSansSerif-43"/>
-       <use xlink:href="#MicrosoftSansSerif-4d" x="72.216797"/>
-       <use xlink:href="#MicrosoftSansSerif-49" x="155.517578"/>
-       <use xlink:href="#MicrosoftSansSerif-50" x="183.300781"/>
-       <use xlink:href="#MicrosoftSansSerif-35" x="250"/>
+       <use xlink:href="#MicrosoftSansSerif-4d" transform="translate(72.216797 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-49" transform="translate(155.517578 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-50" transform="translate(183.300781 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-35" transform="translate(250 0)"/>
       </g>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#md878d5c9a4" x="48.4" y="184.813091" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#md8bd73c2c2" x="48.4" y="184.813091" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -504,10 +504,10 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#MicrosoftSansSerif-43"/>
-       <use xlink:href="#MicrosoftSansSerif-4d" x="72.216797"/>
-       <use xlink:href="#MicrosoftSansSerif-49" x="155.517578"/>
-       <use xlink:href="#MicrosoftSansSerif-50" x="183.300781"/>
-       <use xlink:href="#MicrosoftSansSerif-36" x="250"/>
+       <use xlink:href="#MicrosoftSansSerif-4d" transform="translate(72.216797 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-49" transform="translate(155.517578 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-50" transform="translate(183.300781 0)"/>
+       <use xlink:href="#MicrosoftSansSerif-36" transform="translate(250 0)"/>
       </g>
      </g>
     </g>
@@ -586,9 +586,9 @@ z
 " transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#MicrosoftSansSerif-33"/>
-     <use xlink:href="#MicrosoftSansSerif-34" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-32" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-34" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-32" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_5">
@@ -630,27 +630,27 @@ z
 " transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#MicrosoftSansSerif-32"/>
-     <use xlink:href="#MicrosoftSansSerif-34" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-38" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-34" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-38" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_6">
     <!-- 38.4 -->
     <g style="fill: #ffffff" transform="translate(169.992731 187.395903) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-33"/>
-     <use xlink:href="#MicrosoftSansSerif-38" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-34" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-38" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-34" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_7">
     <!-- 38.4 -->
     <g style="fill: #ffffff" transform="translate(403.912181 78.665722) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-33"/>
-     <use xlink:href="#MicrosoftSansSerif-38" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-34" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-38" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-34" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_8">
@@ -695,9 +695,9 @@ z
 " transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#MicrosoftSansSerif-34"/>
-     <use xlink:href="#MicrosoftSansSerif-39" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-31" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-39" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-31" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_9">
@@ -716,116 +716,116 @@ z
 " transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#MicrosoftSansSerif-33"/>
-     <use xlink:href="#MicrosoftSansSerif-31" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-37" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-31" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-37" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_10">
     <!-- 16.8 -->
     <g style="fill: #ffffff" transform="translate(592.689281 78.665722) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-36" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-38" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-36" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-38" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_11">
     <!-- 7.7 -->
     <g style="fill: #ffffff" transform="translate(573.240563 133.030812) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-37"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-37" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-37" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_12">
     <!-- 8.6 -->
     <g style="fill: #ffffff" transform="translate(550.3274 187.395903) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-38"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-36" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-36" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_13">
     <!-- 6.7 -->
     <g style="fill: #ffffff" transform="translate(602.651487 187.395903) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-36"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-37" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-37" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_14">
     <!-- 4.9 -->
     <g style="fill: #a9a9a9" transform="translate(669.681038 78.665722) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-34"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-39" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-39" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_15">
     <!-- 3.1 -->
     <g style="fill: #a9a9a9" transform="translate(610.175213 133.030812) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-33"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-31" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-31" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_16">
     <!-- 1.9 -->
     <g style="fill: #a9a9a9" transform="translate(632.062412 187.395903) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-39" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-39" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_17">
     <!-- 1.8 -->
     <g style="fill: #ffffff" transform="translate(626.9326 133.030812) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-38" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-38" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_18">
     <!-- 1.7 -->
     <g style="fill: #ffffff" transform="translate(638.902162 133.030812) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-37" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-37" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_19">
     <!-- 1.6 -->
     <g style="fill: #ffffff" transform="translate(644.031975 187.395903) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-36" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-36" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_20">
     <!-- 5.7 -->
     <g style="fill: #ffffff" transform="translate(705.931713 78.665722) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-35"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-37" x="83.398438"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-37" transform="translate(83.398438 0)"/>
     </g>
    </g>
    <g id="text_21">
     <!-- 11.8 -->
     <g style="fill: #ffffff" transform="translate(682.290006 133.030812) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-31" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-38" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-31" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-38" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="text_22">
     <!-- 11.1 -->
     <g style="fill: #ffffff" transform="translate(684.683919 187.395903) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftSansSerif-31"/>
-     <use xlink:href="#MicrosoftSansSerif-31" x="55.615234"/>
-     <use xlink:href="#MicrosoftSansSerif-2e" x="111.230469"/>
-     <use xlink:href="#MicrosoftSansSerif-31" x="139.013672"/>
+     <use xlink:href="#MicrosoftSansSerif-31" transform="translate(55.615234 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-2e" transform="translate(111.230469 0)"/>
+     <use xlink:href="#MicrosoftSansSerif-31" transform="translate(139.013672 0)"/>
     </g>
    </g>
    <g id="legend_1">
@@ -1022,16 +1022,16 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-53"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="66.699219"/>
-      <use xlink:href="#MicrosoftSansSerif-65" x="116.699219"/>
-      <use xlink:href="#MicrosoftSansSerif-6e" x="172.314453"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="227.929688"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="283.544922"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="316.845703"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="339.648438"/>
-      <use xlink:href="#MicrosoftSansSerif-4d" x="395.263672"/>
-      <use xlink:href="#MicrosoftSansSerif-49" x="478.564453"/>
-      <use xlink:href="#MicrosoftSansSerif-50" x="506.347656"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(66.699219 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-65" transform="translate(116.699219 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6e" transform="translate(172.314453 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(227.929688 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(283.544922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(316.845703 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(339.648438 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-4d" transform="translate(395.263672 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-49" transform="translate(478.564453 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-50" transform="translate(506.347656 0)"/>
      </g>
     </g>
     <g id="patch_42">
@@ -1118,15 +1118,15 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-68"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="78.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="128.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="156.201172"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="211.816406"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="245.117188"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="267.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="317.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-6c" x="373.535156"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(78.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(128.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(156.201172 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(211.816406 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(245.117188 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(267.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(317.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6c" transform="translate(373.535156 0)"/>
      </g>
     </g>
     <g id="patch_43">
@@ -1166,14 +1166,14 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-70"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-43" x="78.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="150.634766"/>
-      <use xlink:href="#MicrosoftSansSerif-6e" x="206.25"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="261.865234"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="289.648438"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="322.949219"/>
-      <use xlink:href="#MicrosoftSansSerif-6c" x="378.564453"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-43" transform="translate(78.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(150.634766 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6e" transform="translate(206.25 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(261.865234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(289.648438 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(322.949219 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6c" transform="translate(378.564453 0)"/>
      </g>
     </g>
     <g id="patch_44">
@@ -1236,19 +1236,19 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-64"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-70" x="105.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-70" x="161.230469"/>
-      <use xlink:href="#MicrosoftSansSerif-41" x="216.845703"/>
-      <use xlink:href="#MicrosoftSansSerif-2d" x="283.544922"/>
-      <use xlink:href="#MicrosoftSansSerif-68" x="316.845703"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="372.460938"/>
-      <use xlink:href="#MicrosoftSansSerif-6e" x="395.263672"/>
-      <use xlink:href="#MicrosoftSansSerif-64" x="450.878906"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="506.494141"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="556.494141"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="612.109375"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="662.109375"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-70" transform="translate(105.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-70" transform="translate(161.230469 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-41" transform="translate(216.845703 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-2d" transform="translate(283.544922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-68" transform="translate(316.845703 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(372.460938 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6e" transform="translate(395.263672 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-64" transform="translate(450.878906 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(506.494141 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(556.494141 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(612.109375 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(662.109375 0)"/>
      </g>
     </g>
     <g id="patch_45">
@@ -1286,12 +1286,12 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-31"/>
-      <use xlink:href="#MicrosoftSansSerif-70" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="111.230469"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="161.230469"/>
-      <use xlink:href="#MicrosoftSansSerif-43" x="189.013672"/>
-      <use xlink:href="#MicrosoftSansSerif-4f" x="261.230469"/>
-      <use xlink:href="#MicrosoftSansSerif-32" x="339.013672"/>
+      <use xlink:href="#MicrosoftSansSerif-70" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(111.230469 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(161.230469 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-43" transform="translate(189.013672 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-4f" transform="translate(261.230469 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-32" transform="translate(339.013672 0)"/>
      </g>
     </g>
     <g id="patch_46">
@@ -1306,19 +1306,19 @@ z
      <!-- historicalMisc -->
      <g transform="translate(339.410156 41.274487) scale(0.1 -0.1)">
       <use xlink:href="#MicrosoftSansSerif-68"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="78.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="128.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="156.201172"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="211.816406"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="245.117188"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="267.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="317.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-6c" x="373.535156"/>
-      <use xlink:href="#MicrosoftSansSerif-4d" x="396.337891"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="479.638672"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="502.441406"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="552.441406"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(78.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(128.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(156.201172 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(211.816406 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(245.117188 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(267.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(317.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6c" transform="translate(373.535156 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-4d" transform="translate(396.337891 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(479.638672 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(502.441406 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(552.441406 0)"/>
      </g>
     </g>
     <g id="patch_47">
@@ -1389,17 +1389,17 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-61"/>
-      <use xlink:href="#MicrosoftSansSerif-62" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="111.230469"/>
-      <use xlink:href="#MicrosoftSansSerif-75" x="144.53125"/>
-      <use xlink:href="#MicrosoftSansSerif-70" x="200.146484"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="255.761719"/>
-      <use xlink:href="#MicrosoftSansSerif-2d" x="283.544922"/>
-      <use xlink:href="#MicrosoftSansSerif-34" x="316.845703"/>
-      <use xlink:href="#MicrosoftSansSerif-78" x="372.460938"/>
-      <use xlink:href="#MicrosoftSansSerif-43" x="422.460938"/>
-      <use xlink:href="#MicrosoftSansSerif-4f" x="494.677734"/>
-      <use xlink:href="#MicrosoftSansSerif-32" x="572.460938"/>
+      <use xlink:href="#MicrosoftSansSerif-62" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(111.230469 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-75" transform="translate(144.53125 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-70" transform="translate(200.146484 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(255.761719 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-2d" transform="translate(283.544922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-34" transform="translate(316.845703 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-78" transform="translate(372.460938 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-43" transform="translate(422.460938 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-4f" transform="translate(494.677734 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-32" transform="translate(572.460938 0)"/>
      </g>
     </g>
     <g id="patch_48">
@@ -1429,18 +1429,18 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-68"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="78.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="128.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="156.201172"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="211.816406"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="245.117188"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="267.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="317.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-6c" x="373.535156"/>
-      <use xlink:href="#MicrosoftSansSerif-4e" x="396.337891"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="468.554688"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="524.169922"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(78.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(128.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(156.201172 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(211.816406 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(245.117188 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(267.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(317.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6c" transform="translate(373.535156 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-4e" transform="translate(396.337891 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(468.554688 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(524.169922 0)"/>
      </g>
     </g>
     <g id="patch_49">
@@ -1497,18 +1497,18 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-68"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="78.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="128.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-6f" x="156.201172"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="211.816406"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="245.117188"/>
-      <use xlink:href="#MicrosoftSansSerif-63" x="267.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-61" x="317.919922"/>
-      <use xlink:href="#MicrosoftSansSerif-6c" x="373.535156"/>
-      <use xlink:href="#MicrosoftSansSerif-47" x="396.337891"/>
-      <use xlink:href="#MicrosoftSansSerif-48" x="474.121094"/>
-      <use xlink:href="#MicrosoftSansSerif-47" x="546.337891"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(78.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(128.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6f" transform="translate(156.201172 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(211.816406 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(245.117188 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-63" transform="translate(267.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-61" transform="translate(317.919922 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-6c" transform="translate(373.535156 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-47" transform="translate(396.337891 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-48" transform="translate(474.121094 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-47" transform="translate(546.337891 0)"/>
      </g>
     </g>
     <g id="patch_50">
@@ -1542,14 +1542,14 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#MicrosoftSansSerif-68"/>
-      <use xlink:href="#MicrosoftSansSerif-69" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-73" x="78.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="128.417969"/>
-      <use xlink:href="#MicrosoftSansSerif-2d" x="156.201172"/>
-      <use xlink:href="#MicrosoftSansSerif-31" x="189.501953"/>
-      <use xlink:href="#MicrosoftSansSerif-39" x="245.117188"/>
-      <use xlink:href="#MicrosoftSansSerif-35" x="300.732422"/>
-      <use xlink:href="#MicrosoftSansSerif-30" x="356.347656"/>
+      <use xlink:href="#MicrosoftSansSerif-69" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-73" transform="translate(78.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(128.417969 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-2d" transform="translate(156.201172 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-31" transform="translate(189.501953 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-39" transform="translate(245.117188 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-35" transform="translate(300.732422 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-30" transform="translate(356.347656 0)"/>
      </g>
     </g>
     <g id="patch_51">
@@ -1564,17 +1564,17 @@ z
      <!-- other -->
      <g transform="translate(668.860156 27.124487) scale(0.1 -0.1)">
       <use xlink:href="#MicrosoftSansSerif-6f"/>
-      <use xlink:href="#MicrosoftSansSerif-74" x="55.615234"/>
-      <use xlink:href="#MicrosoftSansSerif-68" x="83.398438"/>
-      <use xlink:href="#MicrosoftSansSerif-65" x="139.013672"/>
-      <use xlink:href="#MicrosoftSansSerif-72" x="194.628906"/>
+      <use xlink:href="#MicrosoftSansSerif-74" transform="translate(55.615234 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-68" transform="translate(83.398438 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-65" transform="translate(139.013672 0)"/>
+      <use xlink:href="#MicrosoftSansSerif-72" transform="translate(194.628906 0)"/>
      </g>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p26a2aa3d76">
+  <clipPath id="p3af223f54a">
    <rect x="48.4" y="55.696" width="683.975" height="149.504"/>
   </clipPath>
  </defs>
