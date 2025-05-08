@@ -1,7 +1,8 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
 
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file"
+message: "If you use this data and software, please cite it as Durack et al. (2025; DOI: 10.5281/zenodo.15321348)"
+title: "Durack et al. 2025: The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, infrastructure and implementation"
 authors:
 - family-names: "Durack"
   given-names: "Paul J."
@@ -42,6 +43,9 @@ authors:
 - family-names: "Juckes"
   given-names: "Martin"
   orcid: "https://orcid.org/0000-0003-1770-2132"
+- family-names: "Foster"
+  given-names: "Ian T."
+  orcid: "https://orcid.org/0000-0003-2129-5269"
 - family-names: "Ames"
   given-names: "Sasha K."
   orcid: "https://orcid.org/0000-0001-9981-2997"
@@ -102,8 +106,15 @@ authors:
   given-names: "Sven"
 - family-names: "Williams"
   given-names: "Dean N."
-title: "Durack et al. 2025: The Coupled Model Intercomparison Project (CMIP): Reviewing project history, evolution, infrastructure and implementation"
-version: 1.2
-doi: "https://doi.org/10.5194/egusphere-2024-3729"
-date-released: 2025-01-14
+version: 1.2.1
+date-released: 2025-05-01
+identifiers:
+- description: "Durack et al., 2025 (GMD)"
+  type: doi
+  value: "10.5194/egusphere-2024-3729"
+- description: "Durack et al., 2025 (GMD) Data and software"
+  type: doi
+  value: "10.5281/zenodo.15321348"
+license: CC-BY-4.0
+repository-code: "https://github.com/durack1/CMIPSummary"
 url: "https://github.com/durack1/CMIPSummary"
