@@ -835,7 +835,7 @@ The CMIP6 ``data request'' \citep{juckes_cmip6_2020} was the most comprehensivel
 https://pcmdi.llnl.gov/mips/amip/OUTPUT/WGNEDIAGS/index.html
 \citet{taylor_pcmdi_2009}
 \citet{taylor_pcmdi_2013}
-\citet{juckes_baseline_2024}
+\citet{juckes_baseline_2025}
 FANGIO not multi-year (perpetual July)/January; AMIP1 success, multi-year SST/sea-ice (Russians and Chinese); AMIP2 next-level output, more high-frequency data, mean products (covariances; u/v-prime overbar - on the fly calculation) monthly mean timeseries (Boer \& Lambert 2008, clim dyn - relationship to Lorenz energy cycle)
 CMIP2: https://pcmdi.llnl.gov/mips/cmip2/
 CMIP3: https://pcmdi.llnl.gov/mips/cmip3/experiment.html
@@ -1292,7 +1292,7 @@ There is considerable continuity with experimental protocols across phases. The 
 
 \section{MIP variable request, standard output and data growth}  %% Appendix B
 \label{sec:secAppB1-MIPStandardOutput}
-The information presented in \autoref{tab:tab1-MIPsThroughTime} row ``Standard output variables/Tables'' was collated from numerous live and archived resources available from 1991 through to the CMIP6 CMOR Table files that are still being used today. The earliest resources were published in written form, the AMIP Newsletters \citep[e.g.,][]{gates_amip_1991}, and subsequently, became available on the PCMDI website for AMIP2, CMIP1 and CMIP2/2+ phases. CMIP3 marked a step change, with the development of the CMOR1 software \citep{taylor_cmor_2006} and CMIP3 Standard Output defined by the more complete CMIP3-CMOR-Tables \citep{doutriaux_cmip3_2005}. CMIP5 continued this trend with CMOR2 \citep{doutriaux_cmor_2011} and the CMIP5-CMOR-Tables \citep{doutriaux_cmip5_2013}. For CMIP6, project expansion to include 22 MIPs and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime} respectively) required the development of a dedicated CMIP6 Data Request (see \autoref{sec:CMIP6DR}) along with the parallel development of CMOR3 \citep{mauzey_cmor_2024} and the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}. For each tabulated value, superscript-identified links provide live connections to these sources, see \autoref{tab:tabAppB1-MIPStandardOutput}.
+The information presented in \autoref{tab:tab1-MIPsThroughTime} row ``Standard output variables/Tables'' was collated from numerous live and archived resources available from 1991 through to the CMIP6 CMOR Table files that are still being used today. The earliest resources were published in written form, the AMIP Newsletters \citep[e.g.,][]{gates_amip_1991}, and subsequently, became available on the PCMDI website for AMIP2, CMIP1 and CMIP2/2+ phases. CMIP3 marked a step change, with the development of the CMOR1 software \citep{taylor_cmor_2006} and CMIP3 Standard Output defined by the more complete CMIP3-CMOR-Tables \citep{doutriaux_cmip3_2005}. CMIP5 continued this trend with CMOR2 \citep{doutriaux_cmor_2011} and the CMIP5-CMOR-Tables \citep{doutriaux_cmip5_2013}. For CMIP6, project expansion to include 22 MIPs and 322 experiments (\autoref{tab:tab2-CMIP6MIPs}, \autoref{tab:tab1-MIPsThroughTime} respectively) required the development of a dedicated CMIP6 Data Request (see \autoref{sec:CMIP6DR}) along with the parallel development of CMOR3 \citep{mauzey_cmor_2024} and the CMIP6-CMOR-Tables \citep{nadeau_cmip6_2017}, themselves built from the CMIP6 Data Request \citep{juckes_cmip6_2020}. For each tabulated value, superscript-identified links provide live connections to these sources, see \autoref{tab:tabAppB1-MIPStandardOutput}.
 
 
 % Rerun https://github.com/durack1/Duracketal24-CMIP6/blob/main/getVarCounts.py against other table sets to fill in numbers below
@@ -1317,7 +1317,7 @@ The information presented in \autoref{tab:tab1-MIPsThroughTime} row ``Standard o
 			4 & CMIP2 & 28 & $\sim$ & 1997 & \url{https://pcmdi.llnl.gov/mips/cmip2/}\\ \hline
 			5 & CMIP3 & 143\textsuperscript{\textdagger} & 1.0 & Doutriaux \& Taylor, 2005 & \href{http://doi.org/10.5281/zenodo.12792173}{10.5281/zenodo.12792173}; \url{https://github.com/PCMDI/cmip3-cmor-tables}\\ \hline
 			6 & CMIP5 & 986 & 2.0 & Doutriaux \& Taylor, 2013 & \href{http://doi.org/10.5281/zenodo.12792191}{10.5281/zenodo.12792191}; \url{https://github.com/PCMDI/cmip5-cmor-tables}\\ \hline
-			7 & CMIP6 & 2062 & 3.0 & Nadeau et al., 2018 & \href{http://doi.org/10.5281/zenodo.597650}{10.5281/zenodo.597650}; \url{https://github.com/PCMDI/cmip6-cmor-tables}\\ \hline
+			7 & CMIP6 & 2062 & 3.0 & Nadeau et al., 2018; \citep{juckes_cmip6_2020, juckes_baseline_2025} & \href{http://doi.org/10.5281/zenodo.597650}{10.5281/zenodo.597650}; \url{https://github.com/PCMDI/cmip6-cmor-tables}\\ \hline
 			\hline
 			$\sim$ & CFMIP1 & 149 & 1.0 & $\sim$ & \url{https://github.com/PCMDI/cfmip1-cmor-tables}\\ \hline
 			$\sim$ & C-LAMP1 & 88 & 1.0 & $\sim$ & \url{https://github.com/PCMDI/c-lamp1-cmor-tables}\\ \hline
@@ -1707,7 +1707,7 @@ D.E. and E.O's work at the CMIP-IPO is hosted by the European Space Agency, with
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{250122a}
+\bibliography{250514a}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
