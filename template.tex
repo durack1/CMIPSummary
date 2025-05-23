@@ -1395,16 +1395,17 @@ Also Potter et al. 2011 https://doi.org/10.1175/2011BAMS3018.1
 \centering
 \caption{Download statistics, their source, temporal coverage, and web resource (if available)}
 \resizebox{\textwidth}{!} {
-	\begin{tabularx}{0.9\textwidth} { 
-	  | >{\raggedright\arraybackslash\hsize=.14\hsize}X
-	  | >{\centering\arraybackslash\hsize=.2\hsize}X
-	  | >{\centering\arraybackslash\hsize=.46\hsize}X
-	  | >{\centering\arraybackslash\hsize=.1\hsize}X
-	  | >{\centering\arraybackslash\hsize=.1\hsize}X | }
+	\begin{tabularx}{1\textwidth} { 
+	  | >{\raggedright\arraybackslash\hsize=.1\hsize}X
+	  | >{\centering\arraybackslash\hsize=.15\hsize}X
+	  | >{\centering\arraybackslash\hsize=.225\hsize}X
+	  | >{\centering\arraybackslash\hsize=.5\hsize}X
+    | >{\centering\arraybackslash\hsize=.1\hsize}X }
 \hline
-\textbf{CMIP Phase} & \textbf{Temporal coverage} & \textbf{Source} & \textbf{URL} \\ \hline
-CMIP3 & 2004-2008 & PCMDI, LLNL & - \\ \hline
-
+\textbf{MIP Phase} & \textbf{Temporal coverage} & \textbf{Source} & \textbf{URL} \\ \hline
+CMIP3 & 2004-2008 & PCMDI, LLNL (Archive) & - \\ \hline
+CMIP5 & 2012-2017;\newline 2018- & CMCC (Archive);\newline CMCC (Live web) & -\newline\url{https://esgf-ui.cmcc.it/esgf-dashboard-ui/cmip5.html} \\ \hline
+CMIP6 & 2018- & CMCC (Live web) & \url{https://esgf-ui.cmcc.it/esgf-dashboard-ui/cmip6.html} \\ \hline
 \end{tabularx}
 } % /resizebox
 \label{tab:secAppD1-CMIP6Downloads}
@@ -1418,10 +1419,10 @@ CMIP3 & 2004-2008 & PCMDI, LLNL & - \\ \hline
 
 
 
-\section{\cred{CMIP downstream data services}}  %% Appendix E
+\section{\cred{CMIP downstream data services and analysis tools}}  %% Appendix E
 \label{sec:secAppE1-CMIPDownstreamServices}
 
-\cred{The sustained CMIP development across multiple phases, along with publicly open data access since CMIP3 \autoref{sec:cmip3}, facilitated numerous downstream tools, and service developments which repackage and reformulate CMIP output for science use. In addition, non-ESGF data repositories are also now available, facilitating broad data access. A non-exhaustive list of several examples is included in \autoref{tab:secAppE1-CMIP6DownstreamServices}}
+\cred{The sustained CMIP development across multiple phases, along with publicly open data access since CMIP3 \autoref{sec:cmip3}, facilitated the development of numerous downstream tools, and data services which repackage and reformulate CMIP output for science use. In addition, non-ESGF data repositories are also now available, facilitating broad data access. A non-exhaustive list of several examples is included in \autoref{tab:secAppE1-CMIP6DownstreamServices}. In addition to data sources, the stability of the CMIP netCDF data format which was first established in CMIP3 has allowed for the development of numerous analysis packages and evaluation tools to be developed (see also \autoref{sec:CMIP6SupportingProjects-CoordEval}), facilitating reproducible CMIP model analysis and evaluation, numerous examples are listed at \url{https://wcrp-cmip.org/tools}.}
 
 \begin{table*}[htp]
 \renewcommand{\arraystretch}{2}
@@ -1430,19 +1431,24 @@ CMIP3 & 2004-2008 & PCMDI, LLNL & - \\ \hline
 \caption{Downstream data services facilitated by the publicly open data access model, first defined in CMIP3 (non-exhaustive list)}
 \resizebox{\textwidth}{!} {
 	\begin{tabularx}{0.9\textwidth} { 
-	  | >{\raggedright\arraybackslash\hsize=.14\hsize}X
+	  | >{\raggedright\arraybackslash\hsize=.25\hsize}X
 	  | >{\centering\arraybackslash\hsize=.2\hsize}X
-	  | >{\centering\arraybackslash\hsize=.46\hsize}X
+	  | >{\centering\arraybackslash\hsize=.3\hsize}X
 	  | >{\centering\arraybackslash\hsize=.1\hsize}X
-	  | >{\centering\arraybackslash\hsize=.1\hsize}X | }
+	  | >{\centering\arraybackslash\hsize=.15\hsize}X | }
 \hline
 \textbf{Project or package} & \textbf{CMIP phase data available} & \textbf{URL} & \textbf{Citation} & \textbf{DOI}\\ \hline
-KNMI Climate Explorer & CMIP3, CMIP5, CMIP6, plus others & \url{https://climexp.knmi.nl} & \cred{\cite{durack_cmip6_2024}} & - \\ \hline
-The U.S. Climate Resilience Toolkit CLIMATE EXPLORER & CMIP5 & \url{https://crt-climate-explorer.nemac.org} & - & - \\ \hline
-PANGEO & CMIP3, CMIP5, CMIP6 & \url{https://pangeo-data.github.io/pangeo-cmip6-cloud/}; \url{https://registry.opendata.aws/cmip6/} & \cite{abernathey_cmip6_2020} & - \\ \hline
-
-
-
+KNMI Climate Explorer & CMIP3, CMIP5, CMIP6, plus others & \url{https://climexp.knmi.nl} & \cred{Trouet and Oldenborgh, 2013} & - \\ \hline
+PANGEO & CMIP3, CMIP5, CMIP6 & \url{https://pangeo-data.github.io/pangeo-cmip6-cloud} & \cite{abernathey_cmip6_2020} & - \\ \hline
+Copernicus Climate Change Service (C3S) & reformatted CMIP5, CMIP6 & \url{https://cds.climate.copernicus.eu/datasets?q=CMIP} & - & - \\ \hline
+IAC ETHZ & CMIP2, CMIP3, CMIP5, CMIP6 & \url{https://data.iac.ethz.ch/atmos} & - & - \\ \hline
+IPCC CMIP6 Interactive Atlas & CMIP6 & \url{https://interactive-atlas.ipcc.ch} & \cite{gutierrez_atlas_2021} & 10.1017/ 9781009157896.021 \\ \hline
+CORDEX &  Downscaled CMIP5, CMIP6 & \url{https://cordex.org/} & \cite{jones_coordinated_2011,gutowski_jr_wcrp_2016} & - \\ \hline
+The U.S. Climate Resilience Toolkit CLIMATE EXPLORER & Downscaled CMIP5 & \url{https://crt-climate-explorer.nemac.org} & - & - \\ \hline
+NOAA’s Climate Projection Web Portal & Downscaled CMIP5 and others & \url{https://psl.noaa.gov/ipcc} & - & - \\ \hline
+NASA CMIP5: 21st Century Temperature and Precipitation Scenarios & Visualized CMIP5 future scenarios & \url{https://svs.gsfc.nasa.gov/4110} & - & - \\ \hline
+World Bank Climate Projections & CMIP5 future scenarios & \url{https://climateknowledgeportal.worldbank.org/cmip5} & - & - \\ \hline
+\cred{\textbf{Others?}} & - & - & - & - \\ \hline
 \end{tabularx}
 } % /resizebox
 \label{tab:secAppE1-CMIP6DownstreamServices}
