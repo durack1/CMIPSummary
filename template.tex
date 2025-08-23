@@ -672,7 +672,7 @@ While community consultation underpins the CMIP project planning and development
 \section{CMIP supporting infrastructure and organisations}
 \label{sec:CMIPSupportingOrgsAndInfra}
 
-The early FANGIO success and the developing appetite to improve climate change understanding led to the establishment by the US DoE of the Program for Climate Model Diagnosis and Intercomparison (PCMDI) at Lawrence Livermore National Laboratory (LLNL) in 1989. PCMDI was created to develop improved methods and tools for the diagnosis, validation, and intercomparison of global climate models. LLNL was selected to host the PCMDI to leverage the co-location of the US DoE Research Scientific Computing Center (NERSC) computing resource (1974-1996) and the pre-existing DoE-supported atmospheric climate modelling efforts that were already underway \citep[e.g.,][]{maccracken_projecting_1985,potter_celebrating_2011}.
+The early FANGIO success and the developing appetite to improve climate change understanding led to the establishment by the US DoE of the Program for Climate Model Diagnosis and Intercomparison (PCMDI) at Lawrence Livermore National Laboratory (LLNL) in 1989. PCMDI was created to develop improved methods and tools for the diagnosis, validation, and intercomparison of global climate models. LLNL was selected to host the PCMDI to leverage the co-location of the US DoE National Energy Research Supercomputer Center (NERSC) computing resource (1974-1996) and the pre-existing DoE-supported atmospheric climate modelling efforts that were already underway \citep[e.g.,][]{maccracken_projecting_1985,potter_celebrating_2011}.
 
 The existence of the NERSC high-performance computing infrastructure delivered a significant opportunity to the program, enticing 12 international modelling groups to participate in AMIP1 and providing compute cycles to run their codes to develop simulations. These groups ran the ten simulation years (1979-1988), storing their output on the same system \citep{gates_amip_1991, gates_amip_1992}. By 2000, there was a recognition that supporting infrastructure, data standards, software, and hardware development was essential for project success. The infrastructure facilitated data delivery and was becoming heavily relied upon to serve the growing MIP-contributing communities and downstream users. As such, ``MIP'' infrastructure was now of equal importance to the parallel intercomparison, science coordination, and experimental protocol activities that it served, with the ``I'' in the MIP acronym interchangeable across \textit{intercomparison} and \emph{infrastructure} terms \citep{gleckler_amip_2001}.
 
@@ -1235,7 +1235,11 @@ The CMIP project has had a sustained global impact. Its success has depended on 
 
 %\dataavailability{TEXT} %% use this section when having only data sets available
 
-\codedataavailability{Data underpinning figures in the paper, in addition to tabulated additional information can be viewed in a paper-dedicated GitHub repository at \url{https://github.com/durack1/CMIPSummary}, or using NBViewer at \url{https://nbviewer.org/github/durack1/CMIPSummary/blob/main/figuresAndTables.ipynb}. All code and materials are also accessible in a Zenodo archive, accessible at \url{https://doi.org/10.5281/zenodo.15321348}.} %% use this section when having data sets and software code available
+\codedataavailability{
+Data and code supporting the figures and tables in this paper are available via GitHub at \url{https://github.com/durack1/CMIPSummary}, or viewed directly at \url{https://nbviewer.org/github/durack1/CMIPSummary/blob/main/figuresAndTables.ipynb}. A persistent Zenodo archive is also available at {https://doi.org/10.5281/zenodo.15321348}.
+} %% use this section when having data sets and software code available
+
+\mycomment{OLD TEXT: Data underpinning figures in the paper, in addition to tabulated additional information, can be viewed in a paper-dedicated GitHub repository at \url{https://github.com/durack1/CMIPSummary}, or using NBViewer at \url{https://nbviewer.org/github/durack1/CMIPSummary/blob/main/figuresAndTables.ipynb}. All code and materials are also accessible in a Zenodo archive, accessible at \url{https://doi.org/10.5281/zenodo.15321348}.}
 
 %\sampleavailability{TEXT} %% use this section when having geoscientific samples available
 
@@ -1323,7 +1327,7 @@ The information presented in \autoref{tab:tab1-MIPsThroughTime} row ``Standard o
 			$\sim$ & CORDEX (CMIP5) & 207 & 2.0 & $\sim$ & \url{https://github.com/PCMDI/cordex-cmor-tables}\\ \hline
 			$\sim$ & GEOMIP & 1142 & 2.0 & $\sim$ & \url{https://github.com/PCMDI/geomip-cmor-tables}\\ \hline
 			$\sim$ & LUCID & 979 & 2.0 & $\sim$ & \url{https://github.com/PCMDI/lucid-cmor-tables}\\ \hline
-			$\sim$ & PMIP3 & 810 & 2.0 & $\sim$ & \url{https://github.com/PCMDI/pmip3-cmor-tables}\\ \hline
+			$\sim$ & PMIP3 & 810 & 2.0 & \citet{braconnot_paleoclimate_2011} & \url{https://github.com/PCMDI/pmip3-cmor-tables}\\ \hline
 			$\sim$ & CORDEX-CMIP6 & 565 & 3.0 & \citet{gutowski_jr_wcrp_2016} & \url{https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables}\\
 			\hline
 		\end{tabularx}
@@ -1385,7 +1389,8 @@ Also Potter et al. 2011 https://doi.org/10.1175/2011BAMS3018.1
 \label{sec:secAppD1-CMIPDownloads}
 
 \cred{\textbf{Some info about download stats}}
-
+%% Alessandra and Fabrizio have provided details in
+% https://docs.google.com/document/d/1xum5wePapEC0m1ER-ind5NtY2zsc4MbiuX5ryYGwXus/edit?tab=t.0
 
 \begin{table*}[htp]
 \renewcommand{\arraystretch}{2}
@@ -1637,7 +1642,7 @@ NASA & US National Aeronautic and Space Administration; \url{https://www.nasa.go
 NASA-JPL & US NASA Jet Propulsion Laboratory; \url{https://www.jpl.nasa.gov}\\ \hline
 NCAR & US National Center for Atmospheric Research; \url{https://ncar.ucar.edu}\\ \hline
 NCI & Australian National Computational Infrastructure; \url{https://nci.org.au}\\ \hline
-NERSC & US Department of Energy Research Scientific Computing Center; \url{https://www.nersc.gov}\\ \hline
+NERSC & US Department of Energy National Energy Research Scientific Computing Center (formerly the National Energy Research Supercomputer Center); \url{https://www.nersc.gov}\\ \hline
 \multicolumn{2}{l}{\textbf{\autoref{tab:tabAppG1-Acronyms} continued overpage..}}\\
 \end{tabularx}
 } % /resizebox
