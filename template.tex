@@ -222,7 +222,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 
 %% If authors contributed equally, please mark the respective author names with an asterisk, e.g., ``\Author[2,*]{Anton}{Smith}'' and ``\Author[3,*]{Bradley}{Miller}'' and add a further affiliation: ``\affil[*]{These authors contributed equally to this work.}.''
 
-\correspondence{Paul J. Durack (durack1@llnl.gov)}
+\correspondence{Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com)}
 \runningtitle{MIP: History and evolution}
 \runningauthor{Durack et al.}
 \keywords{AMIP, CMIP, AMIP1, AMIP2, CMIP1, CMIP2, CMIP3, CMIP5, CMIP6, CMIP6Plus, climate, earth system, modelling, atmosphere, ocean, land, sea ice, land ice, model, intercomparison, science}
@@ -239,7 +239,7 @@ Jiwoo alternate: The Coupled Model Intercomparison Project (CMIP): a review of p
 \maketitle
 \enlargethispage{1cm}  %% extend vertical length of page so Correspondence can fit
 \section*{Correspondence}
-Paul J. Durack (pauldurack@llnl.gov)
+Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com)
 
 {\cred{\textbf{A working draft document, dated \DTMnow} - 14th Jan 2025 pre-print can be downloaded \href{https://doi.org/10.5194/egusphere-2024-3729}{\underline{HERE}}}}
 \vspace{0.5cm}
@@ -950,13 +950,13 @@ For CMIP5, the three primary ESGF nodes at PCMDI (US), DKRZ (Germany), and CEDA 
 
 Following CMIP5, for CMIP6, a more ambitious plan was established to meet the needs of IPCC DDC archived data and the evolving data real-time \citep{stockhause_cmip6_2017}. Considering the CMIP project evolution across phases and the federated design that underpinned CMIP6 \citep[see \autoref{sec:cmip6ProjectDesign};][]{eyring_overview_2016}, data citation needed to account for model configurations that were targeted across the 22 MIPs that published data to the project (\autoref{tab:tab2-CMIP6MIPs}). The DKRZ, began a process to identify and generate CMIP6 DOIs that provided two levels of citation support, leveraging the CMIP6 Controlled Vocabularies \citep[see \autoref{sec:CMIPCVs};][]{durack_cmip6_2024}. One targeted the upper level, a single model (source\_id) for a unique MIP (activity\_id) configuration published in the ESGF CMIP6 archive, and another at the lower experiment (experiment\_id) level, allowing users to attribute the dataset used more tightly - identifying a unique dataset matching a model, MIP and experiment.
 
-To date, 2727 CMIP6 DOIs have been generated, with the first issued in June 2018 to the first CMIP6 dataset published in May 2018 (see \autoref{fig:fig2-CMIP6DataGrowth}). In addition, DKRZ also provided DOI support for the input4MIPs project, minting 210 DOIs for the forcing datasets being used by modelling groups to meet CMIP6 experimental protocols (see \autoref{sec:CMIP6SupportingProjects-input4MIPs}). Currently, more than 6700 recorded citations have been made against these ESGF datasets, approximately the same counts recorded against the CMIP6 overview paper \citep[see \autoref{sec:CMIP6Impact};][]{eyring_overview_2016}.
+To date, \cred{2727/2798} CMIP6 DOIs have been generated, with the first issued in June 2018 to the first CMIP6 dataset published in May 2018 (see \autoref{fig:fig2-CMIP6DataGrowth}). In addition, DKRZ also provided DOI support for the input4MIPs project, minting 210 DOIs for the forcing datasets being used by modelling groups to meet CMIP6 experimental protocols (see \autoref{sec:CMIP6SupportingProjects-input4MIPs}). Currently, more than \cred{6700/36700} recorded citations have been made against these ESGF datasets, approximately the same counts recorded against the CMIP6 overview paper \citep[see \autoref{sec:CMIP6Impact};][]{eyring_overview_2016}.
 
 \mycomment{
 %%##### COMMENTS %#####
 https://www.ipcc-data.org/sim/gcm_monthly/AR5/WG1-Archive.html
 https://www.wdc-climate.de/ui/statistics?type=cmip6_doi_registration
-https://commons.datacite.org/repositories/8orcv25 - Master overview 6720 citations
+https://commons.datacite.org/repositories/8orcv25 - Master overview ~6720~ 36,758 [250823] citations
 https://www.wdc-climate.de/ords/f?p=127:2 - CMIP6 data references
 https://www.wdc-climate.de/ui/cmip6?input=CMIP6.ScenarioMIP.NOAA-GFDL.GFDL-CM4.ssp585
 https://www.wdc-climate.de/ui/cmip6?input=input4MIPs.CMIP6.CMIP.PCMDI
@@ -1203,7 +1203,7 @@ After nearly all CMIP6 simulation results had been published and the IPCC AR6 ha
 
 An interim phase, CMIP6Plus, was initiated to address this need and expand the now well-established data standardisation requirements, data-sharing culture, and collaborative goodwill proven essential to CMIP's success \citep{mizielinski_cmip6plus_2024}. The project, led by the WIP, has continued to develop the underlying infrastructure responsible for delivering CMIP6, adapting and modularising it to enable ongoing use with limited additional technical investments by contributing modelling groups or MIP leads. The goal has been to establish consistent data requirements and a sound supporting infrastructure serving to minimise data preparation and publication efforts and enhance scientific productivity and impact. This allows several CMIP6 follow-on activities to continue leveraging the infrastructure in the service of climate science research. The project provides ongoing, but limited support for coordinated model experimentation.
 
-Planning for the 7th phase of CMIP (CMIP7) has now begun with an emphasis on broad community consultation \citep{orourke_cmip6_2024}. As discussions continue on the core science foci of CMIP7 \citep[e.g.,][]{dunne_climate_2023,dunne_evolving_2024}, CMIP infrastructure providers are undertaking work \citep[e.g.,][]{kershaw_esgf_2020} to modernise and ready services for a relatively small number of CMIP7 AR7 ``Fast Track'' experiments, which are expected to begin in mid-2025 \citep{dunne_evolving_2024}. At that time, new additions to the CMIP6 data archive will cease, and the next-generation simulations based on the latest model versions, updated forcing datasets (\autoref{sec:CMIP6SupportingProjects-input4MIPs}), and refined experimental protocols may begin to be published.
+Planning for the 7th phase of CMIP (CMIP7) has now begun with an emphasis on broad community consultation \citep{orourke_cmip6_2024}. As discussions continue on the core science foci of CMIP7 \citep[e.g.,][]{dunne_climate_2023,dunne_evolving_2024-1}, CMIP infrastructure providers are undertaking work \citep[e.g.,][]{kershaw_esgf_2020} to modernise and ready services for a relatively small number of CMIP7 AR7 ``Fast Track'' experiments, which are expected to begin in mid-2025 \citep{dunne_evolving_2024-1}. At that time, new additions to the CMIP6 data archive will cease, and the next-generation simulations based on the latest model versions, updated forcing datasets (\autoref{sec:CMIP6SupportingProjects-input4MIPs}), and refined experimental protocols may begin to be published.
 
 \mycomment{
 %%##### COMMENTS %#####
@@ -1212,9 +1212,17 @@ MIP6Plus: Infrastructure concepts of multiverse/CMIP, planet/project, and contin
 }
 
 
+
+
+
 \section{CMIP phase 7 planning}
 \label{sec:CMIP7Planning}
-\cite{mizielinski_cmip6_2025, juckes_baseline_2025}
+\cred{\cite{mizielinski_cmip6_2025, juckes_baseline_2025, hassell_essential_2025, dunne_evolving_2024-1, hoffman_rapid_2025, durack_earth_2025, ruane_cmip7_2025, li_cmip7_2025,mcpartland_cmip7_2025,dingley_cmip7_2025,fox-kemper_cmip7_2025}}
+
+\cred{\cite{gillett_detection_2025, roberts_high-resolution_2025}}
+
+
+
 
 
 \section{Summary} %% \conclusions[modified heading if necessary]
@@ -1791,7 +1799,7 @@ D.E. and E.O's work at the CMIP-IPO is hosted by the European Space Agency, with
 %REFERENCE 1
 %\end{thebibliography}
 \bibliographystyle{copernicus}
-\bibliography{250823a}
+\bibliography{250823b}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
