@@ -1,380 +1,383 @@
 #!/bin/env python
 # -*- coding: utf-8 -*-
 
-# %% imports
+"""
+MIPSummLib - Reusable functions for CMIP citation analysis
+
+Created: November 16, 2024
+Author: Paul J. Durack @durack1
+
+Provides functionality for:
+- Web of Science (WoS) API queries and citation reports
+- Google Scholar citation retrieval via SerpAPI
+- Citation data processing and padding to current year
+
+Version History:
+- 2024-11-16: Initial creation
+- 2024-11-17: Updated SerpAPI to use cluster (doi) query
+- 2024-11-18: add updateLineColours
+- 2025-01-22: pullstats updated to deal with int64 string mapping (cfmip, omip2)
+- 2025-01-23: pullstats updated to track citeStart, pub and end yrs
+- 2025-01-24: add padCitationCounts
+- 2025-01-28: Enhanced for gsch DOI or cluster ID flexibility (author=researchgate.net)
+- 2026-05-23: Refactored for cleaner code practices; map gsch doi/cluster input
+"""
 
 import copy
 import datetime
 import logging
+import re
 import requests
 import numpy as np
 
-# %% notes
-"""
-Created on Sat Nov 16 06:34:21 2024
 
-Paul J. Durack 16 November 2024
-
-This python library holds a number of reusable functions
-being used in this repo
-
-2024-
-PJD 16 Nov 2024 - started
-PJD 17 Nov 2024 - updated serpapi call to use cluster vs doi query
-PJD 18 Nov 2024 - add updateLineColours func
-PJD 22 Jan 2025 - tweak pullstats to deal with int64 string mapping (cfmip, omip2)
-                  citation before publication
-PJD 23 Jan 2025 - augmented pullstats to track citeStart, pub and end yrs
-PJD 24 Jan 2025 - add padCitationCounts
-PJD 28 Feb 2025 - updated to deal with ar2/gates gsch author=researchgate.net
-
-@author: durack1
-"""
-
-# %% function defs
-
-# API Expanded
+# API Constants
 WOS_API_URL = "https://wos-api.clarivate.com/api/wos"
-# https://api.clarivate.com/swagger-ui/?apikey=none&url=https%3A%2F%2Fdeveloper.clarivate.com%2Fapis%2Fwos%2Fswagger
-# Starter API
-WoSStarter_API_URL = "https://api.clarivate.com/apis/wos-starter/v1"
-# https://api.clarivate.com/swagger-ui/?apikey=none&url=https%3A%2F%2Fdeveloper.clarivate.com%2Fapis%2Fwos-starter%2Fswagger
+WOS_STARTER_API_URL = "https://api.clarivate.com/apis/wos-starter/v1"
+SERPAPI_URL = "https://serpapi.com/search.json"
+
+
+# ============================================================================
+# API Key Management
+# ============================================================================
+
+def _load_api_key(filename):
+    """Load API key from file (last whitespace-delimited token)."""
+    try:
+        with open(filename, "r") as f:
+            return f.read().split()[-1]
+    except FileNotFoundError:
+        logging.error(f"API key file not found: {filename}")
+        raise
 
 
 def apiKeyW():
-    """
-    Read WoS API key from local store
-    """
-    with open("WoSKey.txt", "r") as f:
-        tmp = f.read()
-        key = tmp.split()[-1]
-
-    return key
+    """Get WoS API key from WoSKey.txt."""
+    return _load_api_key("WoSKey.txt")
 
 
 def apiKeyG():
-    """
-    Read SerpAPI key from local store
-    """
-    with open("SerpKey.txt", "r") as f:
-        tmp = f.read()
-        key = tmp.split()[-1]
+    """Get SerpAPI key from SerpKey.txt."""
+    return _load_api_key("SerpKey.txt")
 
-    return key
 
+# ============================================================================
+# Helper Functions
+# ============================================================================
 
 def convertToFloat(inList):
-    """
-    Convert all list integers to float type
-    """
+    """Convert list elements to float type."""
     return [float(x) for x in inList]
 
 
-def grabCitationReport(queryId, params={}):
+def _make_wos_headers():
+    """Build WoS API headers with authentication."""
+    return {"Accept": "application/json", "X-ApiKey": apiKeyW()}
+
+
+def _extract_author_info(pub_info):
     """
-    Use queryId to grab json output - every query counts as 1 against quota
+    Extract author count and first author name from publication info.
+
+    Returns:
+        tuple: (author_count, first_author_last_name, et_al_str)
     """
-    headers = {"Accept": "application/json", "X-ApiKey": apiKeyW()}
-    r = requests.get(
-        WOS_API_URL + "/citation-report/" + str(queryId),
-        params=params,
-        headers=headers,
-        timeout=10,
-    )
+    if "authors" in pub_info:
+        authors = pub_info["authors"]
+        author_count = len(authors)
+        first_author_last_name = authors[0]["name"]
+        et_al = "et al." if author_count > 1 else ""
+        return author_count, first_author_last_name, et_al
+
+    # Fallback: extract from summary (e.g., ResearchGate)
+    summary = pub_info.get("summary", "Unknown")
+    if summary == "researchgate.net":
+        return 0, "researchgate.net", ""
+
+    first_author = summary.split("-")[0].strip()
+    return 0, first_author, ""
+
+
+def _is_doi_format(query_id):
+    """Check if query_id appears to be a DOI (contains slashes)."""
+    return "/" in str(query_id)
+
+
+# ============================================================================
+# WoS API Functions
+# ============================================================================
+
+def grabQueryId(query, params=None):
+    """
+    Send API call to get query ID.
+
+    Args:
+        query (str): WoS query string
+        params (dict): Additional query parameters
+
+    Returns:
+        str: Query ID for subsequent API calls
+
+    Raises:
+        Exception: If API call fails
+    """
+    if params is None:
+        params = {}
+
+    query_obj = {
+        "databaseId": "WOS",
+        "usrQuery": query,
+        "count": 0,
+        "firstRecord": 1
+    }
+    query_obj.update(params)
+
     try:
+        r = requests.get(WOS_API_URL, params=query_obj,
+                         headers=_make_wos_headers(), timeout=10)
         rj = r.json()
-        logging.debug("API response: {}".format(rj))
-        return rj
-    except Exception:
-        logging.exception("Citation report for queryId {} failed".format(queryId))
+        logging.debug(f"grabQueryId response: {rj}")
+        return rj["QueryResult"]["QueryID"]
+    except Exception as e:
+        logging.exception(f"Failed to get query ID for: {query}")
         raise
 
 
-def grabGoogleScholarCites(doi):
+def grabQueryReport(queryId, params=None):
     """
-    User SerpAPI to scour citation counts from Google Scholar
+    Fetch query results using a query ID.
+
+    Args:
+        queryId (str): Query ID from grabQueryId()
+        params (dict): Additional parameters
+
+    Returns:
+        dict: Query results JSON
+
+    Raises:
+        Exception: If API call fails
     """
-    # params = {"api_key": apiKeyG(), "engine": "google_scholar", "q": doi, "hl": "en"}
+    if params is None:
+        params = {}
+
+    try:
+        r = requests.get(
+            f"{WOS_API_URL}/query/{queryId}",
+            params=params,
+            headers=_make_wos_headers(),
+            timeout=10
+        )
+        rj = r.json()
+        logging.debug(f"grabQueryReport response: {rj}")
+        return rj
+    except Exception as e:
+        logging.exception(
+            f"Failed to retrieve query report for queryId: {queryId}")
+        raise
+
+
+def grabCitationReport(queryId, params=None):
+    """
+    Fetch citation report for a query ID.
+
+    Args:
+        queryId (str): Query ID from grabQueryId()
+        params (dict): Additional parameters (e.g., reportLevel)
+
+    Returns:
+        dict: Citation report JSON
+
+    Raises:
+        Exception: If API call fails
+    """
+    if params is None:
+        params = {}
+
+    try:
+        r = requests.get(
+            f"{WOS_API_URL}/citation-report/{queryId}",
+            params=params,
+            headers=_make_wos_headers(),
+            timeout=10
+        )
+        rj = r.json()
+        logging.debug(f"grabCitationReport response: {rj}")
+        return rj
+    except Exception as e:
+        logging.exception(
+            f"Failed to retrieve citation report for queryId: {queryId}")
+        raise
+
+
+# ============================================================================
+# Google Scholar Functions
+# ============================================================================
+
+def grabGoogleScholarCites(query_id):
+    """
+    Retrieve citation data from Google Scholar via SerpAPI.
+
+    Accepts either a DOI or Google Scholar cluster ID. Auto-detects format:
+    - DOI: Contains "/" (e.g., "10.1175/JCLI-D-18-0823.1")
+    - Cluster ID: Numeric value (e.g., "1234567890")
+
+    Args:
+        query_id (str): DOI or Google Scholar cluster ID
+
+    Returns:
+        int or None: Citation count, or None if query fails
+
+    Prints:
+        Author name, "et al." if applicable, publication year, citation count
+    """
+    # Auto-detect input type
+    query_param = "doi" if _is_doi_format(query_id) else "cluster"
+
     params = {
         "api_key": apiKeyG(),
         "engine": "google_scholar",
-        "cluster": doi,
+        query_param: query_id,
         "hl": "en",
     }
-    queryUrl = "https://serpapi.com/search.json?"
-    r = requests.get(queryUrl, params=params, timeout=10)
 
-    # catch case of allocation time out
-    pubYr = ""
-    if "organic_results" not in r.json().keys():
-        print("Processing GS: API allocation exceeded")
-        googleScholCites = None
-    else:
-        try:
-            rj = r.json()
-            logging.debug("SerpAPI response: {}".format(rj))
-            googleScholCites = rj["organic_results"][0]["inline_links"]["cited_by"][
-                "total"
-            ]
-            if "authors" in rj["organic_results"][0]["publication_info"].keys():
-                authorCount = len(
-                    rj["organic_results"][0]["publication_info"]["authors"]
-                )
-                firstAuthorLastName = rj["organic_results"][0]["publication_info"][
-                    "authors"
-                ][0]["name"]
-            # catch issue with ar2/gates - researchgate.net author
-            elif (
-                rj["organic_results"][0]["publication_info"]["summary"]
-                == "researchgate.net"
-            ):
-                authorCount = 0
-                firstAuthorLastName = "researchgate.net"
-            else:
-                authorCount = 0
-                firstAuthorLastName = (
-                    rj["organic_results"][0]["publication_info"]["summary"]
-                    .split("-")[0]
-                    .strip()
-                )
-            if authorCount > 1:
-                etal = "et al."
-            else:
-                etal = ""
-
-            if pubYr != "":
-                pubYr = (
-                    rj["organic_results"][0]["publication_info"]["summary"]
-                    .split("-")[1]
-                    .split(",")[-1]
-                    .strip()
-                )
-            print("Processing GS:", firstAuthorLastName, etal, pubYr, googleScholCites)
-        except Exception:
-            logging.exception(doi)
-            raise
-
-    return googleScholCites
-
-
-def grabQueryId(query, params={}):
-    """
-    Send API dummy call - ping to get query ID, start connection
-    """
-    query = {"databaseId": "WOS", "usrQuery": query, "count": 0, "firstRecord": 1}
-    query.update(params)
-    headers = {"Accept": "application/json", "X-ApiKey": apiKeyW()}
-    # logging.info('Query parameters: {}'.format(query))
-    # print(query)
-    r = requests.get(WOS_API_URL, params=query, headers=headers, timeout=10)
     try:
-        # print(r.text)
+        r = requests.get(SERPAPI_URL, params=params, timeout=10)
         rj = r.json()
-        # print(rj)
-        logging.debug("API response: {}".format(rj))
-        queryId = rj["QueryResult"]["QueryID"]
-        return queryId
-    except Exception:
-        logging.exception(query)
+        logging.debug(f"grabGoogleScholarCites response: {rj}")
+
+        # Check if API quota exceeded
+        if "organic_results" not in rj:
+            print("Processing GS: API allocation exceeded")
+            return None
+
+        result = rj["organic_results"][0]
+
+        # Extract citation count
+        cite_count = None
+        if "inline_links" in result and "cited_by" in result["inline_links"]:
+            cite_count = result["inline_links"]["cited_by"]["total"]
+
+        # Extract publication info
+        pub_info = result.get("publication_info", {})
+        author_count, first_author, et_al = _extract_author_info(pub_info)
+
+        # Extract publication year from summary
+        pub_year = ""
+        if "summary" in pub_info:
+            parts = pub_info["summary"].split("-")
+            if len(parts) > 1:
+                pub_year = parts[-1].split(",")[-1].strip()
+
+        print(f"Processing GS: {first_author} {et_al} {pub_year} {cite_count}")
+        return cite_count
+
+    except Exception as e:
+        logging.exception(
+            f"Failed to retrieve Google Scholar data for: {query_id}")
         raise
 
 
-def grabQueryReport(queryId, params={}):
-    """
-    Use queryId to grab json output - every query counts as 1 against quota
-    """
-    headers = {"Accept": "application/json", "X-ApiKey": apiKeyW()}
-    r = requests.get(
-        WOS_API_URL + "/query/" + str(queryId),
-        params=params,
-        headers=headers,
-        timeout=10,
-    )
-    try:
-        rj = r.json()
-        logging.debug("API response: {}".format(rj))
-        return rj
-    except Exception:
-        logging.exception("Citation report for queryId {} failed".format(queryId))
-        raise
-
+# ============================================================================
+# Citation Data Processing
+# ============================================================================
 
 def padCiteCounts(citeDict, pubYr):
     """
-    Take WoS citation year:count, sum earlier citations to pubYr, fill missing
-    years and expand to current year, even if not citations to fill
+    Process WoS citation data: aggregate pre-publication citations, fill gaps to current year.
+
+    Args:
+        citeDict (dict): Citation data from WoS report with 'CitingYears' key
+        pubYr (int): Publication year
+
+    Returns:
+        tuple: (citingYrs, citingCounts, citingYrsComplete, citeCountsComplete)
+               Complete year and count arrays from pubYr to current year
     """
     currentYr = datetime.date.today().year
-    # targetYr = currentYr - 1
-    # print("currentYr:", currentYr, "targetYr:", targetYr)
 
-    # ascertain cite start year build list
+    # Extract and convert years/counts
     citingYrs = list(map(int, citeDict["CitingYears"].keys()))
     citingCounts = list(map(int, citeDict["CitingYears"].values()))
     citeStartYr = citingYrs[0]
-    # print("citingYrs:", citingYrs)
-    # print("citingCounts:", citingCounts)
 
-    # if citeStartYr < pubYr sum first entries
-    startInd = citeStartYr - pubYr  # 0 if cited same year published
-    startIndAbs = abs(startInd)
-    # print("startInd:", startInd)
-    if startInd < 0:  # cfmip, omip2 = -1; = 0; ar1 = 1; dynvarmip = 2
+    # Handle citations before publication year
+    startInd = citeStartYr - pubYr
+    if startInd < 0:
         print("**case citeStartYr < pubYr")
-        # sum entries before publication yr into pubYr
-        tmp = copy.deepcopy(citingCounts)
-        # print("citingCounts:", citingCounts)
-        # print("tmp:       ", tmp)
+        # Sum all pre-publication citations into publication year
         newInd = abs(startInd) + 1
-        tmp1 = [np.sum(tmp[:newInd])]
-        tmp1.extend(citingCounts[newInd:])
-        # print("tmp1.ext:", tmp1)
-        citingCounts = tmp1  # list(map(int, tmp1))
-        citingYrs = citingYrs[startIndAbs:]
-        del (tmp, tmp1)
+        citingCounts = [np.sum(citingCounts[:newInd])] + citingCounts[newInd:]
+        citingYrs = citingYrs[abs(startInd):]
 
-    # preallocate target - ar1 has holes
+    # Create complete year range with padding
     citingYrsComplete = np.arange(pubYr, currentYr + 1, dtype="int16").tolist()
-    citingCountsComplete = np.zeros(len(citingYrsComplete), dtype="int16").tolist()
+    citingCountsComplete = np.zeros(
+        len(citingYrsComplete), dtype="int16").tolist()
 
-    # iterate and fill - ignoring current year
+    # Fill in observed years
     for count, yr in enumerate(citingYrs):
-        # report currentYr partial counts
-        if yr == currentYr:  # fangio, cmip3, ar4, cmip5, cmip6, 250124
-            print("Current year:", currentYr, "total citations:", citingCounts[count])
-        ind = citingYrsComplete.index(yr)
-        citingCountsComplete[ind] = citingCounts[count]
-
-    # print("citingYrsComplete:", len(citingYrsComplete), citingYrsComplete)
-    # print("citingCountsComplete:", len(citingCountsComplete), citingCountsComplete)
+        if yr == currentYr:
+            print(
+                f"Current year: {currentYr}, total citations: {citingCounts[count]}")
+        idx = citingYrsComplete.index(yr)
+        citingCountsComplete[idx] = citingCounts[count]
 
     return citingYrs, citingCounts, citingYrsComplete, citingCountsComplete
 
 
 def pullStats(wosId, doi, padArray):
     """
-    From WoS Expanded API DOI object extract time history of citations
-    along with total citation count and pubYr
+    Extract publication and citation statistics from WoS.
+
+    Args:
+        wosId (str): Web of Science ID
+        doi (str): DOI (for reference, currently unused in query)
+        padArray (list): Pre-allocated array for citation counts
+
+    Returns:
+        tuple: (pubYr, timesCited, citingYrs, citingCountsCompletePad,
+                citingYrsDict, citeStartYr, citeEndYr)
     """
-    # construct per call arguments and send to API
-    params = "UT={}".format(wosId)
-    # if doi != "":
-    #    params = "&".join([params, "DO={}".format(doi)])
-    queryId = grabQueryId(params)
-    # query
+    # Query WoS for publication record
+    queryId = grabQueryId(f"UT={wosId}")
     query = grabQueryReport(queryId)
 
-    #### drop json to file
-    # with open("query-dynvarmip.json", "w") as f:
-    #    json.dump(
-    #        query, f, ensure_ascii=True, sort_keys=True, indent=4, separators=(",", ":")
-    #    )
+    # Extract publication info
+    rec = query["Records"]["records"]["REC"][0]["static_data"]["summary"]
+    pubYr = rec["pub_info"]["pubyear"]
 
-    pubYr = query["Records"]["records"]["REC"][0]["static_data"]["summary"]["pub_info"][
-        "pubyear"
-    ]
-    authorCount = query["Records"]["records"]["REC"][0]["static_data"]["summary"][
-        "names"
-    ][
-        "count"
-    ]  # Author count
-    if authorCount > 1:
-        etal = "et al."
-        firstAuthorLastName = query["Records"]["records"]["REC"][0]["static_data"][
-            "summary"
-        ]["names"]["name"][0]["last_name"]
+    # Extract author info
+    names = rec["names"]
+    author_count = names["count"]
+
+    if author_count > 1:
+        et_al = "et al."
+        first_author = names["name"][0]["last_name"]
     else:
-        etal = ""
-        firstAuthorLastName = query["Records"]["records"]["REC"][0]["static_data"][
-            "summary"
-        ]["names"]["name"]["last_name"]
-    print("Processing WoS:", firstAuthorLastName, etal, pubYr)
-    # citation-report
-    crParams = {"reportLevel": "WOS"}
-    crData = grabCitationReport(queryId, crParams)
+        et_al = ""
+        first_author = names["name"]["last_name"]
 
-    #### drop json to file
-    # with open("crData-cordex.json", "w") as f:
-    #    json.dump(
-    #        crData,
-    #        f,
-    #        ensure_ascii=True,
-    #        sort_keys=True,
-    #        indent=4,
-    #        separators=(",", ":"),
-    #    )
+    print(f"Processing WoS: {first_author} {et_al} {pubYr}")
 
-    # pull entries out of data object
-    # citingYrsDict = crData[0]["CitingYears"]
-    # citingYrs = list(map(int, citingYrsDict.values()))
-    # timesCited = crData[0]["TimesCited"]
+    # Get citation report
+    cite_report = grabCitationReport(queryId, {"reportLevel": "WOS"})
 
-    # ascertain length; generate padded citingYears - check pubYr against citeStartYr
-    # citeStartYr = int(list(citingYrsDict.keys())[0])
-    # citeEndYr = int(list(citingYrsDict.keys())[-1])
-    # startInd = citeStartYr - pubYr  # 0 if cited same year published
-    # print("startInd:", startInd)
-    # print("len(citingYrsPad):", len(citingYrsPad))
-    # indEnd = len(citingYrs)
-
-    # padArray copy.deepcopy() NaN length array
+    # Process citations
     citingCountsCompletePad = copy.deepcopy(padArray)
-    del padArray
-
-    # print(
-    #    "citingCountsCompletePad 1:",
-    #    len(citingCountsCompletePad),
-    #    citingCountsCompletePad,
-    # )
-
-    # pass info to padCiteCounts providing a time complete entry to currentYr-1
     citingYrs, citingCounts, citingYrsComplete, citeCountsComplete = padCiteCounts(
-        crData[0], pubYr
+        cite_report[0], pubYr
     )
-    indEnd = len(citingYrsComplete)  # stop prior to currentYr, index in zero space
-    # print("indEnd:", indEnd, "len(citingYrsComplete):", len(citingYrsComplete))
-    citingCountsCompletePad[0:indEnd] = citeCountsComplete
 
-    # print(
-    #    "citingCountsCompletePad 2:",
-    #    len(citingCountsCompletePad),
-    #    citingCountsCompletePad,
-    # )
-    # print("**********")
+    # Fill padded array
+    citingCountsCompletePad[0:len(citeCountsComplete)] = citeCountsComplete
 
-    citingYrsDict = crData[0]["CitingYears"]
-    timesCited = crData[0]["TimesCited"]
+    # Extract metadata
+    citingYrsDict = cite_report[0]["CitingYears"]
+    timesCited = cite_report[0]["TimesCited"]
     citeStartYr = citingYrs[0]
     citeEndYr = citingYrs[-1]
 
-    # old and delete-able
-    # if startInd == -1:
-    #    # count first two entries as one
-    #    tmp = list(map(int, citingYrs))
-    #    tmp1 = [np.sum(tmp[:2])]
-    #    tmp1.extend(citingYrs[2:])
-    #    citingYrs = list(map(int, tmp1))  # catch issue with omip2 wos first entry "6"
-    #    del (tmp, tmp1)
-    #    citingYrsPad[0 : indEnd - 1] = list(map(int, citingYrs))
-    # elif startInd == 1:
-    #    citingYrsPad[0] = 0
-    #    citingYrsPad[startInd : indEnd + 1] = list(map(int, citingYrs))
-    # elif startInd > 1:
-    #    citingYrsPad[0:startInd] = list(map(int, np.zeros(startInd)))
-    #    citingYrsPad[startInd : indEnd + startInd] = list(map(int, citingYrs))
-    # else:
-    #    citingYrsPad[0:indEnd] = list(map(int, citingYrs))
-    # print("len(citingYrsPad):", len(citingYrsPad))
-
-    # print("type(pubYr):", type(pubYr))
-    # print("type(timesCited):", type(timesCited))
-    # print("type(citingYrs):", type(citingYrs))
-    # print("type(citingCountsCompletePad):", type(citingCountsCompletePad))
-    # print("type(citingYrsDict):", type(citingYrsDict))
-    # print("type(citeStartYr):", type(citeStartYr))
-    # print("type(citeEndYr):", type(citeEndYr))
-
-    # explicitly convert int64 to int16 - json.dump can't write it
+    # Convert to float for JSON serialization
     citingYrs = convertToFloat(citingYrs)
     citingCountsCompletePad = convertToFloat(citingCountsCompletePad)
 
@@ -389,10 +392,20 @@ def pullStats(wosId, doi, padArray):
     )
 
 
+# ============================================================================
+# Plotting Utilities
+# ============================================================================
+
 def updateLineColours(ax, cm):
     """
-    For line plot, take provided colourmap and recolour lines
-    https://stackoverflow.com/questions/20040597/matplotlib-change-colormap-after-the-fact
+    Recolor line plot using provided colormap.
+
+    Args:
+        ax: Matplotlib axis object
+        cm: Colormap to apply
+
+    Reference:
+        https://stackoverflow.com/questions/20040597/matplotlib-change-colormap-after-the-fact
     """
     lines = ax.lines
     colours = cm(np.linspace(0, 1, len(lines)))
