@@ -106,8 +106,8 @@ authors:
   given-names: "Sven"
 - family-names: "Williams"
   given-names: "Dean N."
-version: 1.2.1
-date-released: 2025-05-01
+version: 1.2.2
+date-released: 2026-05-24
 identifiers:
 - description: "Durack et al., 2025 (GMD)"
   type: doi

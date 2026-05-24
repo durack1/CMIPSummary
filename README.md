@@ -1,5 +1,5 @@
 # Duracketal25GMD-MIPHistoryAndEvolution
-[![stable version](https://img.shields.io/badge/Current%20version-1.2.1-brightgreen.svg)](https://github.com/durack1/CMIPSummary/releases/tag/1.2.1) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15321349.svg)](https://doi.org/10.5281/zenodo.15321349)
+[![stable version](https://img.shields.io/badge/Current%20version-1.2.2-brightgreen.svg)](https://github.com/durack1/CMIPSummary/releases/tag/1.2.2) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15321349.svg)](https://doi.org/10.5281/zenodo.15321349)
 
 Paper docs, data, analysis and figures.
 
